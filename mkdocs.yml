@@ -1,0 +1,32 @@
+site_name: Documentation Template
+
+nav:
+    - About: index.md
+    
+theme:
+    name: material
+    palette:
+        primary: '#003DA5'
+        accent: '#FFB81C'
+
+extra:
+    social:
+        - type: 'github'
+          link: 'https://github.com/mwang87'
+        - type: 'twitter'
+          link: 'https://twitter.com/mingxunwang'
+
+plugins:
+    - search
+    - git-revision-date-localized:
+        type: datetime
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+
+extra:
+  analytics:
+    provider: google
+    property: XXX
