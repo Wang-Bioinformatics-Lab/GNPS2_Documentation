@@ -166,6 +166,16 @@ Linkout
         hashparam:
             -   input_spectra:TASKLOCATION/[task]/input_spectra
             -   description:Downstream from [task] Molecular Networking
+
+
+-   name: Visualize Heatmap
+    displayname: Visualize Heatmap
+    viewname: visualizeheatmap
+    displaytype: linkout
+    parameters:
+        baseurl: /taskresult/[task]/file/nf_output/output.html
+        urlparam:
+            -   attachment:no
 ```
 
 
