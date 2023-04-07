@@ -3,6 +3,7 @@ site_name: Documentation Template
 nav:
     - About: index.md
     - GNPS2 Workflow Development: workflowdev.md
+    - GNPS2 Tool Index: toolindex.md
     
 theme:
     name: material
@@ -14,7 +15,7 @@ theme:
 extra:
     social:
         - type: 'github'
-          link: 'https://github.com/mwang87'
+          link: 'https://github.com/Wang-Bioinformatics-Lab'
         - type: 'twitter'
           link: 'https://twitter.com/mingxunwang'
 
