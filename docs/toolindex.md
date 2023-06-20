@@ -26,8 +26,8 @@ These notebooks are for postprocessing of results from GNPS/GNPS2 and other comp
 
 | Tool | Documentation | Source Code | Binder Launch |
 | ---- | ------------- | ----------- | ------------- |
-| GNPS2 MASST Post Processing | --- | [GitHub](https://github.com/mwang87/GNPS_MASST_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwang87/GNPS_MASST_Notebooks/master) |
-| GNPS2 MassQL and Networking Integration | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/MassQL_Networking_Connection_Notebook) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/MassQL_Networking_Connection_Notebook/master) |
-| GNPS2 Networking Family Consistent Fragmentation | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/MolecularFamily_Consistent_Fragmentation_Notebook) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/MolecularFamily_Consistent_Fragmentation_Notebook/master) |
-| GNPS2 MassQL Post Processing | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow_Postprocessing_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/MassQL_Workflow_Postprocessing_Notebooks/master) |
+| GNPS2 MASST Post Processing | --- | [GitHub](https://github.com/mwang87/GNPS_MASST_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mwang87/GNPS_MASST_Notebooks/master?labpath=src%2Fjupyternotebook.ipynb) |
+| GNPS2 MassQL and Networking Integration | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/MassQL_Networking_Connection_Notebook) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/MassQL_Networking_Connection_Notebook/master?labpath=src%2Fjupyternotebook.ipynb) |
+| GNPS2 Networking Family Consistent Fragmentation | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/MolecularFamily_Consistent_Fragmentation_Notebook) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/MolecularFamily_Consistent_Fragmentation_Notebook/master?labpath=src%2Fjupyternotebook.ipynb) |
+| GNPS2 MassQL Post Processing | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow_Postprocessing_Notebooks) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/MassQL_Workflow_Postprocessing_Notebooks/master?labpath=src%2Fjupyternotebook.ipynb) |
 
