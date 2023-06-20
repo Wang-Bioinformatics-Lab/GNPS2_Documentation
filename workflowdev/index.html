@@ -456,7 +456,7 @@ parameterlist:
                 data: filename
         columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
-            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.ucsd.edu/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
+            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
         `;}}]'
 </code></pre>
 <p>Serverside Tables (Large Sized - GB+ Size)</p>
@@ -474,7 +474,7 @@ parameterlist:
                 data: filename
         columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
-            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.ucsd.edu/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
+            &lt;a target=&quot;_blank&quot; href=&quot;https://structure.gnps2.org/structureimg?smiles=${row[&quot;smiles&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
         `;}}]'
 </code></pre>
 <p>Linkout</p>
@@ -522,7 +522,7 @@ parameterlist:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2023 06:26:24</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 20, 2023 22:49:39</span>
       
     
   </small>
