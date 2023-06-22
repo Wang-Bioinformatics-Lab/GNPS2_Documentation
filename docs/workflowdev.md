@@ -148,7 +148,7 @@ Serverside Tables (Large Sized - GB+ Size)
                 data: filename
         columnDefs: '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
         return `
-            <a target="_blank" href="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}">View Spectrum</a>
+            <img src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/>
         `;}}]'
 ```
 
