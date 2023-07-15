@@ -13,7 +13,7 @@ These are web tools that is run by the GNPS2 team and provides complementary fun
 
 | Tool  | Documentation | Source Code | Citation |
 |---|---|---|---|
-| [Pubmed Co-Authors List](https://pubmed.mingxunwang.com/) | --- | --- | 
+| [Pubmed Co-Authors List](https://coauthor.wanglab.science/) | --- | --- | 
 | [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/) | --- | --- | 
 | [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/) | --- | --- | 
 | [GNPS2 Structure Server](https://structure.gnps2.org/) | --- | --- |
