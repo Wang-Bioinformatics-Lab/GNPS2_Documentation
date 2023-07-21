@@ -9,6 +9,7 @@ nav:
     - GNPS2 Workflow Development: workflowdev.md
     - GNPS2 Tool Index: toolindex.md
     - GNPS2 USI: usi.md
+    - IDBac Documentation: idbac.md
     
 theme:
     name: material
