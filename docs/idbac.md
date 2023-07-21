@@ -3,7 +3,7 @@ Convert raw autoExecute data (Bruker FID) to mzML via MSConvert.
  <img width="1120" alt="MSConvert Settings1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/11c83de8-85b1-4eae-bdfa-b80d2f8fde5f">\
  <img width="1120" alt="Choosing File1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/75cc9747-28ab-41ce-815c-27dfe259b8a4">
  
-Upload your converted mzML file along with a labeled MALDI plate map (CSV or XLSX) to "File Browser". 
+Upload your converted mzML file along with a MALDI plate map labeled with your isolate IDs (CSV or XLSX) to "File Browser". 
 
 <img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6">
 
