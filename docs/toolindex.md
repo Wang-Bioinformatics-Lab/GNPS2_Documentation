@@ -17,6 +17,22 @@ These are web tools that is run by the GNPS2 team and provides complementary fun
 | [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/) | --- | --- | 
 | [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/) | --- | --- | 
 | [GNPS2 Structure Server](https://structure.gnps2.org/) | --- | --- |
+| [GNPS2 Cytoscape](https://cytoscape.gnps2.org/) | --- | --- |
+| [Metabolomics Spectrum Resolver](https://metabolomics-usi.gnps2.org) | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
+| [GNPS2 Networking URL Formatter](https://urlformatter.gnps2.org) | --- | --- |
+| [GNPS2 Classical Networking Upset Plot Dashboard](http://classicalupset.gnps2.org/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
+| [GNPS2 FBMN Upset Plot Dashboard](https://fbmnupset.gnps2.org/) | --- | --- |
+| [NP Classifier](https://npclassifier.gnps2.org/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) | --- |
+| [GNPS2 Dashboard](https://dashboard.gnps2.org/) | --- | --- |
+| [GNPS2 Plotter Dashboard (Beta)](https://plotter.gnps2.org/) | --- | --- |
+| [GNPS2 Dataset File Explorer (Beta)](https://explorer.gnps2.org/) | --- | --- |
+| [GNPS2 Public Libraries Download List](https://external.gnps2.org/gnpslibrary) | --- | --- | 
+| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/) | --- | --- | 
+
+
+
+
+
 
 
 
@@ -33,3 +49,16 @@ These notebooks are for postprocessing of results from GNPS/GNPS2 and other comp
 | CMMC Integration | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/CMMC-GNPS-Integration-Notebook) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Wang-Bioinformatics-Lab/CMMC-GNPS-Integration-Notebook/master) |
 
 
+## Community Tools GNPS2 Interfaces with
+
+| Tool  | Publication |
+|---|---|
+| [MS2LDA.org](http://ms2lda.org/) | [Citation](https://academic.oup.com/bioinformatics/article/34/2/317/4158166) |
+| [NPAtlas](https://www.npatlas.org/joomla/) | [Citation](https://pubs.acs.org/doi/10.1021/acscentsci.9b00806) |
+| [MIBiG](https://mibig.secondarymetabolites.org/) | [Citation](https://academic.oup.com/nar/article/48/D1/D454/5587631) |
+| [ClassyFire](http://classyfire.wishartlab.com/) | [Citation](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y) |
+| [SMART NMR](http://smart.ucsd.edu) | [Citation](https://pubs.acs.org/doi/abs/10.1021/jacs.9b13786) |
+| MassBank | [Citation](https://onlinelibrary.wiley.com/doi/full/10.1002/jms.1777?casa_token=Wr51kpu9hCgAAAAA%3AERBV24GFextLVnW0J4SDcdJAskSYG2eqf2tgh8AUBeowVLnKBErbLqJxEzOQJUz2MqrI5dKr47zSVXw) |
+| Cytoscape | [Citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC403769/) |
+| ProteoWizard | [Citation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732273/) |
+| [SNAP-MS](https://www.npatlas.org/discover/snapms/) | [Citation](https://www.nature.com/articles/s41467-022-35734-z) and [Documentation](https://liningtonlab.github.io/snapms_documentation/) |

@@ -1,4 +1,8 @@
-site_name: Documentation Template
+site_name: GNPS2 Documentation
+site_url: https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/
+edit_uri: https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/
+repo_name: CCMS-UCSD/GNPSDocumentation
+repo_url: https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation
 
 nav:
     - About: index.md
