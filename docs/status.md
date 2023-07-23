@@ -11,7 +11,7 @@ Here is a quick dashboard for the uptime monitoring meant to give an at the glan
 
 These are detailed server status tests for functionality:
 
-| Feature  | Server Status |
+| Server  | Status |
 |---|---|
 | GNPS2 Structure | ![production-integration](https://github.com/mwang87/ChemicalStructureWebService/workflows/production-integration/badge.svg) |
 
