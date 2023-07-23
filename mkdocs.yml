@@ -13,6 +13,7 @@ nav:
     - GNPS2 USI: usi.md
     - GNPS2 API: api.md
     - IDBac Documentation: idbac.md
+    - Join the GNPS2 community: community.md
     
 theme:
     name: material
