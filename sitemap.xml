@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/</loc>
-         <lastmod>2023-07-21</lastmod>
+         <lastmod>2023-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/fileupload/</loc>
+         <lastmod>2023-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbac/</loc>
-         <lastmod>2023-07-21</lastmod>
+         <lastmod>2023-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/toolindex/</loc>
-         <lastmod>2023-07-21</lastmod>
+         <lastmod>2023-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/usi/</loc>
-         <lastmod>2023-07-21</lastmod>
+         <lastmod>2023-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/workflowdev/</loc>
-         <lastmod>2023-07-21</lastmod>
+         <lastmod>2023-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
