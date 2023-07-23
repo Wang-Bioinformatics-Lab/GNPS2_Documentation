@@ -9,7 +9,11 @@ Here is a quick dashboard for the uptime monitoring meant to give an at the glan
 
 ## Integration Testing
 
-TODO: Active Integration Testing banners
+These are detailed server status tests for functionality:
+
+| Feature  | Server Status |
+|---|---|
+| GNPS2 Structure | ![production-integration](https://github.com/mwang87/ChemicalStructureWebService/workflows/production-integration/badge.svg) |
 
 ## Workflow Testing
 
