@@ -6,6 +6,7 @@ repo_url: https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation
 
 nav:
     - About: index.md
+    - Server Status: status.md
     - File Upload: fileupload.md
     - GNPS2 Workflow Development: workflowdev.md
     - GNPS2 Tool Index: toolindex.md
