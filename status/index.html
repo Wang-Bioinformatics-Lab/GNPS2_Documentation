@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/workflowdev/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/status/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>GNPS2 Workflow Development - GNPS2 Documentation</title>
+        <title>Server Status - GNPS2 Documentation</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#defining-gnps2-workflow-input-yaml" class="md-skip">
+        <a href="#uptime-monitoring" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GNPS2 Workflow Development
+              Server Status
             
           </span>
         </div>
@@ -231,11 +231,62 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../status/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Server Status
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Server Status
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uptime-monitoring" class="md-nav__link">
+    Uptime Monitoring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-testing" class="md-nav__link">
+    Integration Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-testing" class="md-nav__link">
+    Workflow Testing
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -261,68 +312,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          GNPS2 Workflow Development
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../workflowdev/" class="md-nav__link">
         GNPS2 Workflow Development
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#defining-gnps2-workflow-input-yaml" class="md-nav__link">
-    Defining GNPS2 Workflow Input YAML
-  </a>
-  
-    <nav class="md-nav" aria-label="Defining GNPS2 Workflow Input YAML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#workflow-input-parameters" class="md-nav__link">
-    Workflow Input Parameters
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workflow-display-parameters" class="md-nav__link">
-    Workflow Display Parameters
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -397,29 +391,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#defining-gnps2-workflow-input-yaml" class="md-nav__link">
-    Defining GNPS2 Workflow Input YAML
-  </a>
-  
-    <nav class="md-nav" aria-label="Defining GNPS2 Workflow Input YAML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#workflow-input-parameters" class="md-nav__link">
-    Workflow Input Parameters
+  <a href="#uptime-monitoring" class="md-nav__link">
+    Uptime Monitoring
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#workflow-display-parameters" class="md-nav__link">
-    Workflow Display Parameters
+      
+        <li class="md-nav__item">
+  <a href="#integration-testing" class="md-nav__link">
+    Integration Testing
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-testing" class="md-nav__link">
+    Workflow Testing
+  </a>
   
 </li>
       
@@ -437,183 +425,30 @@
                 
                   
 
-  <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/workflowdev.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/status.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>GNPS2 Workflow Development</h1>
+  <h1>Server Status</h1>
 
-<h2 id="defining-gnps2-workflow-input-yaml">Defining GNPS2 Workflow Input YAML<a class="headerlink" href="#defining-gnps2-workflow-input-yaml" title="Permanent link">&para;</a></h2>
-<p>For each workflow, there is a yml file called: workflowinput.yaml. It requires the following items:</p>
-<pre><code>workflowname: classic_networking
-workflowdescription: LC - Classical Molecular Networking
-workflowlongdescription: Molecular networks ...
-workflowversion: &quot;0.1&quot;
-workflowfile: workflows.nf
-workflowautohide: false
-adminonly: true
-parameterlist:
-</code></pre>
-<h3 id="workflow-input-parameters">Workflow Input Parameters<a class="headerlink" href="#workflow-input-parameters" title="Permanent link">&para;</a></h3>
-<p>Text Entry</p>
-<pre><code>    - displayname: Precursor Ion Tolerance
-      paramtype: text
-      nf_paramname: precursor_mass_tolerance
-      formplaceholder: Enter the Precursor Ion Tolerance
-      formvalue: &quot;2.0&quot;
-      tooltip: &quot;Lorem Ipsum&quot;
-</code></pre>
-<p>Text Area</p>
-<pre><code>    - displayname: USI Entry
-      paramtype: textarea
-      nf_paramname: usi_field
-      formplaceholder: Enter USIs
-      formvalue: &quot;&quot;
-      rows: 4
-      cols: 50
-</code></pre>
-<p>Drop Down List</p>
-<pre><code>    - displayname: Network Generation Mode
-      paramtype: select
-      nf_paramname: cosinemode
-      formvalue: fast
-      options:
-        - value: python
-          display: python
-        - value: fast
-          display: fast
-      options-from-file: options.csv
-      options-from-url:
-        url: https://gnps-external.ucsd.edu/gnpslibrary
-        value-key: &quot;name&quot;
-        display-key: &quot;name&quot;
-</code></pre>
-<p>NOTE: For options-from-url, the API expects to return in json format, a list of dictionaries. Each dictionary will have the same keys, and the users can specify the value and display for the keys in the dropdown.</p>
-<p>Section Header</p>
-<pre><code>    - displayname: Advanced Network Options
-      paramtype: section
-</code></pre>
-<p>File Selector</p>
-<pre><code>    - displayname: Metadata Path
-      paramtype: fileselector
-      nf_paramname: metadata_filename
-      formplaceholder: Enter the path to metadata
-      formvalue: &quot;&quot;
-      targettaskfolder: metadata_folder
-      optional: true
-      selectsinglefile: false
-      folderunroll: true
-      linkdata: true
-</code></pre>
-<ol>
-<li>optional means that if nothing is selected, it will default the nextflow argument to NO_FILE</li>
-<li>selectsinglefile means that it will take the first selected file as the nextflow argument rather than the whole folder</li>
-<li>folderunroll means that we will file all the leaf files and symlink them into the target folder, false means we will simply link the select file or folder as is</li>
-<li>linkdata means that any linking will happen, by default on, but can turn off in cases where we simply want to specify files and not actually do anything with it beyond the name.</li>
-</ol>
-<h3 id="workflow-display-parameters">Workflow Display Parameters<a class="headerlink" href="#workflow-display-parameters" title="Permanent link">&para;</a></h3>
-<p>Pure Java Script Client Side Tables</p>
-<pre><code>-   name: Results
-    displayname: Results
-    viewname: results
-    displaytype: datatable
-    parameters:
-        filename: library/results.tsv
-        error_missingfile: &quot;No File&quot;
-        columns:
-            -   title: &quot;Visualize&quot;
-                data: 
-            -   title: &quot;SpecFile&quot;
-                data: filename
-        columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
-        return `
-            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.ucsd.edu/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
-</code></pre>
-<p>Serverside Tables (Medium Sized)</p>
-<pre><code>-   name: Results
-    displayname: Results
-    viewname: results
-    displaytype: datatable_server
-    parameters:
-        filename: library/results.tsv
-        error_missingfile: &quot;No File&quot;
-        columns:
-            -   title: &quot;Visualize&quot;
-                data: 
-            -   title: &quot;SpecFile&quot;
-                data: filename
-        columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
-        return `
-            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
-</code></pre>
-<p>Serverside Tables (Large Sized - GB+ Size)</p>
-<pre><code>-   name: Results
-    displayname: Results
-    viewname: results
-    displaytype: datatable_serverbig
-    parameters:
-        filename: library/results.tsv
-        error_missingfile: &quot;No File&quot;
-        columns:
-            -   title: &quot;Visualize&quot;
-                data: 
-            -   title: &quot;SpecFile&quot;
-                data: filename
-        columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
-        return `
-            &lt;img src=&quot;https://structure.gnps2.org/structureimg?smiles=${row[&quot;smiles&quot;]}&quot;/&gt;
-        `;}}]'
-</code></pre>
-<p>Linkout</p>
-<pre><code>-   name: Downstream Analysis - Run Analysis
-    displayname: Downstream Analysis - Run Analysis
-    viewname: downstreamworkflow
-    displaytype: linkout
-    parameters:
-        baseurl: /workflowinput
-        urlparam:
-            -   workflowname:reanalysis_workflow
-        hashparam:
-            -   input_spectra:TASKLOCATION/[task]/input_spectra
-            -   description:Downstream from [task] Molecular Networking
+<p>Here we can see the status of the GNPS2 Infrastructure ecosystem. </p>
+<h2 id="uptime-monitoring">Uptime Monitoring<a class="headerlink" href="#uptime-monitoring" title="Permanent link">&para;</a></h2>
+<p>Here is a quick dashboard for the uptime monitoring meant to give an at the glance understanding which servers are up and running but do not give you detailed information about funcionality. </p>
+<iframe src="https://stats.uptimerobot.com/4P67vuzkr8" width="600" height="400"></iframe>
 
-
--   name: Visualize Heatmap
-    displayname: Visualize Heatmap
-    viewname: visualizeheatmap
-    displaytype: linkout
-    parameters:
-        baseurl: /taskresult/[task]/file/nf_output/output.html
-        urlparam:
-            -   attachment:no
-</code></pre>
-<p>Here if we want to use the task params in the linkout, simply use the syntax</p>
-<p><code>[@paramname]</code></p>
-<p>Download Files</p>
-<pre><code>-   name: Download PCoA
-    displayname: Download PCoA
-    viewname: poca
-    displaytype: download
-    parameters:
-        filename: pcoa/pcoa.qzv
-</code></pre>
-<p>Section Division</p>
-<pre><code>-   name: section
-    displayname: Summary Views
-    viewname: section
-    displaytype: section
-</code></pre>
+<h2 id="integration-testing">Integration Testing<a class="headerlink" href="#integration-testing" title="Permanent link">&para;</a></h2>
+<p>TODO: Active Integration Testing banners</p>
+<h2 id="workflow-testing">Workflow Testing<a class="headerlink" href="#workflow-testing" title="Permanent link">&para;</a></h2>
+<p>TODO: Add all the workflow testing monitoring</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 22, 2023 23:22:25</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 23, 2023 21:16:58</span>
       
     
   </small>
@@ -640,7 +475,7 @@ parameterlist:
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../fileupload/" class="md-footer__link md-footer__link--prev" aria-label="Previous: File Upload" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: About" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -649,20 +484,20 @@ parameterlist:
               <span class="md-footer__direction">
                 Previous
               </span>
-              File Upload
+              About
             </div>
           </div>
         </a>
       
       
         
-        <a href="../toolindex/" class="md-footer__link md-footer__link--next" aria-label="Next: GNPS2 Tool Index" rel="next">
+        <a href="../fileupload/" class="md-footer__link md-footer__link--next" aria-label="Next: File Upload" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              GNPS2 Tool Index
+              File Upload
             </div>
           </div>
           <div class="md-footer__button md-icon">
