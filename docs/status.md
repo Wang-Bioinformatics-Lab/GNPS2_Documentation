@@ -14,6 +14,7 @@ These are detailed server status tests for functionality:
 | Server  | Status |
 |---|---|
 | GNPS2 Structure | ![production-integration](https://github.com/mwang87/ChemicalStructureWebService/workflows/production-integration/badge.svg) |
+| GNPS2 Cytoscape | ![production-integration](https://github.com/mwang87/GNPS_CytoscapeFormatting/workflows/production-integration/badge.svg) |
 
 ## Workflow Testing
 
