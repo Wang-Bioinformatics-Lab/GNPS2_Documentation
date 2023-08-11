@@ -36,7 +36,9 @@
 <img width="993" alt="Databasesubmissionfinal" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f">
 
 
-IDBac Analysis Workflow Submission: Within this workflow you have the ability to analyze your data through:
+
+
+IDBac Analysis Options: Within this workflow you have the ability to analyze your data through:
 
 <img width="992" alt="Picture5" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5c514131-2f8f-4e32-b351-9edc33e2e467">
 
