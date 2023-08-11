@@ -105,7 +105,7 @@ Pure Java Script Client Side Tables
                 data: filename
         columnDefs: '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
         return `
-            <a target="_blank" href="https://metabolomics-usi.ucsd.edu/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}">View Spectrum</a>
+            <a target="_blank" href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}">View Spectrum</a>
         `;}}]'
 ```
 
