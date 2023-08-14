@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#defining-gnps2-workflow-input-yaml" class="md-skip">
+        <a href="#overview-of-gnps2-workflow-development" class="md-skip">
           Skip to content
         </a>
       
@@ -298,6 +298,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview-of-gnps2-workflow-development" class="md-nav__link">
+    Overview of GNPS2 Workflow Development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#defining-gnps2-workflow-input-yaml" class="md-nav__link">
     Defining GNPS2 Workflow Input YAML
   </a>
@@ -432,6 +439,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview-of-gnps2-workflow-development" class="md-nav__link">
+    Overview of GNPS2 Workflow Development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#defining-gnps2-workflow-input-yaml" class="md-nav__link">
     Defining GNPS2 Workflow Input YAML
   </a>
@@ -483,6 +497,19 @@
 
   <h1>GNPS2 Workflow Development</h1>
 
+<h2 id="overview-of-gnps2-workflow-development">Overview of GNPS2 Workflow Development<a class="headerlink" href="#overview-of-gnps2-workflow-development" title="Permanent link">&para;</a></h2>
+<p>Here is the template for GNPS2 Workflows, it provides boiler plate for NextFlow and the accompanying yaml files for input and display. There are several distinct steps that we would recommend:</p>
+<ol>
+<li>Make a new repository for the GNPS2 workflow that uses this <a href="https://github.com/Wang-Bioinformatics-Lab/Nextflow_Workflow_Template">template</a></li>
+<li>Make sure you can run the template by having conda and nextflow installed</li>
+<li>Run the test with <code>make run</code></li>
+<li>Once your workflow is how you like it in nextflow, you can hook everything up with the workflowinput.yaml file to define the input form. The specifics on each thing are below</li>
+<li>Update the workflow name so it is unique to your workflow in workflowinput.yaml</li>
+<li>Update the workflow name for results in workflowresults.yaml</li>
+<li>To deploy to Dev GNPS2 instance, send Ming your preferred username and public ssh key</li>
+<li>Prep deployment environment</li>
+<li>Deploy to GNPS2 Dev instance, see below on how to do that</li>
+</ol>
 <h2 id="defining-gnps2-workflow-input-yaml">Defining GNPS2 Workflow Input YAML<a class="headerlink" href="#defining-gnps2-workflow-input-yaml" title="Permanent link">&para;</a></h2>
 <p>For each workflow, there is a yml file called: workflowinput.yaml. It requires the following items:</p>
 <pre><code>workflowname: classic_networking
@@ -567,7 +594,7 @@ parameterlist:
                 data: filename
         columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
-            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.ucsd.edu/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
+            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
         `;}}]'
 </code></pre>
 <p>Serverside Tables (Medium Sized)</p>
@@ -651,7 +678,7 @@ parameterlist:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 22, 2023 23:22:25</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 14, 2023 20:26:06</span>
       
     
   </small>
