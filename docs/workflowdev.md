@@ -1,3 +1,17 @@
+## Overview of GNPS2 Workflow Development
+
+Here is the template for GNPS2 Workflows, it provides boiler plate for NextFlow and the accompanying yaml files for input and display. There are several distinct steps that we would recommend:
+
+1. Make a new repository for the GNPS2 workflow that uses this [template](https://github.com/Wang-Bioinformatics-Lab/Nextflow_Workflow_Template)
+1. Make sure you can run the template by having conda and nextflow installed
+1. Run the test with ```make run```
+1. Once your workflow is how you like it in nextflow, you can hook everything up with the workflowinput.yaml file to define the input form. The specifics on each thing are below
+1. Update the workflow name so it is unique to your workflow in workflowinput.yaml
+1. Update the workflow name for results in workflowresults.yaml
+1. To deploy to Dev GNPS2 instance, send Ming your preferred username and public ssh key
+1. Prep deployment environment
+1. Deploy to GNPS2 Dev instance, see below on how to do that
+
 ## Defining GNPS2 Workflow Input YAML
 
 For each workflow, there is a yml file called: workflowinput.yaml. It requires the following items:
