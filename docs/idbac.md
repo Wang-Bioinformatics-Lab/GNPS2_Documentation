@@ -1,62 +1,94 @@
-1) Convert raw autoExecute data to mzML via MSConvert.
+# IDBac Database Submission and Analysis  
+
+## <ins>IDBac Templates<ins>
+[MALDI Plate Map](https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
+
+[Metadata Sheet](https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
+
+## <ins>Convert raw autoExecute data to mzML via MSConvert.<ins>
    
-   a) Select browse to  your Bruker FID file by clicking 'Browse'
+   1) Select browse to  your Bruker FID file by clicking 'Browse'
    
-   b) Click 'Add' to submit your file to the conversion cue
+   2) Click 'Add' to submit your file to the conversion cue
    
-   c) Select where you would like your file to be saved under "Output Directory"
+   3) Select where you would like your file to be saved under "Output Directory"
    
-   d) Ensure mzML is selected under 'Options/Output format'
+   4) Ensure mzML is selected under 'Options/Output format'
    
-   e) When the previous steps are completed, click 'Start'
+   5) When the previous steps are completed, click 'Start'
+
+   6) The output of this conversion will be a single autoexecute mzML for the entire plate.
 
 <img width="938" alt="Picture1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ce5975a1-4177-4abe-b3da-fddf437f775d">
 
 <img width="948" alt="Picture2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/3f05f184-1d17-4d4e-80c8-cd4e92477fcd">
 
  
-2) Upload your converted mzML file along with a MALDI plate map labeled with your isolate IDs (CSV or XLSX) to "File Browser" found on the GNPS2.org homepage. 
+ ## <ins>Upload files to GNPS2.org
+ 
+   1) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
+   2) Create a new folder and upload your autoexecute mzmL, plate map and metadata sheets.
+ 
+
 
 <img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6">
 
 <img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba">
 
 
-3) IDBac_split_MALDI Workflow submission (https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow): Select your autoExecute mzML and plate map from the drop down menu. The output of this workflow is individual, labeled mzML files based on MALDI well-position. 
+
+## <ins>Split and re-name autoexectute file
+
+This workflow will split your autoexecute data into individual and labeled mzML files based on your plate map and well-positions. 
+
+   1) Open the [IDBac_split_MALDI Workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow) 
+   2) Select your autoExecute mzML and plate map from the drop down menu.
+   3) Submit workflow
 
 <img width="995" alt="Picture3" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5566327a-12a6-4c65-a280-a645de45a5a5">
 
-4) Once this workflow is completed, you will be provided with two options:
-   <img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92">
 
-   a) IDBac Analyisis: Analyze spectra within your dataset indepedently, or by comparing against the IDBac database (See below for full analysis options).
-   <img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
-   
-   b) IDBac Database Deposition: Deposit your spectra and metadata into the IDBac database
-<img width="993" alt="Databasesubmissionfinal" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f">
+## <ins>Downstream options<ins>
+Once the IDBac_split_MALDI workflow is completed, you will be provided with two options:
+
+   a) **IDBac Analyisis:** Analyze spectra within your dataset indepedently, or by comparing against the IDBac database (See below for full analysis options).
+
+   b) **IDBac Database Deposition:** Deposit metadata and spectra of genetically verified isolates into the IDBac database.
+
+ <img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92">
 
 
+## <ins>IDBac Analysis
 
+**<ins>Workflow submission:** Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
-IDBac Analysis Options: Within this workflow you have the ability to analyze your data through:
+<img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
 
-<img width="992" alt="Picture5" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5c514131-2f8f-4e32-b351-9edc33e2e467">
+**<ins>Analysis options:** Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
-   a) Vizualize dendrogram: View dendrogram of your data (excluding database seeds).
+   a) Vizualize dendrogram: View a dendrogram of your isolates (excluding database seeds).
    
    b) Visualize with Metadata: If you selected a metadata colum to display, it will appear within the dendrogram here. 
       
-
    c) Spectra summary: This option allows you to compare mirror plots of your spectra.
 
    d) Dendrogram similarity: You may view similarity scores between your isolates based onthe similarity metric you chose in the analysis workflow submission.       
 
-   e) Database Search Summary: Here you can identify which database seeds that your 
-      isolates matched with, based on similairty scores.
+   e) Database Search Summary: Here you can identify which database seeds your isolates matched with, based on similairty scores.
+   
+      
+<img width="992" alt="Picture5" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5c514131-2f8f-4e32-b351-9edc33e2e467">
 
 
+## IDBac Database Deposition 
 
+**<ins>Workflow submission:** Select [idbacdeposition_workflow](https://gnps2.org/workflowinput?workflowname=idbacdeposition_workflow) and reference the following image for deposition instructions.
 
+<img width="993" alt="Databasesubmissionfinal" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f">
+
+**<ins>View Database**
+
+To view your deposition, visit the [IDBac Knowledgebase](https://idbac-kb.gnps2.org/).
 
 
 
