@@ -68,13 +68,13 @@ This workflow will split your autoexecute data into individually labeled mzML fi
 
    i) Vizualize protein dendrogram: View a dendrogram of your isolates (excluding database seeds). 
    
-   ii) Visualize with Metadata: If you selected a metadata colum to display, it will appear within the dendrogram here. 
+   ii) Visualize with Metadata: If you selected a metadata colum to display, it will appear within this protein dendrogram. 
       
    iii) Spectra summary: This option allows you to compare mirror plots of your spectra.
 
-   iv) Dendrogram similarity: You may view similarity scores between your isolates based onthe similarity metric you chose in the analysis workflow submission.       
-
-   v) Database Search Summary: Here you can identify which database seeds your isolates matched with, based on similairty scores.
+   iv) Dendrogram similarity: You may view similarity scores between your isolates based on the similarity metric you chose in the analysis workflow submission.
+   
+   v) Database Search Summary: Here you query protein spectra of your unknown isolate against our database of characterized bacterial strains (based on similairty scores).
    
 <img width="992" alt="Picture5" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5c514131-2f8f-4e32-b351-9edc33e2e467">
 
