@@ -45,7 +45,7 @@ This workflow will split your autoexecute data into individually labeled mzML fi
    2) Select your autoExecute mzML and plate map from the drop down menu.
    3) Submit workflow
 
-<img width="995" alt="Picture3" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5566327a-12a6-4c65-a280-a645de45a5a5">
+<img width="991" alt="Finalsplitmaldi" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f40702df-7337-47dc-92d0-fbef29742eee">
 
 
 ## <ins>4) Choose what you would like to do next:<ins>
@@ -78,7 +78,8 @@ This workflow will split your autoexecute data into individually labeled mzML fi
    
    v) Database Search Summary: Here you query protein spectra of your unknown isolate against our database of characterized bacterial strains (based on similairty scores).
    
-<img width="992" alt="Picture5" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5c514131-2f8f-4e32-b351-9edc33e2e467">
+
+<img width="986" alt="Finalanalysis" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/378353bc-0ee9-411b-a5c4-83bd6f286826">
 
 
 ## b) IDBac Database Deposition 
