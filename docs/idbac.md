@@ -7,15 +7,15 @@
 
 ## <ins>1) Convert raw autoExecute data to mzML via MSConvert.<ins>
    
-   1) Select browse to  your Bruker FID file by clicking 'Browse'
+   1) Select browse to  your Bruker FID file by clicking 'Browse'.
    
-   2) Click 'Add' to submit your file to the conversion cue
+   2) Click 'Add' to submit your file to the conversion cue.
    
-   3) Select where you would like your file to be saved under "Output Directory"
+   3) Select where you would like your file to be saved under "Output Directory".
    
-   4) Ensure mzML is selected under 'Options/Output format'
+   4) Ensure mzML is selected under 'Options/Output format'.
    
-   5) When the previous steps are completed, click 'Start'
+   5) When the previous steps are completed, click 'Start'.
 
    6) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below). 
 
@@ -43,7 +43,7 @@ This workflow will split your autoexecute data into individually labeled mzML fi
 
    1) Open the [idbac_split_maldi workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow) 
    2) Select your autoExecute mzML and plate map from the drop down menu.
-   3) Submit workflow
+   3) Submit workflow.
 
 <img width="991" alt="Finalsplitmaldi" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f40702df-7337-47dc-92d0-fbef29742eee">
 
