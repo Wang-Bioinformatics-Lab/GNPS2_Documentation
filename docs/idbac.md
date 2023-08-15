@@ -17,7 +17,7 @@
    
    5) When the previous steps are completed, click 'Start'
 
-   6) The output of this conversion will be a single autoexecute mzML for the entire plate.
+   6) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below). 
 
 <img width="938" alt="Picture1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ce5975a1-4177-4abe-b3da-fddf437f775d">
 
@@ -37,11 +37,11 @@
 
 
 
-## <ins>Split and re-name autoexectute file
+## <ins>Split re-name autoexecute file
 
-This workflow will split your autoexecute data into individual and labeled mzML files based on your plate map and well-positions. 
+This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions. 
 
-   1) Open the [IDBac_split_MALDI Workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow) 
+   1) Open the [idbac_split_maldi workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow) 
    2) Select your autoExecute mzML and plate map from the drop down menu.
    3) Submit workflow
 
