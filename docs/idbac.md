@@ -64,9 +64,10 @@ Once the IDBac_split_MALDI workflow is completed, you will be provided with two 
 
 <img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
 
+
 **<ins>Analysis options:** Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
-   a) Vizualize dendrogram: View a dendrogram of your isolates (excluding database seeds).
+   a) Vizualize dendrogram: View a dendrogram of your isolates (excluding database seeds). 
    
    b) Visualize with Metadata: If you selected a metadata colum to display, it will appear within the dendrogram here. 
       
@@ -76,7 +77,6 @@ Once the IDBac_split_MALDI workflow is completed, you will be provided with two 
 
    e) Database Search Summary: Here you can identify which database seeds your isolates matched with, based on similairty scores.
    
-      
 <img width="992" alt="Picture5" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5c514131-2f8f-4e32-b351-9edc33e2e467">
 
 
