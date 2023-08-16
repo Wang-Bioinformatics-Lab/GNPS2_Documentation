@@ -1,4 +1,4 @@
-name: CI
+name: Documentation Build
 
 on: 
   schedule:
