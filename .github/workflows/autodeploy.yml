@@ -23,7 +23,6 @@ jobs:
         mkdocs build -s
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      env:
-        PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: site
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        publish_dir: ./site
