@@ -17,7 +17,7 @@
         <link rel="next" href="../idbac/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#chemicalstructurewebservice" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -314,10 +319,43 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GNPS2 API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         GNPS2 API
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#web-api-endpoints" class="md-nav__link">
+    Web API Endpoints
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -353,6 +391,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accounts/" class="md-nav__link">
+        Accounts
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -370,6 +423,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#web-api-endpoints" class="md-nav__link">
+    Web API Endpoints
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -392,16 +462,39 @@
   
 
 
-  <h1>GNPS2 API</h1>
-
-
+<h1 id="chemicalstructurewebservice">ChemicalStructureWebService<a class="headerlink" href="#chemicalstructurewebservice" title="Permanent link">&para;</a></h1>
+<p>Web Server for Chemical Structure pictures as well as other chemical structure things</p>
+<h2 id="web-api-endpoints">Web API Endpoints<a class="headerlink" href="#web-api-endpoints" title="Permanent link">&para;</a></h2>
+<p>Full resolution of all structural information conversion</p>
+<p><code>https://structure.gnps2.org/convert?smiles=CCO</code></p>
+<p>InChI Conversion</p>
+<p><code>https://structure.gnps2.org/inchi?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
+<p>InChIKey Conversion</p>
+<p><code>https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
+<p>Smiles Conversion</p>
+<p><code>https://structure.gnps2.org/inchikey?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
+<p>Mol Conversion</p>
+<p><code>https://structure.gnps2.org/mol?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
+<p>ClassyFire</p>
+<p><code>https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
+<p>Formula</p>
+<p><code>https://structure.gnps2.org/formula?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
+<p>Structure Mass</p>
+<p><code>https://structure.gnps2.org/structuremass?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code>
+<code>https://structure.gnps2.org/structuremass?formula=C8H10N4O2</code></p>
+<p>Structure Fingerprint</p>
+<p><code>https://structure.gnps2.org/structurefingerprint?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
+<p>Image Creation</p>
+<p><code>https://structure.gnps2.org/structureimg?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
+<p>Structure Similarity</p>
+<p><code>https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&amp;smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 23, 2023 21:27:08</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 16, 2023 18:28:44</span>
       
     
   </small>
