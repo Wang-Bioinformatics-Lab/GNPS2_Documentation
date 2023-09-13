@@ -5,7 +5,10 @@
 
 [Metadata Sheet](https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
 
+
 ## <ins>1) Convert raw autoExecute data to mzML via MSConvert.<ins>
+
+#### * *If your files have already been converted to mzML, proceed to step 4a for IDBac analysis or 4b for database deposition* *
    
    1) Select browse to  your Bruker FID file by clicking 'Browse'.
    
