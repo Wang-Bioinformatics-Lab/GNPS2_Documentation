@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/api/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/workflowindex/">
       
       
-        <link rel="prev" href="../usi/">
-      
-      
-        <link rel="next" href="../idbac/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>GNPS2 API - GNPS2 Documentation</title>
+        <title>Workflowindex - GNPS2 Documentation</title>
       
     
     
@@ -80,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chemicalstructurewebservice" class="md-skip">
+        <a href="#gnps2-workflows" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GNPS2 API
+              Workflowindex
             
           </span>
         </div>
@@ -343,29 +339,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    GNPS2 API
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -374,33 +350,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#web-api-endpoints" class="md-nav__link">
-    Web API Endpoints
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -479,8 +428,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -489,9 +436,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#web-api-endpoints" class="md-nav__link">
-    Web API Endpoints
+  <a href="#gnps2-workflows" class="md-nav__link">
+    GNPS2 Workflows
   </a>
+  
+    <nav class="md-nav" aria-label="GNPS2 Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ms-ms-choser" class="md-nav__link">
+    MS-MS choser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#np-classifier" class="md-nav__link">
+    NP-Classifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ms2lda" class="md-nav__link">
+    MS2LDA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chemwalker" class="md-nav__link">
+    ChemWalker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ms2query" class="md-nav__link">
+    MS2query
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -510,7 +498,7 @@
                   
 
   
-    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/workflowindex.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -518,32 +506,33 @@
   
 
 
-<h1 id="chemicalstructurewebservice">ChemicalStructureWebService<a class="headerlink" href="#chemicalstructurewebservice" title="Permanent link">&para;</a></h1>
-<p>Web Server for Chemical Structure pictures as well as other chemical structure things</p>
-<h2 id="web-api-endpoints">Web API Endpoints<a class="headerlink" href="#web-api-endpoints" title="Permanent link">&para;</a></h2>
-<p>Full resolution of all structural information conversion</p>
-<p><code>https://structure.gnps2.org/convert?smiles=CCO</code></p>
-<p>InChI Conversion</p>
-<p><code>https://structure.gnps2.org/inchi?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
-<p>InChIKey Conversion</p>
-<p><code>https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
-<p>Smiles Conversion</p>
-<p><code>https://structure.gnps2.org/inchikey?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Mol Conversion</p>
-<p><code>https://structure.gnps2.org/mol?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>ClassyFire</p>
-<p><code>https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Formula</p>
-<p><code>https://structure.gnps2.org/formula?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Structure Mass</p>
-<p><code>https://structure.gnps2.org/structuremass?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code>
-<code>https://structure.gnps2.org/structuremass?formula=C8H10N4O2</code></p>
-<p>Structure Fingerprint</p>
-<p><code>https://structure.gnps2.org/structurefingerprint?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Image Creation</p>
-<p><code>https://structure.gnps2.org/structureimg?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Structure Similarity</p>
-<p><code>https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&amp;smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
+  <h1>Workflowindex</h1>
+
+<p>GNPS2 Workflow Index
+This is a global workflow index for GNPS2. Throughout this documentation we have a small tutorial of the list of workflows listed <a href="https://gnps2.org/workflows">https://gnps2.org/workflows</a>
+The source code and the documentation of the tools will be linked at the beginning of each tool. 
+The workflows are <a href="https://www.nextflow.io/docs/latest/getstarted.html">nextflow</a> workflows that can be run independently in any server running nextflow. </p>
+<p>This page only contains information about the GNPS GUI workflow, that are intended to be self-explained. </p>
+<p>However, we recognize it might be difficult to keep this documentation up to date, so please help us fill in more completely! Edit online, submit the PR and we will review it!</p>
+<h2 id="gnps2-workflows">GNPS2 Workflows<a class="headerlink" href="#gnps2-workflows" title="Permanent link">&para;</a></h2>
+<h3 id="ms-ms-choser">MS-MS choser<a class="headerlink" href="#ms-ms-choser" title="Permanent link">&para;</a></h3>
+<p>| <a href="https://gnps2.org/workflowinput?workflowname=msms_choser_nextflow_workflow">Link</a> | <a href="https://github.com/albertogilf/nextflow_msms-choser">Source Code</a> | <a href="https://ccms-ucsd.github.io/GNPSDocumentation/msmschooser/">Tool documentation</a> | ---  |</p>
+<p>MSMS-Chooser is a GNPS2 workflow and open-source protocol to empower the community to collect MS/MS reference data and contribute to the public MS/MS reference library. 
+This specific step enables the finding of reference MS/MS spectra automatically in LC/MS data of pure standards given the structure of the pure standards. </p>
+<p>Input:
+Annotations file in .tsv format from MassIVE. 
+Spectra path containing a set of mzML/XML files. 
+tolerance: in ppm</p>
+<p>Output: 
+A .tsv file with the extracted information spectra from the molecule of interest. </p>
+<h3 id="np-classifier">NP-Classifier<a class="headerlink" href="#np-classifier" title="Permanent link">&para;</a></h3>
+<p>| <a href="https://gnps2.org/workflowinput?workflowname=NP_Classifier_nextflow_workflow">Link</a> | <a href="https://github.com/albertogilf/nextflow_NP-Classifier">Source Code</a> | <a href="https://github.com/albertogilf/nextflow_NP-Classifier">Tool documentation</a> | ---  |</p>
+<h3 id="ms2lda">MS2LDA<a class="headerlink" href="#ms2lda" title="Permanent link">&para;</a></h3>
+<p>| <a href="https://gnps2.org/workflowinput?workflowname=ms2lda_nextflow_workflow">Link</a> | <a href="https://github.com/glasgowcompbio/pySubstructures">Source Code</a> | <a href="https://ms2lda.org/user_guide/">Tool documentation</a> | <a href="https://academic.oup.com/bioinformatics/article/34/2/317/4158166">Citation</a>  |</p>
+<h3 id="chemwalker">ChemWalker<a class="headerlink" href="#chemwalker" title="Permanent link">&para;</a></h3>
+<p>| <a href="https://gnps2.org/workflowinput?workflowname=chemwalker_nextflow_workflow">Link</a> | <a href="https://github.com/computational-chemical-biology/ChemWalker/tree/master">Source Code</a> | <a href="https://github.com/computational-chemical-biology/ChemWalker/tree/master">Tool documentation</a> | <a href="https://academic.oup.com/bioinformatics/article/39/3/btad078/7067745?login=true">Citation</a>  |</p>
+<h3 id="ms2query">MS2query<a class="headerlink" href="#ms2query" title="Permanent link">&para;</a></h3>
+<p>| <a href="https://gnps2.org/workflowinput?workflowname=ms2query_nextflow_workflow">Link</a> | <a href="https://github.com/iomega/ms2query/tree/main">Source Code</a> | <a href="https://github.com/iomega/ms2query/tree/main">Tool documentation</a> | <a href="https://www.nature.com/articles/s41467-023-37446-4">Citation</a>  |</p>
 
   <hr>
 <div class="md-source-file">
