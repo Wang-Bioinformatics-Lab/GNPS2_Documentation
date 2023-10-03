@@ -14,7 +14,9 @@ nav:
     - GNPS2 API: api.md
     - IDBac Documentation: idbac.md
     - Join the GNPS2 community: community.md
+    - Accounts: accounts.md
     - Contact/Office Hours: contact.md
+
     
 theme:
     name: material
