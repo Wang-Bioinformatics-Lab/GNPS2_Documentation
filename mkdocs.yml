@@ -8,6 +8,7 @@ nav:
     - About: index.md
     - Server Status: status.md
     - File Upload: fileupload.md
+    - Mass Spec File Conversion: fileconversion.md
     - GNPS2 Workflow Development: workflowdev.md
     - GNPS2 Tool Index: toolindex.md
     - GNPS2 USI: usi.md
