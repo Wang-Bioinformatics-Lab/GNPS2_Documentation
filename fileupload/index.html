@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#browser-file-uploads" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -255,9 +260,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          File Upload
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         File Upload
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#browser-file-uploads" class="md-nav__link">
+    Browser File Uploads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sftp-file-uploads" class="md-nav__link">
+    SFTP File Uploads
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -416,6 +457,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#browser-file-uploads" class="md-nav__link">
+    Browser File Uploads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sftp-file-uploads" class="md-nav__link">
+    SFTP File Uploads
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -439,15 +502,37 @@
 
   <h1>File Upload</h1>
 
-<p>File uploads are handled all via the browser. </p>
+<h2 id="browser-file-uploads">Browser File Uploads<a class="headerlink" href="#browser-file-uploads" title="Permanent link">&para;</a></h2>
 <p>Go ahead and login and click the "File Broswer" in the top right. You will be able to drag and drop. However, be warned that you cannot upload files directly to the root of your user. You will need to make a new folder first. </p>
+<h2 id="sftp-file-uploads">SFTP File Uploads<a class="headerlink" href="#sftp-file-uploads" title="Permanent link">&para;</a></h2>
+<p>You can access the SFTP file upload with the following information</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hostname</td>
+<td>sftp.gnps2.org</td>
+</tr>
+<tr>
+<td>port</td>
+<td>6542</td>
+</tr>
+</tbody>
+</table>
+<p>You can login with your GNPS2 username and password. </p>
+<p>NOTE: This is currently in beta and not all accounts are activated on the SFTP server. </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 23, 2023 18:37:14</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 12, 2023 21:42:31</span>
       
     
   </small>
