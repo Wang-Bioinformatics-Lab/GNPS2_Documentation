@@ -16,3 +16,13 @@ You can access the SFTP file upload with the following information
 You can login with your GNPS2 username and password. 
 
 NOTE: This is currently in beta and not all accounts are activated on the SFTP server. 
+
+## FTP File Uploads
+
+If you want to upload with FTP because SFTP is blocked or has issues at your institution or computer, you can use the following information
+
+| Field | Value | 
+| ----- | ----- |
+| hostname | sftp.gnps2.org |
+| port | 6541 |
+
