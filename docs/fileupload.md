@@ -23,6 +23,6 @@ If you want to upload with FTP because SFTP is blocked or has issues at your ins
 
 | Field | Value | 
 | ----- | ----- |
-| hostname | sftp.gnps2.org |
+| hostname | ftp.gnps2.org |
 | port | 6541 |
 
