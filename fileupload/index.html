@@ -540,6 +540,9 @@
 </table>
 <p>You can login with your GNPS2 username and password. </p>
 <p>NOTE: This is currently in beta and not all accounts are activated on the SFTP server. </p>
+<p>Here is a one-liner if you like using the commandline for uploading a folder</p>
+<pre><code>sftp -P 6542 &lt;username&gt;@sftp.gnps2.org:/ &lt;&lt;&lt; $'put -r &lt;folder name&gt;'
+</code></pre>
 <h2 id="ftp-file-uploads">FTP File Uploads<a class="headerlink" href="#ftp-file-uploads" title="Permanent link">&para;</a></h2>
 <p>If you want to upload with FTP because SFTP is blocked or has issues at your institution or computer, you can use the following information</p>
 <table>
@@ -552,7 +555,7 @@
 <tbody>
 <tr>
 <td>hostname</td>
-<td>sftp.gnps2.org</td>
+<td>ftp.gnps2.org</td>
 </tr>
 <tr>
 <td>port</td>
@@ -566,7 +569,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 16, 2023 16:13:03</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 18, 2023 18:21:06</span>
       
     
   </small>
