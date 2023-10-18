@@ -17,6 +17,12 @@ You can login with your GNPS2 username and password.
 
 NOTE: This is currently in beta and not all accounts are activated on the SFTP server. 
 
+Here is a one-liner if you like using the commandline for uploading a folder
+
+```
+sftp -P 6542 <username>@sftp.gnps2.org:/ <<< $'put -r <folder name>'
+```
+
 ## FTP File Uploads
 
 If you want to upload with FTP because SFTP is blocked or has issues at your institution or computer, you can use the following information
