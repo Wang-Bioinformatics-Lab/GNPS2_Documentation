@@ -334,8 +334,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           GNPS2 API
@@ -352,8 +350,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -362,8 +358,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#chemicalstructurewebservice" class="md-nav__link">
+    ChemicalStructureWebService
+  </a>
+  
+    <nav class="md-nav" aria-label="ChemicalStructureWebService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#web-api-endpoints" class="md-nav__link">
     Web API Endpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-dataset-files" class="md-nav__link">
+    Public Dataset Files
   </a>
   
 </li>
@@ -453,8 +469,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -463,8 +477,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#chemicalstructurewebservice" class="md-nav__link">
+    ChemicalStructureWebService
+  </a>
+  
+    <nav class="md-nav" aria-label="ChemicalStructureWebService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#web-api-endpoints" class="md-nav__link">
     Web API Endpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-dataset-files" class="md-nav__link">
+    Public Dataset Files
   </a>
   
 </li>
@@ -492,9 +526,11 @@
   
 
 
-<h1 id="chemicalstructurewebservice">ChemicalStructureWebService<a class="headerlink" href="#chemicalstructurewebservice" title="Permanent link">&para;</a></h1>
+  <h1>GNPS2 API</h1>
+
+<h2 id="chemicalstructurewebservice">ChemicalStructureWebService<a class="headerlink" href="#chemicalstructurewebservice" title="Permanent link">&para;</a></h2>
 <p>Web Server for Chemical Structure pictures as well as other chemical structure things</p>
-<h2 id="web-api-endpoints">Web API Endpoints<a class="headerlink" href="#web-api-endpoints" title="Permanent link">&para;</a></h2>
+<h3 id="web-api-endpoints">Web API Endpoints<a class="headerlink" href="#web-api-endpoints" title="Permanent link">&para;</a></h3>
 <p>Full resolution of all structural information conversion</p>
 <p><code>https://structure.gnps2.org/convert?smiles=CCO</code></p>
 <p>InChI Conversion</p>
@@ -518,13 +554,20 @@
 <p><code>https://structure.gnps2.org/structureimg?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
 <p>Structure Similarity</p>
 <p><code>https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&amp;smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
+<h2 id="public-dataset-files">Public Dataset Files<a class="headerlink" href="#public-dataset-files" title="Permanent link">&para;</a></h2>
+<p>Getting all files per dataset</p>
+<pre><code>https://explorer.gnps2.org/api/datasets/{accession}/files
+</code></pre>
+<p>Getting file path per USI</p>
+<pre><code>https://dashboard.gnps2.org/downloadlink?usi={file usi}
+</code></pre>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 16, 2023 17:47:53</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 19, 2023 20:48:58</span>
       
     
   </small>
