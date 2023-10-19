@@ -1,8 +1,8 @@
-# ChemicalStructureWebService
+## ChemicalStructureWebService
 
 Web Server for Chemical Structure pictures as well as other chemical structure things
 
-## Web API Endpoints
+### Web API Endpoints
 
 Full resolution of all structural information conversion
 
@@ -48,3 +48,17 @@ Image Creation
 Structure Similarity
 
 ```https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C```
+
+## Public Dataset Files
+
+Getting all files per dataset
+
+```
+https://explorer.gnps2.org/api/datasets/{accession}/files
+```
+
+Getting file path per USI
+
+```
+https://dashboard.gnps2.org/downloadlink?usi={file usi}
+```
