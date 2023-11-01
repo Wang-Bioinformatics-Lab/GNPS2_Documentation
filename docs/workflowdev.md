@@ -216,3 +216,25 @@ Section Division
     viewname: section
     displaytype: section
 ```
+
+#### Display Widgets
+
+We can have little widgets to render in the table rows. To make them, you overwrite the columnDefs key. Here are a few examples.
+
+Spectrum Resolver Linkouts
+
+```
+'[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
+        return `
+            <a target="_blank" href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}">View Spectrum</a>
+        `;}}]'
+```
+
+Structure Display
+
+```
+'[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
+        return `
+            <img src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/>
+        `;}}]'
+```
