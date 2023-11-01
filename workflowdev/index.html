@@ -339,6 +339,19 @@
     Workflow Display Parameters
   </a>
   
+    <nav class="md-nav" aria-label="Workflow Display Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-widgets" class="md-nav__link">
+    Display Widgets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -509,6 +522,19 @@
   <a href="#workflow-display-parameters" class="md-nav__link">
     Workflow Display Parameters
   </a>
+  
+    <nav class="md-nav" aria-label="Workflow Display Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-widgets" class="md-nav__link">
+    Display Widgets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -717,13 +743,27 @@ parameterlist:
     viewname: section
     displaytype: section
 </code></pre>
+<h4 id="display-widgets">Display Widgets<a class="headerlink" href="#display-widgets" title="Permanent link">&para;</a></h4>
+<p>We can have little widgets to render in the table rows. To make them, you overwrite the columnDefs key. Here are a few examples.</p>
+<p>Spectrum Resolver Linkouts</p>
+<pre><code>'[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+        return `
+            &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
+        `;}}]'
+</code></pre>
+<p>Structure Display</p>
+<pre><code>'[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+        return `
+            &lt;img src=&quot;https://structure.gnps2.org/structureimg?smiles=${row[&quot;smiles&quot;]}&quot;/&gt;
+        `;}}]'
+</code></pre>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 14, 2023 20:26:06</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 1, 2023 21:44:57</span>
       
     
   </small>
