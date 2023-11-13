@@ -62,3 +62,9 @@ Getting file path per USI
 ```
 https://dashboard.gnps2.org/downloadlink?usi={file usi}
 ```
+
+Getting spectrum data from Spectrum ID
+
+```
+https://external.gnps2.org/gnpsspectrum?SpectrumID={Spectrum ID}
+```
