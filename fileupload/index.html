@@ -364,6 +364,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../workflowindex/" class="md-nav__link">
+        GNPS2 Workflows
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../usi/" class="md-nav__link">
         GNPS2 USI
       </a>
@@ -543,6 +558,9 @@
 <p>Here is a one-liner if you like using the commandline for uploading a folder</p>
 <pre><code>sftp -P 6542 &lt;username&gt;@sftp.gnps2.org:/ &lt;&lt;&lt; $'put -r &lt;folder name&gt;'
 </code></pre>
+<p>If you want to mirror a lot of data periodically, use this command:</p>
+<pre><code>lftp -e &quot;mirror --parallel=4 --include '/*.mzML' -R $local_directory $remote_directory; quit&quot; -u &quot;$remote_user,$password&quot; sftp://$remote_host:$remote_port
+</code></pre>
 <h2 id="ftp-file-uploads">FTP File Uploads<a class="headerlink" href="#ftp-file-uploads" title="Permanent link">&para;</a></h2>
 <p>If you want to upload with FTP because SFTP is blocked or has issues at your institution or computer, you can use the following information</p>
 <table>
@@ -569,7 +587,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 18, 2023 18:21:06</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 6, 2023 22:47:12</span>
       
     
   </small>

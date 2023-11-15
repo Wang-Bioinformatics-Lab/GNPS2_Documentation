@@ -8,20 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/usi/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/chemwalker_doc/">
       
       
-        <link rel="prev" href="../workflowindex/">
-      
-      
-        <link rel="next" href="../api/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
-        <title>GNPS2 USI - GNPS2 Documentation</title>
+        <title>Chemwalker doc - GNPS2 Documentation</title>
       
     
     
@@ -75,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#chemwalker-workflow-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GNPS2 USI
+              Chemwalker doc
             
           </span>
         </div>
@@ -321,19 +322,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../usi/" class="md-nav__link">
         GNPS2 USI
       </a>
-      
     </li>
   
 
@@ -431,6 +424,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chemwalker-workflow-documentation" class="md-nav__link">
+    ChemWalker workflow documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="ChemWalker workflow documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -444,7 +472,7 @@
                   
 
   
-    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/usi.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/chemwalker_doc.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -452,19 +480,69 @@
   
 
 
-  <h1>GNPS2 USI</h1>
+  <h1>Chemwalker doc</h1>
 
-<p>In GNPS2, you can also refer to spectra using the Universal Spectrum Identifier. The main resolver can be found at metabolomics-usi.gnps2.org. The format of the USI is as follows:</p>
-<pre><code>mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}
-</code></pre>
-<p>You can also access the gnps2 native resolver at gnps2.org/dashboards/embedded/resolver/</p>
+<h2 id="chemwalker-workflow-documentation">ChemWalker workflow documentation<a class="headerlink" href="#chemwalker-workflow-documentation" title="Permanent link">&para;</a></h2>
+<p>Chemwalker is a tool published by R. da Silva lab to annotate features in metabolomic networks by propagating annotations on non-directly connected nodes by using MetFrag. The article is published <a href="https://academic.oup.com/bioinformatics/article/39/3/btad078/7067745">here</a> and the source code is available in <a href="https://github.com/computational-chemical-biology">github</a>. </p>
+<h3 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h3>
+<p>The fields are presented in the image:
+<img alt="chemwalker input fields image" src="../img/workflows/chemwalker/chemwalker_input.png" />. Bold fields are mandatory</p>
+<ol>
+<li>
+<p>task description
+Optional, a description of the task to ease the user its identification. </p>
+</li>
+<li>
+<p><strong>GNPS2, FBMN, or FBMNv2 task id</strong></p>
+</li>
+</ol>
+<p>The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the <a href="https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow">molecular network task</a>. To view the task_id, check the image and the red rectangle: 
+<img alt="task id location image" src="../img/workflows/task_id.png" />. 
+The task id can be</p>
+<ol>
+<li>
+<p><strong>Workflow type (GNPS2, FBMN or V2)</strong>
+The task id of the molecular netowrking. Be aware that tasks from FBMN or molecular networking v2 depend on the GNPS availability and the GNPS2 depends on the GNPS2 availability. If the GNPS server is down, the chemwalker task will not work for those tasks since it needs to retrieve the data from GNPS. Analogously the GNPS2 depends on GNPS2 availability. </p>
+</li>
+<li>
+<p><strong>Component (Molecular family) index</strong> </p>
+</li>
+</ol>
+<p>The component index of the network to annotate. If the user wants to annotate all networks, a 0 shall be introduced. 
+The molecular networking has been performed before. If the user only wants to annotate a specific network and its nodes. If a 0 is introduced, all networks will be annotated. If a component index with no nodes is introduced, the task will fail. </p>
+<ol>
+<li><strong>File selection</strong> </li>
+</ol>
+<p>The database where the annotations will be based. This database will be used later to use the MetFrag software against and annotate and score the molecules. </p>
+<p>To create a user specific database, see <a href="https://ccms-ucsd.github.io/GNPSDocumentation/nap/#structure-database">https://ccms-ucsd.github.io/GNPSDocumentation/nap/#structure-database</a></p>
+<h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
+<p>The different parts of the output are presented in the image:
+<img alt="chemwalker input fields image" src="../img/workflows/chemwalker/chemwalker_output.png" />. </p>
+<ol>
+<li>
+<p><strong>Log Text area</strong>
+Text area with the result of the task. If there is some fail, the log will be written there. If the task failed and you want to contact the support team, please provide the output of this text area along with the job id. </p>
+</li>
+<li>
+<p><strong>Full results from the job</strong>
+Full results from the job. It can provide information to debug or to users with programming knowledge. </p>
+</li>
+<li>
+<p><strong>random walk structures.tsv</strong>
+File with the annotations over the nodes in the selected network/s. You can download to see the full fields or visit the online version. For a full analysis the download of the file is recommended.</p>
+</li>
+<li>
+<p><strong>random walk structures.graphml</strong></p>
+</li>
+</ol>
+<p>Graphml with the annotations to visualize the nodes in Cytoscape. You can import this datafile and dynamically analyze it there.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 22, 2023 23:22:25</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 14, 2023 05:13:04</span>
       
     
   </small>
