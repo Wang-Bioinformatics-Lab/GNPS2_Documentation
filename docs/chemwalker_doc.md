@@ -4,7 +4,7 @@ Chemwalker is a tool published by R. da Silva lab to annotate features in metabo
 
 ### Input
 
-The fields are presented in the image.  Bold fields are mandatory:
+The fields are presented in the image. Bold fields are mandatory:
 ![chemwalker input fields image](./img/workflows/chemwalker/chemwalker_input.png)
 
 1. Task description
