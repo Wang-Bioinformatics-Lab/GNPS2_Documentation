@@ -20,7 +20,7 @@ jobs:
         pip install -r requirements.txt
     - name: Test Build
       run: |
-        mkdocs build -s
+        mkdocs build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
