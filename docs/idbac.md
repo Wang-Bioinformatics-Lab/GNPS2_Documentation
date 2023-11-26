@@ -10,27 +10,28 @@
 
 #### * *If your files have already been converted to mzML, proceed to step 4a for IDBac analysis or 4b for database deposition* *
    
-   1) Select browse to  your Bruker FID file by clicking 'Browse'.
+   i) Select browse to  your Bruker FID file by clicking 'Browse'.
    
-   2) Click 'Add' to submit your file to the conversion cue.
+   ii) Click 'Add' to submit your file to the conversion cue.
    
-   3) Select where you would like your file to be saved under "Output Directory".
+   iii) Select where you would like your file to be saved under "Output Directory".
    
-   4) Ensure mzML is selected under 'Options/Output format'.
+   iv) Ensure mzML is selected under 'Options/Output format'.
    
-   5) When the previous steps are completed, click 'Start'.
+   v) When the previous steps are completed, click 'Start'.
 
-   6) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below). 
+   vi) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below). 
 
 <img width="938" alt="Picture1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ce5975a1-4177-4abe-b3da-fddf437f775d">
 
 <img width="948" alt="Picture2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/3f05f184-1d17-4d4e-80c8-cd4e92477fcd">
 
  
- ## <ins>2) Upload files to GNPS2.org
+ ## <ins>2) Upload files to GNPS2.org<ins>
  
-   1) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
-   2) Create a new folder and upload your autoexecute mzmL, plate map and metadata sheets.
+   i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
+   
+   ii) Create a new folder and upload your autoexecute mzmL, plate map and metadata sheets.
  
 
 
@@ -44,9 +45,11 @@
 
 This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions. 
 
-   1) Open the [idbac_split_maldi workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow) 
-   2) Select your autoExecute mzML and plate map from the drop down menu.
-   3) Submit workflow.
+   i) Open the [idbac_split_maldi workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow)
+      
+   ii) Select your autoExecute mzML and plate map from the drop down menu.
+      
+   iii) Submit workflow.
 
 <img width="991" alt="Finalsplitmaldi" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f40702df-7337-47dc-92d0-fbef29742eee">
 
