@@ -24,7 +24,19 @@ The fields are presented in the image. Bold fields are mandatory:
 
 ### Links to task ids
 
-The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the molecular network task. To view the task_id, check the red rectangle in the [image](./img/workflows/task_id.png). The task id can correspond to a GNPS2 Feature based molecular networking (FBMN) [https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow), to a GNPS FBMN[https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) or a GNPS Molecular Networking v2 [https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D). 
+The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the molecular network task. To view the task_id, check the red rectangle in the [image](./img/workflows/task_id.png). The task id can correspond to a [GNPS2 Feature based molecular networking (FBMN)](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow), to a [GNPS FBMN](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D) or a [GNPS Molecular Networking v2](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D). 
+
+
+### Example Input
+
+| #   | Information                                        | Value                                      |
+| --- | ------------------------------------------------- | ------------------------------------------- |
+| 1.  | Task description                                  | User label to identify the workflow task    |
+| 2.  | **GNPS2, FBMN, or FBMNv2 task id**                | b6d12e1e42b64ad6b20e7d38d5a4214b            |
+| 3.  | **Workflow type (GNPS2, FBMN or V2)**             | GNPS2                                       |
+| 4.  | **Component (Molecular family) index**            | 11                                          |
+| 5.  | **File selection**                                | LIBRARYLOCATION/STRUCTURE/Chemwalker/COCONUT.psv |
+
 
 ### Output
 
@@ -47,18 +59,8 @@ To test the functionality of the ChemWalker workflow an [Example task](httpshttp
 
 ![Workflow clone task button](./img/workflows/clone_button.png)
 
-### Input
 
-| #   | Information                                        | Value                                       |
-| --- | -------------------------------------------------- | ------------------------------------------- |
-| 1.  | Task description                                  | empty                                       |
-| 2.  | **GNPS2, FBMN, or FBMNv2 task id**                | b6d12e1e42b64ad6b20e7d38d5a4214b           |
-| 3.  | **Workflow type (GNPS2, FBMN or V2)**             | GNPS2                                       |
-| 4.  | **Component (Molecular family) index**            | 11                                          |
-| 5.  | **File selection**                                | COCONUT.tsv                                 |
-
-
-### Output
+### Example output
 
 The result of the task is the annotation of compounds from the chosen database according to the in-silico fragmentations calculated by MetFrag. The cluster index is the identification of the feature, the score is the associated score for the corresponding annotation for that specific feature. Results are sorted according to cluster index and score. The online results are not complete, it is recommended to download the full table. 
 
@@ -75,7 +77,7 @@ The user can download the graphml with the new nodes annotated by chem Walker, a
 # Full tutorial of ChemWalker 
 
 ChemWalker is a python package to propagate spectral library match identities through candidate structures provided by in silico fragmentation, using random walk.
-
+ 
 ![model](img/workflows/chemwalker/walk_schem.png)
 
 Check out the package's [documentation](https://github.com/computational-chemical-biology/ChemWalker).
