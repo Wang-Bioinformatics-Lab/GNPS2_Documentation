@@ -35,7 +35,7 @@ The information from the molecular network is necessary to annotate the nodes (f
 | 2.  | **GNPS2, FBMN, or FBMNv2 task id**                | b6d12e1e42b64ad6b20e7d38d5a4214b            |
 | 3.  | **Workflow type (GNPS2, FBMN or V2)**             | GNPS2                                       |
 | 4.  | **Component (Molecular family) index**            | 11                                          |
-| 5.  | **File selection**                                | COCONUT.tsv                                 |
+| 5.  | **File selection**                                | LIBRARYLOCATION/STRUCTURE/Chemwalker/COCONUT.psv |
 
 
 ### Output
