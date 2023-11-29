@@ -602,6 +602,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#example-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
       Output
@@ -626,18 +635,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#input_1" class="md-nav__link">
+  <a href="#example-output" class="md-nav__link">
     <span class="md-ellipsis">
-      Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output
+      Example output
     </span>
   </a>
   
@@ -739,7 +739,44 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 <p>The fields are presented in the image. Bold fields are mandatory:
 <img alt="chemwalker input fields image" src="../img/workflows/chemwalker/chemwalker_input.png" /></p>
 <h3 id="links-to-task-ids">Links to task ids<a class="headerlink" href="#links-to-task-ids" title="Permanent link">&para;</a></h3>
-<p>The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the molecular network task. To view the task_id, check the red rectangle in the <a href="../img/workflows/task_id.png">image</a>. The task id can correspond to a GNPS2 Feature based molecular networking (FBMN) <a href="https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow">https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow</a>, to a GNPS FBMN<a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D</a> or a GNPS Molecular Networking v2 <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D</a>. </p>
+<p>The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the molecular network task. To view the task_id, check the red rectangle in the <a href="../img/workflows/task_id.png">image</a>. The task id can correspond to a <a href="https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow">GNPS2 Feature based molecular networking (FBMN)</a>, to a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">GNPS FBMN</a> or a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">GNPS Molecular Networking v2</a>. </p>
+<h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Information</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>Task description</td>
+<td>User label to identify the workflow task</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><strong>GNPS2, FBMN, or FBMNv2 task id</strong></td>
+<td>b6d12e1e42b64ad6b20e7d38d5a4214b</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><strong>Workflow type (GNPS2, FBMN or V2)</strong></td>
+<td>GNPS2</td>
+</tr>
+<tr>
+<td>4.</td>
+<td><strong>Component (Molecular family) index</strong></td>
+<td>11</td>
+</tr>
+<tr>
+<td>5.</td>
+<td><strong>File selection</strong></td>
+<td>LIBRARYLOCATION/STRUCTURE/Chemwalker/COCONUT.psv</td>
+</tr>
+</tbody>
+</table>
 <h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -777,44 +814,7 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 <h2 id="example-task">Example task<a class="headerlink" href="#example-task" title="Permanent link">&para;</a></h2>
 <p>To test the functionality of the ChemWalker workflow an <a href="httpshttps://gnps2.org/status?task=13e0cc3fafd14f328197c0b45999abc8">Example task</a> can be visited, and this work can be reproduced by clicking the <a href="../img/workflows/clone_button.png">clone button</a>: </p>
 <p><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></p>
-<h3 id="input_1">Input<a class="headerlink" href="#input_1" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Information</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Task description</td>
-<td>empty</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><strong>GNPS2, FBMN, or FBMNv2 task id</strong></td>
-<td>b6d12e1e42b64ad6b20e7d38d5a4214b</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><strong>Workflow type (GNPS2, FBMN or V2)</strong></td>
-<td>GNPS2</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><strong>Component (Molecular family) index</strong></td>
-<td>11</td>
-</tr>
-<tr>
-<td>5.</td>
-<td><strong>File selection</strong></td>
-<td>COCONUT.tsv</td>
-</tr>
-</tbody>
-</table>
-<h3 id="output_1">Output<a class="headerlink" href="#output_1" title="Permanent link">&para;</a></h3>
+<h3 id="example-output">Example output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
 <p>The result of the task is the annotation of compounds from the chosen database according to the in-silico fragmentations calculated by MetFrag. The cluster index is the identification of the feature, the score is the associated score for the corresponding annotation for that specific feature. Results are sorted according to cluster index and score. The online results are not complete, it is recommended to download the full table. </p>
 <p><img alt="chemwalker annotations results example" src="../img/workflows/chemwalker/chemwalker_structures_tsv.png" /> </p>
 <p>The user can download the graphml with the new nodes annotated by chem Walker, and now each node in the network contains the annotation calculated by ChemWalker. </p>
@@ -866,7 +866,7 @@ A standard format is required for the in house database. One can easily collect 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 29, 2023 19:08:59</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 29, 2023 20:08:10</span>
       
     
   </small>
