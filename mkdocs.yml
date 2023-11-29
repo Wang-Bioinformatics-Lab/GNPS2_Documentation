@@ -14,7 +14,9 @@ nav:
     - GNPS2 Workflows: workflowindex.md
     - GNPS2 USI: usi.md
     - GNPS2 API: api.md
-    - IDBac Documentation: idbac.md
+    - IDBac:
+        - Introduction: idbac.md
+        - Conversion: idbacconversion.md
     - Join the GNPS2 community: community.md
     - Accounts: accounts.md
     - Contact/Office Hours: contact.md
