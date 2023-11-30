@@ -76,8 +76,8 @@ This workflow will split your autoexecute data into individually labeled mzML fi
 
    i) Vizualize protein dendrogram: View a dendrogram of your isolates (excluding database seeds). 
    
-   ii) Visualize with Metadata: If you selected a metadata colum to display, it will appear within this protein dendrogram. 
-      
+   ii) Visualize with Metadata: If you selected a metadata column to display, it will appear within this protein dendrogram. If you do not select a metadata column to display, a 500 server error will display on-screen should you choose this analysis.
+  
    iii) Spectra summary: This option allows you to compare mirror plots of your spectra.
 
    iv) Dendrogram similarity: You may view similarity scores between your isolates based on the similarity metric you chose in the analysis workflow submission.
