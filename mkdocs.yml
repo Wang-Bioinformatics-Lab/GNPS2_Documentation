@@ -17,8 +17,8 @@ nav:
     - IDBac:
         - IDBac Database Depositions: idbacdepositions.md
         - IDBac Analysis: idbacanalysis.md
-        - Raw Bruker Data Conversion: idbacrawdataconversion.md
-        - mzXML to mzML Conversion: idbacmzxmlconversions.md
+        - Raw Bruker Data Conversion: idbacraw.md
+        - mzXML to mzML Conversion: idbacmzxml.md
     - Join the GNPS2 community: community.md
     - Accounts: accounts.md
     - Contact/Office Hours: contact.md
