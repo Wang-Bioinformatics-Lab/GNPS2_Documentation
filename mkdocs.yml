@@ -15,10 +15,10 @@ nav:
     - GNPS2 USI: usi.md
     - GNPS2 API: api.md
     - IDBac:
-        - IDBac Database Depositions: depositions.md
-        - IDBac Analysis: analysis.md
-        - Raw Bruker Data Conversion: rawconversion.md
-        - mzXML to mzML Conversion: mzxmlconversion.md
+        - IDBac Database Depositions: idbacdepositions.md
+        - IDBac Analysis: idbacanalysis.md
+        - Raw Bruker Data Conversion: idbacrawconversion.md
+        - mzXML to mzML Conversion: idbacmzxmlconversion.md
     - Join the GNPS2 community: community.md
     - Accounts: accounts.md
     - Contact/Office Hours: contact.md
