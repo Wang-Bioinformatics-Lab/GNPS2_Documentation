@@ -14,4 +14,8 @@ v) When the previous steps are completed, click 'Start'.
 
 vi) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below).
 
-![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/9b598176-a748-4868-868c-6afc3c039301)
+<img width="1054" alt="autoexex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/54cb4f20-2283-431f-b698-6757f2d3125f">
+
+<img width="1066" alt="Manualex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e3798a46-19ce-4f99-979d-febc9f9f8338">
+
+
