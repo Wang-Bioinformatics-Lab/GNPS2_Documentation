@@ -32,12 +32,16 @@ ii) Create a new folder and upload your converted files.
 
 # 3) Split re-name autoexecute file
 
-*This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions.*
+*For Autoexecute mzML: This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions.*
+*For manual collection mzML: This workflow will re-name your mzML files based on your plate map and well positions*
 
 i) Open the [idbac_split_maldi workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow)
 
 ii) Select your autoExecute mzML and plate map from the drop down menu.
 
 iii) Submit workflow.
+
+![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/318e354a-8159-43f7-98df-e915c3d00d72)
+
 
 
