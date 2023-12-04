@@ -5,14 +5,14 @@
 
 [Metadata Sheet](https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
 
+### *IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left. 
  
- ## Upload mzML files to GNPS2.org
+ ## <ins>1) Upload mzML files to GNPS2.org
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
    ii) Create a new folder and upload your autoexecute mzmL, plate map and metadata sheets.
  
-
 
 <img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6">
 
