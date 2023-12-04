@@ -1,8 +1,8 @@
-# Convert raw autoExecute data to mzML via MSConvert.
+# Convert raw Bruker data to mzML via MSConvert.
   
-*Open MSConvert and proceed to the following steps*
+### *Open MSConvert and proceed to the following steps.*
 
-i) Select your Bruker FID file by clicking 'Browse'.
+i) Select your Bruker FID file(s) by clicking 'Browse'.
 
 ii) Click 'Add' to submit your file to the conversion cue.
 
