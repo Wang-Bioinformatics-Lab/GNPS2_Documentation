@@ -8,7 +8,7 @@ ii) Create a new folder and upload the mzXML files that need conversion.
 
 FileBrowserEx1 SourceExamples
 
-i) Open the msconvert_workflow.
+## 2) Run the msconvert_workflow.
 
 ii) Select the mzXML files that you would like to convert to mzML from the drop down menu.
 
