@@ -12,7 +12,7 @@ iv) Ensure mzML is selected under 'Options/Output format'.
 
 v) When the previous steps are completed, click 'Start'.
 
-vi) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below).
+vi) The output of this conversion will be a single autoexecute mzML for the entire plate or single mzML files for each MALDI TOF well. These files can be re-named and merged "Idbac_split_maldi_workflow" section below).
 
 <img width="1054" alt="autoexex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/54cb4f20-2283-431f-b698-6757f2d3125f">
 
