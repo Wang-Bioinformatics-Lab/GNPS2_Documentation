@@ -5,29 +5,8 @@
 
 [Metadata Sheet](https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
 
-
-## <ins>1) Convert raw autoExecute data to mzML via MSConvert.<ins>
-
-#### * *If your files have already been converted to mzML, proceed to step 4a for IDBac analysis or 4b for database deposition* *
-   
-   i) Select browse to  your Bruker FID file by clicking 'Browse'.
-   
-   ii) Click 'Add' to submit your file to the conversion cue.
-   
-   iii) Select where you would like your file to be saved under "Output Directory".
-   
-   iv) Ensure mzML is selected under 'Options/Output format'.
-   
-   v) When the previous steps are completed, click 'Start'.
-
-   vi) The output of this conversion will be a single autoexecute mzML for the entire plate (this single file will be split in the "Idbac_split_maldi_workflow" section below). 
-
-<img width="938" alt="Picture1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ce5975a1-4177-4abe-b3da-fddf437f775d">
-
-<img width="948" alt="Picture2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/3f05f184-1d17-4d4e-80c8-cd4e92477fcd">
-
  
- ## <ins>2) Upload files to GNPS2.org<ins>
+ ## Upload mzML files to GNPS2.org
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
