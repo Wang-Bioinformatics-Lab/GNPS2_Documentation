@@ -10,7 +10,7 @@ ii) Create a new folder and upload the mzXML files that need conversion.
 ![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/9b49c078-22bc-4f8a-b5c5-ce3131e04a3b)
 
 
-## 2) Run the [msconvert_workflow](https://gnps2.org/workflowinput?workflowname=msconvert_workflow)) homepage.<ins> 
+## 2) Run the [msconvert_workflow](https://gnps2.org/workflowinput?workflowname=msconvert_workflow) homepage.<ins> 
 
 i) Select the mzXML files that you would like to convert to mzML from the drop down menu.
 
