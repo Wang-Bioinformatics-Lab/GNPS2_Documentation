@@ -18,4 +18,5 @@ vi) The output of this conversion will be a single autoexecute mzML for the enti
 
 <img width="1066" alt="Manualex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e3798a46-19ce-4f99-979d-febc9f9f8338">
 
+![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/98c67e40-dcab-4d12-9178-f58432b9665d)
 
