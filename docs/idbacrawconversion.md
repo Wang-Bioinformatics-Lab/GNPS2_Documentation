@@ -26,3 +26,6 @@ i) Select "File Browser" found on the GNPS2.org homepage.
 
 ii) Create a new folder and upload your converted files.
 
+![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/d7db9757-c14d-4a8f-97a3-8a61dd90ddf3)
+
+
