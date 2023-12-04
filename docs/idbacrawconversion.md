@@ -2,7 +2,7 @@
   
 *Open MSConvert and proceed to the following steps*
 
-i) Select browse to your Bruker FID file by clicking 'Browse'.
+i) Select your Bruker FID file by clicking 'Browse'.
 
 ii) Click 'Add' to submit your file to the conversion cue.
 
