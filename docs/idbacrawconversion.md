@@ -28,4 +28,7 @@ ii) Create a new folder and upload your converted files.
 
 ![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/d7db9757-c14d-4a8f-97a3-8a61dd90ddf3)
 
+![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ef017f85-3315-4ce1-8c24-cb1bf948c41b)
+
+
 
