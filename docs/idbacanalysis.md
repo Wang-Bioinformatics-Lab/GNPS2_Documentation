@@ -7,7 +7,7 @@
 
 ### *IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
 
- ## <ins>1) Upload mzML files to GNPS2.org
+ ## 1) Upload mzML files to GNPS2.org
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
@@ -19,14 +19,18 @@
 <img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba">
 
 
-## **<ins>2) Submit workflow:** Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
+## 2) Submit workflow: 
+
+Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
 *If you do not submit metadata during this step, you will have fewer analysis options.*
 
 <img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
 
 
-**<ins>Analysis options:** Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
+## Analysis options: 
+
+Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
    i) Vizualize protein dendrogram: View a dendrogram of your isolates (excluding database seeds). 
    
