@@ -2,7 +2,7 @@
 
 **<ins>Submit workflow:** Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
-*If you do not submit metadata during this step, you will have fewer analysis options.
+*If you do not submit metadata during this step, you will have fewer analysis options.*
 
 <img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
 
