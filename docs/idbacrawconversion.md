@@ -30,7 +30,7 @@ ii) Create a new folder and upload your converted files.
 
 ![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ef017f85-3315-4ce1-8c24-cb1bf948c41b)
 
-# 3) Split re-name autoexecute file
+# 3) Split/ re-name autoexecute file
 
 *For Autoexecute mzML: This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions.*
 
