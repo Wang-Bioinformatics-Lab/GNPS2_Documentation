@@ -19,7 +19,7 @@
 <img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba">
 
 
-## 2) Submit workflow: 
+## <ins>2) Submit workflow: 
 
 Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
@@ -28,7 +28,7 @@ Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=id
 <img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
 
 
-## Analysis options: 
+## <ins>3) Analysis options: 
 
 Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
