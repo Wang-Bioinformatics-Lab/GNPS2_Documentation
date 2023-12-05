@@ -45,5 +45,14 @@ iii) Submit workflow.
 
 ![image](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/318e354a-8159-43f7-98df-e915c3d00d72)
 
+## <ins>4) Choose what you would like to do next:<ins>
+
+   a) **IDBac Analysis:** Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "Analysis options" below).
+
+   b) **IDBac Protein Database Deposition:** Deposit metadata and spectra of genetically verified isolates into the IDBac database.
+
+ <img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92">
+
+
 
 
