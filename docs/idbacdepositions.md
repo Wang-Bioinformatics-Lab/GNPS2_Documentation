@@ -7,7 +7,7 @@
 
 *IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
 
- ## 1) Upload mzML files to GNPS2.org
+## 1) Upload mzML files to GNPS2.org
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
@@ -22,7 +22,7 @@
 
 <img width="993" alt="Databasesubmissionfinal" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f">
 
-**<ins>View Database**
+## View Database
 
 To view your deposition, visit the [IDBac Knowledgebase](https://idbac-kb.gnps2.org/).
 
