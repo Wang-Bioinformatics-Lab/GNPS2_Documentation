@@ -11,7 +11,7 @@
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
-   ii) Create a new folder and upload your autoexecute mzmL, plate map and metadata sheets.
+   ii) Create a new folder and upload your mzmL files, plate map and metadata sheet.
  
 
 <img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6">
