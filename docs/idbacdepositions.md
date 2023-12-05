@@ -7,7 +7,7 @@
 
 *IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
 
- ## <ins>1) Upload mzML files to GNPS2.org
+ ## **<ins>1) Upload mzML files to GNPS2.org**
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
