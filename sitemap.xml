@@ -11,6 +11,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/agilent_conversion/</loc>
+         <lastmod>2023-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/agilent_fbmn/</loc>
+         <lastmod>2023-12-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/api/</loc>
          <lastmod>2023-12-06</lastmod>
          <changefreq>daily</changefreq>
