@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#msconvert" class="md-skip">
+        <a href="#msconvert-and-gnps2" class="md-skip">
           Skip to content
         </a>
       
@@ -394,9 +394,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#msconvert" class="md-nav__link">
+  <a href="#msconvert-and-gnps2" class="md-nav__link">
     <span class="md-ellipsis">
-      MSConvert
+      MSConvert and GNPS2
     </span>
   </a>
   
@@ -805,9 +805,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#msconvert" class="md-nav__link">
+  <a href="#msconvert-and-gnps2" class="md-nav__link">
     <span class="md-ellipsis">
-      MSConvert
+      MSConvert and GNPS2
     </span>
   </a>
   
@@ -848,15 +848,24 @@
   <h1>Agilent</h1>
 
 <p>This is the conversion for Agilent.</p>
-<h2 id="msconvert">MSConvert<a class="headerlink" href="#msconvert" title="Permanent link">&para;</a></h2>
+<h2 id="msconvert-and-gnps2">MSConvert and GNPS2<a class="headerlink" href="#msconvert-and-gnps2" title="Permanent link">&para;</a></h2>
+<p>One of the key issues with Agilent software converted with MSConvert, is that the MSConvert makes the scans non-sequential. Molecular Networking does not like this, so we have created a workflow in GNPS2 that renumbers the MS scans so that it is sequential. The general process involves this:</p>
+<ol>
+<li>Convert the Agilent data with MSConvert</li>
+<li>Upload the data to GNPS2</li>
+<li>Run the <a href="https://gnps2.org/workflowinput?workflowname=agilent_conversion_workflow">Agilent Conversion workflow</a></li>
+<li>Run the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">Classical Molecular Networking workflow</a> in GNPS2.</li>
+</ol>
 <h2 id="agilent-software-qual">Agilent Software - Qual<a class="headerlink" href="#agilent-software-qual" title="Permanent link">&para;</a></h2>
+<p>We can also do export directly from Agilent software.</p>
+<p>TODO: Finish this</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 6, 2023 18:23:56</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 6, 2023 18:26:18</span>
       
     
   </small>
