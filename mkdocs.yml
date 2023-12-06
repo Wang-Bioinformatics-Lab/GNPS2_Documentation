@@ -11,9 +11,8 @@ nav:
     - Mass Spec File Conversion: 
         - File Conversion: fileconversion.md
         - Agilent: agilent_conversion.md
-    - GNPS2 Workflow Development: workflowdev.md
-    - GNPS2 Tool Index: toolindex.md
-    - GNPS2 Workflows: workflowindex.md
+    - Overall Tool Index: toolindex.md
+    - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
         - IDBac Database Depositions: idbacdepositions.md
@@ -23,6 +22,7 @@ nav:
     - FBMN:
         Agilent: agilent_fbmn.md
     - API: api.md
+    - GNPS2 Workflow Development: workflowdev.md
     - Join the GNPS2 community: community.md
     - Accounts: accounts.md
     - Contact/Office Hours: contact.md
