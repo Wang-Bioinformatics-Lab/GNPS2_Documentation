@@ -5,7 +5,7 @@
 
 [Metadata Sheet](https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
 
-### *IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
+*IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
 
 ## <ins>1) Upload mzML files to GNPS2.org
  
