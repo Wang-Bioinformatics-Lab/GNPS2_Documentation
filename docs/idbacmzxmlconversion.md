@@ -19,7 +19,8 @@ ii) Submit workflow.
 
 iii) The output of this workflow is individual mzML files that can be used in downstream IDBac analysis or database depositions. 
 
-<img width="1115" alt="mzxml conversionedited" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/66242253-a125-49c4-af33-5619484cd58d">
+<img width="1112" alt="entermzxmlhere" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/6a0860aa-bb20-44c5-b7e5-d32579cbd4d7">
+
 
 ## 3) Choose what you would like to do next:<ins>
 
