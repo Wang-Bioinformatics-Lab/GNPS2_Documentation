@@ -19,7 +19,8 @@ nav:
         - IDBac Analysis: idbacanalysis.md
         - Raw Bruker Data Conversion: idbacrawconversion.md
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
-       
+    FBMN:
+        Agilent: agilent.md
        
     - Join the GNPS2 community: community.md
     - Accounts: accounts.md
