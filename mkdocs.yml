@@ -9,8 +9,8 @@ nav:
     - Server Status: status.md
     - File Upload: fileupload.md
     - Mass Spec File Conversion: 
-        File Conversion: fileconversion.md
-        Agilent: agilent_conversion.md
+        - File Conversion: fileconversion.md
+        - Agilent: agilent_conversion.md
     - GNPS2 Workflow Development: workflowdev.md
     - GNPS2 Tool Index: toolindex.md
     - GNPS2 Workflows: workflowindex.md
@@ -21,9 +21,8 @@ nav:
         - IDBac Analysis: idbacanalysis.md
         - Raw Bruker Data Conversion: idbacrawconversion.md
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
-    FBMN:
+    - FBMN:
         Agilent: agilent_fbmn.md
-       
     - Join the GNPS2 community: community.md
     - Accounts: accounts.md
     - Contact/Office Hours: contact.md
