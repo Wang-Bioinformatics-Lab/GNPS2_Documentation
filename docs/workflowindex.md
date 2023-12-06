@@ -42,5 +42,4 @@ A .tsv file with the extracted information spectra from the molecule of interest
 
 ### MS2query
 | [Link](https://gnps2.org/workflowinput?workflowname=ms2query_nextflow_workflow) | [Source Code](https://github.com/iomega/ms2query/tree/main) | [Tool documentation](https://github.com/iomega/ms2query/tree/main) | [Citation](https://www.nature.com/articles/s41467-023-37446-4)  |
-=======
-| [Link](https://gnps2.org/workflowinput?workflowname=chemwalker_nextflow_workflow) | [Source Code](https://github.com/computational-chemical-biology/ChemWalker/tree/master) | [Tool documentation](https://github.com/computational-chemical-biology/ChemWalker/tree/master) | [Citation](https://academic.oup.com/bioinformatics/article/39/3/btad078/7067745?login=true)  |
+
