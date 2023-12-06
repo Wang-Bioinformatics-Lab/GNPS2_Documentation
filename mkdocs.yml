@@ -7,6 +7,7 @@ repo_url: https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation
 nav:
     - About: index.md
     - Server Status: status.md
+    - Accounts: accounts.md
     - File Upload: fileupload.md
     - Mass Spec File Conversion: 
         - File Conversion: fileconversion.md
@@ -24,7 +25,6 @@ nav:
     - API: api.md
     - GNPS2 Workflow Development: workflowdev.md
     - Join the GNPS2 community: community.md
-    - Accounts: accounts.md
     - Contact/Office Hours: contact.md
 
     
