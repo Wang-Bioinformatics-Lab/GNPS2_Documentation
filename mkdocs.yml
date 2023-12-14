@@ -23,7 +23,7 @@ nav:
     - FBMN:
         Agilent: agilent_fbmn.md
     - API: api.md
-    - Logos: logos.md
+    - Logos: logo.md
     - GNPS2 Workflow Development: workflowdev.md
     - Join the GNPS2 community: community.md
     - Contact/Office Hours: contact.md
