@@ -24,9 +24,9 @@ iii) The output of this workflow is individual mzML files that can be used in do
 
 ## 3) Choose what you would like to do next:<ins>
 
-   a) **IDBac Analysis:** Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "Analysis options" below).
+   a) **IDBac Analysis:** Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "IDBac Analysis" tab).
 
-   b) **IDBac Protein Database Deposition:** Deposit metadata and spectra of genetically verified isolates into the IDBac database.
+   b) **IDBac Protein Database Deposition:** Deposit metadata and spectra of genetically verified isolates into the IDBac database (See "IDBac Database Depositions" tab).
 
    <img width="1114" alt="mzXML for doc" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e1f78041-1411-4e6c-80b4-aa2fe5404ac9">
 
