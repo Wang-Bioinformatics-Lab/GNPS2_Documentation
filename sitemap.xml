@@ -76,6 +76,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/logo/</loc>
+         <lastmod>2023-12-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/status/</loc>
          <lastmod>2023-12-14</lastmod>
          <changefreq>daily</changefreq>
