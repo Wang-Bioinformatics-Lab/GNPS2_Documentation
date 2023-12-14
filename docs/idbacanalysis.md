@@ -32,13 +32,13 @@ Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=id
 
 Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
-   i) Vizualize protein dendrogram: View a dendrogram of your isolates (excluding database seeds). 
+   ii) Query Spectra Summary: Visualize spectra of each strain you are analyzing. 
    
-   ii) Visualize with Metadata: If you selected a metadata column to display, it will appear within this protein dendrogram. If you do not select a metadata column to display, a 500 server error will display on-screen should you choose this analysis.
-  
-   iii) Spectra summary: This option allows you to compare mirror plots of your spectra.
+   ii) Vizualize dendrogram: View a protein dendrogram of your isolates (excluding database seeds). 
+   
+   iii) Visualize with Metadata: If you selected a metadata column to display, it will appear within this protein dendrogram.
 
-   iv) Dendrogram similarity: You may view similarity scores between your isolates based on the similarity metric you chose in the analysis workflow submission.
+   iv) Dendrogram similarity: You may view mirror plots and similarity scores between your isolates based on the similarity metric you chose in the analysis workflow submission.
    
    v) Database Search Summary: Here you query protein spectra of your unknown isolate against our database of characterized bacterial strains (based on similairty scores).
    
