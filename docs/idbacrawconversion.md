@@ -35,7 +35,7 @@ ii) Create a new folder and upload your converted files.
 *For Autoexecute mzML: This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions.*
 
 
-*For manual collection mzML: This workflow will re-name your mzML files based on your plate map and well positions*
+*For manual collection mzML: This workflow will re-name your mzML files based on your plate map and well positions.*
 
 i) Open the [idbac_split_maldi workflow](https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow)
 
@@ -47,7 +47,7 @@ iii) Submit workflow.
 
 ## <ins>4) Choose what you would like to do next:<ins>
 
-   a) **IDBac Analysis:** Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "IDBac analysis tab").
+   a) **IDBac Analysis:** Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "IDBac analysis" tab).
 
    b) **IDBac Protein Database Deposition:** Deposit metadata and spectra of genetically verified isolates into the IDBac database (See "IDBac Depositions" tab).
 
