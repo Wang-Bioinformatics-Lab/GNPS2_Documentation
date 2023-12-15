@@ -22,7 +22,7 @@ vi) The output of this conversion will be a single autoexecute mzML for the enti
 
 # 2) Upload mzML files to GNPS2.org
 
-i) Select "File Browser" found on the GNPS2.org homepage.
+i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.
 
 ii) Create a new folder and upload your converted files.
 
