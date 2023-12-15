@@ -32,7 +32,7 @@ Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=id
 
 Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
-   __i) Query Spectra Summary:__ Visualize spectra of each strain you are analyzing. 
+  __i) Query Spectra Summary:__ Visualize spectra of each strain you are analyzing. 
    
   __ii) Vizualize dendrogram:__ View a protein dendrogram of your isolates (excluding database seeds). 
    
