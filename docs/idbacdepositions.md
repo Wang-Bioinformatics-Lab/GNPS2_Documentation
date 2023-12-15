@@ -7,7 +7,7 @@
 
 **IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
 
-**All database depositions must have either an accompanying accession number or 16S taxonomy and sequence.*
+**All database depositions must have either an accompanying accession number or 16S taxonomy assignment and sequence.*
 
 
 ## <ins>1) Upload mzML files to GNPS2.org
