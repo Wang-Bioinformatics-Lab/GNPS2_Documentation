@@ -2,7 +2,7 @@
 
 ## 1) Upload mzXML files to GNPS2.org
 
-i) Select "File Browser" found on the GNPS2.org homepage.
+i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.
 
 ii) Create a new folder and upload the mzXML files that need conversion. 
 
