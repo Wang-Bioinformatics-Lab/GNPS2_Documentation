@@ -1,7 +1,17 @@
 # MS2Query workflow documentation
 
-MS2Query is a tool published by N. De Jonge in the Integrated Omics for MEtabolomics and Genomics Annotation lab to find the best match in libraries using MS/MS spectra. It uses MS2DeepScore to calculate the similarity between 
-the query spectrum and all library spectra for a subsequent rank of the top matches using a Random Forest Model. 
+MS2Query is a tool published by N. De Jonge et al. for annotating MS2 spectra, by finding the best match in mass spectral libraries.
+What makes MS2Query unique is that it will also return analogues if no good exact match is available. An analgoue is a metabolite that is chemically very similar to your metabolite, but can have some modifications. Analogues can be a great starting point for annotation, or can help you to prioritize metabolites/spectra for further analysis. 
+Including analogues increases the number of spectra for which you get some results by a lot, thereby making it possible to learn more from your data!
+
+MS2Query gives more results and more reliable predictions compared to previous methods for library matching, like (modified) cosine score or MS2Deepscore. 
+MS2Query uses previously developed machine learning algorithms (MS2Deepscore and Spec2Vec) to predict chemical similarity between your spectra and library spectra. 
+MS2Query is able to improve the reliability of the predicitons a lot by not directly picking the highest predicted similarity, but looking at many predictions for similar library metabolites first, to make sure the potential match is not a false positive. 
+More details about how this was implemented and the benchmarking results can be found in: https://www.nature.com/articles/s41467-023-37446-4 Please cite this article as well if you use MS2Query. 
+
+The code of MS2Query is fully open source and can be found on https://github.com/iomega/ms2query 
+Here you can also read how you can easily run MS2Query locally from the command line. 
+
 
 ## Quick tutorial of MS2Query workflow
 
@@ -56,9 +66,12 @@ The result of the task is the annotation of features present in the MS/MS spectr
 
 ![MS2Query annotations results example](./img/workflows/ms2query/ms2query_annotations_csv.png) 
 
-# Full tutorial of MS2Query
+# Interpretation results
 
-TODO Niek 
+As output a csv file is returned. For each of your input spectra MS2Query predicts a library match. It is important to check the ms2query_model_prediction column. This column contains a score, which indicates the likelihood that the found match is a good match. This score ranges between 0 and 1, the closer this score is to 1 the more likely that it is a good match/analogue. It is important to use this score to select only the reliable hits, since a prediction is given for each spectrum, regardless of the ms2query score. There is no strict minimum for this score, but the higher the MS2Query model prediction the more likely it is a good match/analogue. It will depend on your research goal, what a good threshold is. If a high recall is important you might want a low threshold and if a high reliability is more important you might want a high threshold. To give a general indication, a score > 0,7 has many good analogues and exact matches. In the range of 0.6-0.7, the results can still be useful, but should be analysed with more caution and results below 0.6 can often best be discarded. 
+
+MS2Query does not need two different workflows for searching for analogues and searching for exact matches, it automatically selects the most likely library spectra. If it is important to separate potential exact matches from potential analogues for your research question, the column with the precursor mz difference can be used to separate these results, since exact matches should have no precursor mz difference.
+The columns completely to the right are estimated molecular classes based on the molecular structure of the predicted library molecule, these columns can be used to get a quick overview of the kind of compounds that were found. 
 
 ## Citation
 
