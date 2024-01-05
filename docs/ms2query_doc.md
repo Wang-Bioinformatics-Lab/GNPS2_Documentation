@@ -1,6 +1,6 @@
 # MS2Query workflow documentation
 
-MS2Query is a tool published by N. De Jonge in the Integrated Omics for MEtabolomics and Genomics Annotation lab to find the best match in libraries using MS/MS spectra. It uses MS2DeepScore to calculate the similarity between 
+MS2Query is a tool published by N. De Jonge in the Integrated Omics for Metabolomics and Genomics Annotation lab to find the best match in libraries using MS/MS spectra. It uses MS2DeepScore to calculate the similarity between 
 the query spectrum and all library spectra for a subsequent rank of the top matches using a Random Forest Model. 
 
 ## Quick tutorial of MS2Query workflow
