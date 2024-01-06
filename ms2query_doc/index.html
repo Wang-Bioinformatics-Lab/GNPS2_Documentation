@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/chemwalker_doc/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/ms2query_doc/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>ChemWalker workflow documentation - GNPS2 Documentation</title>
+        <title>MS2Query workflow documentation - GNPS2 Documentation</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chemwalker-workflow-documentation" class="md-skip">
+        <a href="#ms2query-workflow-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ChemWalker workflow documentation
+              MS2Query workflow documentation
             
           </span>
         </div>
@@ -767,28 +767,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-tutorial-of-chemwalker-workflow" class="md-nav__link">
+  <a href="#quick-tutorial-of-ms2query-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick tutorial of chemwalker workflow
+      Quick tutorial of MS2Query workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Quick tutorial of chemwalker workflow">
+    <nav class="md-nav" aria-label="Quick tutorial of MS2Query workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
       Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#links-to-task-ids" class="md-nav__link">
-    <span class="md-ellipsis">
-      Links to task ids
     </span>
   </a>
   
@@ -856,7 +847,7 @@
                   
 
   
-    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/chemwalker_doc.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/ms2query_doc.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -864,10 +855,17 @@
   
 
 
-<h1 id="chemwalker-workflow-documentation">ChemWalker workflow documentation<a class="headerlink" href="#chemwalker-workflow-documentation" title="Permanent link">&para;</a></h1>
-<p>Chemwalker is a tool published by R. da Silva lab to annotate features in metabolomic networks by propagating annotations on non-directly connected nodes by using MetFrag. The article is published <a href="https://academic.oup.com/bioinformatics/article/39/3/btad078/7067745">here</a> and the source code is available in <a href="https://github.com/computational-chemical-biology">github</a>. 
-A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalker">below</a>. </p>
-<h2 id="quick-tutorial-of-chemwalker-workflow">Quick tutorial of chemwalker workflow<a class="headerlink" href="#quick-tutorial-of-chemwalker-workflow" title="Permanent link">&para;</a></h2>
+<h1 id="ms2query-workflow-documentation">MS2Query workflow documentation<a class="headerlink" href="#ms2query-workflow-documentation" title="Permanent link">&para;</a></h1>
+<p>MS2Query is a tool published by N. De Jonge et al. for annotating MS2 spectra, by finding the best match in mass spectral libraries.
+What makes MS2Query unique is that it will also return analogues if no good exact match is available. An analgoue is a metabolite that is chemically very similar to your metabolite, but can have some modifications. Analogues can be a great starting point for annotation, or can help you to prioritize metabolites/spectra for further analysis. 
+Including analogues increases the number of spectra for which you get some results by a lot, thereby making it possible to learn more from your data!</p>
+<p>MS2Query gives more results and more reliable predictions compared to previous methods for library matching, like (modified) cosine score or MS2Deepscore. 
+MS2Query uses previously developed machine learning algorithms (MS2Deepscore and Spec2Vec) to predict chemical similarity between your spectra and library spectra. 
+MS2Query is able to improve the reliability of the predicitons a lot by not directly picking the highest predicted similarity, but looking at many predictions for similar library metabolites first, to make sure the potential match is not a false positive. 
+More details about how this was implemented and the benchmarking results can be found in: https://www.nature.com/articles/s41467-023-37446-4 Please cite this article as well if you use MS2Query. </p>
+<p>The code of MS2Query is fully open source and can be found on https://github.com/iomega/ms2query 
+Here you can also read how you can easily run MS2Query locally from the command line. </p>
+<h2 id="quick-tutorial-of-ms2query-workflow">Quick tutorial of MS2Query workflow<a class="headerlink" href="#quick-tutorial-of-ms2query-workflow" title="Permanent link">&para;</a></h2>
 <h3 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -881,25 +879,13 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 <tbody>
 <tr>
 <td>Job Description</td>
-<td>Label for the ChemWalker job to identify it by the user.</td>
+<td>Label for the MS2Query job to identify it by the user.</td>
 <td></td>
 <td>no</td>
 </tr>
 <tr>
-<td>GNPS task ID</td>
-<td>GNPS molecular networking task id. <a href="../img/workflows/task_id.png">Identify the task id of your FBMN job in GNPS2</a>. See <a href="#links-to-task-ids">the links to the jobs in GNPS and GNPS2</a>.</td>
-<td></td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Workflow type</td>
-<td>FBMN or Classic (V2) from GNPS and FBMN from GNPS2, named GNPS2. If the GNPS server is down, the chemwalker task will not work for FBMN or Classic (V2) since it needs to retrieve the data from GNPS. Analogously with GNPS2.</td>
-<td>GNPS2</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Component Index</td>
-<td>Index of a connected component of interest in a Molecular Network. The propagation is limited to the connected component. Zero will perform propagation inside all components.</td>
+<td>Spectra files</td>
+<td>Provide a file with ms/ms spectra. Allowed formats are mzML, json, mgf, msp, mzxml or usi. Those files should have been uploaded to GNPS2 See <a href="../fileupload/">file upload documentation</a>.</td>
 <td></td>
 <td>yes</td>
 </tr>
@@ -910,29 +896,21 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 <td>yes</td>
 </tr>
 <tr>
-<td>Adduct ion type</td>
-<td>Expected adduct type for the precursor ion mass. It should be consistent with the ionization mode, otherwise the workflow will fail.</td>
-<td>[M+H]+</td>
+<td>Library models</td>
+<td>MS2Query uses a Random Forest Model to rank the highest scores in similarity spectra. This The users can use their own models. If the user chooses negative ionization mode, change the model to shared/ms2query/negativeim_model. To train your own models, check the <a href="https://github.com/iomega/ms2query/tree/main">github documentation</a>.</td>
+<td>positiveim_model</td>
 <td>yes</td>
 </tr>
 <tr>
-<td>PPM tolerance (ppm)</td>
-<td>Accuracy used for structure database search. The predicted neutral mass (for a given adduct selected) is compared to the exact mass of the structures provided.</td>
-<td>15</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Structure databases</td>
-<td>The default natural products database is the <a href="https://coconut.naturalproducts.net/">COCONUT</a> database or in house candidate structure database. See the <a href="#structure-database">Structure Database section</a>.</td>
-<td>COCONUT.psv</td>
-<td>yes</td>
+<td>Additional metadata columns from the experimental data</td>
+<td>The columns will be added to the output file with their corresponding values. The name should match the name on the spectra file. It is case sensitive.</td>
+<td>retention_time feature_id</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <p>The fields are presented in the image. Bold fields are mandatory:
-<img alt="chemwalker input fields image" src="../img/workflows/chemwalker/chemwalker_input.png" /></p>
-<h3 id="links-to-task-ids">Links to task ids<a class="headerlink" href="#links-to-task-ids" title="Permanent link">&para;</a></h3>
-<p>The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the molecular network task. To view the task_id, check the red rectangle in the <a href="../img/workflows/task_id.png">image</a>. The task id can correspond to a <a href="https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow">GNPS2 Feature based molecular networking (FBMN)</a>, to a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">GNPS FBMN</a> or a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">GNPS Molecular Networking v2</a>. </p>
+<img alt="MS2Query input fields image" src="../img/workflows/ms2query/ms2query_input.png" /></p>
 <h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -950,23 +928,23 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 </tr>
 <tr>
 <td>2.</td>
-<td><strong>GNPS2, FBMN, or FBMNv2 task id</strong></td>
-<td>b6d12e1e42b64ad6b20e7d38d5a4214b</td>
+<td><strong>Spectra Files</strong></td>
+<td>USERUPLOAD/alberto/ms2query/dummy_spectra.mgf</td>
 </tr>
 <tr>
 <td>3.</td>
-<td><strong>Workflow type (GNPS2, FBMN or V2)</strong></td>
-<td>GNPS2</td>
+<td><strong>Ionization mode</strong></td>
+<td>Positive</td>
 </tr>
 <tr>
 <td>4.</td>
-<td><strong>Component (Molecular family) index</strong></td>
-<td>11</td>
+<td><strong>Library models</strong></td>
+<td>USERUPLOAD/shared/ms2query/positiveim_model</td>
 </tr>
 <tr>
 <td>5.</td>
-<td><strong>File selection</strong></td>
-<td>LIBRARYLOCATION/STRUCTURE/Chemwalker/COCONUT.psv</td>
+<td><strong>Additional metadata columns</strong></td>
+<td>retention_time feature_id</td>
 </tr>
 </tbody>
 </table>
@@ -992,65 +970,25 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 </tr>
 <tr>
 <td>3.</td>
-<td><strong>random walk structures.tsv</strong></td>
-<td>File with the annotations over the nodes in the selected network/s. You can download to see the full fields or visit the online version. For a full analysis, the download of the file is recommended.</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><strong>random walk structures.graphml</strong></td>
-<td>Graphml with the annotations to visualize the nodes in Cytoscape. You can import this data file and dynamically analyze it there.</td>
+<td><strong>MS2Query results.zip</strong></td>
+<td>Zip file containing the csv file with the annotations.</td>
 </tr>
 </tbody>
 </table>
 <p>The different parts of the output are presented in the image:
-<img alt="Workflow clone task button" src="../img/workflows/chemwalker/chemwalker_output.png" /></p>
+<img alt="Workflow clone task button" src="../img/workflows/ms2query/ms2query_output.png" /></p>
 <h2 id="example-task">Example task<a class="headerlink" href="#example-task" title="Permanent link">&para;</a></h2>
-<p>To test the functionality of the ChemWalker workflow an <a href="https://gnps2.org/status?task=13e0cc3fafd14f328197c0b45999abc8">Example task</a> can be visited, and this work can be reproduced by clicking the <a href="../img/workflows/clone_button.png">clone button</a>: </p>
+<p>To test the functionality of the MS2Query workflow an <a href="https://gnps2.org/status?task=8979365f96f8468d98ad7ba919b4e4af">Example task</a> can be visited, and this work can be reproduced by clicking the <a href="../img/workflows/clone_button.png">clone button</a>: </p>
 <p><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></p>
 <h3 id="example-output">Example output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
-<p>The result of the task is the annotation of compounds from the chosen database according to the in-silico fragmentations calculated by MetFrag. The cluster index is the identification of the feature, the score is the associated score for the corresponding annotation for that specific feature. Results are sorted according to cluster index and score. The online results are not complete, it is recommended to download the full table. </p>
-<p><img alt="chemwalker annotations results example" src="../img/workflows/chemwalker/chemwalker_structures_tsv.png" /> </p>
-<p>The user can download the graphml with the new nodes annotated by chem Walker, and now each node in the network contains the annotation calculated by ChemWalker. </p>
-<p><img alt="chemwalker graphml network results example" src="../img/workflows/chemwalker/chemwalker_network_graphml.png" /> </p>
-<h1 id="full-tutorial-of-chemwalker">Full tutorial of ChemWalker<a class="headerlink" href="#full-tutorial-of-chemwalker" title="Permanent link">&para;</a></h1>
-<p>ChemWalker is a python package to propagate spectral library match identities through candidate structures provided by in silico fragmentation, using random walk.</p>
-<p><img alt="model" src="../img/workflows/chemwalker/walk_schem.png" /></p>
-<p>Check out the package's <a href="https://github.com/computational-chemical-biology/ChemWalker">documentation</a>.</p>
-<h3 id="structure-database">Structure database<a class="headerlink" href="#structure-database" title="Permanent link">&para;</a></h3>
-<p>There are basically three options for database structure selection:</p>
-<ol>
-<li>The default natural products database is the <a href="https://coconut.naturalproducts.net/">COCONUT</a> database. </li>
-<li>Input an in house generated database. 
-A standard format is required for the in house database. One can easily collect structures in the literature and format a tab separated files with SMILES strings and a character identifier of any kind, as the example database <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin.txt">Right-click, and Save link as</a>:<br />
-<img alt="inhousedb" src="../img/workflows/chemwalker/example_inhouse_database.png" /></li>
-</ol>
-<p>Having an in house collection, the user has to first format the database, using the following <a href="http://seriema.fcfrp.usp.br:5002/upload">webserver</a>:</p>
-<p><img alt="conversionweb" src="../img/workflows/chemwalker/format_database_webform.png" /></p>
-<p>After submission for conversion the user should receive an email with the link to download a file in the following format <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin_formatted.txt">Right-click, and Save link as</a>:</p>
-<p><img alt="inhousedbformat" src="../img/workflows/chemwalker/inhouse_databse_formatted.png" /></p>
-<h2 id="chemwalker-visualization-in-cytoscape">ChemWalker Visualization in Cytoscape<a class="headerlink" href="#chemwalker-visualization-in-cytoscape" title="Permanent link">&para;</a></h2>
-<p>In a similar way as Molecular Networking uses Cytoscape to visualize the whole network, we can visualize structure prediction of entire connected component or networks using the output <code>Random walk strtuctures graphml</code> available at the results page.</p>
-<p>Cytoscape (we have used version &gt;= 3.4) is available for download from <a href="http://www.cytoscape.org">here</a>. </p>
-<h3 id="download-chemwalkers-cytoscape-files">Download ChemWalker's Cytoscape files<a class="headerlink" href="#download-chemwalkers-cytoscape-files" title="Permanent link">&para;</a></h3>
-<p>To download the Cytoscape file, go back to the results page of your task:</p>
-<p><img alt="cytoscape" src="../img/workflows/chemwalker/rw_results_page_summary.png" /></p>
-<p>After the download, remember to uncompress the file for downstream use.</p>
-<h3 id="installing-the-chemviz-plugin">Installing the ChemViz plugin<a class="headerlink" href="#installing-the-chemviz-plugin" title="Permanent link">&para;</a></h3>
-<p>To visualize the structures on NAP output we need the <a href="https://apps.cytoscape.org/apps/chemviz">ChemViz</a> plugin. The easiest way to install it is using Cytoscape's App Manager, as shown below:</p>
-<p><img alt="install_chemviz" src="../img/workflows/chemwalker/chemviz_install.gif" /></p>
-<h2 id="load-chemwalkers-cytoscape-file-and-apply-layout">Load ChemWalker's Cytoscape file and apply layout<a class="headerlink" href="#load-chemwalkers-cytoscape-file-and-apply-layout" title="Permanent link">&para;</a></h2>
-<p>Load the graphml file and apply a layout to spread the nodes:</p>
-<p><img alt="layout" src="../img/workflows/chemwalker/cytoscape_layout.gif" /></p>
-<h2 id="change-image-display-properties-and-paint-library-match-structure">Change image display properties and paint library match structure<a class="headerlink" href="#change-image-display-properties-and-paint-library-match-structure" title="Permanent link">&para;</a></h2>
-<p>The graphml file contains some pre-set elements to aid structure display. Browsing the 'Table Panel' is possible to inspect which scoring method has structures available in the column SMILES. To use one of these columns to display the structures we have first to change the properties of ChemViz, by doing:</p>
-<p><img alt="library_smiles" src="../img/workflows/chemwalker/set_spectral_library_smiles.gif" /></p>
-<p>After setting the desired source column to display the structure one can just 'paint' the structure on the node:</p>
-<p><img alt="paint_library" src="../img/workflows/chemwalker/paint_spectral_library_structure.gif" /></p>
-<h3 id="display-the-list-of-candidates">Display the list of candidates<a class="headerlink" href="#display-the-list-of-candidates" title="Permanent link">&para;</a></h3>
-<p>The most correct structure may not be the first candidate. Therefore we can display the structures outputted from our <a href="#parameter-walkthrough">initial parameters</a>:</p>
-<p><img alt="cand_chemviz" src="../img/workflows/chemwalker/display_consensus_candidates.gif" /></p>
+<p>The result of the task is the annotation of features present in the MS/MS spectra file. MS2Query assigns a identifier for each spectra annotated, their corresnponding ms2query_model_prediction_score, the delta m/z of the precursor mass, the representation of the structure (InChI Key and SMILES, the metadata columns added by the user and the corresponding class )</p>
+<p><img alt="MS2Query annotations results example" src="../img/workflows/ms2query/ms2query_annotations_csv.png" /> </p>
+<h1 id="interpretation-results">Interpretation results<a class="headerlink" href="#interpretation-results" title="Permanent link">&para;</a></h1>
+<p>As output a csv file is returned. For each of your input spectra MS2Query predicts a library match. It is important to check the ms2query_model_prediction column. This column contains a score, which indicates the likelihood that the found match is a good match. This score ranges between 0 and 1, the closer this score is to 1 the more likely that it is a good match/analogue. It is important to use this score to select only the reliable hits, since a prediction is given for each spectrum, regardless of the ms2query score. There is no strict minimum for this score, but the higher the MS2Query model prediction the more likely it is a good match/analogue. It will depend on your research goal, what a good threshold is. If a high recall is important you might want a low threshold and if a high reliability is more important you might want a high threshold. To give a general indication, a score &gt; 0,7 has many good analogues and exact matches. In the range of 0.6-0.7, the results can still be useful, but should be analysed with more caution and results below 0.6 can often best be discarded. </p>
+<p>MS2Query does not need two different workflows for searching for analogues and searching for exact matches, it automatically selects the most likely library spectra. If it is important to separate potential exact matches from potential analogues for your research question, the column with the precursor mz difference can be used to separate these results, since exact matches should have no precursor mz difference.
+The columns completely to the right are estimated molecular classes based on the molecular structure of the predicted library molecule, these columns can be used to get a quick overview of the kind of compounds that were found. </p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
-<p><a href="https://doi.org/10.1093/bioinformatics/btad078">Tiago Cabral Borelli, Gabriel Santos Arini, Luís G P Feitosa, Pieter C Dorrestein, Norberto Peporine Lopes, Ricardo R da Silva. Improving annotation propagation on molecular networks through random walks: introducing ChemWalker. Bioinformatics 2023, 39(3), btad078.</a></p>
+<p><a href="https://doi.org/10.1038/s41467-023-37446-4">Niek F. de Jonge, Joris J. R. Louwen, Elena Chekmeneva, Stephane Camuzeaux, Femke J. Vermeir, Robert S. Jansen, Florian Huber, Justin J. J. van der Hooft. MS2Query: reliable and scalable MS2 mass spectra-based analogue search. Nature Communications 2023, 14: 1752</a></p>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
 <p>{{ git_page_authors }}</p>
 
