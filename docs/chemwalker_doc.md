@@ -9,14 +9,14 @@ A detailed explanation of the tool is found [below](#full-tutorial-of-chemwalker
 
 | Parameter  | Description        |  Default | Required | 
 | ------------- |-------------| -----| -----|
-| Job Description | Label for the ChemWalker job to identify it by the user | | no |
-| GNPS task ID | GNPS molecular networking task id. [Identify the task id of your FBMN job in GNPS2](./img/workflows/task_id.png). See [the links to the jobs in GNPS and GNPS2](#links-to-task-ids) | | yes |
-| Workflow type | FBMN or Classic (V2) from GNPS and FBMN from GNPS2, named GNPS2. If the GNPS server is down, the chemwalker task will not work for FBMN or Classic (V2) since it needs to retrieve the data from GNPS. Analogously with GNPS2. Links  | GNPS2 | yes |
+| Job Description | Label for the ChemWalker job to identify it by the user. | | no |
+| GNPS task ID | GNPS molecular networking task id. [Identify the task id of your FBMN job in GNPS2](./img/workflows/task_id.png). See [the links to the jobs in GNPS and GNPS2](#links-to-task-ids). | | yes |
+| Workflow type | FBMN or Classic (V2) from GNPS and FBMN from GNPS2, named GNPS2. If the GNPS server is down, the chemwalker task will not work for FBMN or Classic (V2) since it needs to retrieve the data from GNPS. Analogously with GNPS2. | GNPS2 | yes |
 | Component Index  | Index of a connected component of interest in a Molecular Network. The propagation is limited to the connected component. Zero will perform propagation inside all components. | | yes |
 | Ionization mode | Mass spectrometry acquisition mode. | Positive | yes |
 | Adduct ion type | Expected adduct type for the precursor ion mass. It should be consistent with the ionization mode, otherwise the workflow will fail. | [M+H]+ | yes |
 | PPM tolerance (ppm) | Accuracy used for structure database search. The predicted neutral mass (for a given adduct selected) is compared to the exact mass of the structures provided. | 15 | yes |
-| Structure databases | The default natural products database is the [COCONUT](https://coconut.naturalproducts.net/) database or in house candidate structure database. See the [Structure Database section](#structure-database) | COCONUT.psv | yes |
+| Structure databases | The default natural products database is the [COCONUT](https://coconut.naturalproducts.net/) database or in house candidate structure database. See the [Structure Database section](#structure-database). | COCONUT.psv | yes |
 
 
 The fields are presented in the image. Bold fields are mandatory:
@@ -43,7 +43,7 @@ The information from the molecular network is necessary to annotate the nodes (f
 
 | #   | Item                              | Description                                                                                                                      |
 | --- | ----------------------------------| ---------------------------------------------------------------------------------------------------------------------------------|
-| 1.  | **Log Text area**                 | Text area with the result of the task. If there is some fail, the log will be written there. If the task failed and you want to contact the support team, please provide the output of this text area along with the job id. |
+| 1.  | **Log Text area**                 | Text area with the result of the task. If there is some failure, the log will be written there. If the task failed and you want to contact the support team, please provide the output of this text area along with the job id. |
 | 2.  | **Full results from the job**     | Full results from the job. It can provide information to debug or to users with programming knowledge.                          |
 | 3.  | **random walk structures.tsv**    | File with the annotations over the nodes in the selected network/s. You can download to see the full fields or visit the online version. For a full analysis, the download of the file is recommended. |
 | 4.  | **random walk structures.graphml**| Graphml with the annotations to visualize the nodes in Cytoscape. You can import this data file and dynamically analyze it there.      |
@@ -55,7 +55,7 @@ The different parts of the output are presented in the image:
 
 ## Example task
 
-To test the functionality of the ChemWalker workflow an [Example task](httpshttps://gnps2.org/status?task=13e0cc3fafd14f328197c0b45999abc8) can be visited, and this work can be reproduced by clicking the [clone button](./img/workflows/clone_button.png): 
+To test the functionality of the ChemWalker workflow an [Example task](https://gnps2.org/status?task=13e0cc3fafd14f328197c0b45999abc8) can be visited, and this work can be reproduced by clicking the [clone button](./img/workflows/clone_button.png): 
 
 ![Workflow clone task button](./img/workflows/clone_button.png)
 
