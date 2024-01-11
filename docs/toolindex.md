@@ -31,6 +31,7 @@ These are web tools that is run by the GNPS2 team and provides complementary fun
 | [GNPS2 Tiny Mass Sharer](https://tinymass.gnps2.org/) | --- | --- | 
 | [GNPS2 MassQL Visualizer](https://massql.gnps2.org/) | --- | --- | 
 | [GNPS2 MassQL Analysis/Chatbot](https://massql-analysis.gnps2.org/) | --- | --- | 
+| [GNPS2 USI Playground](https://usi-playground.gnps2.org/) | --- | --- | 
 
 
 
