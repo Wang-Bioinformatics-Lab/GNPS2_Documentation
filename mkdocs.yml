@@ -20,8 +20,10 @@ nav:
         - IDBac Analysis: idbacanalysis.md
         - Raw Bruker Data Conversion: idbacrawconversion.md
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
-    - FBMN:
-        Agilent: agilent_fbmn.md
+    - Tandem Mass Spectrometry Data Analysis:
+        - FBMN:
+            Agilent: agilent_fbmn.md
+        - Classical Molecular Networking: classical.md
     - API: api.md
     - Logos: logo.md
     - GNPS2 Workflow Development: workflowdev.md
