@@ -12,6 +12,7 @@ nav:
     - Mass Spec File Conversion: 
         - File Conversion: fileconversion.md
         - Agilent: agilent_conversion.md
+        - Waters: waters_conversion.md
     - Overall Tool Index: toolindex.md
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
