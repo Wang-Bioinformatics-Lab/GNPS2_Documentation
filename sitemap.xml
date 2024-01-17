@@ -46,11 +46,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/conversion_waters/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/fileconversion/</loc>
          <lastmod>2024-01-17</lastmod>
          <changefreq>daily</changefreq>
@@ -107,6 +102,11 @@
     </url>
     <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/usi/</loc>
+         <lastmod>2024-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/waters_conversion/</loc>
          <lastmod>2024-01-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
