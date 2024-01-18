@@ -53,7 +53,7 @@ Structure Similarity
 ## Fast Search
 <details>
 <summary>Rapidly search pre-made libraries GNPS and MassIVE spectral data.</summary>
-Search by peaks:
+Search by peaks in json format using query_spectrum:
   
 ```
 https://fasst.gnps2.org/search?usi=None&precursor_mz=981.54&charge=1&library=gnpslibrary&query_spectrum={%22n_peaks%22:15,%22peaks%22:[[165.06979370117188,0.38009798526763916],[167.072998046875,1.7413330078125],[179.07260131835938,0.2999509871006012],[180.08079528808594,100.0],[181.08859252929688,2.8455820083618164],[182.09649658203125,23.914995193481445],[192.08079528808594,0.6896359920501709],[193.0886993408203,0.2419929951429367],[208.07569885253906,3.9236950874328613],[210.09129333496094,51.83255386352539],[236.0706024169922,4.025279998779297],[253.09719848632812,21.652437210083008],[254.08120727539062,46.069068908691406],[255.0872039794922,0.3038550019264221],[271.1077880859375,0.7285820245742798]],%22precursor_charge%22:0,%22precursor_mz%22:271.1077}
@@ -72,8 +72,8 @@ Parameters:
 * cache: [Yes/No], Defaults to "No"
 * lower_delta: defaults to 130
 * upper_delta: defaults to 200
-* pm_tolerance: The tolerance for precursor mass matching, defaults to 0.05
-* fragment_tolerance: The tolerance for matching individual peaks, defaults to 0.05
+* pm_tolerance (Da): The tolerance for precursor mass matching in daltons, defaults to 0.05
+* fragment_tolerance (Da): The tolerance for matching individual peaks in daltons, defaults to 0.05
 * cosine_threshold: The minimum cosine threshold to be included in the results, defaults to 0.7
 * query_spectrum (mututally exclusive with USI): A json formatted peak list
 
