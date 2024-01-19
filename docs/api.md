@@ -63,16 +63,16 @@ https://fasst.gnps2.org/search?library=gnpslibrary&usi=mzspec:GNPS:GNPS-LIBRARY:
 ```
 
 Parameters:
-* usi (mutually exclusive with query spectrum)
-* library: The pre-built library index, options are listed on the [Fast Search GUI](https://fasst.gnps2.org/fastsearch/)
-* analog: [Yes/No], Defaults to "No"
-* cache: [Yes/No], Defaults to "No"
-* lower_delta: defaults to 130
-* upper_delta: defaults to 200
-* pm_tolerance (Da): The tolerance for precursor mass matching in daltons, defaults to 0.05
-* fragment_tolerance (Da): The tolerance for matching individual peaks in daltons, defaults to 0.05
-* cosine_threshold: The minimum cosine threshold to be included in the results, defaults to 0.7
-* query_spectrum (mututally exclusive with USI): A json formatted peak list
+- usi (mutually exclusive with query spectrum)
+- library: The pre-built library index, options are listed on the [Fast Search GUI](https://fasst.gnps2.org/fastsearch/)
+- analog: [Yes/No], Defaults to "No"
+- cache: [Yes/No], Defaults to "No"
+- lower_delta: defaults to 130
+- upper_delta: defaults to 200
+- pm_tolerance (Da): The tolerance for precursor mass matching in daltons, defaults to 0.05
+- fragment_tolerance (Da): The tolerance for matching individual peaks in daltons, defaults to 0.05
+- cosine_threshold: The minimum cosine threshold to be included in the results, defaults to 0.7
+- query_spectrum (mututally exclusive with USI): A json formatted peak list
 
 ## Public Dataset Files
 Access spectral data by USI or SpectrumID
