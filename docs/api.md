@@ -1,6 +1,5 @@
 ## ChemicalStructureWebService
-<details>
-<summary>Web Server for Chemical Structure pictures as well as other chemical structure things</summary>
+>Web Server for Chemical Structure pictures as well as other chemical structure things
 
 ### Web API Endpoints
 
@@ -48,11 +47,9 @@ Image Creation
 Structure Similarity
 
 ```https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C```
-</details>
 
 ## Fast Search
-<details>
-<summary>Rapidly search pre-made libraries GNPS and MassIVE spectral data.</summary>
+Rapidly search pre-made libraries GNPS and MassIVE spectral data.
 Search by peaks in json format using query_spectrum:
   
 ```
@@ -77,11 +74,8 @@ Parameters:
 * cosine_threshold: The minimum cosine threshold to be included in the results, defaults to 0.7
 * query_spectrum (mututally exclusive with USI): A json formatted peak list
 
-</details>
-
 ## Public Dataset Files
-<details>
-<summary>Access spectral data by USI or SpectrumID</summary>  
+Access spectral data by USI or SpectrumID
 Getting all files per dataset
 
 ```
@@ -108,4 +102,3 @@ JSON Peak List from USI (Example):
 ```
 https://fasst.gnps2.org/search?library=gnpslibrary&usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
 ```
-</details>
