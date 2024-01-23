@@ -43,3 +43,5 @@ A .tsv file with the extracted information spectra from the molecule of interest
 ### MS2query
 | [Link](https://gnps2.org/workflowinput?workflowname=ms2query_nextflow_workflow) | [Source Code](https://github.com/iomega/ms2query/tree/main) | [Tool documentation](ms2query_doc.md) | [Citation](https://www.nature.com/articles/s41467-023-37446-4)  |
 
+### MSHub-gc
+| [Link](https://gnps2.org/workflowinput?workflowname=mshubgc_workflow) | [Source Code](https://github.com/Wang-Bioinformatics-Lab/mshub-gc_workflow) | [Tool documentation](mshub-gc_doc.md) | ---  |
