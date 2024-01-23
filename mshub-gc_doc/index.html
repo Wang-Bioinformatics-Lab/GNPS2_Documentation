@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/api/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/mshub-gc_doc/">
       
       
-        <link rel="prev" href="../classical/">
-      
-      
-        <link rel="next" href="../logo/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>API - GNPS2 Documentation</title>
+        <title>MSHub-GC Workflow Documentation - GNPS2 Documentation</title>
       
     
     
@@ -79,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chemicalstructurewebservice" class="md-skip">
+        <a href="#mshub-gc-workflow-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              MSHub-GC Workflow Documentation
             
           </span>
         </div>
@@ -735,28 +731,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    API
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -765,66 +743,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#chemicalstructurewebservice" class="md-nav__link">
-    <span class="md-ellipsis">
-      ChemicalStructureWebService
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ChemicalStructureWebService">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#web-api-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Web API Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fast-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fast Search
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-dataset-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Public Dataset Files
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -926,6 +844,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -934,19 +854,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chemicalstructurewebservice" class="md-nav__link">
+  <a href="#brief-tutorial" class="md-nav__link">
     <span class="md-ellipsis">
-      ChemicalStructureWebService
+      Brief tutorial
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ChemicalStructureWebService">
+    <nav class="md-nav" aria-label="Brief tutorial">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#web-api-endpoints" class="md-nav__link">
+  <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
-      Web API Endpoints
+      Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output
     </span>
   </a>
   
@@ -958,20 +896,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fast-search" class="md-nav__link">
+  <a href="#example-task" class="md-nav__link">
     <span class="md-ellipsis">
-      Fast Search
+      Example task
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example task">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example outputs
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#public-dataset-files" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
     <span class="md-ellipsis">
-      Public Dataset Files
+      Example output
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -990,7 +943,7 @@
                   
 
   
-    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/mshub-gc_doc.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -998,70 +951,112 @@
   
 
 
-  <h1>API</h1>
-
-<h2 id="chemicalstructurewebservice">ChemicalStructureWebService<a class="headerlink" href="#chemicalstructurewebservice" title="Permanent link">&para;</a></h2>
-<p>Web Server for Chemical Structure pictures as well as other chemical structure things</p>
-<h3 id="web-api-endpoints">Web API Endpoints<a class="headerlink" href="#web-api-endpoints" title="Permanent link">&para;</a></h3>
-<p>Full resolution of all structural information conversion</p>
-<p><code>https://structure.gnps2.org/convert?smiles=CCO</code></p>
-<p>InChI Conversion</p>
-<p><code>https://structure.gnps2.org/inchi?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
-<p>InChIKey Conversion</p>
-<p><code>https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
-<p>Smiles Conversion</p>
-<p><code>https://structure.gnps2.org/inchikey?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Mol Conversion</p>
-<p><code>https://structure.gnps2.org/mol?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>ClassyFire</p>
-<p><code>https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Formula</p>
-<p><code>https://structure.gnps2.org/formula?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Structure Mass</p>
-<p><code>https://structure.gnps2.org/structuremass?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code>
-<code>https://structure.gnps2.org/structuremass?formula=C8H10N4O2</code></p>
-<p>Structure Fingerprint</p>
-<p><code>https://structure.gnps2.org/structurefingerprint?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Image Creation</p>
-<p><code>https://structure.gnps2.org/structureimg?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3</code></p>
-<p>Structure Similarity</p>
-<p><code>https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&amp;smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C</code></p>
-<h2 id="fast-search">Fast Search<a class="headerlink" href="#fast-search" title="Permanent link">&para;</a></h2>
-<p>Rapidly search pre-made libraries GNPS and MassIVE spectral data.
-Search by peaks in json format using query_spectrum:</p>
-<pre><code>https://fasst.gnps2.org/search?usi=None&amp;precursor_mz=981.54&amp;charge=1&amp;library=gnpslibrary&amp;query_spectrum={%22n_peaks%22:15,%22peaks%22:[[165.06979370117188,0.38009798526763916],[167.072998046875,1.7413330078125],[179.07260131835938,0.2999509871006012],[180.08079528808594,100.0],[181.08859252929688,2.8455820083618164],[182.09649658203125,23.914995193481445],[192.08079528808594,0.6896359920501709],[193.0886993408203,0.2419929951429367],[208.07569885253906,3.9236950874328613],[210.09129333496094,51.83255386352539],[236.0706024169922,4.025279998779297],[253.09719848632812,21.652437210083008],[254.08120727539062,46.069068908691406],[255.0872039794922,0.3038550019264221],[271.1077880859375,0.7285820245742798]],%22precursor_charge%22:0,%22precursor_mz%22:271.1077}
-</code></pre>
-<p>Search by USI:</p>
-<pre><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
-</code></pre>
-<p>Parameters:
-- usi (mutually exclusive with query spectrum)
-- library: The pre-built library index, options are listed on the <a href="https://fasst.gnps2.org/fastsearch/">Fast Search GUI</a>
-- analog: [Yes/No], Defaults to "No"
-- cache: [Yes/No], Defaults to "No"
-- lower_delta: defaults to 130
-- upper_delta: defaults to 200
-- pm_tolerance (Da): The tolerance for precursor mass matching in daltons, defaults to 0.05
-- fragment_tolerance (Da): The tolerance for matching individual peaks in daltons, defaults to 0.05
-- cosine_threshold: The minimum cosine threshold to be included in the results, defaults to 0.7
-- query_spectrum (mututally exclusive with USI): A json formatted peak list</p>
-<h2 id="public-dataset-files">Public Dataset Files<a class="headerlink" href="#public-dataset-files" title="Permanent link">&para;</a></h2>
-<p>Access spectral data by USI or SpectrumID
-Getting all files per dataset</p>
-<pre><code>https://explorer.gnps2.org/api/datasets/{accession}/files
-</code></pre>
-<p>Getting file path per USI</p>
-<pre><code>https://dashboard.gnps2.org/downloadlink?usi={file usi}
-</code></pre>
-<p>Getting spectrum data from Spectrum ID</p>
-<pre><code>https://external.gnps2.org/gnpsspectrum?SpectrumID={Spectrum ID}
-</code></pre>
-<p>JSON Peak List from USI</p>
-<pre><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi={file usi}
-</code></pre>
-<p>JSON Peak List from USI (Example):</p>
-<pre><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
-</code></pre>
+<h1 id="mshub-gc-workflow-documentation">MSHub-GC Workflow Documentation<a class="headerlink" href="#mshub-gc-workflow-documentation" title="Permanent link">&para;</a></h1>
+<p>MSHub-GC is a workflow designed for the systematic processing of raw Gas Chromatography-Mass Spectrometry data. The tool consists in a Wide Spectral Alignment and a subsequent deconvolution, enhancing compound identification accuracy.</p>
+<h2 id="brief-tutorial">Brief tutorial<a class="headerlink" href="#brief-tutorial" title="Permanent link">&para;</a></h2>
+<h3 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Default</th>
+<th style="text-align: left;">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Input Spectra Folder</td>
+<td style="text-align: left;">Folder with mass-spectrometry data. The files should have previously been uploaded to GNPS2</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Time unit</td>
+<td style="text-align: left;">Unit associated with the spectrum or chromatogram</td>
+<td style="text-align: left;">sec</td>
+<td style="text-align: left;">yes</td>
+</tr>
+</tbody>
+</table>
+<p>The inputs are represented in the image:</p>
+<p><img alt="mshub input picture" src="../img/workflows/mshub/input_params.png" /></p>
+<h3 id="example-input">Example input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Information</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;"><strong>Job description</strong></td>
+<td style="text-align: left;">Name given by user to identify task</td>
+</tr>
+<tr>
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;"><strong>File Selection</strong></td>
+<td style="text-align: left;">USERUPLOAD/alberto/mshub-gc</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.</td>
+<td style="text-align: left;"><strong>Time unit</strong></td>
+<td style="text-align: left;">MIN</td>
+</tr>
+</tbody>
+</table>
+<h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1.</td>
+<td style="text-align: left;"><strong>Log Text area</strong></td>
+<td style="text-align: left;">Text area with the result of the task. If there is some failure, the log will be written there. If the task failed and you want to contact the support team, please provide the output of this text area along with the job id.</td>
+</tr>
+<tr>
+<td style="text-align: left;">2.</td>
+<td style="text-align: left;"><strong>Full results from the job</strong></td>
+<td style="text-align: left;">Full results from the job. It can provide information to debug or to users with programming knowledge.</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.</td>
+<td style="text-align: left;"><strong>Quantification table</strong></td>
+<td style="text-align: left;">Table containing the quantitative information of each compound. Shows ID and retention time (RT).</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.</td>
+<td style="text-align: left;"><strong>Cluster summary</strong></td>
+<td style="text-align: left;">Table containing information about clusters in the analysis. Shows cluster index, mean retention time (RTMean), balance score and base peak.</td>
+</tr>
+<tr>
+<td style="text-align: left;">5.</td>
+<td style="text-align: left;"><strong>Deconvolved GCMS file</strong></td>
+<td style="text-align: left;">Resulting data from a deconvolution process of the original data.</td>
+</tr>
+</tbody>
+</table>
+<p>The different outputs are represented in the following image: 
+<img alt="mshub output picture" src="../img/workflows/mshub/output_params.png" /></p>
+<h2 id="example-task">Example task<a class="headerlink" href="#example-task" title="Permanent link">&para;</a></h2>
+<h3 id="example-outputs">Example outputs<a class="headerlink" href="#example-outputs" title="Permanent link">&para;</a></h3>
+<p>To test the functionality of the mshub workflow an <a href="http://ucr-lemon.duckdns.org:4000/status?task=3311aae18ee147be8b5b6e45fbb754b7">example task</a> can be visited, and can be reproduced by clicking the <a href="../img/workflows/mshub/outputClone.png">clone button</a>:</p>
+<p><img alt="Workflow clone task button" src="../img/workflows/mshub/outputClone.png" /></p>
+<h3 id="example-output">Example output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
+<p>The resulting data from the wide spectral alignment and deconvolution is depicted in two tables and the deconvoluted data.
+When looking at the quantification table, the row ID identifies the different compounds and RT shows the retention time associated to each of them. Results are sorted according to the row ID and RT.</p>
+<p><img alt="quantification table output" src="../img/workflows/mshub/quant_table.png" /></p>
+<p>The cluster summary shows a cluster index, identifying each cluster, a mean retention time showing the average retention time in that cluster, a base score for each cluster and a base peak, indicating the highest intensity peak within the cluster. Results are sorted by cluster index.</p>
+<p><img alt="cluster summary" src="../img/workflows/mshub/cluster_summary.png" /></p>
 
 
 
