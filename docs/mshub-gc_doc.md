@@ -1,5 +1,5 @@
-# mshub Workflow Documentation
-Mshub is a workflow designed for the systematic processing of raw Gas Chromatography-Mass Spectrometry data. The tool consists in a Wide Spectral Alignment and a subsequent deconvolution, enhancing compound identification accuracy.
+# MSHub-GC Workflow Documentation
+MSHub-GC is a workflow designed for the systematic processing of raw Gas Chromatography-Mass Spectrometry data. The tool consists in a Wide Spectral Alignment and a subsequent deconvolution, enhancing compound identification accuracy.
 
 ## Brief tutorial
 ### Input
@@ -51,7 +51,7 @@ When looking at the quantification table, the row ID identifies the different co
 
 ![quantification table output](./img/workflows/mshub/quant_table.png)
 
-The cluster summary shows a cluster index, identifying each cluster, a mean retention time showing the average retention time in that cluster, a base score for each cluster and a base peak, indicating the highest intensity peak within the cluster. Results are sorted by cluster index and RTMean.
+The cluster summary shows a cluster index, identifying each cluster, a mean retention time showing the average retention time in that cluster, a base score for each cluster and a base peak, indicating the highest intensity peak within the cluster. Results are sorted by cluster index.
 
 ![cluster summary](./img/workflows/mshub/cluster_summary.png)
 
