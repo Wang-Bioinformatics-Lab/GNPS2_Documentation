@@ -101,6 +101,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/quickstart2/</loc>
+         <lastmod>2024-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/status/</loc>
          <lastmod>2024-02-01</lastmod>
          <changefreq>daily</changefreq>
