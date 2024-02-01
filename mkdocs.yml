@@ -25,6 +25,7 @@ nav:
         - FBMN:
             Agilent: agilent_fbmn.md
         - Classical Molecular Networking: classical.md
+    - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
     - API: api.md
     - Logos: logo.md
     - GNPS2 Workflow Development: workflowdev.md
