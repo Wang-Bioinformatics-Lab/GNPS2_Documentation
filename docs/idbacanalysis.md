@@ -45,7 +45,7 @@ Once the idbac_analysis_workflow is complete, you have the ability to analyze yo
 
 __a)__ If you did not include a metadata spreadsheet during the workflow submission, you may upload the file here.
 
-__b)__ Choose your preferred parameters for dendrogram visulation.
+__b)__ Choose your preferred parameters for dendrogram visualization.
 
 __c)__ Select how database hits will be displayed in the dendrogram. 
 
