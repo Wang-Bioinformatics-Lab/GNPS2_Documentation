@@ -32,7 +32,7 @@ Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=id
 
 Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
-  __i) Interactive IDBac Analysis:__ Choose analysis parameters to visually analyze your dataset. 
+  __i) Interactive IDBac Analysis:__ Choose parameters and visually analyze your dataset. See '4) Interactive IDBac Analysis' below for more details.
    
   __ii) Database Search Summary:__ Compare protein spectra of your unknown isolate against our database of characterized bacterial strains and obtain similarity scores.
    
