@@ -25,7 +25,7 @@ Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=id
 
 *You may submit metadata within this workflow, or on the Interactive IDBac Analsysis interface*
 
-![1a](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/a585a24c-007d-4d9b-89cf-d6bf5be59d39)
+![first fixed](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/71661e45-2c76-47df-9db5-9463c2ad477e)
 
 
 ## <ins>3) Analysis options: 
