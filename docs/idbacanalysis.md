@@ -42,21 +42,23 @@ Once the idbac_analysis_workflow is complete, you have the ability to analyze yo
 
 ## <ins>4) Interactive IDBac Analysis
 
-a) If you did not include a metadata spreadsheet during the workflow submission, you may upload the file here.
+*See images below for more detail*
 
-b) Choose your preferred parameters for dendrogram visulation: clustering method, color-coding threshold, and metadata category that will be displayed next to your strain names.
+__a)__ If you did not include a metadata spreadsheet during the workflow submission, you may upload the file here.
 
-c) Select how database hits will be displayed in the dendrogram. 
+__b)__ Choose your preferred parameters for dendrogram visulation.
 
-d) If you would like to remove isolates from your dataset, you may so here. 
+__c)__ Select how database hits will be displayed in the dendrogram. 
 
-e) You can choose a dendrogram cut-height and display dendrogram distance values for each isolate. 
+__d)__ If you would like to remove isolates from your dataset, you may do so here. 
 
-f) Your dendrogram will be displayed according to the parameters set above. Note: Database strains will be labeled as 'DB'.
+__e)__ You can choose a dendrogram cut-height and/or display dendrogram distance values for each isolate. 
 
-g) Visualize a single spectrum or compare two spectra via a mirror plot. 
+__f)__ Your dendrogram will be displayed according to the parameters set above. Note: Database strains will be labeled as 'DB'.
 
-h) URL link to easily share this analysis page.
+__g)__ Visualize a single spectrum or compare two spectra via a mirror plot. 
+
+__h)__ URL link to easily share this analysis page.
 
 ![a1](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/85c787fc-2ec6-4cae-af4e-c58bf4903da9)
 
