@@ -49,7 +49,7 @@ __b)__ Choose your preferred parameters for dendrogram visualization.
 
 __c)__ Select how database hits will be displayed in the dendrogram. 
 
-__d)__ If you would like to remove isolates from your dataset, you may do so here. 
+__d)__ If you would like to remove isolates from the dendrogram, you may do so here. 
 
 __e)__ You can choose a dendrogram cut-height and/or display dendrogram distance values for each isolate. 
 
