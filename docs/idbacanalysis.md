@@ -23,7 +23,7 @@
 
 Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
-*You may submit metadata within this workflow, or on the Interactive IDBac Analsysis interface*
+*You may submit metadata within this workflow, or on the Interactive IDBac Analysis interface*
 
 ![first fixed](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/71661e45-2c76-47df-9db5-9463c2ad477e)
 
