@@ -48,17 +48,25 @@ b) Choose your preferred parameters for dendrogram visulation: clustering method
 
 c) Select how database hits will be displayed in the dendrogram. 
 
-d) If you would like to remove isolates from your dataset, you may so here. Additionally, you can choose a dendrogram cut-height and display dendrogram distance values for each isolate. 
+d) If you would like to remove isolates from your dataset, you may so here. 
 
-e) Your dendrogram will be displayed according to the parameters set above. Note: Database strains will be labeled as 'DB'.
+e) You can choose a dendrogram cut-height and display dendrogram distance values for each isolate. 
 
-f) This option allows you to visualize a single spectrum, or compare two spectra via a mirror plot. 
+f) Your dendrogram will be displayed according to the parameters set above. Note: Database strains will be labeled as 'DB'.
 
-![1b](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/c91895bd-4ec7-457e-932c-e03c3941bd2a)
+g) Visualize a single spectrum or compare two spectra via a mirror plot. 
 
-![3i](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1d479a82-fc06-45e8-892b-80b7a6c6b56a)
+h) URL link to easily share this analysis page.
 
-![4i](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f15854bc-8860-44b4-99d8-acb103672013)
+![a1](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/85c787fc-2ec6-4cae-af4e-c58bf4903da9)
 
-![5i](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/66b7a108-ee63-46d3-ac54-2a97c23c5e07)
+![a2](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/8d60bbe3-69f2-44c1-9fca-4428d1212b56)
+
+![a3](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5dc59355-a75b-4008-9b73-dbc9e3c6f418)
+
+![a4](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/81629d5d-bf51-41d8-9998-880b681c0974)
+
+
+
+
 
