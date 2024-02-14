@@ -23,25 +23,42 @@
 
 Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
-*If you do not submit metadata during this step, you will have fewer analysis options.*
+*You may submit metadata within this workflow, or on the Interactive IDBac Analsysis interface*
 
-<img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e">
+![1a](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/a585a24c-007d-4d9b-89cf-d6bf5be59d39)
 
 
 ## <ins>3) Analysis options: 
 
 Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:
 
-  __i) Query Spectra Summary:__ Visualize spectra of each strain you are analyzing. 
+  __i) Interactive IDBac Analysis:__ This interface allows you to: analyze your data via a dendrogram, integrate database hits, assess metadata trends within your dataset and view mirror plots of your spectra. 
    
-  __ii) Vizualize dendrogram:__ View a protein dendrogram of your isolates (excluding database seeds). 
-   
-  __iii) Visualize with Metadata:__ If you selected a metadata column to display, it will appear within this protein dendrogram.
-
-  __iv) Dendrogram similarity:__ You may view mirror plots and similarity scores between your isolates based on the similarity metric you chose in the analysis workflow submission.
-   
-  __v) Database Search Summary:__ Here you query protein spectra of your unknown isolate against our database of characterized bacterial strains (based on similairty scores).
+  __ii) Database Search Summary:__ This option you compare protein spectra of your unknown isolate against our database of characterized bacterial strains, resulting in a similarity score.
    
 
-<img width="986" alt="Finalanalysis" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/378353bc-0ee9-411b-a5c4-83bd6f286826">
+![1](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e940dc4c-02f3-4d9f-b230-0b4cb89e9e05)
+
+
+## <ins>4) Interactive IDBac Analysis
+
+a) If you did not include a metadata spreadsheet during the workflow submission, you may upload the file here.
+
+b) Choose your preferred parameters for dendrogram visulation: clustering method, color-coding threshold, and metadata category that will be displayed next to your strain names.
+
+c) Select how database hits will be displayed in the dendrogram. 
+
+d) If you would like to remove isolates from your dataset, you may so here. Additionally, you can choose a dendrogram cut-height and display dendrogram distance values for each isolate. 
+
+e) Your dendrogram will be displayed according to the parameters set above. Note: Database strains will be labeled as 'DB'.
+
+f) This option allows you to visualize a single spectrum, or compare two spectra via a mirror plot. 
+
+![1b](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/c91895bd-4ec7-457e-932c-e03c3941bd2a)
+
+![3i](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1d479a82-fc06-45e8-892b-80b7a6c6b56a)
+
+![4i](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f15854bc-8860-44b4-99d8-acb103672013)
+
+![5i](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/66b7a108-ee63-46d3-ac54-2a97c23c5e07)
 
