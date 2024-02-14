@@ -40,7 +40,7 @@ Once the idbac_analysis_workflow is complete, you have the ability to analyze yo
 ![1](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e940dc4c-02f3-4d9f-b230-0b4cb89e9e05)
 
 
-## __i) Interactive IDBac Analysis__
+## i) Interactive IDBac Analysis
 *See images below for more detail*
 
 __a)__ If you did not include a metadata spreadsheet during the workflow submission, you may upload the file here.
@@ -67,7 +67,7 @@ __h)__ URL link to easily share this analysis page.
 
 ![a4](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/81629d5d-bf51-41d8-9998-880b681c0974)
 
-## __ii) Database Search Summary__
+## ii) Database Search Summary
 
 ![dbsearch](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/18d5e695-35c6-422f-847b-3c33699afb8e)
 
