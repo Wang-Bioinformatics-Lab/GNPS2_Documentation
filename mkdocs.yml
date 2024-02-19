@@ -9,6 +9,7 @@ nav:
     - Server Status: status.md
     - Accounts: accounts.md
     - File Upload: fileupload.md
+    - Data Reanalyze: datareanalysis.md
     - Mass Spec File Conversion: 
         - File Conversion: fileconversion.md
         - Agilent: agilent_conversion.md
