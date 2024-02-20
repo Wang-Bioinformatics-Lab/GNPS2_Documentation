@@ -35,8 +35,48 @@ These are web tools that is run by the GNPS2 team and provides complementary fun
 | [GNPS2 Network Customization Playground](https://networkcustomization.gnps2.org/) | --- | --- | 
 
 
+## Web Interfaces Description
 
+### MS/MS Spectrum Summary App
 
+Here is a little app that can take a set of MS/MS spectra and understand the consistent fragmentation.
+
+[Spectrum Summary App](https://spectrasummary.gnps2.org/)
+
+### Molecular Networking Reformatting App
+
+This little app can reformat molecular networking outputs to create tall tables to make downstream analysis a bit easier. 
+
+[Networking Reformatting App](https://networkcustomization.gnps2.org/second_page)
+
+### Coauthor Summarizer
+
+This app can take all of your publications and tell you who your coauthors were in the last n years. Pretty useful for NSF proposals. 
+
+[Coauthor App](https://coauthor.wanglab.science/)
+
+### TinyMass App
+
+This app is like tinyurl but for mass spectra. You can easily share MS spectra and get a USI that can be used in a ton of different places
+
+[TinyMass App](https://tinymass.gnps2.org/)
+
+### USI Generation App
+
+This app will help to create USIs from a variety of places from datasets to GNPS2 analysis jobs. Making it easier to interact with the rest of the ecosystem. 
+
+[USI Generation App](https://usi-playground.gnps2.org/)
+
+### MassQL Analysis App
+
+This app makes working with MassQL a lot easier. 
+
+You can do the following:
+
+1. Play around with MassQL against MS/MS spectral libraries
+2. Use an LLM to write and interact with MassQL queries for the first time
+
+[MassQL Analysis App](https://massql-analysis.gnps2.org/)
 
 
 ## GNPS2 Jupyter Notebooks
