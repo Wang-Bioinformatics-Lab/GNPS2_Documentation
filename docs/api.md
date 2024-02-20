@@ -1,3 +1,7 @@
+## GNPS2
+
+TODO
+
 ## ChemicalStructureWebService
 Web Server for Chemical Structure pictures as well as other chemical structure things
 
@@ -5,15 +9,21 @@ Web Server for Chemical Structure pictures as well as other chemical structure t
 
 Full resolution of all structural information conversion
 
-```https://structure.gnps2.org/convert?smiles=CCO```
+```
+https://structure.gnps2.org/convert?smiles=CCO
+```
 
 InChI Conversion
 
-```https://structure.gnps2.org/inchi?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C```
+```
+https://structure.gnps2.org/inchi?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+```
 
 InChIKey Conversion
 
-```https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C```
+```
+https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+```
 
 Smiles Conversion
 
