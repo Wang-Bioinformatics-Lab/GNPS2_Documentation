@@ -12,8 +12,8 @@ There are two metadata formats we accept for the majority of GNPS2 workflows:
 1. Google Sheets shared link
 
 !!! note "Google Sheets Supported Workflows"
-    * Classical Molecular Networking Release 22 or later
-    * FBMN Release 23 or later
+    * Classical Molecular Networking is being reworked but not supported currently
+    * FBMN is being reworked but not supported currently
 
 ### ReDU Metadata
 
@@ -25,12 +25,11 @@ The recommended starting point for both of these metadata is  [ReDU Sample Infor
     1. Classical Molecular Networking
     1. Feature Based Molecular Networking
     1. GC Molecular Networking
-    1. Qemistree
 
-Metadata file used must be a tab-delimited text file. A .tsv can be downloaded from the ReDU Sample Information Template. Users that create a metadata file without using the ReDU Sample Information Template using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS) should save as a .txt (tab-delimited). 
+Metadata file used must be a tab-delimited text file. A .tsv can be downloaded from the ReDU Sample Information Template. Users that create a metadata file without using the ReDU Sample Information Template using a text editor (e.g. Microsoft Excel, Notepad++ for Windows, gedit for Linux, TextWrangler for Mac OS) should save as a .txt (tab-delimited). Xlsx is accepted in GNPS2. 
 
 !!! warning
-    Excel (xlsx), rich text (rtf) are not supported.
+    rich text (rtf) are not supported.
 
 ### Barebones Metadata
 
