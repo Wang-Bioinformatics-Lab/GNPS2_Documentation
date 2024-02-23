@@ -8,12 +8,14 @@ nav:
     - About: index.md
     - Server Status: status.md
     - Accounts: accounts.md
-    - File Upload: fileupload.md
     - Data Reanalyze: datareanalysis.md
-    - Mass Spec File Conversion: 
+    - Data Preparation/Upload:
+        - File Formats: dataformats.md
         - File Conversion: fileconversion.md
         - Agilent: agilent_conversion.md
         - Waters: waters_conversion.md
+        - File Upload: fileupload.md
+        - Metadata: metadata.md
     - Overall Tool Index: toolindex.md
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
