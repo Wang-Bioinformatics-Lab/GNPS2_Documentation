@@ -75,6 +75,7 @@ You can do the following:
 
 1. Play around with MassQL against MS/MS spectral libraries
 2. Use an LLM to write and interact with MassQL queries for the first time
+3. Use an LLM to explain the MassQL Queries 
 
 [MassQL Analysis App](https://massql-analysis.gnps2.org/)
 
