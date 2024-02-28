@@ -1,0 +1,18 @@
+The default spectral libraries are located in the speclibs folder in GNPS.
+
+Additionally, separate libraries that are not selected by default can be added. 
+
+These are propagated spectral libraries that inherently are less confident but this provides an avenue to give more identifications.
+
+#### Candidate bile acid modification spectral library
+
+The bile acid MS/MS spectral library consists of 21,549 spectra representing modifications to the bile acid steroid core. This library will not be added as a default library and will need to be added as an additional libraries for spectral matching while analyzing data as a molecular network. To get started on a molecular networking job follow the instructions in this GNPS documentation under Recommended Data Analysis section.
+
+Step-by-step description of using the MS/MS spectral library in the GNPS environment is provided below:
+
+1. Browse to the "GNPS-BILE-ACID-MODIFICATIONS" folder in the file selector.
+2. Click on "Library Files" to add the bile acid spectral library.
+3. Verify that the library now appears in the "Selected Library Files" category in the selection panel.
+4. You can then submit your GNPS analyses. 
+
+![Including the BA library](img/BA_lib_GNPS_documentation.jpg)
