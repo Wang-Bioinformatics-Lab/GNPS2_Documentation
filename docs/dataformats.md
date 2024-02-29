@@ -10,6 +10,7 @@ We generally support libraries from GNPS, but we also note that you might want t
 
 ```
 BEGIN IONS
+TITLE=SOMEUNIQUEID
 PEPMASS=981.54
 CHARGE=0
 MSLEVEL=2
