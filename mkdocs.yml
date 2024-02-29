@@ -8,7 +8,7 @@ nav:
     - About: index.md
     - Server Status: status.md
     - Accounts: accounts.md
-    - Data Reanalyze: datareanalysis.md
+    - Data Reanalysis: datareanalysis.md
     - Data Preparation/Upload:
         - File Formats: dataformats.md
         - File Conversion: fileconversion.md
