@@ -99,6 +99,7 @@ File Selector
 1. selectsinglefile means that it will take the first selected file as the nextflow argument rather than the whole folder
 1. folderunroll means that we will file all the leaf files and symlink them into the target folder, false means we will simply link the select file or folder as is
 1. linkdata means that any linking will happen, by default on, but can turn off in cases where we simply want to specify files and not actually do anything with it beyond the name.
+1. targettaskfolder is the folder where you put the data on the server 
 
 ### Workflow Display Parameters
 
