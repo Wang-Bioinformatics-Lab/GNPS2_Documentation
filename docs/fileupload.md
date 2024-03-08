@@ -3,10 +3,15 @@
 
 Go ahead and login and click the "File Broswer" in the top right. You will be able to drag and drop. However, be warned that you cannot upload files directly to the root of your user. You will need to make a new folder first. 
 
-## SFTP File Uploads
+## Bulk Uploads
+
+Bulk data uploads with sftp and ftp are available for collaborators, see the details below. 
+
+NOTE: This is currently in beta and not all accounts are activated on the SFTP server. 
+
+### SFTP File Uploads
 
 You can access the SFTP file upload with the following information
-
 
 | Field | Value | 
 | ----- | ----- |
@@ -14,8 +19,6 @@ You can access the SFTP file upload with the following information
 | port | 6542 |
 
 You can login with your GNPS2 username and password. 
-
-NOTE: This is currently in beta and not all accounts are activated on the SFTP server. 
 
 Here is a one-liner if you like using the commandline for uploading a folder
 
@@ -29,7 +32,7 @@ If you want to mirror a lot of data periodically, use this command:
 lftp -e "mirror --parallel=4 --include '/*.mzML' -R $local_directory $remote_directory; quit" -u "$remote_user,$password" sftp://$remote_host:$remote_port
 ```
 
-## FTP File Uploads
+### FTP File Uploads
 
 If you want to upload with FTP because SFTP is blocked or has issues at your institution or computer, you can use the following information
 
