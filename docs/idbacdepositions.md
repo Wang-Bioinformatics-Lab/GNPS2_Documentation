@@ -29,5 +29,5 @@ Select [idbacdeposition_workflow](https://gnps2.org/workflowinput?workflowname=i
 
 ## <ins>3) View Database
 
-To view your deposition, visit the [IDBac Knowledgebase](https://idbac-kb.gnps2.org/).
+To view your deposition, visit the [IDBac Database](https://idbac.org/).
 
