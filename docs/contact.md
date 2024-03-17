@@ -4,7 +4,7 @@ If you have any questions about how to use GNPS2 please first ask the community 
 
 ## GNPS2 Office Hours
 
-We are hosting online office hours on a weekly basis online with Ming ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu), [Lab Website](https://www.cs.ucr.edu/~mingxunw/)) via Zoom:
+The [Wang Bioinformatics Lab](https://www.cs.ucr.edu/~mingxunw/) at UC Riverside builds and maintains GNPS2. Specifically, the PI - Mingxun Wang ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu) hosts an office hours on a weekly basis for the benefit of the community. This office hours is virtual and on Zoom:
 
 [https://ucr.zoom.us/j/98049645231](https://ucr.zoom.us/j/98049645231)
 
@@ -14,7 +14,7 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 9AM PST (6PM CET) Weekly on Tuesday | Interactive Office Hours |
+| 9AM PST (6PM CET) Weekly on Wednesdays | Interactive Office Hours |
 
 NOTE: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
 
