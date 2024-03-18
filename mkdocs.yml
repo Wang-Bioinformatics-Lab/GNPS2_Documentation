@@ -28,6 +28,7 @@ nav:
         - FBMN:
             Agilent: agilent_fbmn.md
         - Classical Molecular Networking: classical.md
+        - ModiFinder: modifinder.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
