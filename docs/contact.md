@@ -18,7 +18,7 @@ Upcoming Office Hour Schedule
 
 NOTE: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
 
-NOTE: 3/27/2024 office hours will be cancelled due to a conflict. Our apologies!
+NOTE: 4/10/2024 office hours will be cancelled due travel hiccups, my apologies!
 
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it):
 
