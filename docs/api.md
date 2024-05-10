@@ -31,15 +31,21 @@ Smiles Conversion
 
 Mol Conversion
 
-```https://structure.gnps2.org/mol?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3```
+```
+https://structure.gnps2.org/mol?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
+```
 
 ClassyFire
 
-```https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3```
+```
+https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
+```
 
 Formula
 
-```https://structure.gnps2.org/formula?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3```
+```
+https://structure.gnps2.org/formula?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
+```
 
 Structure Mass
 
@@ -49,6 +55,12 @@ https://structure.gnps2.org/structuremass?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5
 
 ```
 https://structure.gnps2.org/structuremass?formula=C8H10N4O2
+```
+
+Adduct Masses
+
+```
+https://structure.gnps2.org/adductcalc?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
 ```
 
 Structure Fingerprint
