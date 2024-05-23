@@ -31,6 +31,7 @@ nav:
         - ModiFinder: modifinder.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
+    - GNPS2 MASST: masst.md
     - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
     - GNPS2 Quickstart2: quickstart2.md
     - API: api.md
