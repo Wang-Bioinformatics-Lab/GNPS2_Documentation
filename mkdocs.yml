@@ -8,6 +8,7 @@ nav:
     - About: index.md
     - Server Status: status.md
     - Accounts: accounts.md
+    - FAQ: faq.md
     - Data Reanalysis: datareanalysis.md
     - Data Preparation/Upload:
         - File Formats: dataformats.md
