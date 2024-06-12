@@ -21,7 +21,8 @@ nav:
     - GNPS2 USI: usi.md
     - IDBac:
         - IDBac Database Depositions: idbacdepositions.md
-        - IDBac Analysis: idbacanalysis.md
+        - IDBac Protein Analysis: idbacanalysis.md
+        - IDBac Small Molecule Analysis: idbacsmallmolanalysis.md
         - Raw Bruker Data Conversion: idbacrawconversion.md
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
