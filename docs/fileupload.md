@@ -7,7 +7,9 @@ Go ahead and login and click the "File Broswer" in the top right. You will be ab
 
 Bulk data uploads with sftp and ftp are available for collaborators, see the details below. 
 
-NOTE: This is currently in beta and not all accounts are activated on the SFTP server. 
+**NOTE: This is currently in beta and not all accounts are activated on the SFTP server. **
+
+Additionally, if you have tons of data you want to analyze in GNPS2, we'd recommend making a public dataset at MassIVE and then utilizing USIs to select that data for analysis in GNPS2. 
 
 ### SFTP File Uploads
 
