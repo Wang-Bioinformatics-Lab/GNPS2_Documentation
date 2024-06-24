@@ -9,6 +9,8 @@ nav:
     - Server Status: status.md
     - Accounts: accounts.md
     - FAQ: faq.md
+    - GNPS2 Interface
+        - GNPS2 Tasks: workflowtasks.md
     - Data Reanalysis: datareanalysis.md
     - Data Preparation/Upload:
         - File Formats: dataformats.md
