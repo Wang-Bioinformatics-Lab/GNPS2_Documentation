@@ -6,9 +6,9 @@ GNPS2 tasks are specific instances of data processing of workflows. You can find
 
 There are three distinct statuses that matter:
 
-RUNNING
-DONE
-FAILED
+* RUNNING
+* DONE
+* FAILED
 
 ### Resuming Tasks
 
@@ -16,4 +16,4 @@ If a task fails or is a weird state, you can go ahead and click the "Resume" but
 
 ### Hiding a Task
 
-A task can be hidden. 
+A task can be hidden so that its not in the default list
