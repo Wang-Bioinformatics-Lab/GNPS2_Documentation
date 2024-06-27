@@ -1,5 +1,5 @@
 
-Modifinder is a tool for site localization of structural modifications using MS/MS data. 
+ModiFinder is a tool for site localization of structural modifications using MS/MS data. 
 
 ## Data Input
 **Universal Spectrum Identifiers:** The Universal Spectrum Identifiers(USI) for both known and unknown compounds should be provided as they encompass the peak information used in the alignment step.
@@ -24,3 +24,26 @@ Modifinder is a tool for site localization of structural modifications using MS/
 ## Refinement of MS/MS substructure annotation
 
 By selecting a peak associated with the known compound, all the potential substructures assigned to that peak by ModiFinder will be shown. Users have the ability to manually filter these substructures, incorporating specialist domain knowledge into the filtering process.
+
+## Citation
+[
+    **ModiFinder: Tandem Mass Spectral Alignment Enables Structural Modification Site Localization**](https://pubs.acs.org/doi/10.1021/jasms.4c00061)
+
+[<em>Mohammad Reza Zare Shahneh, Michael Strobel, Giovanni Andrea Vitale, Christian Geibel, Yasin El Abiead, Neha Garg, Berenike Wagner, Karl Forchhammer, Allegra Aron, Vanessa V Phelan, Daniel Petras, and Mingxun Wang
+Journal of the American Society for Mass Spectrometry<em>](https://pubs.acs.org/doi/10.1021/jasms.4c00061)
+
+[DOI: <em>10.1021/jasms.4c00061<em>, PMID: <em>38830143<em>](https://pubs.acs.org/doi/10.1021/jasms.4c00061)
+
+```
+@article{doi:10.1021/jasms.4c00061,
+author = {Shahneh, Mohammad Reza Zare and Strobel, Michael and Vitale, Giovanni Andrea and Geibel, Christian and Abiead, Yasin El and Garg, Neha and Wagner, Berenike and Forchhammer, Karl and Aron, Allegra and Phelan, Vanessa V and Petras, Daniel and Wang, Mingxun},
+title = {ModiFinder: Tandem Mass Spectral Alignment Enables Structural Modification Site Localization},
+journal = {Journal of the American Society for Mass Spectrometry},
+volume = {0},
+number = {0},
+pages = {null},
+year = {0},
+doi = {10.1021/jasms.4c00061},
+    note ={PMID: 38830143},
+}
+```
