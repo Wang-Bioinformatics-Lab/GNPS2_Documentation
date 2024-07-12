@@ -30,9 +30,11 @@ nav:
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
         - FBMN:
+            FBMN: fbmn.md
             Agilent: agilent_fbmn.md
         - Classical Molecular Networking: classical.md
         - ModiFinder: modifinder.md
+        - Networking Overlay: Networkingoverlay.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md
