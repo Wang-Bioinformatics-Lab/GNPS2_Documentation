@@ -4,5 +4,5 @@ This is the quickstart2 for FBMN in GNPS2. You can access the portal at [Quickst
 
 You will simply need to upload your quant table, MS/MS spectra, and optionally the metadata file. 
 
-The resulting quat file can be found at nf_output -> clustering -> featuretable_reformated.csv after clicking "Browse All Results"
+The resulting quant file can be found at nf_output -> clustering -> featuretable_reformated.csv after clicking "Browse All Results"
 
