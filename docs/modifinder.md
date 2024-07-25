@@ -17,7 +17,7 @@ ModiFinder is a tool for site localization of structural modifications using MS/
 
 * There are examples provided in the examples tab, you can select any example and click on the update button to see the result.
 
-## Visualization Output
+### Visualization Output
 
 **Stats Table:** This table contains general information about the pair, detailing aspects like the mass difference and the count of both total and shifted peaks observed in the alignment. In the case that SMILES2 is provided, an evaluation score is also provided. This evaluation score evaluates the ModiFinder performance against ground truth.
 
@@ -27,9 +27,26 @@ ModiFinder is a tool for site localization of structural modifications using MS/
 
 **Peaks:** This visualization displays the alignment of peaks, with the peaks of the known compound positioned at the top and those of the modified compound at the bottom. Peaks that are both matched and shifted are indicated in red, while matched but unshifted peaks are highlighted in blue. Peaks that do not have a match are represented in gray. Clicking on a matched and shifted peak will highlight that peak and its corresponding match.
 
-## Refinement of MS/MS substructure annotation
+### Refinement of MS/MS substructure annotation
 
 By selecting a peak associated with the known compound, all the potential substructures assigned to that peak by ModiFinder will be shown. Users have the ability to manually filter these substructures, incorporating specialist domain knowledge into the filtering process.
+
+## High-throughput Nextflow Workflow
+
+This can be found on GitHub
+
+## GNPS2 High-Throughput Workflow
+
+This is a workflow in GNPS2. This can be accessed [here](gnps2.org). There are two distinct ways to use this workflow
+
+1. Analog Library Search + ModiFinder
+2. Pre-determined analogs with a csv input (Matched Mode)
+
+### Matched Mode
+
+The input format is as follows:
+
+Lorem Ipsum
 
 ## Citation
 [
