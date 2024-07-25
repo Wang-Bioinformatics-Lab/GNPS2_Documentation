@@ -961,9 +961,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="GNPS2 Interactive Web Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#visualization-output" class="md-nav__link">
     <span class="md-ellipsis">
       Visualization Output
@@ -971,13 +972,51 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#refinement-of-msms-substructure-annotation" class="md-nav__link">
     <span class="md-ellipsis">
       Refinement of MS/MS substructure annotation
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-throughput-nextflow-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-throughput Nextflow Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnps2-high-throughput-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNPS2 High-Throughput Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GNPS2 High-Throughput Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matched-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matched Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1281,9 +1320,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="GNPS2 Interactive Web Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#visualization-output" class="md-nav__link">
     <span class="md-ellipsis">
       Visualization Output
@@ -1291,13 +1331,51 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#refinement-of-msms-substructure-annotation" class="md-nav__link">
     <span class="md-ellipsis">
       Refinement of MS/MS substructure annotation
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-throughput-nextflow-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-throughput Nextflow Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnps2-high-throughput-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNPS2 High-Throughput Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GNPS2 High-Throughput Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matched-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matched Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1349,13 +1427,24 @@
 <ul>
 <li>There are examples provided in the examples tab, you can select any example and click on the update button to see the result.</li>
 </ul>
-<h2 id="visualization-output">Visualization Output<a class="headerlink" href="#visualization-output" title="Permanent link">&para;</a></h2>
+<h3 id="visualization-output">Visualization Output<a class="headerlink" href="#visualization-output" title="Permanent link">&para;</a></h3>
 <p><strong>Stats Table:</strong> This table contains general information about the pair, detailing aspects like the mass difference and the count of both total and shifted peaks observed in the alignment. In the case that SMILES2 is provided, an evaluation score is also provided. This evaluation score evaluates the ModiFinder performance against ground truth.</p>
 <p><strong>Prediction:</strong> This image shows a heatmap representation of the structure, where atoms with a higher likelihood of being the modification site are highlighted in shades of red, while those less likely to be modified appear in cooler blue tones.</p>
 <p><strong>Modification Highlight:</strong> If SMILES2 is provided, an image indicating the true modification and the modification site is displayed.</p>
 <p><strong>Peaks:</strong> This visualization displays the alignment of peaks, with the peaks of the known compound positioned at the top and those of the modified compound at the bottom. Peaks that are both matched and shifted are indicated in red, while matched but unshifted peaks are highlighted in blue. Peaks that do not have a match are represented in gray. Clicking on a matched and shifted peak will highlight that peak and its corresponding match.</p>
-<h2 id="refinement-of-msms-substructure-annotation">Refinement of MS/MS substructure annotation<a class="headerlink" href="#refinement-of-msms-substructure-annotation" title="Permanent link">&para;</a></h2>
+<h3 id="refinement-of-msms-substructure-annotation">Refinement of MS/MS substructure annotation<a class="headerlink" href="#refinement-of-msms-substructure-annotation" title="Permanent link">&para;</a></h3>
 <p>By selecting a peak associated with the known compound, all the potential substructures assigned to that peak by ModiFinder will be shown. Users have the ability to manually filter these substructures, incorporating specialist domain knowledge into the filtering process.</p>
+<h2 id="high-throughput-nextflow-workflow">High-throughput Nextflow Workflow<a class="headerlink" href="#high-throughput-nextflow-workflow" title="Permanent link">&para;</a></h2>
+<p>This can be found on GitHub</p>
+<h2 id="gnps2-high-throughput-workflow">GNPS2 High-Throughput Workflow<a class="headerlink" href="#gnps2-high-throughput-workflow" title="Permanent link">&para;</a></h2>
+<p>This is a workflow in GNPS2. This can be accessed <a href="gnps2.org">here</a>. There are two distinct ways to use this workflow</p>
+<ol>
+<li>Analog Library Search + ModiFinder</li>
+<li>Pre-determined analogs with a csv input (Matched Mode)</li>
+</ol>
+<h3 id="matched-mode">Matched Mode<a class="headerlink" href="#matched-mode" title="Permanent link">&para;</a></h3>
+<p>The input format is as follows:</p>
+<p>Lorem Ipsum</p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p><a href="https://pubs.acs.org/doi/10.1021/jasms.4c00061">
     <strong>ModiFinder: Tandem Mass Spectral Alignment Enables Structural Modification Site Localization</strong></a></p>
@@ -1394,7 +1483,7 @@ doi = {10.1021/jasms.4c00061},
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 25, 2024 19:08:09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 25, 2024 19:10:03</span>
   </span>
 
     
