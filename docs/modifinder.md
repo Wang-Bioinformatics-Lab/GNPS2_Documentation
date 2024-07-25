@@ -1,8 +1,14 @@
 
-ModiFinder is a tool for site localization of structural modifications using MS/MS data. 
+ModiFinder is a tool for site localization of structural modifications using MS/MS data. There are several ways to use ModiFinder:
 
-## Data Input
+1. GNPS Interactive web interface - https://modifinder.gnps2.org/
+2. High-throughput nextflow workflow - TO LINK
+3. GNPS2 High-Throughput Workflow - To LINK
+
+## GNPS2 Interactive Web Interface
+
 **Universal Spectrum Identifiers:** The Universal Spectrum Identifiers(USI) for both known and unknown compounds should be provided as they encompass the peak information used in the alignment step.
+
 **SMILES:** ModiFinder is designed to accept molecular structures in SMILES notation. Providing the SMILES for the unknown compound is optional and is used to generate additional results that are particularly useful for evaluating and visualizing ModiFinder's performance with compounds whose structures are already known.
 
 **ppm:** This input determines the error tolerance of ModiFinder in ppm. This error tolerance is used both in the alignment step and when annotating the peaks with substructures.
