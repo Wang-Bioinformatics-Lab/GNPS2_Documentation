@@ -1,5 +1,7 @@
 # Convert mzXML to mzML
 
+[MALDI Plate Map](https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
+
 ## 1) Upload mzXML files to GNPS2.org
 
 i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.
