@@ -1,4 +1,6 @@
 # 1) Convert raw Bruker data to mzML via MSConvert.
+
+[MALDI Plate Map](https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true)
   
 ### *Open MSConvert and proceed to the following steps.*
 
