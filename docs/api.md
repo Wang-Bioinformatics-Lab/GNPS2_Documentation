@@ -27,7 +27,9 @@ https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
 
 Smiles Conversion
 
-```https://structure.gnps2.org/inchikey?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3```
+```
+https://structure.gnps2.org/inchikey?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
+```
 
 Mol Conversion
 
@@ -81,8 +83,22 @@ Structure Similarity
 https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
 ```
 
+## ReDU Metadata
+
+Getting files for a given metadata category
+```
+https://redu.gnps2.org/attribute/<attribute>/attributeterm/<term>/files?filters=%5B%5D
+```
+
+Getting all terms per attribute
+```
+https://redu.gnps2.org/attribute/<attribute>/attributeterms?filters=%5B%5D
+```
+
 ## Fast Search
+
 Rapidly search pre-made libraries GNPS and MassIVE spectral data.
+
 Search by peaks in json format using query_spectrum:
   
 ```
