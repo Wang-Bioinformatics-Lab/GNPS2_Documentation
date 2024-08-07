@@ -29,12 +29,13 @@ nav:
         - Raw Bruker Data Conversion: idbacrawconversion.md
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
+        - Classical Molecular Networking: classical.md
         - FBMN:
             FBMN: fbmn.md
             Agilent: agilent_fbmn.md
-        - Classical Molecular Networking: classical.md
         - ModiFinder: modifinder.md
         - Networking Overlay: Networkingoverlay.md
+        - Network Topology - Transitive Alignments: transitive.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md
