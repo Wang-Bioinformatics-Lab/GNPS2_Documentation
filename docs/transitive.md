@@ -4,6 +4,8 @@ Checkout the workflow [here](https://gnps2.org/workflowinput?workflowname=Transi
 
 You can also use this after any molecular networking job, either classical or FBMN. 
 
+Citation - In Press
+
 ### Network Topology Parameters
 
 #### Transitive Param - Min Clique Cosine
