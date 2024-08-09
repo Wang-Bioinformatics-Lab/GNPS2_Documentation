@@ -1,5 +1,7 @@
 ## Transitive Network Topology
 
+Transitive Alignment Workflow enhances the construction of Molecular Networks (MNs) in mass spectrometry data analysis by addressing limitations in traditional MS/MS peak alignment methods. Conventional approaches, which rely on pairwise comparisons using modified cosine methods, often fail to connect molecules with multiple structural modifications, resulting in incomplete networks. The Transitive Alignments approach incorporated in this workflow utilizes network topology to connect molecules that are indirectly related, thereby improving the accuracy and completeness of MNs.
+
 Checkout the workflow [here](https://gnps2.org/workflowinput?workflowname=Transitive_alignment_workflow). 
 
 You can also use this after any molecular networking job, either classical or FBMN. 
