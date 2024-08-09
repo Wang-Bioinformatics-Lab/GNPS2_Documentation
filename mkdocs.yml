@@ -25,7 +25,7 @@ nav:
     - IDBac:
         - IDBac Database Depositions: idbacdepositions.md
         - IDBac Protein Analysis: idbacanalysis.md
-        - IDBac Small Molecule Analysis: idbacsmallmolanalysis.md
+        - IDBac Small Molecule Analysis: idbacsmanalysis.md
         - Raw Bruker Data Conversion: idbacrawconversion.md
         - mzXML to mzML Conversion: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
