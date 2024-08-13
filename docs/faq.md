@@ -20,3 +20,11 @@ At the classical_networking_workflow or feature_based_molecular_networking_workf
 **A:**
 
 GNPS2 has an FTP/SFTP upload portal that is meant for close collaborators to be able to upload a significant amount of data. Otherwise, since GNPS2 does not have the ability to store massive amounts of data for the broader community, we recommend deposition of the data at a public repository such as MassIVE in order to do analysis of such data at GNPS2. 
+
+## Feature-based Molecular Networking
+
+**Q: How do I find the Box Plot of a node?**
+
+**A:**
+
+On the FBMN result page, click "Cluster Summary" and then search for the scan number you are interested in the Cluster column, and then click "View Box Plot". In the Plot Configuration section, you can specify the Metadata Column and then select the groups to be displayed.
