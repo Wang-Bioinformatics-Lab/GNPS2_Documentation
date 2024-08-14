@@ -1,5 +1,5 @@
 # IDBac Analysis Platform
-To work with a sample dataset, visit [analysis.idbac.org](analysis.idbac.org)
+Visit [analysis.idbac.org](https://analysis.idbac.org/) for an example dataset.
 
 &nbsp;
 <img width="1114" alt="analysistools" src="https://github.com/user-attachments/assets/77fe3d95-a724-4075-b15a-58360ba5d50a">
