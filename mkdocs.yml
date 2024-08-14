@@ -24,10 +24,10 @@ nav:
     - GNPS2 USI: usi.md
     - IDBac:
         - IDBac Database Depositions: idbacdepositions.md
-        - IDBac Protein Analysis: idbacanalysis.md
-        - IDBac Small Molecule Analysis: idbacsmallmolanalysis.md
-        - Raw Bruker Data Conversion: idbacrawconversion.md
-        - mzXML to mzML Conversion: idbacmzxmlconversion.md
+        - Sumbit Data for Analysis: idbacsumbmitdata.md
+        - IDBac Analysis Platform: idbacanalysisplatform.md
+        - Data Conversion- Raw Bruker: idbacrawconversion.md
+        - Data Conversion- mzXML to mzML: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:

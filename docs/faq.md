@@ -8,6 +8,13 @@
 2. **Check for Neighbors:** Next, check if your molecule has any neighboring connections in the network. 
 3. **Examine Singletons:** To be thorough, examine the network including singletons.
 
+**Q: How to show the singletons in a network?**
+
+**A:**
+
+At the classical_networking_workflow or feature_based_molecular_networking_workflow task result page, click "Visualize Full Network  w/ Singletons in Browser" in the "Network Visualizations" section.
+
+
 **Q: I have a ton of data to analyze at GNPS2 but the File Uploader is slow, how do I get my data over there?**
 
 **A:**

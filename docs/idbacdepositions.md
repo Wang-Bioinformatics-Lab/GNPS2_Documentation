@@ -12,12 +12,10 @@
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
-   ii) Create a new folder and upload your mzmL files, plate map and metadata sheet.
+   ii) Create a new folder and upload your protein mzML files and deposition metadata sheet.
  
 
 <img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6">
-
-<img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba">
 
 ## <ins>2) Submit workflow: 
 
