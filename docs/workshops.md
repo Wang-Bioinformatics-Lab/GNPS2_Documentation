@@ -1,6 +1,6 @@
 ## Upcoming Workshops and Events
 
-We'll be setting up a email list to keep you all in the loop for future workshops. One main venue is via [VMOL](vmol.org).
+We'll be setting up a email list to keep you all in the loop for future workshops. One main venue is via [VMOL](https://vmol.org/).
 
 ## Previous Workshops
 
