@@ -1,4 +1,4 @@
-# IDBac Analysis
+# Run Analysis Workflow
 
 ## <ins>IDBac Templates<ins>
 [Analysis metadata sheet](https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?usp=sharing)
@@ -9,21 +9,37 @@
  
    i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
    
-   ii) Create a new folder and upload your mzML files, plate map and metadata sheet.
+   ii) Create a new folder and upload your mzML files and metadata sheet.
  
+<img width="1769" alt="addfiles" src="https://github.com/user-attachments/assets/c518b3f2-4075-4228-b8f1-a269db5e07e6">
+&nbsp;
+&nbsp;
 
-<img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6">
-
-<img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba">
-
-
-## <ins>2) Submit Analysis workflow: 
+## <ins>2) Sumbit data: 
 
 Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
 
-*You may submit metadata within this workflow, or on the Interactive IDBac Analysis interface*
+*Note: You may run a protein analysis with or without small molecule data*
 
-![first fixed](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/71661e45-2c76-47df-9db5-9463c2ad477e)
+<img width="1800" alt="1 " src="https://github.com/user-attachments/assets/61cff528-66cc-4dad-be4a-4a2c9a37bbb7">
+
+
+<img width="1798" alt="2 " src="https://github.com/user-attachments/assets/30b8a48b-ed85-491d-8d28-f6c668f9225f">
+
+
+<img width="1799" alt="3" src="https://github.com/user-attachments/assets/1254acd6-f632-4ec7-9708-5deadee12b02">
+
+
+
+### After sumbitting the workflow, you will be taken to the following status page:
+
+
+<img width="1787" alt="4" src="https://github.com/user-attachments/assets/13f42d1c-086b-4a4c-b7a6-efae1b3f48b6">
+
+&nbsp;
+&nbsp;
+
+
 
 
 ## <ins>3) Analysis options: 
