@@ -32,12 +32,14 @@ Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=id
 &nbsp;
 
 ## <ins>3) Choose a data analysis option:
-
-  __i) Web IDBac Analysis Platform:__ Choose parameters and visually analyze your dataset. See tab labeled "Analyze Data".
-   
-  __ii) Database Search Summary:__ Compare protein spectra of your unknown isolate against our database of characterized bacterial strains and obtain distance values.
-
 <img width="1787" alt="4" src="https://github.com/user-attachments/assets/13f42d1c-086b-4a4c-b7a6-efae1b3f48b6">
+
+  ### __a) Web IDBac Analysis Platform:__ Choose parameters and visually analyze your dataset. *See tab labeled "IDBac Analysis Platform".*
+  
+ ### __b) Database Search Summary:__ Compare protein spectra of your unknown isolate against our database of characterized bacterial strains and obtain distance values.
+
+<img width="1633" alt="5" src="https://github.com/user-attachments/assets/128df003-5f55-4be6-a370-dec342bf1998">
+
 
 
 
