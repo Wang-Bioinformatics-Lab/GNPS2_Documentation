@@ -25,7 +25,7 @@ nav:
     - IDBac:
         - IDBac Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacsumbmitdata.md
-        - Analyze Data: idbacanalyze.md
+        - IDBac Analysis Platform: idbacanalysisplatform.md
         - Data Conversion- Raw Bruker: idbacrawconversion.md
         - Data Conversion- mzXML to mzML: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
