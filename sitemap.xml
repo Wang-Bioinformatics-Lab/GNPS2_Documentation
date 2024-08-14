@@ -86,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacanalysisplatform/</loc>
+         <lastmod>2024-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/</loc>
          <lastmod>2024-08-14</lastmod>
          <changefreq>daily</changefreq>
