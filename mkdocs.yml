@@ -26,8 +26,8 @@ nav:
         - IDBac Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacanalysis.md
         - Protein and Small Molecule Analysis: idbacsmanalysis.md
-        - Raw Bruker Data Conversion: idbacrawconversion.md
-        - mzXML to mzML Conversion: idbacmzxmlconversion.md
+        - Data Conversion- Raw Bruker: idbacrawconversion.md
+        - Data Conversion- mzXML to mzML: idbacmzxmlconversion.md
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:
