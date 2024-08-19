@@ -33,3 +33,16 @@ In brief, popular mass spectrometry processing programs have been adapted to exp
 |[MetaboScape](https://www.bruker.com/en/products-and-solutions/mass-spectrometry/ms-software/metaboscape.html)|Doc in preparation| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 |[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[See doc.](FBMN-with-progenesisQI.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 |[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)|Doc in preparation| Non-targeted LC-MS/MS | Standardized format|Multi-systems|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
+
+**IMPORTANT:** The software used for the LC-MS/MS data processing has to be configured and utilized as recommended by its documentation.
+
+## The FBMN Workflow in GNPS2
+
+There is a dedicated Feature-Based Molecular Networking workflow on GNPS2 that [can be accessed here](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow) (you need to be logged in GNPS2 first).
+
+### Requirement for the FBMN workflow
+After processing your LC-MS/MS data with the prefered software, it is possible to export the results into 3 input files for FBMN:
+
+1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
+1. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF file or .msp file).
+3. [Optional] *Metadata table* - format described [here](link to be added)
