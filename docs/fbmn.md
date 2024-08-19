@@ -27,9 +27,9 @@ In brief, popular mass spectrometry processing programs have been adapted to exp
 |  Processing tool | Doc.| Data supported | Interface | Platform | Code |Target user|
 |---|---|---|---|---|---|---|
 |[MZmine](https://github.com/mzmine/mzmine2/)|Doc in preparation | Non-targeted LC-MS/MS | Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
-|[MS-DIAL](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|Doc in preparation | Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** | Graphical UI|Windows|[Open source](http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/)|Mass spectrometrists|
+|[MS-DIAL](https://systemsomicslab.github.io/compms/index.html)|Doc in preparation | Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** | Graphical UI|Windows|[Open source](https://systemsomicslab.github.io/compms/index.html)|Mass spectrometrists|
 |[OpenMS](https://github.com/OpenMS/OpenMS/)|Doc in preparation| Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
 |[XCMS](https://github.com/sneumann/xcms)|Doc in preparation | Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
-|[MetaboScape](https://www.bruker.com/products/mass-spectrometry-and-separations/ms-software/metaboscape/overview.html)|Doc in preparation| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
+|[MetaboScape](https://www.bruker.com/en/products-and-solutions/mass-spectrometry/ms-software/metaboscape.html)|Doc in preparation| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 |[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[See doc.](FBMN-with-progenesisQI.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
 |[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)|Doc in preparation| Non-targeted LC-MS/MS | Standardized format|Multi-systems|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
