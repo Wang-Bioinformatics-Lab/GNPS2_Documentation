@@ -46,3 +46,18 @@ After processing your LC-MS/MS data with the prefered software, it is possible t
 1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
 1. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF file or .msp file).
 3. [Optional] *Metadata table* - format described [here](link to be added)
+
+### Upload the feature table file, the MS/MS spectral summary file and the optional Metadata tabole to GNPS2
+Go to [GNPS2](https://gnps2.org/homepage) and click “File Browser” on the upper right corner, and then create a folder and drag and drop the feature table file, the spectral summary file and the optional metadata file to the folder. Alteratively You can also use the upload button to choose and upload the files.
+
+### Launch FBMN Workflows on GNPS2
+At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, find “feature_based_molecular_networking_workflow”, then click “Launch Workflow”. 
+
+#### Select the file source
+1. Use “Select Input Inputfeatures” to select the feature table file as “Input inputfeatures”.
+2. Use “Select Input Inputspectra” to select the MS/MS spectral summary file  (.mgf or .MSP) as “Input inputspectra”.
+3. Use “Select Input Metadata File” to select the the optional metadata file as “Input Metadata File” if necessary.
+4. Use "Select Input Spectral Library Folder" to select the spectral library as "Input Spectral Library Folder".
+5. Use “Feature Finding Tool” to select "MZMINE, “PROGENESIS” or any other program that was used to generate the feature table and spectral summary files.
+
+#### Basic molecular networking Options
