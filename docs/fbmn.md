@@ -41,12 +41,14 @@ In brief, popular mass spectrometry processing programs have been adapted to exp
 There is a dedicated Feature-Based Molecular Networking workflow on GNPS2 that [can be accessed here](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow) (you need to be logged in GNPS2 first).
 
 ### Requirement for the FBMN workflow
-After processing your LC-MS/MS data with the prefered software, it is possible to export the results into 3 input files for FBMN:
+After processing your LC-MS/MS data with the prefered software, it is possible to export the results into 2 required input files and 3 optional input files for FBMN:
 
 1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
 1. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF file or .msp file).
-3. [Optional] *Metadata table* - format described [here](link to be added)
-
+3. [Optional] *Metadata table* - format described [here](metadata.md)
+4. [Optional] *Original mzML Files* - These are the original files used for feature finding - described [here](#mzml-files-used-for-feature-finding)
+5. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
+   
 ### Upload the feature table file, the MS/MS spectral summary file and the optional Metadata tabole to GNPS2
 Go to [GNPS2](https://gnps2.org/homepage) and click “File Browser” on the upper right corner, and then create a folder and drag and drop the feature table file, the spectral summary file and the optional metadata file to the folder. Alteratively You can also use the upload button to choose and upload the files.
 
@@ -61,3 +63,28 @@ At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, fi
 5. Use “Feature Finding Tool” to select "MZMINE, “PROGENESIS” or any other program that was used to generate the feature table and spectral summary files.
 
 #### Basic molecular networking Options
+
+
+
+
+
+
+#### Advanced Extras
+
+"Supplementary Pairs" is an option to add extra edges to the resulting FBMN. It was initially implemented for the Ion Identity Networking (IIN) workflow. The IIN supports currently MZmine, XCMS-CAMERA, and MS-DIAL. However, this approach is designed to stimulate the development and testing of new workflows as the input is an edge file in a generic CSV format. An edge is described by the following table:
+
+| Header        | Description |
+| ------------- |-------------|
+| ID1 | Node ID 1 matching the row IDs |
+| ID2 | Node ID 2 matching the row IDs |
+| EdgeType | Any string describing the type of edge |
+| Score | A numerical value for the score (cannot be empty) |
+| Annotation | A string annotation |
+
+Note that if Supplementary Pairs from other software are used, it is mandatory that the as the LC-MS feature identifier (ID) matches the "SCANS=" number in the MGF file.
+
+
+#### mzML Files Used for Feature Finding
+
+The original mzML/mzXML files that were used for feature finding can also be included. This provides a way for the workflow to link back to the original files and help people explore the data interactively. 
+
