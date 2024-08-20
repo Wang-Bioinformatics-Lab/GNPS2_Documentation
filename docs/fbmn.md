@@ -46,8 +46,8 @@ After processing your LC-MS/MS data with the prefered software, it is possible t
 1. A *feature table* with the intensities of LC-MS ion features (TXT or CSV format).
 1. A *MS/MS spectral summary* file with a list of MS/MS spectra associated with the LC-MS ion features (.MGF file or .msp file).
 3. [Optional] *Metadata table* - format described [here](metadata.md)
-4. [Optional] *Original mzML Files* - These are the original files used for feature finding - described [here](#mzml-files-used-for-feature-finding)
-5. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras)
+4. [Optional] *"Supplementary Pairs"* of additional edges - described [here](#advanced-extras) 
+5. [Optional] *Original mzML Files* - These are the original files used for feature finding - described [here](#mzml-files-used-for-feature-finding)
    
 ### Upload the feature table file, the MS/MS spectral summary file and the optional Metadata tabole to GNPS2
 Go to [GNPS2](https://gnps2.org/homepage) and click “File Browser” on the upper right corner, and then create a folder and drag and drop the feature table file, the spectral summary file and the optional metadata file to the folder. Alteratively You can also use the upload button to choose and upload the files.
@@ -55,18 +55,25 @@ Go to [GNPS2](https://gnps2.org/homepage) and click “File Browser” on the up
 ### Launch FBMN Workflows on GNPS2
 At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, find “feature_based_molecular_networking_workflow”, then click “Launch Workflow”. 
 
-#### Select the file source
+#### Input File Select
 1. Use “Select Input Inputfeatures” to select the feature table file as “Input inputfeatures”.
 2. Use “Select Input Inputspectra” to select the MS/MS spectral summary file  (.mgf or .MSP) as “Input inputspectra”.
 3. Use “Select Input Metadata File” to select the the optional metadata file as “Input Metadata File” if necessary.
 4. Use "Select Input Spectral Library Folder" to select the spectral library as "Input Spectral Library Folder".
 5. Use “Feature Finding Tool” to select "MZMINE, “PROGENESIS” or any other program that was used to generate the feature table and spectral summary files.
 
-#### Basic molecular networking Options
+### Additional Edges
+1. Use "Select Input Additional Supplemental Edges File(s) (Optional)" to select the optional *"Supplemental Pairs"* file(s)
+
+### Raw Data Selection
+1. Use "Input Raw Data Folder (Optional)" to select the optional *"Original mzML Files"*
 
 
-
-
+#### General Parameters
+| Parameter  | Description          | Default |
+| ------------- |-------------| -----|
+| Precursor Ion Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search expressed in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
+| Fragment Ion Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
 
 
 #### Advanced Extras
