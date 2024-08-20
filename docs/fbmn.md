@@ -22,17 +22,17 @@ The Feature-Based Molecular Networking (FBMN) workflow is available on GNPS2 [he
 
 ## Mass Spectrometry Data Processing for the FBMN
 
-In brief, popular mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectral summary*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. Alternatively, the FBMN supports the mzTab-M format that can be inputted along witht the mzML file(s). The tools supported and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
+In brief, popular mass spectrometry processing programs have been adapted to export two files (*feature quantification table* and *MS/MS spectra file*) files that can be used with the Feature Based Molecular Networking (FBMN) workflow on GNPS. Alternatively, the FBMN supports the mzTab-M format that can be inputted along witht the mzML file(s). The tools supported and their main features are presented in the table below along with a step-by-step documentation to use in FBMN on GNPS:
 
 |  Processing tool | Doc.| Data supported | Interface | Platform | Code |Target user|
 |---|---|---|---|---|---|---|
-|[MZmine](https://github.com/mzmine/mzmine2/)|Doc in preparation | Non-targeted LC-MS/MS | Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
-|[MS-DIAL](https://systemsomicslab.github.io/compms/index.html)|Doc in preparation | Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** | Graphical UI|Windows|[Open source](https://systemsomicslab.github.io/compms/index.html)|Mass spectrometrists|
-|[OpenMS](https://github.com/OpenMS/OpenMS/)|Doc in preparation| Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
-|[XCMS](https://github.com/sneumann/xcms)|Doc in preparation | Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
-|[MetaboScape](https://www.bruker.com/en/products-and-solutions/mass-spectrometry/ms-software/metaboscape.html)|Doc in preparation| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
-|[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[See doc.](FBMN-with-progenesisQI.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
-|[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)|Doc in preparation| Non-targeted LC-MS/MS | Standardized format|Multi-systems|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
+|[MZmine](https://github.com/mzmine/mzmine2/)| Doc in preparation | Non-targeted LC-MS/MS | Graphical UI|Any|[Open source](https://github.com/mzmine/mzmine2/blob/master/LICENSE.txt)|Mass spectrometrists|
+|[MS-DIAL](https://systemsomicslab.github.io/compms/index.html)| Doc in preparation | Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** | Graphical UI|Windows|[Open source](https://systemsomicslab.github.io/compms/index.html)|Mass spectrometrists|
+|[OpenMS](https://github.com/OpenMS/OpenMS/)| Doc in preparation| Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/OpenMS/OpenMS/blob/develop/License.txt)|Bioinformaticians and developers|
+|[XCMS](https://github.com/sneumann/xcms)| Doc in preparation | Non-targeted LC-MS/MS |Commandline|Any|[Open source](https://github.com/sneumann/xcms)|Bioinformaticians and developers|
+|[MetaboScape](https://www.bruker.com/en/products-and-solutions/mass-spectrometry/ms-software/metaboscape.html)| Doc in preparation| Non-targeted LC-MS/MS, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
+|[Progenesis QI](http://www.nonlinear.com/progenesis/qi/)|[Documentation](FBMN-with-progenesisQI.md)| Non-targeted LC-MS/MS, **MSE**, **Ion Mobility** |Graphical UI|Windows|Proprietary code|Mass spectrometrists|
+|[mzTab-M](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.8b04310)| Doc in preparation | Non-targeted LC-MS/MS | Standardized format|Multi-systems|[Open source](https://github.com/lifs-tools/jmzTab-m)|All public|
 
 **IMPORTANT:** The software used for the LC-MS/MS data processing has to be configured and utilized as recommended by its documentation.
 
@@ -72,15 +72,15 @@ At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, fi
 ### General Parameters
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
-| Precursor Ion Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search expressed in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
-| Fragment Ion Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+| Precursor Ion Tolerance (PIMT) | Parameter used for spectral library search expressed in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
+| Fragment Ion Tolerance (FIMT)	      | Parameters used for molecular networking and MS/MS spectral library searches. This value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
 
 ### Advanced Filtering Parameters
 | Parameter        | Description          | Default
 | ------------- |-------------| -----|
 | Minimum Peak Intensity | All fragment ions in the MS/MS spectra below this raw intensity value will be deleted. By default, the filtering is disabled. | 0  |
 | Precursor Window Filter | All peaks in a +/- 17 Da around precursor ion mass are deleted. Enabled by default. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
-|Window Filter | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
+| Window Filter | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
 
 
