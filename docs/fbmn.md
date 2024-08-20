@@ -69,11 +69,19 @@ At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, fi
 1. Use "Input Raw Data Folder (Optional)" to select the optional *"Original mzML Files"*
 
 
-#### General Parameters
+### General Parameters
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
 | Precursor Ion Tolerance (PIMT) | Parameter used for MS-Cluster and spectral library search expressed in Daltons. This value influences the aforementioned clustering of nearly-identical MS/MS spectra via MS-Cluster. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
 | Fragment Ion Tolerance (FIMT)	      | Parameters used for MS-Cluster, molecular networking, and MS/MS spectral library searches. For every group of MS/MS spectra being considered for clustering (consensus spectrum creation), this value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+
+### Advanced Filtering Parameters
+| Parameter        | Description          | Default
+| ------------- |-------------| -----|
+| Minimum Peak Intensity | All fragment ions in the MS/MS spectra below this raw intensity value will be deleted. By default, the filtering is disabled. | 0  |
+| Precursor Window Filter | All peaks in a +/- 17 Da around precursor ion mass are deleted. Enabled by default. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
+|Window Filter | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
+
 
 
 #### Advanced Extras
