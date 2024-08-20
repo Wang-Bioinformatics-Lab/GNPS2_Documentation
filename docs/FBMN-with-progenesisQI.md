@@ -27,6 +27,6 @@ In the menu, under the “Identify Compounds” tab:
 
 ## Running a feature-based molecular network on GNPS2
 
-FBMN with Progenesis QI results can be performed using the [GNPS2 feature_based_molecular_networking_workflow](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow): please refer to the [main FBMN documentation](fbmn.md) for more informations.
+FBMN with Progenesis QI results can be performed using the [GNPS2 feature_based_molecular_networking_workflow](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow): please refer to the [main FBMN documentation](fbmn.md) for more information
 
 
