@@ -72,8 +72,8 @@ At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, fi
 ### General Parameters
 | Parameter  | Description          | Default |
 | ------------- |-------------| -----|
-| Precursor Ion Tolerance (PIMT) | Parameter used for spectral library search expressed in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
-| Fragment Ion Tolerance (FIMT)	      | Parameters used for molecular networking and MS/MS spectral library searches. This value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
+| Precursor Ion Mass Tolerance (PIMT) | Parameter used for spectral library search expressed in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).| 2.0 |
+| Fragment Ion Mass Tolerance (FIMT)	      | Parameters used for molecular networking and MS/MS spectral library searches. This value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ). | 0.5 |
 
 ### Advanced Filtering Parameters
 | Parameter        | Description          | Default
@@ -82,7 +82,21 @@ At [GNPS2 homepage](https://gnps2.org/homepage) click “Launch Workflows”, fi
 | Precursor Window Filter | All peaks in a +/- 17 Da around precursor ion mass are deleted. Enabled by default. This removes the residual precursor ion, which is frequently observed in MS/MS spectra acquired on qTOFs. | Filter | |
 | Window Filter | Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window | Filter |
 
+### Networking Parameters
+| Parameter        | Description          | Default |
+| ------------- |-------------| -----|
+| min_cosine | Minimum cosine similarity score that two MS/MS spectra should get in order to be considered as connected in the network. | 0.7 |
+| min_matched_peaks | Minimum number of common and shifted fragment ions that MS/MS spectra should contain in order to be considered as connected in the network. Default value is 6, but note that this parameters should be tuned depending on the molecules of interest, and the experimental conditions (such as the ionization mode and the fragmentation conditions). For example, the collision-induced fragmentation of some lipids produce only a few fragment ions. | 6 |
+| networking_max_shift | Maximum mass shift between the precursor m/z values of two spectra in the network | 1999 (Da)|
 
+### Advanced Spectral Library Search Options
+
+| Parameter        | Description          | Default |
+| ------------- |-------------| -----|
+| Library Minimum Cosine |Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.| 0.7 |
+| Library Minimum Matched Peaks | Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending on the molecules of interest, and the experimental conditions (such as the ionization mode and the fragmentation conditions). For example, the collision-induced fragmentation of some lipids produce only a few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of MS/MS spectra from different molecular types to be connected in one network. A higher value will do the opposite| 6 |
+| Analog Search |Whether to search data for analogs to library spectra| No |
+| Top-K |Number of matches to report for each feature| 1 |
 
 #### Advanced Extras
 
