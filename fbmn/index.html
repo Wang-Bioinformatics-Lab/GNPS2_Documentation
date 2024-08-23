@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
     
     
       
@@ -1023,7 +1023,25 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advanced Filtering Parameters">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-spectral-library-search-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Spectral Library Search Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Spectral Library Search Options">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1544,7 +1562,25 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advanced Filtering Parameters">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-spectral-library-search-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Spectral Library Search Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Spectral Library Search Options">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1736,12 +1772,12 @@
 </thead>
 <tbody>
 <tr>
-<td>Precursor Ion Tolerance (PIMT)</td>
+<td>Precursor Ion Mass Tolerance (PIMT)</td>
 <td>Parameter used for spectral library search expressed in Daltons. Note that the value of this parameters should be consistent with the capabilities of the mass spectrometer and the specific instrument method used to generated the MS/MS data. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 2.0 Da for low-resolution instruments (ion traps, QqQ).</td>
 <td>2.0</td>
 </tr>
 <tr>
-<td>Fragment Ion Tolerance (FIMT)</td>
+<td>Fragment Ion Mass Tolerance (FIMT)</td>
 <td>Parameters used for molecular networking and MS/MS spectral library searches. This value specifies how much fragment ions can be shifted from their expected m/z values. Recommended Values value is ± 0.02 Da for high-resolution instruments (q-TOF, q-Orbitrap) and ± 0.5 Da for low-resolution instruments (ion traps, QqQ).</td>
 <td>0.5</td>
 </tr>
@@ -1771,6 +1807,65 @@
 <td>Window Filter</td>
 <td>Filter out peaks that are not in the top 6 most intense peaks in a +/- 50Da window</td>
 <td>Filter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="networking-parameters">Networking Parameters<a class="headerlink" href="#networking-parameters" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min_cosine</td>
+<td>Minimum cosine similarity score that two MS/MS spectra should get in order to be considered as connected in the network.</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>min_matched_peaks</td>
+<td>Minimum number of common and shifted fragment ions that MS/MS spectra should contain in order to be considered as connected in the network. Default value is 6, but note that this parameters should be tuned depending on the molecules of interest, and the experimental conditions (such as the ionization mode and the fragmentation conditions). For example, the collision-induced fragmentation of some lipids produce only a few fragment ions.</td>
+<td>6</td>
+</tr>
+<tr>
+<td>networking_max_shift</td>
+<td>Maximum mass shift between the precursor m/z values of two spectra in the network</td>
+<td>1999 (Da)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="advanced-spectral-library-search-options">Advanced Spectral Library Search Options<a class="headerlink" href="#advanced-spectral-library-search-options" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Library Minimum Cosine</td>
+<td>Minimum cosine score that MS/MS spectra should get in spectral matching with MS/MS spectral libraries in order to be considered an annotation.</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>Library Minimum Matched Peaks</td>
+<td>Minimum number of common fragment ions that MS/MS spectra should contain in order to be considered for spectral library annotation. Default value is 6, but note that this parameters should be tuned depending on the molecules of interest, and the experimental conditions (such as the ionization mode and the fragmentation conditions). For example, the collision-induced fragmentation of some lipids produce only a few fragment ions. A lower value will allow clustering of MS/MS spectra containing less  fragment ions, however it will also induce clustering of MS/MS spectra from different molecular types to be connected in one network. A higher value will do the opposite</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Analog Search</td>
+<td>Whether to search data for analogs to library spectra</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Top-K</td>
+<td>Number of matches to report for each feature</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -1829,7 +1924,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 20, 2024 19:09:15</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 23, 2024 15:26:15</span>
   </span>
 
     
@@ -1881,7 +1976,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.471ce7a9.min.js"></script>
+      <script src="../assets/javascripts/bundle.af256bd8.min.js"></script>
       
     
   </body>
