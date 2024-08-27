@@ -25,7 +25,7 @@ iii) Upload your completed msConvert_File_Merger spreadsheet.
 
 ![Strain_platemap_filebroswer](https://github.com/user-attachments/assets/b769b0c3-aea3-40f0-8063-c42646b6fc78)
 
-# 4) Merge spectra for strain replicates using the mzConvert_File_Merger workflow
+# 4) Merge spectra for strain replicates using the msConvert_File_Merger workflow
 
 *This workflow will combine spectra from separate spots that correspond to the same bacterial strain (i.e. replicate spots). The output is a single mzML file (per strain) that contains the replicate spectra as separate scans.* 
 
