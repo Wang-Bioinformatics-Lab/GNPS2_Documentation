@@ -161,6 +161,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/protocol_FBMN_Progenesis_Overlay/</loc>
+         <lastmod>2024-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/quickstart2/</loc>
          <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
