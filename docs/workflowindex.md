@@ -25,7 +25,7 @@ A .tsv file with the extracted information spectra from the molecule of interest
 
 
 ### Feature-based Molecular Networking
-| [Link](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow) | --- | [Tool documentation](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) | ---  |
+| [Link](https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow) | --- | [Tool documentation](fbmn.md) | ---  |
 
 
 ### NP-Classifier
