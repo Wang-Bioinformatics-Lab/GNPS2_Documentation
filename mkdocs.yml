@@ -34,9 +34,9 @@ nav:
         - FBMN:
             - FBMN: fbmn.md
             - Agilent: agilent_fbmn.md
-            - Progenesis: FBMN-with-progenesisQI.md
+            - Progenesis: fbmn-with-progenesisqi.md
             - Protocols for FBMN:
-                - Step by Step Protocols for Progenesis Data: protocol_FBMN_Progenesis_Overlay.md
+                - Step by Step Protocols for Progenesis Data: protocol_fbmn_progenesis_overlay.md
         - ModiFinder: modifinder.md
         - Networking Overlay: Networkingoverlay.md
         - Network Topology - Transitive Alignments: transitive.md
