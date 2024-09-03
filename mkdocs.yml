@@ -32,8 +32,11 @@ nav:
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:
-            FBMN: fbmn.md
-            Agilent: agilent_fbmn.md
+            - FBMN: fbmn.md
+            - Agilent: agilent_fbmn.md
+            - Progenesisi: FBMN-with-progenesisQI.md
+            - Protocols for FBMN:
+                - Step by Step Protocols for Progenesis Data: protocol_FBMN_Progenesis_Overlay.md
         - ModiFinder: modifinder.md
         - Networking Overlay: Networkingoverlay.md
         - Network Topology - Transitive Alignments: transitive.md
