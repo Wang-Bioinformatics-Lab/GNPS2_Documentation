@@ -18,7 +18,7 @@ Upcoming Office Hour Schedule
 
 NOTE: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
 
-Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it):
+Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it. Further, you will not receive any followup given an RSVP except when you show up to office hours):
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
