@@ -5,7 +5,8 @@ Weekly office hours will be hosted by Nyssa Krull [(nkrull@uic.edu)](nkrull@uic.
 These sessions provide an opportunity to recieve hands-on support with IDBac workflows, ask questions or discuss features offered on the web analysis platform. 
 <br>
 
-To RSVP to an upcoming session, please fill out the Google form below. 
+>
+>To RSVP to an upcoming session, please fill out the Google form below. 
 <br>
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYVB6Ieq6Ap-1SKy0QjarTIHUSiqpetmXnmTv3qM3ZQktiNQ/viewform?embedded=true" width="640" height="908" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
