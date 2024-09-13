@@ -23,13 +23,13 @@ nav:
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
-        - IDBac Database Depositions: idbacdepositions.md
+        - Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacsumbmitdata.md
-        - IDBac Analysis Platform: idbacanalysisplatform.md
+        - Analysis Platform: idbacanalysisplatform.md
         - Data Conversion - Raw Bruker: idbacrawconversion.md
         - Data Conversion - non Bruker: idbacmsconvertfilemerger.md
         - Data Conversion - mzXML to mzML: idbacmzxmlconversion.md
-        - IDBac Office Hours: idbacofficehours.md
+        - Office Hours: idbacofficehours.md
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:
