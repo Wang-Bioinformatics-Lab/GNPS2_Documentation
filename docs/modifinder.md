@@ -53,6 +53,7 @@ The input for this mode should be a CSV file containing the following columns:
 - **USI1**: The USI (Unique Structure Identifier) of the known compound.
 - **USI2**: The USI of the unknown compound.
 - **SMILES1**: The structural information of the known compound, represented in SMILES format.
+- **ADDUCT (Optional)**: The adduct information for the known scan is determined as follows: If the scan corresponds to a library spectrum, the adduct details are retrieved from the library. If the scan is not a library spectrum and an adduct column is present, the data from that column is used. If the column is absent, `[M+H]1+` is used as the default adduct. supported_adducts are: [`[M+H]1+`, `[M-H]1-`, `[M+Na]1+`, `[M+NH4]1+`, `[M+K]1+`, `[M+Cl]1-`, `[M+Br]1-`].
 
 By default, these column names are "USI1", "USI2", and "SMILES1". However, you can customize these settings on the Workflow Launcher page. For each pair (row) in the CSV file, ModiFinder will predict the modification site from the known compound to its analog.
 
