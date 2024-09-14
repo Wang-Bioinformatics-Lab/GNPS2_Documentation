@@ -33,7 +33,7 @@ By selecting a peak associated with the known compound, all the potential substr
 
 ## High-throughput Nextflow Workflow
 
-This can be found on GitHub
+This can be found on [GitHub](https://github.com/Wang-Bioinformatics-Lab/highThroughputModiFinder_workflow)
 
 ## GNPS2 High-Throughput Workflow
 
@@ -42,11 +42,19 @@ This is a workflow in GNPS2. This can be accessed [here](gnps2.org). There are t
 1. Analog Library Search + ModiFinder
 2. Pre-determined analogs with a csv input (Matched Mode)
 
+### Analog Library Search with ModiFinder
+
+This mode begins with an Analog Library Search, which uses the same input format as the Library Search workflow. The search identifies potential matches. The matched results are then processed by ModiFinder, which predicts the location of modifications for each compound pair.
+
 ### Matched Mode
 
-The input format is as follows:
+The input for this mode should be a CSV file containing the following columns:
 
-Lorem Ipsum
+- **USI1**: The USI (Unique Structure Identifier) of the known compound.
+- **USI2**: The USI of the unknown compound.
+- **SMILES1**: The structural information of the known compound, represented in SMILES format.
+
+By default, these column names are "USI1", "USI2", and "SMILES1". However, you can customize these settings on the Workflow Launcher page. For each pair (row) in the CSV file, ModiFinder will predict the modification site from the known compound to its analog.
 
 ## Citation
 [
