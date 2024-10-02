@@ -77,6 +77,8 @@ markdown_extensions:
     - toc:
         permalink: true
     - admonition
+    - pymdownx.details
+    - pymdownx.superfences
 
 extra:
   analytics:
