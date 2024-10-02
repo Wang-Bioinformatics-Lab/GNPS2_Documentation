@@ -20,7 +20,7 @@ Upcoming Office Hour Schedule
 
 Note: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
 
-!!! note "Notes"
+!!! danger "Notes"
     10/2/2024 Office Hours will be delayed
 
 
