@@ -18,9 +18,12 @@ Upcoming Office Hour Schedule
 | ------------- |------------- |
 | 930AM PST (6PM CET) Weekly on Wednesdays | Interactive Office Hours |
 
-NOTE: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
+Note: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
 
-NOTE: 10/2/2024 Office Hours are delayed
+!!! note "Notes"
+    10/2/2024 Office Hours will be delayed
+
+
 
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it. Further, you will not receive any followup given an RSVP except when you show up to office hours):
 
