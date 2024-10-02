@@ -1558,7 +1558,7 @@
 </ol>
 <h2 id="defining-gnps2-workflow-input-yaml">Defining GNPS2 Workflow Input YAML<a class="headerlink" href="#defining-gnps2-workflow-input-yaml" title="Permanent link">&para;</a></h2>
 <p>For each workflow, there is a yml file called: workflowinput.yaml. It requires the following items:</p>
-<pre><code>workflowname: classic_networking
+<div class="highlight"><pre><span></span><code>workflowname: classic_networking
 workflowdescription: LC - Classical Molecular Networking
 workflowlongdescription: Molecular networks ...
 workflowversion: &quot;0.1&quot;
@@ -1566,27 +1566,27 @@ workflowfile: workflows.nf
 workflowautohide: false
 adminonly: true
 parameterlist:
-</code></pre>
+</code></pre></div>
 <h3 id="workflow-input-parameters">Workflow Input Parameters<a class="headerlink" href="#workflow-input-parameters" title="Permanent link">&para;</a></h3>
 <p>Text Entry</p>
-<pre><code>    - displayname: Precursor Ion Tolerance
+<div class="highlight"><pre><span></span><code>    - displayname: Precursor Ion Tolerance
       paramtype: text
       nf_paramname: precursor_mass_tolerance
       formplaceholder: Enter the Precursor Ion Tolerance
       formvalue: &quot;2.0&quot;
       tooltip: &quot;Lorem Ipsum&quot;
-</code></pre>
+</code></pre></div>
 <p>Text Area</p>
-<pre><code>    - displayname: USI Entry
+<div class="highlight"><pre><span></span><code>    - displayname: USI Entry
       paramtype: textarea
       nf_paramname: usi_field
       formplaceholder: Enter USIs
       formvalue: &quot;&quot;
       rows: 4
       cols: 50
-</code></pre>
+</code></pre></div>
 <p>Drop Down List</p>
-<pre><code>    - displayname: Network Generation Mode
+<div class="highlight"><pre><span></span><code>    - displayname: Network Generation Mode
       paramtype: select
       nf_paramname: cosinemode
       formvalue: fast
@@ -1600,14 +1600,14 @@ parameterlist:
         url: https://gnps-external.ucsd.edu/gnpslibrary
         value-key: &quot;name&quot;
         display-key: &quot;name&quot;
-</code></pre>
+</code></pre></div>
 <p>NOTE: For options-from-url, the API expects to return in json format, a list of dictionaries. Each dictionary will have the same keys, and the users can specify the value and display for the keys in the dropdown.</p>
 <p>Section Header</p>
-<pre><code>    - displayname: Advanced Network Options
+<div class="highlight"><pre><span></span><code>    - displayname: Advanced Network Options
       paramtype: section
-</code></pre>
+</code></pre></div>
 <p>File Selector</p>
-<pre><code>    - displayname: Metadata Path
+<div class="highlight"><pre><span></span><code>    - displayname: Metadata Path
       paramtype: fileselector
       nf_paramname: metadata_filename
       formplaceholder: Enter the path to metadata
@@ -1617,7 +1617,7 @@ parameterlist:
       selectsinglefile: false
       folderunroll: true
       linkdata: true
-</code></pre>
+</code></pre></div>
 <ol>
 <li>optional means that if nothing is selected, it will default the nextflow argument to NO_FILE</li>
 <li>selectsinglefile means that it will take the first selected file as the nextflow argument rather than the whole folder</li>
@@ -1627,7 +1627,7 @@ parameterlist:
 </ol>
 <h3 id="workflow-display-parameters">Workflow Display Parameters<a class="headerlink" href="#workflow-display-parameters" title="Permanent link">&para;</a></h3>
 <p>Pure Java Script Client Side Tables</p>
-<pre><code>-   name: Results
+<div class="highlight"><pre><span></span><code>-   name: Results
     displayname: Results
     viewname: results
     displaytype: datatable
@@ -1639,13 +1639,13 @@ parameterlist:
                 data: 
             -   title: &quot;SpecFile&quot;
                 data: filename
-        columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+        columnDefs: &#39;[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
             &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
-</code></pre>
+        `;}}]&#39;
+</code></pre></div>
 <p>Serverside Tables (Medium Sized)</p>
-<pre><code>-   name: Results
+<div class="highlight"><pre><span></span><code>-   name: Results
     displayname: Results
     viewname: results
     displaytype: datatable_server
@@ -1657,13 +1657,13 @@ parameterlist:
                 data: 
             -   title: &quot;SpecFile&quot;
                 data: filename
-        columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+        columnDefs: &#39;[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
             &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
-</code></pre>
+        `;}}]&#39;
+</code></pre></div>
 <p>Serverside Tables (Large Sized - GB+ Size)</p>
-<pre><code>-   name: Results
+<div class="highlight"><pre><span></span><code>-   name: Results
     displayname: Results
     viewname: results
     displaytype: datatable_serverbig
@@ -1675,13 +1675,13 @@ parameterlist:
                 data: 
             -   title: &quot;SpecFile&quot;
                 data: filename
-        columnDefs: '[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+        columnDefs: &#39;[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
             &lt;img src=&quot;https://structure.gnps2.org/structureimg?smiles=${row[&quot;smiles&quot;]}&quot;/&gt;
-        `;}}]'
-</code></pre>
+        `;}}]&#39;
+</code></pre></div>
 <p>Linkout</p>
-<pre><code>-   name: Downstream Analysis - Run Analysis
+<div class="highlight"><pre><span></span><code>-   name: Downstream Analysis - Run Analysis
     displayname: Downstream Analysis - Run Analysis
     viewname: downstreamworkflow
     displaytype: linkout
@@ -1702,37 +1702,37 @@ parameterlist:
         baseurl: /taskresult/[task]/file/nf_output/output.html
         urlparam:
             -   attachment:no
-</code></pre>
+</code></pre></div>
 <p>Here if we want to use the task params in the linkout, simply use the syntax</p>
 <p><code>[@paramname]</code></p>
 <p>Download Files</p>
-<pre><code>-   name: Download PCoA
+<div class="highlight"><pre><span></span><code>-   name: Download PCoA
     displayname: Download PCoA
     viewname: poca
     displaytype: download
     parameters:
         filename: pcoa/pcoa.qzv
-</code></pre>
+</code></pre></div>
 <p>Section Division</p>
-<pre><code>-   name: section
+<div class="highlight"><pre><span></span><code>-   name: section
     displayname: Summary Views
     viewname: section
     displaytype: section
-</code></pre>
+</code></pre></div>
 <h4 id="display-widgets">Display Widgets<a class="headerlink" href="#display-widgets" title="Permanent link">&para;</a></h4>
 <p>We can have little widgets to render in the table rows. To make them, you overwrite the columnDefs key. Here are a few examples.</p>
 <p>Spectrum Resolver Linkouts</p>
-<pre><code>'[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+<div class="highlight"><pre><span></span><code>&#39;[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
             &lt;a target=&quot;_blank&quot; href=&quot;https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row[&quot;filename&quot;]}:scan:${row[&quot;scan1&quot;]}&quot;&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
-</code></pre>
+        `;}}]&#39;
+</code></pre></div>
 <p>Structure Display</p>
-<pre><code>'[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
+<div class="highlight"><pre><span></span><code>&#39;[ {&quot;targets&quot;: 0,&quot;data&quot;: null,&quot;render&quot;: function ( data, type, row, meta ) {
         return `
             &lt;img src=&quot;https://structure.gnps2.org/structureimg?smiles=${row[&quot;smiles&quot;]}&quot;/&gt;
-        `;}}]'
-</code></pre>
+        `;}}]&#39;
+</code></pre></div>
 
 
 
@@ -1753,7 +1753,7 @@ parameterlist:
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 2, 2024 17:09:40</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 2, 2024 17:10:26</span>
   </span>
 
     
