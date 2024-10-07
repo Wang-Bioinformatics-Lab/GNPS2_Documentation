@@ -16,7 +16,7 @@ Upcoming Office Hour Schedule
 
 |     Date/Time    | Subjects Covered          |
 | ------------- |------------- |
-| 930AM PST (6PM CET) Weekly on Wednesdays | Interactive Office Hours |
+| 930AM PST (630PM CET) Weekly on Wednesdays | Interactive Office Hours |
 
 Note: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
 
