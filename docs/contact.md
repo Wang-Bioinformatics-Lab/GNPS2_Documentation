@@ -1,4 +1,4 @@
-## GNPS2 Workflow Contact information
+## GNPS2 Contact information
 
 If you have any questions about how to use GNPS2 please first ask the community at the GNPS forum located [here](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports).
 
