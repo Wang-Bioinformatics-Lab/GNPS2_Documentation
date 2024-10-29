@@ -121,7 +121,7 @@ Below the summary statistics, the main data table displays the dataset. Each col
     - **Purpose**: Generate Molecular Networks for filtered files using Universal Spectrum Identifiers (USIs).
     - **Important Note**:
       - **Top 50 mz(X)ML Files**: When you click this link, the system selects the first 50 mz(X)ML files from your filtered data.
-      - **Processing More USIs**: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs cirectly into the [workflow](https://gnps2.org/workflowinput?workflowname=classical_networking_workflow).
+      - **Processing More USIs**: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the [workflow](https://gnps2.org/workflowinput?workflowname=classical_networking_workflow).
     - **How to Use**:
       1. **Click "USIs → Molecular Networking"** under "Downstream tooling".
       2. **Proceed to GNPS**: You'll be redirected to the GNPS workflow input page with the USIs already populated.
@@ -131,10 +131,10 @@ Below the summary statistics, the main data table displays the dataset. Each col
     - **Purpose**: Query mass spectrometry data using MassQL.
     - **Important Note**:
       - **Top 50 mz(X)ML Files**: As with Molecular Networking, only the top 50 mz(X)ML files are used to prevent system overload.
-      - **Processing More USIs**: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs cirectly into the [workflow](https://gnps2.org/workflowinput?workflowname=massql_workflow).
+      - **Processing More USIs**: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the [workflow](https://gnps2.org/workflowinput?workflowname=massql_workflow).
     - **How to Use**:
       1. **Click "USIs → MassQL"**.
-      2. **Explore Data**: You'll be taken to the MassQL workflow input page with the USIs already populated.
+      2. **Proceed to GNPS**: You'll be taken to the MassQL workflow input page with the USIs already populated.
 
     ### USIs → Raw Data Download
 
@@ -150,7 +150,6 @@ Below the summary statistics, the main data table displays the dataset. Each col
     ### Customizing Columns
 
     - **Show/Hide Columns**:
-      - **Click on the Column Header Menu**: Each column header has a dropdown.
       - **Select "Hide Column" or "Show Column"**: Customize which columns are visible.
 
     ## Contributors
