@@ -140,10 +140,10 @@ Below the summary statistics, the main data table displays the dataset. Each col
 
     - **Purpose**: Download raw mass spectrometry data files.
     - **Important Note**:
-      - **This returns a tsv file**: This link returns **all** USIs from your filtered selection in a tsv file which you can use to download the raw files through a [commandline tool](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata). The tutorial for that tool can be found here.
+      - **This returns a tsv file**: This link returns **all** USIs from your filtered selection in a tsv file not the actual raw data.
     - **How to Use**:
       1. **Click "USIs → Raw Data Download"**.
-      2. **Download Data**: You'll download a tsv file with USIs of the filtered table. You will then be directed to the GitHub repository of the [commandline tool](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) to download the raw data. 
+      2. **Download Data**: You'll download a tsv file with USIs of the filtered table. You will then be directed to the GitHub repository of the [commandline tool](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) to download the raw data. The tutorial for that tool can be found here.
 
     ## Additional Features
 
