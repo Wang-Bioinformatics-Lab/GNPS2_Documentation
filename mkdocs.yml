@@ -45,6 +45,11 @@ nav:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md
     - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
+    - GNPS2 PanReDU:
+        - ReDU Overview: ReDU_overview.md
+        - ReDU Data Selection: ReDU_Dataselection_dashboard.md
+        - ReDU Contribution: ReDU_Contribution.md
+        - Pan Repo Public Data Downloader: downloadpublicdata.md
     - GNPS2 Quickstart2: quickstart2.md
     - API: api.md
     - Logos: logo.md
