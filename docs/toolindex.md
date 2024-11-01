@@ -1,38 +1,39 @@
 # GNPS2 Tool Index
 
-This is a global tool index for GNPS2. Throughout this documentation we have very detailed information for how to use way more tools than we though we'd have, but its a good problem to have!
+This is a global tool index for GNPS2. Throughout this documentation we have very detailed information for how to use way more tools than we thought we'd have, but it's a good problem to have!
 
-However, we recognize it might be difficult for people to simply see what all is availble in GNPS as tool and web services. This table is always evolving and hope to make it easier for people to navigate. 
+However, we recognize it might be difficult for people to simply see what all is available in GNPS as tool and web services. This table is always evolving and hope to make it easier for people to navigate. 
 
 Please help us fill in more completely!
 
 
 ## GNPS2 Web Tools
 
-These are web tools that is run by the GNPS2 team and provides complementary funcationality to GNPS2. 
+These are web tools that is run by the GNPS2 team and provides complementary functionality to GNPS2. 
 
-| Tool  | Documentation | Source Code | Citation |
-|---|---|---|---|
-| [Pubmed Co-Authors List](https://coauthor.wanglab.science/) | --- | --- | 
-| [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/) | --- | --- | 
-| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/) | --- | --- | 
-| [GNPS2 Structure Server](https://structure.gnps2.org/) | --- | --- |
-| [GNPS2 Cytoscape](https://cytoscape.gnps2.org/) | --- | --- |
-| [Metabolomics Spectrum Resolver](https://metabolomics-usi.gnps2.org) | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver) | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
-| [GNPS2 Networking URL Formatter](https://urlformatter.gnps2.org) | --- | --- |
+| Tool                                                                                | Documentation | Source Code                                                                         | Citation |
+|-------------------------------------------------------------------------------------|---|-------------------------------------------------------------------------------------|---|
+| [Pubmed Co-Authors List](https://coauthor.wanglab.science/)                         | --- | ---         | ---                                                                         | 
+| [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/)        | --- | --- | ---                                                                                 | 
+| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/)                      | --- | ---                | ---                                                                  | 
+| [GNPS2 Structure Server](https://structure.gnps2.org/)                              | --- | ---               | ---                                                                   |
+| [GNPS2 Cytoscape](https://cytoscape.gnps2.org/)                                     | --- | ---                | ---                                                                  |
+| [Metabolomics Spectrum Resolver](https://metabolomics-usi.gnps2.org)                | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver)                   | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
+| [GNPS2 Networking URL Formatter](https://urlformatter.gnps2.org)                    | --- | ---                   | ---                                                               |
 | [GNPS2 Classical Networking Upset Plot Dashboard](http://classicalupset.gnps2.org/) | --- | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | --- |
-| [GNPS2 FBMN Upset Plot Dashboard](https://fbmnupset.gnps2.org/) | --- | --- |
-| [NP Classifier](https://npclassifier.gnps2.org/) | --- | [GitHub](https://github.com/mwang87/NP-Classifier) | --- |
-| [GNPS2 Dashboard](https://dashboard.gnps2.org/) | --- | --- |
-| [GNPS2 Plotter Dashboard (Beta)](https://plotter.gnps2.org/) | --- | --- |
-| [GNPS2 Dataset File Explorer (Beta)](https://explorer.gnps2.org/) | --- | --- |
-| [GNPS2 Public Libraries Download List](https://external.gnps2.org/gnpslibrary) | --- | --- | 
-| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/) | --- | --- | 
-| [GNPS2 Tiny Mass Sharer](https://tinymass.gnps2.org/) | --- | --- | 
-| [GNPS2 MassQL Visualizer](https://massql.gnps2.org/) | --- | --- | 
-| [GNPS2 MassQL Analysis/Chatbot](https://massql-analysis.gnps2.org/) | --- | --- | 
-| [GNPS2 USI Playground](https://usi-playground.gnps2.org/) | --- | --- | 
-| [GNPS2 Network Customization Playground](https://networkcustomization.gnps2.org/) | --- | --- | 
+| [GNPS2 FBMN Upset Plot Dashboard](https://fbmnupset.gnps2.org/)                     | --- | ---                | ---                                                                  |
+| [NP Classifier](https://npclassifier.gnps2.org/)                                    | --- | [GitHub](https://github.com/mwang87/NP-Classifier)                                  | --- |
+| [GNPS2 Dashboard](https://dashboard.gnps2.org/)                                     | --- | ---                 | ---                                                                 |
+| [GNPS2 Plotter Dashboard (Beta)](https://plotter.gnps2.org/)                        | --- | ---               | ---                                                                   |
+| [GNPS2 Dataset File Explorer (Beta)](https://explorer.gnps2.org/)                   | --- | ---                | ---                                                                  |
+| [GNPS2 Public Libraries Download List](https://external.gnps2.org/gnpslibrary)      | --- | ---                           | ---                                                       | 
+| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/)                      | --- | ---                   | ---                                                               | 
+| [GNPS2 Tiny Mass Sharer](https://tinymass.gnps2.org/)                               | --- | ---                | ---                                                                  | 
+| [GNPS2 MassQL Visualizer](https://massql.gnps2.org/)                                | --- | ---               | ---                                                                   | 
+| [GNPS2 MassQL Analysis/Chatbot](https://massql-analysis.gnps2.org/)                 | --- | ---                       | ---                                                           | 
+| [GNPS2 USI Playground](https://usi-playground.gnps2.org/)                           | --- | ---                      | ---                                                            | 
+| [GNPS2 Network Customization Playground](https://networkcustomization.gnps2.org/)   | --- | ---                            | ---                                                      | 
+| [CMMC Batch validation](https://cmmc-validation.gnps2.org/)                   | --- | [GitHub](https://github.com/Wang-Bioinformatics-Lab/streamlit-cmmc-validator)                   | ---                                                        | 
 
 
 ## Web Interfaces Description
@@ -82,7 +83,7 @@ You can do the following:
 
 ## GNPS2 Jupyter Notebooks
 
-These notebooks are for postprocessing of results from GNPS/GNPS2 and other computational processing that have not be integrated yet. If they are super useful, we can integrate into high throughput workflows. For now, give them a try!
+These notebooks are for postprocessing of results from GNPS/GNPS2 and other computational processing that have not been integrated yet. If they are super useful, we can integrate into high throughput workflows. For now, give them a try!
 
 | Tool | Documentation | Source Code | Binder Launch |
 | ---- | ------------- | ----------- | ------------- |
