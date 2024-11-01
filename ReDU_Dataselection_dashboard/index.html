@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/api/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/ReDU_Dataselection_dashboard/">
       
       
-        <link rel="prev" href="../quickstart2/">
-      
-      
-        <link rel="next" href="../logo/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>API - GNPS2 Documentation</title>
+        <title>Pan-ReDU Data Selection Dashboard User Guide - GNPS2 Documentation</title>
       
     
     
@@ -79,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gnps2" class="md-skip">
+        <a href="#pan-redu-data-selection-dashboard-user-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              Pan-ReDU Data Selection Dashboard User Guide
             
           </span>
         </div>
@@ -1228,28 +1224,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    API
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1258,84 +1236,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gnps2" class="md-nav__link">
-    <span class="md-ellipsis">
-      GNPS2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chemicalstructurewebservice" class="md-nav__link">
-    <span class="md-ellipsis">
-      ChemicalStructureWebService
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ChemicalStructureWebService">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#web-api-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Web API Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redu-metadata" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReDU Metadata
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fast-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fast Search
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-dataset-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Public Dataset Files
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1457,6 +1357,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1465,28 +1367,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gnps2" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      GNPS2
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chemicalstructurewebservice" class="md-nav__link">
+  <a href="#navigation-bar" class="md-nav__link">
     <span class="md-ellipsis">
-      ChemicalStructureWebService
+      Navigation Bar
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ChemicalStructureWebService">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtering Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filtering Data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#web-api-endpoints" class="md-nav__link">
+  <a href="#using-column-filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Web API Endpoints
+      Using Column Filters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Filters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subset-to-mzxml-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subset to mz(X)ML Files
     </span>
   </a>
   
@@ -1498,29 +1436,101 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#redu-metadata" class="md-nav__link">
+  <a href="#downloading-data" class="md-nav__link">
     <span class="md-ellipsis">
-      ReDU Metadata
+      Downloading Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-filtered-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download Filtered Data
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#fast-search" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#download-complete-dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      Fast Search
+      Download Complete Dataset
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#public-dataset-files" class="md-nav__link">
+  <a href="#downstream-tooling" class="md-nav__link">
     <span class="md-ellipsis">
-      Public Dataset Files
+      Downstream Tooling
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Downstream Tooling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usis-molecular-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      USIs → Molecular Networking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usis-massql" class="md-nav__link">
+    <span class="md-ellipsis">
+      USIs → MassQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usis-raw-data-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      USIs → Raw Data Download
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customizing-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1539,7 +1549,7 @@
                   
 
   
-    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/ReDU_Dataselection_dashboard.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1547,94 +1557,140 @@
   
 
 
-  <h1>API</h1>
-
-<h2 id="gnps2">GNPS2<a class="headerlink" href="#gnps2" title="Permanent link">&para;</a></h2>
-<p>TODO</p>
-<h2 id="chemicalstructurewebservice">ChemicalStructureWebService<a class="headerlink" href="#chemicalstructurewebservice" title="Permanent link">&para;</a></h2>
-<p>Web Server for Chemical Structure pictures as well as other chemical structure things</p>
-<h3 id="web-api-endpoints">Web API Endpoints<a class="headerlink" href="#web-api-endpoints" title="Permanent link">&para;</a></h3>
-<p>Full resolution of all structural information conversion</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/convert?smiles=CCO
+<h1 id="pan-redu-data-selection-dashboard-user-guide">Pan-ReDU Data Selection Dashboard User Guide<a class="headerlink" href="#pan-redu-data-selection-dashboard-user-guide" title="Permanent link">&para;</a></h1>
+<p>Welcome to the <strong>Pan-ReDU Dashboard</strong>! This guide will help you navigate the <a href="https://redu.gnps2.org/selection/">dashboard</a>, filter data, download datasets, and utilize downstream tools for your metabolomics research.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <strong>Pan-ReDU Dashboard</strong> is a comprehensive platform that aggregates metadata from public metabolomics repositories:</p>
+<ul>
+<li><strong>MetaboLights</strong></li>
+<li><strong>Metabolomics Workbench</strong></li>
+<li><strong>GNPS</strong></li>
+</ul>
+<p>By consolidating this data, the dashboard provides a unified interface for exploring and analyzing metabolomics datasets.</p>
+<h2 id="navigation-bar">Navigation Bar<a class="headerlink" href="#navigation-bar" title="Permanent link">&para;</a></h2>
+<p>At the top of the dashboard, you'll find the navigation bar, which includes:</p>
+<ul>
+<li><strong>ReDU Logo</strong>: Click to return to the homepage.</li>
+<li><strong>Contribute Your Data</strong>: Link to <a href="https://deposit.redu.gnps2.org/">submission page</a> for your own metadata.</li>
+<li><strong>ReDU Dashboard - Documentation</strong>: Access detailed documentation about the dashboard.</li>
+<li><strong>Download Complete ReDU</strong>: Download the entire ReDU dataset.</li>
+</ul>
+<h2 id="summary-statistics">Summary Statistics<a class="headerlink" href="#summary-statistics" title="Permanent link">&para;</a></h2>
+<p>On the left side of the dashboard, the <strong>Summary Statistics</strong> card provides quick insights:</p>
+<ul>
+<li><strong>Total Files</strong>: Number of files available.</li>
+<li><strong>Unique Datasets</strong>: Number of datasets.</li>
+<li><strong>Files by DataSource</strong>: Breakdown of files by their source repository.</li>
+<li><strong>Represented Taxonomies</strong>: Diversity of biological NCBI taxa represented.</li>
+<li><strong>Human/Mouse Data</strong>: Specific statistics for human and mouse samples (often of interested for biomedical studies).</li>
+<li><strong>Last Modified</strong>: Date when the dataset was last updated.</li>
+</ul>
+<h2 id="filtering-data">Filtering Data<a class="headerlink" href="#filtering-data" title="Permanent link">&para;</a></h2>
+<h3 id="using-column-filters">Using Column Filters<a class="headerlink" href="#using-column-filters" title="Permanent link">&para;</a></h3>
+<p>Below the summary statistics, the main data table displays the dataset. Each column header includes a filter input:</p>
+<ol>
+<li><strong>Locate the Column Filter</strong>: Click on the filter input beneath the column name.</li>
+<li><strong>Enter Filter Criteria</strong>: Input your filter expression. You can use operators such as:</li>
+<li><code>=</code>: Equals (for numerical columns)</li>
+<li><code>!=</code>: Not equal (for numerical columns)</li>
+<li><code>&gt;</code>: Greater than (for numerical columns)</li>
+<li><code>&lt;</code>: Less than (for numerical columns)</li>
+<li><code>&gt;=</code>: Greater than or equal to (for numerical columns)</li>
+<li><code>&lt;=</code>: Less than or equal to (for numerical columns)</li>
+<li><code>contains</code>: Contains substring (for character columns; case-insensitive)</li>
+<li><code>scontains</code>: Contains substring (for character columns; case-sensitive)</li>
+<li>
+<p><strong>Apply Multiple Filters</strong>: Combine filters using <code>&amp;&amp;</code> (AND operator). For example:</p>
+<p><strong>Example</strong>: To find entries where "NCBITaxonomy" contains 'Homo sapiens' and "MassSpectrometer" contains 'Orbitrap' :</p>
+<div class="highlight"><pre><span></span><code><span class="err">{</span><span class="n">NCBITaxonomy</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;Homo sapiens&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="err">{</span><span class="n">MassSpectrometer</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;Orbitrap&quot;</span>
 </code></pre></div>
-<p>InChI Conversion</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/inchi?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+</li>
+<li>
+<p><strong>Regular Expressions in Filters</strong>: Use regular expressions (regex) within the <code>contains</code> operator for complex filtering.</p>
+<p><strong>Example</strong>: To find entries where <code>NCBITaxonomy</code> contains either "Homo" or "Mus", but not "musculus":</p>
+<div class="highlight"><pre><span></span><code><span class="err">{</span><span class="n">NCBITaxonomy</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;(Homo|Mus)(?!.*musculus)&quot;</span>
 </code></pre></div>
-<p>InChIKey Conversion</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/inchikey?smiles=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+<p><strong>Explanation</strong>:</p>
+<ul>
+<li><code>(Homo|Mus)</code>: Matches "Homo" or "Mus".</li>
+<li><code>(?!.*musculus)</code>: Negative lookahead to exclude entries containing "musculus".</li>
+</ul>
+<p><strong>Example</strong>: To find samples where <code>UBERONBodyPartName</code> contains "blood" and <code>NCBITaxonomy</code> contains "Rattus norvegicus":</p>
+<div class="highlight"><pre><span></span><code><span class="err">{</span><span class="n">UBERONBodyPartName</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;blood&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="err">{</span><span class="n">NCBITaxonomy</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;Rattus norvegicus&quot;</span>
 </code></pre></div>
-<p>Smiles Conversion</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/inchikey?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>Mol Conversion</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/mol?smiles=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>ClassyFire</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/classyfire?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>Formula</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/formula?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>Structure Mass</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structuremass?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structuremass?formula=C8H10N4O2
-</code></pre></div>
-<p>Adduct Masses</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/adductcalc?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>Structure Fingerprint</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structurefingerprint?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>Structure Drawing</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structureimg?inchi=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
-</code></pre></div>
-<p>Structure Similarity</p>
-<div class="highlight"><pre><span></span><code>https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&amp;smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
-</code></pre></div>
-<h2 id="redu-metadata">ReDU Metadata<a class="headerlink" href="#redu-metadata" title="Permanent link">&para;</a></h2>
-<p>Getting files for a given metadata category
-<div class="highlight"><pre><span></span><code>https://redu.gnps2.org/attribute/&lt;attribute&gt;/attributeterm/&lt;term&gt;/files?filters=%5B%5D
-</code></pre></div></p>
-<p>Getting all terms per attribute
-<div class="highlight"><pre><span></span><code>https://redu.gnps2.org/attribute/&lt;attribute&gt;/attributeterms?filters=%5B%5D
-</code></pre></div></p>
-<h2 id="fast-search">Fast Search<a class="headerlink" href="#fast-search" title="Permanent link">&para;</a></h2>
-<p>Rapidly search pre-made libraries GNPS and MassIVE spectral data.</p>
-<p>Search by peaks in json format using query_spectrum:</p>
-<div class="highlight"><pre><span></span><code>https://fasst.gnps2.org/search?usi=None&amp;precursor_mz=981.54&amp;charge=1&amp;library=gnpslibrary&amp;query_spectrum={%22n_peaks%22:15,%22peaks%22:[[165.06979370117188,0.38009798526763916],[167.072998046875,1.7413330078125],[179.07260131835938,0.2999509871006012],[180.08079528808594,100.0],[181.08859252929688,2.8455820083618164],[182.09649658203125,23.914995193481445],[192.08079528808594,0.6896359920501709],[193.0886993408203,0.2419929951429367],[208.07569885253906,3.9236950874328613],[210.09129333496094,51.83255386352539],[236.0706024169922,4.025279998779297],[253.09719848632812,21.652437210083008],[254.08120727539062,46.069068908691406],[255.0872039794922,0.3038550019264221],[271.1077880859375,0.7285820245742798]],%22precursor_charge%22:0,%22precursor_mz%22:271.1077}
-</code></pre></div>
-<p>Search by USI:</p>
-<div class="highlight"><pre><span></span><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
-</code></pre></div>
-<p>Parameters:
-* usi (mutually exclusive with query spectrum)
-* library: The pre-built library index, options are listed on the <a href="https://fasst.gnps2.org/fastsearch/">Fast Search GUI</a>
-* analog: [Yes/No], Defaults to "No"
-* cache: [Yes/No], Defaults to "No"
-* lower_delta: defaults to 130
-* upper_delta: defaults to 200
-* pm_tolerance (Da): The tolerance for precursor mass matching in daltons, defaults to 0.05
-* fragment_tolerance (Da): The tolerance for matching individual peaks in daltons, defaults to 0.05
-* cosine_threshold: The minimum cosine threshold to be included in the results, defaults to 0.7
-* query_spectrum (mututally exclusive with USI): A json formatted peak list</p>
-<h2 id="public-dataset-files">Public Dataset Files<a class="headerlink" href="#public-dataset-files" title="Permanent link">&para;</a></h2>
-<p>Access spectral data by USI or SpectrumID
-Getting all files per dataset</p>
-<div class="highlight"><pre><span></span><code>https://explorer.gnps2.org/api/datasets/{accession}/files
-</code></pre></div>
-<p>Getting file path per USI</p>
-<div class="highlight"><pre><span></span><code>https://dashboard.gnps2.org/downloadlink?usi={file usi}
-</code></pre></div>
-<p>Getting spectrum data from Spectrum ID</p>
-<div class="highlight"><pre><span></span><code>https://external.gnps2.org/gnpsspectrum?SpectrumID={Spectrum ID}
-</code></pre></div>
-<p>JSON Peak List from USI
-<div class="highlight"><pre><span></span><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi={file usi}
-</code></pre></div>
-JSON Peak List from USI (Example):
-<div class="highlight"><pre><span></span><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
-</code></pre></div></p>
+<h3 id="example-filters">Example Filters<a class="headerlink" href="#example-filters" title="Permanent link">&para;</a></h3>
+<p>The dashboard provides preset example filters for quick access:</p>
+<ul>
+<li><strong>Human Samples</strong>: Filters for samples from <em>Homo sapiens</em>.</li>
+<li><strong>Plant Samples</strong>: Shows samples categorized under plants.</li>
+<li><strong>Orbitrap Mass Spectrometer</strong>: Filters samples analyzed using an Orbitrap mass spectrometer (QExactive, Orbitrap, Astral substrings).</li>
+<li><strong>Homo sapiens and Mus but no Mus musculus</strong>: Advanced filter excluding <em>Mus musculus</em>.</li>
+<li><strong>Blood Samples from Rattus norvegicus</strong>: Filters for blood samples from <em>Rattus norvegicus</em>.</li>
+</ul>
+<p><strong>To use an example filter</strong>:</p>
+<ol>
+<li><strong>Click on the Filter Name</strong>: Under "Example Filters", click the desired filter button.</li>
+<li><strong>View Filtered Data</strong>: The data table will automatically update to reflect the filter.</li>
+</ol>
+<h3 id="subset-to-mzxml-files">Subset to mz(X)ML Files<a class="headerlink" href="#subset-to-mzxml-files" title="Permanent link">&para;</a></h3>
+<p>To filter the table to only include files ending with <code>.mzML</code> or <code>.mzXML</code>:</p>
+<ol>
+<li><strong>Click "Subset Table to mz(X)ML files"</strong>: This button is located under "Filter Table"-button. Make sure the USI column is not Toggled before clicking. </li>
+<li><strong>View Results</strong>: The data table will display only the relevant files while keeping your current filters.</li>
+</ol>
+<h2 id="downloading-data">Downloading Data<a class="headerlink" href="#downloading-data" title="Permanent link">&para;</a></h2>
+<h3 id="download-filtered-data">Download Filtered Data<a class="headerlink" href="#download-filtered-data" title="Permanent link">&para;</a></h3>
+<p>After applying your filters, you can download the resulting dataset:</p>
+<ol>
+<li><strong>Click "Download Filtered Table"</strong>: Located under "Download selection".</li>
+<li><strong>Save the File</strong>: A CSV file named <code>filtered_dataset.csv</code> will be downloaded to your device.</li>
+</ol>
+<h3 id="download-complete-dataset">Download Complete Dataset<a class="headerlink" href="#download-complete-dataset" title="Permanent link">&para;</a></h3>
+<p>To download the entire ReDU dataset:</p>
+<ul>
+<li><strong>Click "Download Complete ReDU"</strong>: Found in the navigation bar at the top.</li>
+</ul>
+<h2 id="downstream-tooling">Downstream Tooling<a class="headerlink" href="#downstream-tooling" title="Permanent link">&para;</a></h2>
+<p>The dashboard offers direct links to tools for further analysis:</p>
+<h3 id="usis-molecular-networking">USIs → Molecular Networking<a class="headerlink" href="#usis-molecular-networking" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose</strong>: Generate Molecular Networks for filtered files using Universal Spectrum Identifiers (USIs).</li>
+<li><strong>Important Note</strong>:</li>
+<li><strong>Top 50 mz(X)ML Files</strong>: When you click this link, the system selects the first 50 mz(X)ML files from your filtered data.</li>
+<li><strong>Processing More USIs</strong>: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</li>
+<li><strong>How to Use</strong>:</li>
+<li><strong>Click "USIs → Molecular Networking"</strong> under "Downstream tooling".</li>
+<li><strong>Proceed to GNPS</strong>: You'll be redirected to the GNPS workflow input page with the USIs already populated.</li>
+</ul>
+<h3 id="usis-massql">USIs → MassQL<a class="headerlink" href="#usis-massql" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose</strong>: Query mass spectrometry data using MassQL.</li>
+<li><strong>Important Note</strong>:</li>
+<li><strong>Top 50 mz(X)ML Files</strong>: As with Molecular Networking, only the top 50 mz(X)ML files are used to prevent system overload.</li>
+<li><strong>Processing More USIs</strong>: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</li>
+<li><strong>How to Use</strong>:</li>
+<li><strong>Click "USIs → MassQL"</strong>.</li>
+<li><strong>Proceed to GNPS</strong>: You'll be taken to the MassQL workflow input page with the USIs already populated.</li>
+</ul>
+<h3 id="usis-raw-data-download">USIs → Raw Data Download<a class="headerlink" href="#usis-raw-data-download" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose</strong>: Download raw mass spectrometry data files.</li>
+<li><strong>Important Note</strong>:</li>
+<li><strong>This returns a tsv file</strong>: This link returns <strong>all</strong> USIs from your filtered selection in a tsv file not the actual raw data.</li>
+<li><strong>How to Use</strong>:</li>
+<li><strong>Click "USIs → Raw Data Download"</strong>.</li>
+<li><strong>Download Data</strong>: You'll download a tsv file with USIs of the filtered table. You will then be directed to the GitHub repository of the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">commandline tool</a> to download the raw data. The tutorial for that tool can be found here.</li>
+</ul>
+<h2 id="additional-features">Additional Features<a class="headerlink" href="#additional-features" title="Permanent link">&para;</a></h2>
+<h3 id="customizing-columns">Customizing Columns<a class="headerlink" href="#customizing-columns" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Show/Hide Columns</strong>:</li>
+<li><strong>Select "Hide Column" or "Show Column"</strong>: Customize which columns are visible.</li>
+</ul>
+</li>
+</ol>
+<h1 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h1>
+<p>Yasin El Abiead (UCSD), and Mingxun Wang (UCR)</p>
 
 
 
