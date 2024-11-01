@@ -152,7 +152,5 @@ Below the summary statistics, the main data table displays the dataset. Each col
     - **Show/Hide Columns**:
       - **Select "Hide Column" or "Show Column"**: Customize which columns are visible.
 
-    ## Contributors
-
-    - **Yasin El Abiead**
-    - **Mingxun Wang**
+# Page Contributions
+Yasin El Abiead (UCSD), and Mingxun Wang (UCR)
