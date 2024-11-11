@@ -128,7 +128,7 @@ Below the summary statistics, the main data table displays the dataset. Each col
 
     ### USIs → MassQL
 
-    - **Purpose**: Query mass spectrometry data using MassQL.
+    - **Purpose**: Query mass spectrometry data using [MassQL](https://mwang87.github.io/MassQueryLanguage_Documentation/).
     - **Important Note**:
       - **Top 50 mz(X)ML Files**: As with Molecular Networking, only the top 50 mz(X)ML files are used to prevent system overload.
       - **Processing More USIs**: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the [workflow](https://gnps2.org/workflowinput?workflowname=massql_workflow).
