@@ -17,8 +17,9 @@ There are three main components of Pan-ReDU to understand:
     - Tools for [validating](https://docs.google.com/spreadsheets/d/10U0xnJUKa_mD0H_9suH1KJAlJD9io9e4chBX8EAHneE/edit?gid=1001603307#gid=1001603307) and [submitting](https://deposit.redu.gnps2.org/) metadata are explained on the following pages.
 
 3. **Downloading raw data**
-    - Download raw data file-by-file through the [GNPS2 Dataset Explorer](https://explorer.gnps2.org/) from any supported repository, as explained on the following pages.
-    - Download raw data in batches using our [downloadpublicdata tool](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) from any supported repository, as explained on the following pages.
+    - Given a dataset accession id (e.g. MSV000083665, MTBLS284 or ST002962) download raw data file-by-file through the [GNPS2 Dataset Explorer](https://explorer.gnps2.org/) from any supported repository, as explained on the following pages.
+    - Given a universal spectrum identifier (USI) (e.g. mzspec:MSV000083756:ccms_peak/Blank-3ACN-3IPA-2H2O_RE11_196.mzML) download raw data file-by-file through the [GNPS Dashboard](https://dashboard.gnps2.org/) from any supported repository, as explained on the following pages.
+    - Given a list of USIs download raw data in batch using our [downloadpublicdata tool](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) from any supported repository, as explained on the following pages.
 
 # Page Contributions
 Yasin El Abiead (UCSD) and Mingxun Wang (UCR)
