@@ -1,5 +1,5 @@
 ## Account Creation
-To create an account, please [contact us](emailto:nkrull@uic.edu) via email. Tell us your name and institution, and please use your academic affiliated email address.
+To create an account, please contact us via email (nkrull@uic.edu). Tell us your name and institution, and please use your academic affiliated email address.
 
 Once you have a token, please create an account [here](https://gnps2.org/user/signup).
 
