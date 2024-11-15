@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/ms2query_doc/">
+        <link rel="canonical" href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsmallmolanalysis/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>MS2Query workflow documentation - GNPS2 Documentation</title>
+        <title>Idbacsmallmolanalysis - GNPS2 Documentation</title>
       
     
     
@@ -75,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#ms2query-workflow-documentation" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -112,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MS2Query workflow documentation
+              Idbacsmallmolanalysis
             
           </span>
         </div>
@@ -1505,82 +1500,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quick-tutorial-of-ms2query-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick tutorial of MS2Query workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick tutorial of MS2Query workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example task
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example task">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example output
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1595,7 +1514,7 @@
                   
 
   
-    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/ms2query_doc.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/edit/master/docs/idbacsmallmolanalysis.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1603,142 +1522,9 @@
   
 
 
-<h1 id="ms2query-workflow-documentation">MS2Query workflow documentation<a class="headerlink" href="#ms2query-workflow-documentation" title="Permanent link">&para;</a></h1>
-<p>MS2Query is a tool published by N. De Jonge et al. for annotating MS2 spectra, by finding the best match in mass spectral libraries.
-What makes MS2Query unique is that it will also return analogues if no good exact match is available. An analgoue is a metabolite that is chemically very similar to your metabolite, but can have some modifications. Analogues can be a great starting point for annotation, or can help you to prioritize metabolites/spectra for further analysis. 
-Including analogues increases the number of spectra for which you get some results by a lot, thereby making it possible to learn more from your data!</p>
-<p>MS2Query gives more results and more reliable predictions compared to previous methods for library matching, like (modified) cosine score or MS2Deepscore. 
-MS2Query uses previously developed machine learning algorithms (MS2Deepscore and Spec2Vec) to predict chemical similarity between your spectra and library spectra. 
-MS2Query is able to improve the reliability of the predicitons a lot by not directly picking the highest predicted similarity, but looking at many predictions for similar library metabolites first, to make sure the potential match is not a false positive. 
-More details about how this was implemented and the benchmarking results can be found in: https://www.nature.com/articles/s41467-023-37446-4 Please cite this article as well if you use MS2Query. </p>
-<p>The code of MS2Query is fully open source and can be found on https://github.com/iomega/ms2query 
-Here you can also read how you can easily run MS2Query locally from the command line. </p>
-<h2 id="quick-tutorial-of-ms2query-workflow">Quick tutorial of MS2Query workflow<a class="headerlink" href="#quick-tutorial-of-ms2query-workflow" title="Permanent link">&para;</a></h2>
-<h3 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Default</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Job Description</td>
-<td>Label for the MS2Query job to identify it by the user.</td>
-<td></td>
-<td>no</td>
-</tr>
-<tr>
-<td>Spectra files</td>
-<td>Provide a file with ms/ms spectra. Allowed formats are mzML, json, mgf, msp, mzxml or usi. Those files should have been uploaded to GNPS2 See <a href="../fileupload/">file upload documentation</a>.</td>
-<td></td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Ionization mode</td>
-<td>Mass spectrometry acquisition mode.</td>
-<td>Positive</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Library models</td>
-<td>MS2Query uses a Random Forest Model to rank the highest scores in similarity spectra. This The users can use their own models. If the user chooses negative ionization mode, change the model to shared/ms2query/negativeim_model. To train your own models, check the <a href="https://github.com/iomega/ms2query/tree/main">github documentation</a>.</td>
-<td>positiveim_model</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Additional metadata columns from the experimental data</td>
-<td>The columns will be added to the output file with their corresponding values. The name should match the name on the spectra file. It is case sensitive.</td>
-<td>retention_time feature_id</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
-<p>The fields are presented in the image. Bold fields are mandatory:
-<img alt="MS2Query input fields image" src="../img/workflows/ms2query/ms2query_input.png" /></p>
-<h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Information</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Task description</td>
-<td>User label to identify the workflow task</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><strong>Spectra Files</strong></td>
-<td>USERUPLOAD/alberto/ms2query/dummy_spectra.mgf</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><strong>Ionization mode</strong></td>
-<td>Positive</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><strong>Library models</strong></td>
-<td>USERUPLOAD/shared/ms2query/positiveim_model</td>
-</tr>
-<tr>
-<td>5.</td>
-<td><strong>Additional metadata columns</strong></td>
-<td>retention_time feature_id</td>
-</tr>
-</tbody>
-</table>
-<h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Item</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td><strong>Log Text area</strong></td>
-<td>Text area with the result of the task. If there is some failure, the log will be written there. If the task failed and you want to contact the support team, please provide the output of this text area along with the job id.</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><strong>Full results from the job</strong></td>
-<td>Full results from the job. It can provide information to debug or to users with programming knowledge.</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><strong>MS2Query results.zip</strong></td>
-<td>Zip file containing the csv file with the annotations.</td>
-</tr>
-</tbody>
-</table>
-<p>The different parts of the output are presented in the image:
-<img alt="Workflow clone task button" src="../img/workflows/ms2query/ms2query_output.png" /></p>
-<h2 id="example-task">Example task<a class="headerlink" href="#example-task" title="Permanent link">&para;</a></h2>
-<p>To test the functionality of the MS2Query workflow an <a href="https://gnps2.org/status?task=8979365f96f8468d98ad7ba919b4e4af">Example task</a> can be visited, and this work can be reproduced by clicking the <a href="../img/workflows/clone_button.png">clone button</a>: </p>
-<p><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></p>
-<h3 id="example-output">Example output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
-<p>The result of the task is the annotation of features present in the MS/MS spectra file. MS2Query assigns a identifier for each spectra annotated, their corresnponding ms2query_model_prediction_score, the delta m/z of the precursor mass, the representation of the structure (InChI Key and SMILES, the metadata columns added by the user and the corresponding class )</p>
-<p><img alt="MS2Query annotations results example" src="../img/workflows/ms2query/ms2query_annotations_csv.png" /> </p>
-<h1 id="interpretation-results">Interpretation results<a class="headerlink" href="#interpretation-results" title="Permanent link">&para;</a></h1>
-<p>As output a csv file is returned. For each of your input spectra MS2Query predicts a library match. It is important to check the ms2query_model_prediction column. This column contains a score, which indicates the likelihood that the found match is a good match. This score ranges between 0 and 1, the closer this score is to 1 the more likely that it is a good match/analogue. It is important to use this score to select only the reliable hits, since a prediction is given for each spectrum, regardless of the ms2query score. There is no strict minimum for this score, but the higher the MS2Query model prediction the more likely it is a good match/analogue. It will depend on your research goal, what a good threshold is. If a high recall is important you might want a low threshold and if a high reliability is more important you might want a high threshold. To give a general indication, a score &gt; 0,7 has many good analogues and exact matches. In the range of 0.6-0.7, the results can still be useful, but should be analysed with more caution and results below 0.6 can often best be discarded. </p>
-<p>MS2Query does not need two different workflows for searching for analogues and searching for exact matches, it automatically selects the most likely library spectra. If it is important to separate potential exact matches from potential analogues for your research question, the column with the precursor mz difference can be used to separate these results, since exact matches should have no precursor mz difference.
-The columns completely to the right are estimated molecular classes based on the molecular structure of the predicted library molecule, these columns can be used to get a quick overview of the kind of compounds that were found. </p>
-<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
-<p><a href="https://doi.org/10.1038/s41467-023-37446-4">Niek F. de Jonge, Joris J. R. Louwen, Elena Chekmeneva, Stephane Camuzeaux, Femke J. Vermeir, Robert S. Jansen, Florian Huber, Justin J. J. van der Hooft. MS2Query: reliable and scalable MS2 mass spectra-based analogue search. Nature Communications 2023, 14: 1752</a></p>
-<h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
-<p>{{ git_page_authors }}</p>
+  <h1>Idbacsmallmolanalysis</h1>
+
+
 
 
 
