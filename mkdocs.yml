@@ -23,6 +23,7 @@ nav:
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
+        - Request an Account: idbac-request-an-account.md
         - Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacsumbmitdata.md
         - Analysis Platform: idbacanalysisplatform.md
