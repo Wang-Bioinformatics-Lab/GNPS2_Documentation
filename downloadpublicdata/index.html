@@ -1342,6 +1342,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pan Repo Public Data Downloader
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1351,6 +1362,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-raw-data-file-by-file-in-the-gnps2-dashboardpan-redu-metadata-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download raw data file-by-file in the GNPS2 Dashboard/Pan-ReDU Metadata Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-raw-data-file-by-file-in-the-gnps2-dataset-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download raw data file-by-file in the GNPS2 Dataset Explorer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-raw-data-in-batch-through-our-public-data-downloader-which-requires-just-a-few-steps-with-some-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download raw data in batch through our public data downloader, which requires just a few steps with some coding.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1524,6 +1581,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-raw-data-file-by-file-in-the-gnps2-dashboardpan-redu-metadata-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download raw data file-by-file in the GNPS2 Dashboard/Pan-ReDU Metadata Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-raw-data-file-by-file-in-the-gnps2-dataset-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download raw data file-by-file in the GNPS2 Dataset Explorer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-raw-data-in-batch-through-our-public-data-downloader-which-requires-just-a-few-steps-with-some-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download raw data in batch through our public data downloader, which requires just a few steps with some coding.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1546,25 +1638,50 @@
 
 
 <h1 id="downloading-public-metabolomics-data">Downloading public metabolomics data<a class="headerlink" href="#downloading-public-metabolomics-data" title="Permanent link">&para;</a></h1>
-<p>This tutorial explains how to download public mass spectral raw data from <a href="https://www.ebi.ac.uk/metabolights/index">MetaboLights</a> or <a href="https://www.metabolomicsworkbench.org">Metabolomics Workbench</a>, or <a href="https://massive.ucsd.edu/">MassIVE/GNPS</a> through GNPS tooling. </p>
-<p>There are two main ways to download data. </p>
-<ol>
-<li>Download raw data file-by-file in the <a href="https://explorer.gnps2.org/">GNPS2 Dataset Explorer</a></li>
-</ol>
-<p><img alt="GNPS Explorer Download" src="../visuals/explorer.gif" /></p>
+<p>This tutorial explains how to download public mass spectral raw data from <a href="https://www.ebi.ac.uk/metabolights/index">MetaboLights</a>, <a href="https://www.metabolomicsworkbench.org">Metabolomics Workbench</a>, or <a href="https://massive.ucsd.edu/">MassIVE/GNPS</a> through GNPS tooling.</p>
+<p>There are three main ways to download data.</p>
+<h2 id="download-raw-data-file-by-file-in-the-gnps2-dashboardpan-redu-metadata-dashboard">Download raw data file-by-file in the <a href="https://explorer.gnps2.org/">GNPS2 Dashboard</a>/<a href="https://redu.gnps2.org/selection/">Pan-ReDU Metadata Dashboard</a><a class="headerlink" href="#download-raw-data-file-by-file-in-the-gnps2-dashboardpan-redu-metadata-dashboard" title="Permanent link">&para;</a></h2>
+<p><img alt="GNPS Dashboard Download" src="../img/redu_dashboard_download.gif" /></p>
+<h2 id="download-raw-data-file-by-file-in-the-gnps2-dataset-explorer">Download raw data file-by-file in the <a href="https://explorer.gnps2.org/">GNPS2 Dataset Explorer</a><a class="headerlink" href="#download-raw-data-file-by-file-in-the-gnps2-dataset-explorer" title="Permanent link">&para;</a></h2>
+<p><img alt="GNPS Explorer Download" src="../img/explorer.gif" /></p>
+<h2 id="download-raw-data-in-batch-through-our-public-data-downloader-which-requires-just-a-few-steps-with-some-coding">Download raw data in batch through our <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">public data downloader</a>, which requires just a few steps with some coding.<a class="headerlink" href="#download-raw-data-in-batch-through-our-public-data-downloader-which-requires-just-a-few-steps-with-some-coding" title="Permanent link">&para;</a></h2>
+<p>This can be done through our <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">public data downloader</a>, which requires just a few command line steps.</p>
 <ol>
 <li>
-<p>Download raw data in batch through our <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">public data downloader</a> wich just requires a few steps with a bit of coding.</p>
-<p>a. Make sure you have <a href="https://wiki.python.org/moin/BeginnersGuide/Download">python</a> and <a href="https://github.com/git-guides/install-git">git</a> installed on your system.</p>
-<p>b. Clone the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">repository</a> which you can typically do with <code>git clone https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata.git</code>.</p>
-<p>c. Navigate to the directory through your terminal with <code>cd downloadpublicdata</code>.</p>
-<p>d. Install required packages with <code>pip install -r requirements.txt</code>.</p>
-<p>e. Test if it works with <code>python ./bin/download_public_data_usi.py ./data/test_download.tsv ./data/ ./data/summary.tsv</code>.</p>
-<p>d. Replace the './data/test_download.tsv' with a path a tsv with USIs you want to download. An example file can be found <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata/blob/main/data/test_download.tsv">here</a>. If you want to select files based on metadata categories we recomment to download our Pan-ReDU table from the <a href="https://redu.gnps2.org/selection/">Dashboard</a> and use the USI values from the table after filtering based on metadata. Files downloaded through the "USIs --&gt; Raw Data Download" button on the <a href="https://redu.gnps2.org/selection/">ReDU Dashboard</a> already have the right format.</p>
+<p>Make sure you have <a href="https://wiki.python.org/moin/BeginnersGuide/Download">Python</a> and <a href="https://github.com/git-guides/install-git">Git</a> installed on your system.</p>
+</li>
+<li>
+<p>Clone the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">repository</a> through your terminal by running:</p>
 </li>
 </ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata.git
+</code></pre></div>
+<ol>
+<li>Navigate to the directory in your terminal with:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>downloadpublicdata
+</code></pre></div>
+<ol>
+<li>Install required packages with:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+<ol>
+<li>Test if it works with:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>./bin/download_public_data_usi.py<span class="w"> </span>./data/test_download.tsv<span class="w"> </span>./data/<span class="w"> </span>./data/summary.tsv
+</code></pre></div>
+<ol>
+<li>Replace <code>./data/test_download.tsv</code> with the path to a TSV file containing the USIs you want to download. An example file can be found <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata/blob/main/data/test_download.tsv">here</a>. This should download the raw data into the folder <code>./data/</code>.</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>: By default, files are converted to <code>.mzML</code> format before the download. If you wish to download without conversion, you can use the <code>--noconversion</code> flag:</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>./bin/download_public_data_usi.py<span class="w"> </span>./data/test_download.tsv<span class="w"> </span>./data/<span class="w"> </span>./data/summary.tsv<span class="w"> </span>--noconversion
+</code></pre></div>
+<p>Further details can be found in the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">GitHub README</a>.</p>
 <h1 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h1>
-<p>Yasin El Abiead (UCSD), and Mingxun Wang (UCR)</p>
+<p>Yasin El Abiead (UCSD) and Mingxun Wang (UCR)</p>
 
 
 
@@ -1585,7 +1702,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2024 20:35:36</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 16, 2024 22:52:24</span>
   </span>
 
     

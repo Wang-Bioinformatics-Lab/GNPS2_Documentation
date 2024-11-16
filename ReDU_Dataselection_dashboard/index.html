@@ -1425,6 +1425,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#usis-for-batch-processingdownload" class="md-nav__link">
+    <span class="md-ellipsis">
+      USIs for Batch Processing/Download
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#download-complete-dataset" class="md-nav__link">
     <span class="md-ellipsis">
       Download Complete Dataset
@@ -1449,27 +1458,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usis-molecular-networking" class="md-nav__link">
+  <a href="#viewdownload-raw-data-in-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      USIs → Molecular Networking
+      View/Download Raw Data in Browser
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usis-massql" class="md-nav__link">
+  <a href="#molecular-networkinglibrary-matching" class="md-nav__link">
     <span class="md-ellipsis">
-      USIs → MassQL
+      Molecular Networking/Library Matching
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usis-raw-data-download" class="md-nav__link">
+  <a href="#massqlfragmentation-rule-search" class="md-nav__link">
     <span class="md-ellipsis">
-      USIs → Raw Data Download
+      MassQL/Fragmentation Rule Search
     </span>
   </a>
   
@@ -1817,6 +1826,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#usis-for-batch-processingdownload" class="md-nav__link">
+    <span class="md-ellipsis">
+      USIs for Batch Processing/Download
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#download-complete-dataset" class="md-nav__link">
     <span class="md-ellipsis">
       Download Complete Dataset
@@ -1841,27 +1859,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usis-molecular-networking" class="md-nav__link">
+  <a href="#viewdownload-raw-data-in-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      USIs → Molecular Networking
+      View/Download Raw Data in Browser
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usis-massql" class="md-nav__link">
+  <a href="#molecular-networkinglibrary-matching" class="md-nav__link">
     <span class="md-ellipsis">
-      USIs → MassQL
+      Molecular Networking/Library Matching
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usis-raw-data-download" class="md-nav__link">
+  <a href="#massqlfragmentation-rule-search" class="md-nav__link">
     <span class="md-ellipsis">
-      USIs → Raw Data Download
+      MassQL/Fragmentation Rule Search
     </span>
   </a>
   
@@ -1932,10 +1950,10 @@
 <h2 id="navigation-bar">Navigation Bar<a class="headerlink" href="#navigation-bar" title="Permanent link">&para;</a></h2>
 <p>At the top of the dashboard, you'll find the navigation bar, which includes:</p>
 <ul>
-<li><strong>ReDU Logo</strong>: Click to return to the homepage.</li>
+<li><strong>Pan-ReDU Logo</strong>: Click to return to the homepage.</li>
 <li><strong>Contribute Your Data</strong>: Link to <a href="https://deposit.redu.gnps2.org/">submission page</a> for your own metadata.</li>
-<li><strong>ReDU Dashboard - Documentation</strong>: Access detailed documentation about the dashboard.</li>
-<li><strong>Download Complete ReDU</strong>: Download the entire ReDU dataset.</li>
+<li><strong>Pan-ReDU Dashboard - Documentation</strong>: Access detailed documentation about the dashboard.</li>
+<li><strong>Download Complete Pan-ReDU</strong>: Download the entire Pan-ReDU dataset.</li>
 </ul>
 <h2 id="summary-statistics">Summary Statistics<a class="headerlink" href="#summary-statistics" title="Permanent link">&para;</a></h2>
 <p>On the left side of the dashboard, the <strong>Summary Statistics</strong> card provides quick insights:</p>
@@ -1944,7 +1962,7 @@
 <li><strong>Unique Datasets</strong>: Number of datasets.</li>
 <li><strong>Files by DataSource</strong>: Breakdown of files by their source repository.</li>
 <li><strong>Represented Taxonomies</strong>: Diversity of biological NCBI taxa represented.</li>
-<li><strong>Human/Mouse Data</strong>: Specific statistics for human and mouse samples (often of interested for biomedical studies).</li>
+<li><strong>Human/Mouse Data</strong>: Specific statistics for human and mouse samples (often of interest for biomedical studies).</li>
 <li><strong>Last Modified</strong>: Date when the dataset was last updated.</li>
 </ul>
 <h2 id="filtering-data">Filtering Data<a class="headerlink" href="#filtering-data" title="Permanent link">&para;</a></h2>
@@ -1960,10 +1978,12 @@
 <li><code>&gt;=</code>: Greater than or equal to (for numerical columns)</li>
 <li><code>&lt;=</code>: Less than or equal to (for numerical columns)</li>
 <li><code>contains</code>: Contains substring (for character columns; case-insensitive)</li>
-<li><code>scontains</code>: Contains substring (for character columns; case-sensitive)</li>
+<li>
+<p><code>scontains</code>: Contains substring (for character columns; case-sensitive)</p>
+</li>
 <li>
 <p><strong>Apply Multiple Filters</strong>: Combine filters using <code>&amp;&amp;</code> (AND operator). For example:</p>
-<p><strong>Example</strong>: To find entries where "NCBITaxonomy" contains 'Homo sapiens' and "MassSpectrometer" contains 'Orbitrap' :</p>
+<p><strong>Example</strong>: To find entries where "NCBITaxonomy" contains 'Homo sapiens' and "MassSpectrometer" contains 'Orbitrap':</p>
 <div class="highlight"><pre><span></span><code><span class="err">{</span><span class="n">NCBITaxonomy</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;Homo sapiens&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="err">{</span><span class="n">MassSpectrometer</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;Orbitrap&quot;</span>
 </code></pre></div>
 </li>
@@ -1972,16 +1992,13 @@
 <p><strong>Example</strong>: To find entries where <code>NCBITaxonomy</code> contains either "Homo" or "Mus", but not "musculus":</p>
 <div class="highlight"><pre><span></span><code><span class="err">{</span><span class="n">NCBITaxonomy</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;(Homo|Mus)(?!.*musculus)&quot;</span>
 </code></pre></div>
-<p><strong>Explanation</strong>:</p>
-<ul>
-<li><code>(Homo|Mus)</code>: Matches "Homo" or "Mus".</li>
-<li><code>(?!.*musculus)</code>: Negative lookahead to exclude entries containing "musculus".</li>
-</ul>
 <p><strong>Example</strong>: To find samples where <code>UBERONBodyPartName</code> contains "blood" and <code>NCBITaxonomy</code> contains "Rattus norvegicus":</p>
 <div class="highlight"><pre><span></span><code><span class="err">{</span><span class="n">UBERONBodyPartName</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;blood&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="err">{</span><span class="n">NCBITaxonomy</span><span class="err">}</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="ss">&quot;Rattus norvegicus&quot;</span>
 </code></pre></div>
+</li>
+</ol>
 <h3 id="example-filters">Example Filters<a class="headerlink" href="#example-filters" title="Permanent link">&para;</a></h3>
-<p>The dashboard provides preset example filters for quick access:</p>
+<p>The dashboard provides preset example filters for quick access. These filters are not meant to be exhaustive. For example, the Plant Samples filter will return all rows with value "plant" in the "SampleType" column rather than return all plant samples. For more complex filters (e.g., plant samples based on the NCBITaxonomy), download the whole dataset and do so locally or reach out to us:</p>
 <ul>
 <li><strong>Human Samples</strong>: Filters for samples from <em>Homo sapiens</em>.</li>
 <li><strong>Plant Samples</strong>: Shows samples categorized under plants.</li>
@@ -1997,51 +2014,70 @@
 <h3 id="subset-to-mzxml-files">Subset to mz(X)ML Files<a class="headerlink" href="#subset-to-mzxml-files" title="Permanent link">&para;</a></h3>
 <p>To filter the table to only include files ending with <code>.mzML</code> or <code>.mzXML</code>:</p>
 <ol>
-<li><strong>Click "Subset Table to mz(X)ML files"</strong>: This button is located under "Filter Table"-button. Make sure the USI column is not Toggled before clicking. </li>
+<li><strong>Click "Subset Table to mz(X)ML files"</strong>: This button is located under "Filter Table". Make sure the USI column is not toggled before clicking.</li>
 <li><strong>View Results</strong>: The data table will display only the relevant files while keeping your current filters.</li>
 </ol>
 <h2 id="downloading-data">Downloading Data<a class="headerlink" href="#downloading-data" title="Permanent link">&para;</a></h2>
 <h3 id="download-filtered-data">Download Filtered Data<a class="headerlink" href="#download-filtered-data" title="Permanent link">&para;</a></h3>
 <p>After applying your filters, you can download the resulting dataset:</p>
-<ol>
-<li><strong>Click "Download Filtered Table"</strong>: Located under "Download selection".</li>
-<li><strong>Save the File</strong>: A CSV file named <code>filtered_dataset.csv</code> will be downloaded to your device.</li>
-</ol>
+<ul>
+<li><strong>Click "ReDU Table"</strong>: Located under "Download Filtered Subset".</li>
+</ul>
+<h3 id="usis-for-batch-processingdownload">USIs for Batch Processing/Download<a class="headerlink" href="#usis-for-batch-processingdownload" title="Permanent link">&para;</a></h3>
+<p>Download USIs of filtered ReDU table which can be used for batch processing in various GNPS tools or raw data download.</p>
+<ul>
+<li><strong>Important Note</strong>:</li>
+<li>
+<p><strong>This returns a TSV file</strong>: This link returns the USIs from your filtered selection in a TSV file.</p>
+</li>
+<li>
+<p><strong>How to Use</strong>:</p>
+</li>
+<li><strong>Download Data</strong>: You'll download a TSV file with USIs of the filtered table. You can download raw data for those USIs in batch via the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">command-line tool</a>. The tutorial for that tool can be found <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">here</a> and on the next pages of this documentation.</li>
+<li><strong>Batch Molecular Networking or MassQL search</strong>: You can paste downloaded USIs directly into the text fields of the workflows for <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">MassQL</a> or <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">Molecular Networking</a>. If you do not have a GNPS2 account yet, reach out to Prof. Mingxun Wang.</li>
+</ul>
 <h3 id="download-complete-dataset">Download Complete Dataset<a class="headerlink" href="#download-complete-dataset" title="Permanent link">&para;</a></h3>
 <p>To download the entire ReDU dataset:</p>
 <ul>
 <li><strong>Click "Download Complete ReDU"</strong>: Found in the navigation bar at the top.</li>
 </ul>
 <h2 id="downstream-tooling">Downstream Tooling<a class="headerlink" href="#downstream-tooling" title="Permanent link">&para;</a></h2>
-<p>The dashboard offers direct links to tools for further analysis:</p>
-<h3 id="usis-molecular-networking">USIs → Molecular Networking<a class="headerlink" href="#usis-molecular-networking" title="Permanent link">&para;</a></h3>
+<p>The dashboard offers direct links to tools for further analysis and data inspection:</p>
+<h3 id="viewdownload-raw-data-in-browser">View/Download Raw Data in Browser<a class="headerlink" href="#viewdownload-raw-data-in-browser" title="Permanent link">&para;</a></h3>
+<p>View selected raw data files directly in your browser or download them to your PC.</p>
 <ul>
-<li><strong>Purpose</strong>: Generate Molecular Networks for filtered files using Universal Spectrum Identifiers (USIs).</li>
 <li><strong>Important Note</strong>:</li>
-<li><strong>Top 50 mz(X)ML Files</strong>: When you click this link, the system selects the first 50 mz(X)ML files from your filtered data.</li>
-<li><strong>Processing More USIs</strong>: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</li>
-<li><strong>How to Use</strong>:</li>
-<li><strong>Click "USIs → Molecular Networking"</strong> under "Downstream tooling".</li>
+<li>
+<p><strong>Raw data download</strong>: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard.</p>
+</li>
+<li>
+<p><strong>How to Use</strong>:</p>
+</li>
+<li><strong>Proceed to GNPS</strong>: You'll be redirected to the <a href="https://dashboard.gnps2.org/">GNPS dashboard</a> input page with the USIs already populated.</li>
+</ul>
+<h3 id="molecular-networkinglibrary-matching">Molecular Networking/Library Matching<a class="headerlink" href="#molecular-networkinglibrary-matching" title="Permanent link">&para;</a></h3>
+<p>Generate Molecular Networks and molecule annotations for selected files.</p>
+<ul>
+<li><strong>Important Note</strong>:</li>
+<li>
+<p><strong>Batch processing</strong>: If you wish to process more files than can be selected, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</p>
+</li>
+<li>
+<p><strong>How to Use</strong>:</p>
+</li>
 <li><strong>Proceed to GNPS</strong>: You'll be redirected to the GNPS workflow input page with the USIs already populated.</li>
 </ul>
-<h3 id="usis-massql">USIs → MassQL<a class="headerlink" href="#usis-massql" title="Permanent link">&para;</a></h3>
+<h3 id="massqlfragmentation-rule-search">MassQL/Fragmentation Rule Search<a class="headerlink" href="#massqlfragmentation-rule-search" title="Permanent link">&para;</a></h3>
+<p>Query mass spectrometry data using <a href="https://mwang87.github.io/MassQueryLanguage_Documentation/">MassQL</a>.</p>
 <ul>
-<li><strong>Purpose</strong>: Query mass spectrometry data using MassQL.</li>
 <li><strong>Important Note</strong>:</li>
-<li><strong>Top 50 mz(X)ML Files</strong>: As with Molecular Networking, only the top 50 mz(X)ML files are used to prevent system overload.</li>
-<li><strong>Processing More USIs</strong>: If you wish to process more USIs, please download the filtered table (as described above) to get the complete filtered table and copy the USIs directly into the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</li>
-<li><strong>How to Use</strong>:</li>
-<li><strong>Click "USIs → MassQL"</strong>.</li>
+<li>
+<p><strong>Batch processing</strong>: If you wish to process more files than can be selected, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</p>
+</li>
+<li>
+<p><strong>How to Use</strong>:</p>
+</li>
 <li><strong>Proceed to GNPS</strong>: You'll be taken to the MassQL workflow input page with the USIs already populated.</li>
-</ul>
-<h3 id="usis-raw-data-download">USIs → Raw Data Download<a class="headerlink" href="#usis-raw-data-download" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Purpose</strong>: Download raw mass spectrometry data files.</li>
-<li><strong>Important Note</strong>:</li>
-<li><strong>This returns a tsv file</strong>: This link returns <strong>all</strong> USIs from your filtered selection in a tsv file not the actual raw data.</li>
-<li><strong>How to Use</strong>:</li>
-<li><strong>Click "USIs → Raw Data Download"</strong>.</li>
-<li><strong>Download Data</strong>: You'll download a tsv file with USIs of the filtered table. You will then be directed to the GitHub repository of the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">commandline tool</a> to download the raw data. The tutorial for that tool can be found here.</li>
 </ul>
 <h2 id="additional-features">Additional Features<a class="headerlink" href="#additional-features" title="Permanent link">&para;</a></h2>
 <h3 id="customizing-columns">Customizing Columns<a class="headerlink" href="#customizing-columns" title="Permanent link">&para;</a></h3>
@@ -2049,8 +2085,6 @@
 <li><strong>Show/Hide Columns</strong>:</li>
 <li><strong>Select "Hide Column" or "Show Column"</strong>: Customize which columns are visible.</li>
 </ul>
-</li>
-</ol>
 <h1 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h1>
 <p>Yasin El Abiead (UCSD), and Mingxun Wang (UCR)</p>
 
@@ -2073,7 +2107,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2024 20:35:36</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 16, 2024 22:52:24</span>
   </span>
 
     
