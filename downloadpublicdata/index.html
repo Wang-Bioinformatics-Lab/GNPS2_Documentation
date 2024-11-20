@@ -1403,6 +1403,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Download raw data in batch through our public data downloader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-downloader-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Downloader Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1612,6 +1627,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Download raw data in batch through our public data downloader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-downloader-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Downloader Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1646,6 +1676,13 @@
 <p><img alt="GNPS Explorer Download" src="../img/explorer.gif" /></p>
 <h2 id="download-raw-data-in-batch-through-our-public-data-downloader">Download raw data in batch through our public data downloader<a class="headerlink" href="#download-raw-data-in-batch-through-our-public-data-downloader" title="Permanent link">&para;</a></h2>
 <p>This can be done through our <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">public data downloader</a>, which requires just a few command line steps.</p>
+<p>This downloadpublicdata tool enables you to download several different types of data in different ways using MRI reference to each public file. Specifically, you are able to download:</p>
+<ol>
+<li>MRIs of open formats, e.g. mzML, mzXML, MGF</li>
+<li>MRIs of vendor raw data, e.g. .raw, .d, etc. while maintaining the full folder structure for formats like .d</li>
+<li>MRIs of vendor raw data automatically converted to the mzML open format</li>
+</ol>
+<h3 id="using-downloader-steps">Using Downloader Steps<a class="headerlink" href="#using-downloader-steps" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Make sure you have <a href="https://wiki.python.org/moin/BeginnersGuide/Download">Python</a> and <a href="https://github.com/git-guides/install-git">Git</a> installed on your system.</p>
@@ -1680,8 +1717,6 @@
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>./bin/download_public_data_usi.py<span class="w"> </span>./data/test_download.tsv<span class="w"> </span>./data/<span class="w"> </span>./data/summary.tsv<span class="w"> </span>--noconversion
 </code></pre></div>
 <p>Further details can be found in the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">GitHub README</a>.</p>
-<h1 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h1>
-<p>Yasin El Abiead (UCSD) and Mingxun Wang (UCR)</p>
 
 
 
@@ -1702,7 +1737,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 20, 2024 22:39:42</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 20, 2024 22:55:02</span>
   </span>
 
     
