@@ -16,33 +16,42 @@ There are three main ways to download data.
 
 This can be done through our [public data downloader](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata), which requires just a few command line steps.
 
+This downloadpublicdata tool enables you to download several different types of data in different ways using MRI reference to each public file. Specifically, you are able to download:
+
+1. MRIs of open formats, e.g. mzML, mzXML, MGF
+1. MRIs of vendor raw data, e.g. .raw, .d, etc. while maintaining the full folder structure for formats like .d
+1. MRIs of vendor raw data automatically converted to the mzML open format
+
+
+### Using Downloader Steps
+
 1. Make sure you have [Python](https://wiki.python.org/moin/BeginnersGuide/Download) and [Git](https://github.com/git-guides/install-git) installed on your system.
 
-2. Clone the [repository](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) through your terminal by running:
+1. Clone the [repository](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) through your terminal by running:
 
    ```bash
    git clone https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata.git
    ```
 
-3. Navigate to the directory in your terminal with:
+1. Navigate to the directory in your terminal with:
 
    ```bash
    cd downloadpublicdata
    ```
 
-4. Install required packages with:
+1. Install required packages with:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Test if it works with:
+1. Test if it works with:
 
    ```bash
    python ./bin/download_public_data_usi.py ./data/test_download.tsv ./data/ ./data/summary.tsv
    ```
 
-6. Replace `./data/test_download.tsv` with the path to a TSV file containing the USIs you want to download. An example file can be found [here](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata/blob/main/data/test_download.tsv). This should download the raw data into the folder `./data/`.
+1. Replace `./data/test_download.tsv` with the path to a TSV file containing the USIs you want to download. An example file can be found [here](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata/blob/main/data/test_download.tsv). This should download the raw data into the folder `./data/`.
 
    > **Note**: By default, files are converted to `.mzML` format before the download. If you wish to download without conversion, you can use the `--noconversion` flag:
 
@@ -53,5 +62,3 @@ This can be done through our [public data downloader](https://github.com/Wang-Bi
 Further details can be found in the [GitHub README](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata).
 
 
-# Page Contributions
-Yasin El Abiead (UCSD) and Mingxun Wang (UCR)
