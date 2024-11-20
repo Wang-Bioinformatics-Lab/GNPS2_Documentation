@@ -12,7 +12,7 @@ There are three main ways to download data.
 
 ![GNPS Explorer Download](img/explorer.gif)
 
-## Download raw data in batch through our [public data downloader](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata), which requires just a few steps with some coding.
+## Download raw data in batch through our public data downloader
 
 This can be done through our [public data downloader](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata), which requires just a few command line steps.
 
