@@ -1448,6 +1448,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#viewdownload-raw-data-in-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      View/Download Raw Data in Browser
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#downstream-tooling" class="md-nav__link">
     <span class="md-ellipsis">
       Downstream Tooling
@@ -1456,15 +1465,6 @@
   
     <nav class="md-nav" aria-label="Downstream Tooling">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#viewdownload-raw-data-in-browser" class="md-nav__link">
-    <span class="md-ellipsis">
-      View/Download Raw Data in Browser
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#molecular-networkinglibrary-matching" class="md-nav__link">
@@ -1849,6 +1849,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#viewdownload-raw-data-in-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      View/Download Raw Data in Browser
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#downstream-tooling" class="md-nav__link">
     <span class="md-ellipsis">
       Downstream Tooling
@@ -1857,15 +1866,6 @@
   
     <nav class="md-nav" aria-label="Downstream Tooling">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#viewdownload-raw-data-in-browser" class="md-nav__link">
-    <span class="md-ellipsis">
-      View/Download Raw Data in Browser
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#molecular-networkinglibrary-matching" class="md-nav__link">
@@ -2005,6 +2005,7 @@
 <li><strong>Orbitrap Mass Spectrometer</strong>: Filters samples analyzed using an Orbitrap mass spectrometer (QExactive, Orbitrap, Astral substrings).</li>
 <li><strong>Homo sapiens and Mus but no Mus musculus</strong>: Advanced filter excluding <em>Mus musculus</em>.</li>
 <li><strong>Blood Samples from Rattus norvegicus</strong>: Filters for blood samples from <em>Rattus norvegicus</em>.</li>
+<li><strong>Samples with RP-LC, hydrophobic extraction and MS2 scans</strong>: Filters for files with MS/MS scans, hydrophobic extraction solvents, and reversed phase chromatography. (lipidomics type analysis)</li>
 </ul>
 <p><strong>To use an example filter</strong>:</p>
 <ol>
@@ -2024,60 +2025,41 @@
 <li><strong>Click "ReDU Table"</strong>: Located under "Download Filtered Subset".</li>
 </ul>
 <h3 id="usis-for-batch-processingdownload">USIs for Batch Processing/Download<a class="headerlink" href="#usis-for-batch-processingdownload" title="Permanent link">&para;</a></h3>
-<p>Download USIs of filtered ReDU table which can be used for batch processing in various GNPS tools or raw data download.</p>
+<p>Download USIs of filtered ReDU table as tsv file which can be used for batch processing in various GNPS tools or raw data download.</p>
 <ul>
-<li><strong>Important Note</strong>:</li>
-<li>
-<p><strong>This returns a TSV file</strong>: This link returns the USIs from your filtered selection in a TSV file.</p>
-</li>
-<li>
-<p><strong>How to Use</strong>:</p>
-</li>
+<li><strong>How to Use</strong>:</li>
 <li><strong>Download Data</strong>: You'll download a TSV file with USIs of the filtered table. You can download raw data for those USIs in batch via the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">command-line tool</a>. The tutorial for that tool can be found <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">here</a> and on the next pages of this documentation.</li>
-<li><strong>Batch Molecular Networking or MassQL search</strong>: You can paste downloaded USIs directly into the text fields of the workflows for <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">MassQL</a> or <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">Molecular Networking</a>. If you do not have a GNPS2 account yet, reach out to Prof. Mingxun Wang.</li>
+<li>
+<p><strong>Batch Molecular Networking or MassQL search</strong>: You can paste downloaded USIs directly into the text fields of the workflows for <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">MassQL</a> or <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">Molecular Networking</a>. If you do not have a GNPS2 account yet, reach out to Prof. Mingxun Wang.</p>
+</li>
+<li>
+<p><strong>Important Note</strong>:</p>
+</li>
+<li><strong>GNPS2 is a shared resource</strong>: GNPS2 is a shared resource where the sceintific community can gain access to computational resources free of cost. For this reason batch processing of thousands if files via the downstream tooling described below (especially MassQL and Molecular Networking) will likely fail due to insufficient resources. However, if you still wish to do so you can always download raw data as described below and clone the <a href="https://github.com/Wang-Bioinformatics-Lab/Classical_Networking_Workflow">Github Molecular Networking repository</a> or <a href="https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow">Github MassQL repository</a> to on your local computer. </li>
 </ul>
 <h3 id="download-complete-dataset">Download Complete Dataset<a class="headerlink" href="#download-complete-dataset" title="Permanent link">&para;</a></h3>
 <p>To download the entire ReDU dataset:</p>
 <ul>
 <li><strong>Click "Download Complete ReDU"</strong>: Found in the navigation bar at the top.</li>
 </ul>
-<h2 id="downstream-tooling">Downstream Tooling<a class="headerlink" href="#downstream-tooling" title="Permanent link">&para;</a></h2>
-<p>The dashboard offers direct links to tools for further analysis and data inspection:</p>
-<h3 id="viewdownload-raw-data-in-browser">View/Download Raw Data in Browser<a class="headerlink" href="#viewdownload-raw-data-in-browser" title="Permanent link">&para;</a></h3>
-<p>View selected raw data files directly in your browser or download them to your PC.</p>
+<h2 id="viewdownload-raw-data-in-browser">View/Download Raw Data in Browser<a class="headerlink" href="#viewdownload-raw-data-in-browser" title="Permanent link">&para;</a></h2>
+<p>After selecting files via the row checkboxes you can view the selected raw data files directly in your browser or download them to your PC by chlicking the "View/Download Raw Data in Browser" button. This will redirect to the <a href="https://dashboard.gnps2.org/">GNPS dashboard</a> input page with the USIs already populated.</p>
 <ul>
 <li><strong>Important Note</strong>:</li>
-<li>
-<p><strong>Raw data download</strong>: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard.</p>
-</li>
-<li>
-<p><strong>How to Use</strong>:</p>
-</li>
-<li><strong>Proceed to GNPS</strong>: You'll be redirected to the <a href="https://dashboard.gnps2.org/">GNPS dashboard</a> input page with the USIs already populated.</li>
+<li><strong>Raw data download</strong>: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard and click the download buttons. </li>
 </ul>
+<h2 id="downstream-tooling">Downstream Tooling<a class="headerlink" href="#downstream-tooling" title="Permanent link">&para;</a></h2>
 <h3 id="molecular-networkinglibrary-matching">Molecular Networking/Library Matching<a class="headerlink" href="#molecular-networkinglibrary-matching" title="Permanent link">&para;</a></h3>
 <p>Generate Molecular Networks and molecule annotations for selected files.</p>
 <ul>
 <li><strong>Important Note</strong>:</li>
-<li>
-<p><strong>Batch processing</strong>: If you wish to process more files than can be selected, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</p>
-</li>
-<li>
-<p><strong>How to Use</strong>:</p>
-</li>
-<li><strong>Proceed to GNPS</strong>: You'll be redirected to the GNPS workflow input page with the USIs already populated.</li>
+<li><strong>Batch processing</strong>: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</li>
 </ul>
 <h3 id="massqlfragmentation-rule-search">MassQL/Fragmentation Rule Search<a class="headerlink" href="#massqlfragmentation-rule-search" title="Permanent link">&para;</a></h3>
 <p>Query mass spectrometry data using <a href="https://mwang87.github.io/MassQueryLanguage_Documentation/">MassQL</a>.</p>
 <ul>
 <li><strong>Important Note</strong>:</li>
-<li>
-<p><strong>Batch processing</strong>: If you wish to process more files than can be selected, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</p>
-</li>
-<li>
-<p><strong>How to Use</strong>:</p>
-</li>
-<li><strong>Proceed to GNPS</strong>: You'll be taken to the MassQL workflow input page with the USIs already populated.</li>
+<li><strong>Batch processing</strong>: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</li>
 </ul>
 <h2 id="additional-features">Additional Features<a class="headerlink" href="#additional-features" title="Permanent link">&para;</a></h2>
 <h3 id="customizing-columns">Customizing Columns<a class="headerlink" href="#customizing-columns" title="Permanent link">&para;</a></h3>
@@ -2107,7 +2089,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 20, 2024 20:21:20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 20, 2024 22:39:42</span>
   </span>
 
     
