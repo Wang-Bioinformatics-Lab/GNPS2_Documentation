@@ -1971,7 +1971,7 @@
 <ol>
 <li><strong>Locate the Column Filter</strong>: Click on the filter input beneath the column name.</li>
 <li><strong>Enter Filter Criteria</strong>: Input your filter expression. You can use operators such as:</li>
-<li><code>=</code>: Equals (for numerical columns)</li>
+<li><code>=</code>: Equals (for numerical and character columns)</li>
 <li><code>!=</code>: Not equal (for numerical columns)</li>
 <li><code>&gt;</code>: Greater than (for numerical columns)</li>
 <li><code>&lt;</code>: Less than (for numerical columns)</li>
@@ -2020,53 +2020,40 @@
 </ol>
 <h2 id="downloading-data">Downloading Data<a class="headerlink" href="#downloading-data" title="Permanent link">&para;</a></h2>
 <h3 id="download-filtered-data">Download Filtered Data<a class="headerlink" href="#download-filtered-data" title="Permanent link">&para;</a></h3>
-<p>After applying your filters, you can download the resulting dataset:</p>
-<ul>
-<li><strong>Click "ReDU Table"</strong>: Located under "Download Filtered Subset".</li>
-</ul>
+<p>After applying your filters, you can download the resulting dataset by clicking <strong>"ReDU Table"</strong> which is located under "Download Filtered Subset".</p>
 <h3 id="usis-for-batch-processingdownload">USIs for Batch Processing/Download<a class="headerlink" href="#usis-for-batch-processingdownload" title="Permanent link">&para;</a></h3>
 <p>Download USIs of filtered ReDU table as tsv file which can be used for batch processing in various GNPS tools or raw data download.</p>
-<ul>
-<li><strong>How to Use</strong>:</li>
-<li><strong>Download Data</strong>: You'll download a TSV file with USIs of the filtered table. You can download raw data for those USIs in batch via the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">command-line tool</a>. The tutorial for that tool can be found <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">here</a> and on the next pages of this documentation.</li>
-<li>
-<p><strong>Batch Molecular Networking or MassQL search</strong>: You can paste downloaded USIs directly into the text fields of the workflows for <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">MassQL</a> or <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">Molecular Networking</a>. If you do not have a GNPS2 account yet, reach out to Prof. Mingxun Wang.</p>
-</li>
-<li>
-<p><strong>Important Note</strong>:</p>
-</li>
-<li><strong>GNPS2 is a shared resource</strong>: GNPS2 is a shared resource where the sceintific community can gain access to computational resources free of cost. For this reason batch processing of thousands if files via the downstream tooling described below (especially MassQL and Molecular Networking) will likely fail due to insufficient resources. However, if you still wish to do so you can always download raw data as described below and clone the <a href="https://github.com/Wang-Bioinformatics-Lab/Classical_Networking_Workflow">Github Molecular Networking repository</a> or <a href="https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow">Github MassQL repository</a> to on your local computer. </li>
-</ul>
+<p><strong>How to Use</strong>:
+  1. <strong>Download Data</strong>: You'll download a TSV file with USIs of the filtered table. You can download raw data for those USIs in batch via the <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">command-line tool</a>. The tutorial for that tool can be found <a href="https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata">here</a> and on the next pages of this documentation.
+  2. <strong>Batch Molecular Networking or MassQL search</strong>: You can paste downloaded USIs directly into the text fields of the workflows for <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">MassQL</a> or <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">Molecular Networking</a>. If you do not have a GNPS2 account yet, reach out to Prof. Mingxun Wang.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p><strong>GNPS2 is a shared resource</strong> where the sceintific community can gain access to computational resources free of cost. For this reason batch processing of thousands if files via the downstream tooling described below (especially MassQL and Molecular Networking) will likely fail due to insufficient resources. However, if you still wish to do so you can always download raw data as described below and clone the <a href="https://github.com/Wang-Bioinformatics-Lab/Classical_Networking_Workflow">Github Molecular Networking repository</a> or <a href="https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow">Github MassQL repository</a> to on your local computer. </p>
 <h3 id="download-complete-dataset">Download Complete Dataset<a class="headerlink" href="#download-complete-dataset" title="Permanent link">&para;</a></h3>
-<p>To download the entire ReDU dataset:</p>
-<ul>
-<li><strong>Click "Download Complete ReDU"</strong>: Found in the navigation bar at the top.</li>
-</ul>
+<p>To download the entire ReDU dataset click "Download Complete ReDU"** found in the navigation bar at the top.</p>
 <h2 id="viewdownload-raw-data-in-browser">View/Download Raw Data in Browser<a class="headerlink" href="#viewdownload-raw-data-in-browser" title="Permanent link">&para;</a></h2>
 <p>After selecting files via the row checkboxes you can view the selected raw data files directly in your browser or download them to your PC by chlicking the "View/Download Raw Data in Browser" button. This will redirect to the <a href="https://dashboard.gnps2.org/">GNPS dashboard</a> input page with the USIs already populated.</p>
-<ul>
-<li><strong>Important Note</strong>:</li>
-<li><strong>Raw data download</strong>: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard and click the download buttons. </li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p><strong>Raw data download</strong>: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard and click the download buttons. </p>
 <h2 id="downstream-tooling">Downstream Tooling<a class="headerlink" href="#downstream-tooling" title="Permanent link">&para;</a></h2>
 <h3 id="molecular-networkinglibrary-matching">Molecular Networking/Library Matching<a class="headerlink" href="#molecular-networkinglibrary-matching" title="Permanent link">&para;</a></h3>
 <p>Generate Molecular Networks and molecule annotations for selected files.</p>
-<ul>
-<li><strong>Important Note</strong>:</li>
-<li><strong>Batch processing</strong>: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p><strong>Batch processing</strong>: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=classical_networking_workflow">workflow</a>.</p>
 <h3 id="massqlfragmentation-rule-search">MassQL/Fragmentation Rule Search<a class="headerlink" href="#massqlfragmentation-rule-search" title="Permanent link">&para;</a></h3>
 <p>Query mass spectrometry data using <a href="https://mwang87.github.io/MassQueryLanguage_Documentation/">MassQL</a>.</p>
-<ul>
-<li><strong>Important Note</strong>:</li>
-<li><strong>Batch processing</strong>: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p><strong>Batch processing</strong>: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the <a href="https://gnps2.org/workflowinput?workflowname=massql_workflow">workflow</a>.</p>
 <h2 id="additional-features">Additional Features<a class="headerlink" href="#additional-features" title="Permanent link">&para;</a></h2>
 <h3 id="customizing-columns">Customizing Columns<a class="headerlink" href="#customizing-columns" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Show/Hide Columns</strong>:</li>
-<li><strong>Select "Hide Column" or "Show Column"</strong>: Customize which columns are visible.</li>
-</ul>
+<p><em>Select "Hide Column" or "Show Column"</em>*: Customize which columns are visible.</p>
 <h1 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h1>
 <p>Yasin El Abiead (UCSD), and Mingxun Wang (UCR)</p>
 
@@ -2089,7 +2076,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 20, 2024 22:55:02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2024 21:16:27</span>
   </span>
 
     
