@@ -23,13 +23,15 @@ nav:
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
+        - Request an Account: idbac-request-an-account.md
+        - Office Hours: idbacofficehours.md
         - Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacsumbmitdata.md
         - Analysis Platform: idbacanalysisplatform.md
         - Data Conversion - Raw Bruker: idbacrawconversion.md
         - Data Conversion - non Bruker: idbacmsconvertfilemerger.md
         - Data Conversion - mzXML to mzML: idbacmzxmlconversion.md
-        - Office Hours: idbacofficehours.md
+        
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:
@@ -45,6 +47,11 @@ nav:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md
     - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
+    - GNPS2 PanReDU:
+        - ReDU Overview: ReDU_overview.md
+        - ReDU Data Selection: ReDU_Dataselection_dashboard.md
+        - ReDU Contribution: ReDU_Contribution.md
+        - Pan Repo Public Data Downloader: downloadpublicdata.md
     - GNPS2 Quickstart2: quickstart2.md
     - API: api.md
     - Logos: logo.md
