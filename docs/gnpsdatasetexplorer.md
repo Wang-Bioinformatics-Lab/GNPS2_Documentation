@@ -26,7 +26,7 @@ We attempt to gather metadata from several sources for public mass spectrometry 
 1. MassIVE Metadata Uploads
 1. Metabolights Study Information
 
-Please note that only partial ReDU metadata will be shown here. For full metadata go to the [Pan-ReDU metadata selection dashboard](https://redu.gnps2.org/selection/).
+Please note that only partial ReDU metadata will be shown here. For full metadata go to the [Pan-ReDU metadata selection dashboard](https://redu.gnps2.org/selection/). 
 
 ## Listing GNPS Tasks
 
