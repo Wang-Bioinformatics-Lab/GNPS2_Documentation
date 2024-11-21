@@ -44,7 +44,7 @@ Below the summary statistics, the main data table displays the dataset. Each col
 
 1. **Locate the Column Filter**: Click on the filter input beneath the column name.
 2. **Enter Filter Criteria**: Input your filter expression. You can use operators such as:
-   - `=`: Equals (for numerical columns)
+   - `=`: Equals (for numerical and character columns)
    - `!=`: Not equal (for numerical columns)
    - `>`: Greater than (for numerical columns)
    - `<`: Less than (for numerical columns)
@@ -103,35 +103,31 @@ To filter the table to only include files ending with `.mzML` or `.mzXML`:
 
 ### Download Filtered Data
 
-After applying your filters, you can download the resulting dataset:
-
-- **Click "ReDU Table"**: Located under "Download Filtered Subset".
+After applying your filters, you can download the resulting dataset by clicking **"ReDU Table"** which is located under "Download Filtered Subset".
 
 ### USIs for Batch Processing/Download
 
 Download USIs of filtered ReDU table as tsv file which can be used for batch processing in various GNPS tools or raw data download.
 
-- **How to Use**:
+**How to Use**:
   1. **Download Data**: You'll download a TSV file with USIs of the filtered table. You can download raw data for those USIs in batch via the [command-line tool](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata). The tutorial for that tool can be found [here](https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata) and on the next pages of this documentation.
   2. **Batch Molecular Networking or MassQL search**: You can paste downloaded USIs directly into the text fields of the workflows for [MassQL](https://gnps2.org/workflowinput?workflowname=massql_workflow) or [Molecular Networking](https://gnps2.org/workflowinput?workflowname=classical_networking_workflow). If you do not have a GNPS2 account yet, reach out to Prof. Mingxun Wang.
 
 
-- **Important Note**:
-  - **GNPS2 is a shared resource**: GNPS2 is a shared resource where the sceintific community can gain access to computational resources free of cost. For this reason batch processing of thousands if files via the downstream tooling described below (especially MassQL and Molecular Networking) will likely fail due to insufficient resources. However, if you still wish to do so you can always download raw data as described below and clone the [Github Molecular Networking repository](https://github.com/Wang-Bioinformatics-Lab/Classical_Networking_Workflow) or [Github MassQL repository](https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow) to on your local computer. 
+!!! note
+  **GNPS2 is a shared resource** where the sceintific community can gain access to computational resources free of cost. For this reason batch processing of thousands if files via the downstream tooling described below (especially MassQL and Molecular Networking) will likely fail due to insufficient resources. However, if you still wish to do so you can always download raw data as described below and clone the [Github Molecular Networking repository](https://github.com/Wang-Bioinformatics-Lab/Classical_Networking_Workflow) or [Github MassQL repository](https://github.com/Wang-Bioinformatics-Lab/MassQL_Workflow) to on your local computer. 
 
 ### Download Complete Dataset
 
-To download the entire ReDU dataset:
-
-- **Click "Download Complete ReDU"**: Found in the navigation bar at the top.
+To download the entire ReDU dataset click "Download Complete ReDU"** found in the navigation bar at the top.
 
 
 ## View/Download Raw Data in Browser
 
 After selecting files via the row checkboxes you can view the selected raw data files directly in your browser or download them to your PC by chlicking the "View/Download Raw Data in Browser" button. This will redirect to the [GNPS dashboard](https://dashboard.gnps2.org/) input page with the USIs already populated.
 
-- **Important Note**:
-  - **Raw data download**: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard and click the download buttons. 
+!!! note
+  **Raw data download**: If you wish to download raw data, scroll down to the 'File Summaries' section of the Dashboard and click the download buttons. 
 
 
 ## Downstream Tooling
@@ -140,22 +136,21 @@ After selecting files via the row checkboxes you can view the selected raw data 
 
 Generate Molecular Networks and molecule annotations for selected files.
 
-- **Important Note**:
-  - **Batch processing**: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the [workflow](https://gnps2.org/workflowinput?workflowname=classical_networking_workflow).
+!!! note
+  **Batch processing**: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the [workflow](https://gnps2.org/workflowinput?workflowname=classical_networking_workflow).
 
 ### MassQL/Fragmentation Rule Search
 
 Query mass spectrometry data using [MassQL](https://mwang87.github.io/MassQueryLanguage_Documentation/).
 
-- **Important Note**:
-  - **Batch processing**: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the [workflow](https://gnps2.org/workflowinput?workflowname=massql_workflow).
+!!! note
+  **Batch processing**: If you wish to process more files than can be selected on a single page, download the (filtered) ReDU table, as described above, or the filtered USIs (via the "USIs for Batch Processing/Download" button) and copy the USIs directly into the text field of the [workflow](https://gnps2.org/workflowinput?workflowname=massql_workflow).
 
 ## Additional Features
 
 ### Customizing Columns
 
-- **Show/Hide Columns**:
-  - **Select "Hide Column" or "Show Column"**: Customize which columns are visible.
+*Select "Hide Column" or "Show Column"**: Customize which columns are visible.
 
 # Page Contributions
 
