@@ -43,6 +43,7 @@ nav:
         - ModiFinder: modifinder.md
         - Networking Overlay: Networkingoverlay.md
         - Network Topology - Transitive Alignments: transitive.md
+        - Multiple Spectrum Alignment: mmsa.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md
