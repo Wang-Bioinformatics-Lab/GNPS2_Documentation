@@ -11,7 +11,7 @@ flowchart LR
     F --> |No| G[Click 'Downstream Analysis']
     F --> |Yes| H[Complete the steps in this flowchart for your small molecule data]
     click B href "https://proteowizard.sourceforge.io/"
-    click C href "https://docs.google.com/spreadsheets/d/e/2PACX-1vSiVhxSfJDf3PEZ6ts_Rf124xX7rDvHGF69fqJy4JlbcyPHvUm60BUoBhN4Z_BRpA/pub?output=xlsx"
+    click C href "https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
 
