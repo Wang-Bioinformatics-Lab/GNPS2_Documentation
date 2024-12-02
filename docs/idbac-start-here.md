@@ -1,5 +1,6 @@
 ---
-Starting with raw Bruker data (This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions)
+Starting with raw Bruker data 
+(This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions)
 ---
 ```mermaid
 flowchart LR
