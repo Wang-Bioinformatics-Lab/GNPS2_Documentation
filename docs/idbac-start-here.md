@@ -3,7 +3,7 @@ NOTE: This page is currently being updated, please visit at a later time or emai
 
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Raw Bruker Data] --> B[Convert raw protein data to mzML via MSConvert]
     B --> C[Download and fill out a MALDI TOF plate map]
     C --> D[Upload converted mzML files and plate map to GNPS2]
