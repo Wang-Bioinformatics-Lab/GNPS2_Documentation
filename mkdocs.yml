@@ -23,13 +23,16 @@ nav:
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
+        - Start Here: idbac-start-here.md 
+        - Request an Account: idbac-request-an-account.md
+        - Office Hours: idbacofficehours.md
         - Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacsumbmitdata.md
         - Analysis Platform: idbacanalysisplatform.md
         - Data Conversion - Raw Bruker: idbacrawconversion.md
         - Data Conversion - non Bruker: idbacmsconvertfilemerger.md
         - Data Conversion - mzXML to mzML: idbacmzxmlconversion.md
-        - Office Hours: idbacofficehours.md
+        
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:
@@ -41,6 +44,7 @@ nav:
         - ModiFinder: modifinder.md
         - Networking Overlay: Networkingoverlay.md
         - Network Topology - Transitive Alignments: transitive.md
+        - Multiple Spectrum Alignment: mmsa.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md

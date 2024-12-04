@@ -1,6 +1,11 @@
 ## Account Creation
 
-To create an account, you'll need to reach out to Ming to get an signup token. When reaching out, please let us know who you are and your institution. Please also email from your actual academic affiliation email address.
+To create an account, please [contact us](contact.md) via email or join us in office hours to get started. When reaching out, please let us know your:
+
+1. Name
+2. institution
+
+NOTE: Please also email from your actual academic affiliation email address.
 
 Once you have a token, please create an account [here](https://gnps2.org/user/signup).
 

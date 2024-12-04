@@ -19,12 +19,14 @@ Once you have entered an accession, a set of files will appear in the table. You
 
 ### Metadata
 
-We attempt to gather metadata from several sources for public mass spectrometry data in MassIVE/GNPS. 
+We attempt to gather metadata from several sources for public mass spectrometry data in MassIVE/GNPS. The metadata source can be selected in the "Metadata Source" dropdown menu. Only metadata sources available for the current dataset is shown. 
 
 1. Default (MS information from run)
 1. ReDU
 1. MassIVE Metadata Uploads
 1. Metabolights Study Information
+
+Please note that only partial ReDU metadata will be shown here. For full metadata go to the [Pan-ReDU metadata selection dashboard](https://redu.gnps2.org/selection/).
 
 ## Listing GNPS Tasks
 
