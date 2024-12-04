@@ -1,6 +1,7 @@
----
-This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions
----
+
+NOTE: This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions
+
+
 ```mermaid
 flowchart LR
     A[Raw Bruker Data] --> B[Convert raw protein data to mzML via MSConvert]
@@ -31,3 +32,4 @@ flowchart LR
     linkStyle 2 stroke:#ffcc33,stroke-width:2px
     linkStyle 3 stroke:#ffcc33,stroke-width:2px
     linkStyle 4 stroke:#ffcc33,stroke-width:2px
+```
