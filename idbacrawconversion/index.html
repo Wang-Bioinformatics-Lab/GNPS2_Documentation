@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1652,25 +1661,25 @@
 <p>iv) Ensure mzML is selected under 'Options/Output format'.</p>
 <p>v) When the previous steps are completed, click 'Start'.</p>
 <p>vi) The output of this conversion will be a single autoexecute mzML for the entire plate or single mzML files for each well. These files will be re-named and replicates will be merged within the "Idbac_split_maldi_workflow" section below.</p>
-<p><img width="1054" alt="autoexex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/54cb4f20-2283-431f-b698-6757f2d3125f"></p>
-<p><img width="1066" alt="Manualex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e3798a46-19ce-4f99-979d-febc9f9f8338"></p>
-<p><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/98c67e40-dcab-4d12-9178-f58432b9665d" /></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/54cb4f20-2283-431f-b698-6757f2d3125f" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="1054" alt="autoexex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/54cb4f20-2283-431f-b698-6757f2d3125f"></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e3798a46-19ce-4f99-979d-febc9f9f8338" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="1066" alt="Manualex" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e3798a46-19ce-4f99-979d-febc9f9f8338"></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/98c67e40-dcab-4d12-9178-f58432b9665d" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/98c67e40-dcab-4d12-9178-f58432b9665d" /></a></p>
 <h1 id="2-upload-mzml-files-to-gnps2org">2) Upload mzML files to GNPS2.org<a class="headerlink" href="#2-upload-mzml-files-to-gnps2org" title="Permanent link">&para;</a></h1>
 <p>i) Select "File Browser" found on the <a href="https://gnps2.org/homepage">GNPS2.org</a> homepage.</p>
 <p>ii) Create a new folder and upload your converted files.</p>
-<p><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/d7db9757-c14d-4a8f-97a3-8a61dd90ddf3" /></p>
-<p><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ef017f85-3315-4ce1-8c24-cb1bf948c41b" /></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/d7db9757-c14d-4a8f-97a3-8a61dd90ddf3" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/d7db9757-c14d-4a8f-97a3-8a61dd90ddf3" /></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ef017f85-3315-4ce1-8c24-cb1bf948c41b" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/ef017f85-3315-4ce1-8c24-cb1bf948c41b" /></a></p>
 <h1 id="3-split-re-name-autoexecute-file">3) Split/ re-name autoexecute file<a class="headerlink" href="#3-split-re-name-autoexecute-file" title="Permanent link">&para;</a></h1>
 <p><em>For Autoexecute mzML: This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions.</em></p>
 <p><em>For manual collection mzML: This workflow will re-name your mzML files based on your plate map and well positions.</em></p>
 <p>i) Open the <a href="https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow">idbac_split_maldi workflow</a></p>
 <p>ii) Select your autoExecute mzML and plate map from the drop down menu.</p>
 <p>iii) Submit workflow.</p>
-<p><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/318e354a-8159-43f7-98df-e915c3d00d72" /></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/318e354a-8159-43f7-98df-e915c3d00d72" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/318e354a-8159-43f7-98df-e915c3d00d72" /></a></p>
 <h2 id="4-choose-what-you-would-like-to-do-next"><ins>4) Choose what you would like to do next:<ins><a class="headerlink" href="#4-choose-what-you-would-like-to-do-next" title="Permanent link">&para;</a></h2>
 <p>a) <strong>IDBac Analysis:</strong> Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "IDBac analysis" tab).</p>
 <p>b) <strong>IDBac Protein Database Deposition:</strong> Deposit metadata and spectra of genetically verified isolates into the IDBac database (See "IDBac Depositions" tab).</p>
-<p><img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92"></a></p>
 
 
 
@@ -1691,7 +1700,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 17:44:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:22:02</span>
   </span>
 
     
@@ -1746,5 +1755,7 @@
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

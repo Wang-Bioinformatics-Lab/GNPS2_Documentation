@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1720,7 +1729,7 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 </tbody>
 </table>
 <p>The fields are presented in the image. Bold fields are mandatory:
-<img alt="chemwalker input fields image" src="../img/workflows/chemwalker/chemwalker_input.png" /></p>
+<a class="glightbox" href="../img/workflows/chemwalker/chemwalker_input.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="chemwalker input fields image" src="../img/workflows/chemwalker/chemwalker_input.png" /></a></p>
 <h3 id="links-to-task-ids">Links to task ids<a class="headerlink" href="#links-to-task-ids" title="Permanent link">&para;</a></h3>
 <p>The information from the molecular network is necessary to annotate the nodes (features). For that, chemwalker needs the job id of the molecular network task. To view the task_id, check the red rectangle in the <a href="../img/workflows/task_id.png">image</a>. The task id can correspond to a <a href="https://gnps2.org/workflowinput?workflowname=feature_based_molecular_networking_workflow">GNPS2 Feature based molecular networking (FBMN)</a>, to a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22FEATURE-BASED-MOLECULAR-NETWORKING%22,%22library_on_server%22:%22d.speclibs;%22%7D">GNPS FBMN</a> or a <a href="https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D">GNPS Molecular Networking v2</a>. </p>
 <h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
@@ -1793,18 +1802,18 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 </tbody>
 </table>
 <p>The different parts of the output are presented in the image:
-<img alt="Workflow clone task button" src="../img/workflows/chemwalker/chemwalker_output.png" /></p>
+<a class="glightbox" href="../img/workflows/chemwalker/chemwalker_output.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Workflow clone task button" src="../img/workflows/chemwalker/chemwalker_output.png" /></a></p>
 <h2 id="example-task">Example task<a class="headerlink" href="#example-task" title="Permanent link">&para;</a></h2>
 <p>To test the functionality of the ChemWalker workflow an <a href="https://gnps2.org/status?task=13e0cc3fafd14f328197c0b45999abc8">Example task</a> can be visited, and this work can be reproduced by clicking the <a href="../img/workflows/clone_button.png">clone button</a>: </p>
-<p><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></p>
+<p><a class="glightbox" href="../img/workflows/clone_button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></a></p>
 <h3 id="example-output">Example output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
 <p>The result of the task is the annotation of compounds from the chosen database according to the in-silico fragmentations calculated by MetFrag. The cluster index is the identification of the feature, the score is the associated score for the corresponding annotation for that specific feature. Results are sorted according to cluster index and score. The online results are not complete, it is recommended to download the full table. </p>
-<p><img alt="chemwalker annotations results example" src="../img/workflows/chemwalker/chemwalker_structures_tsv.png" /> </p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/chemwalker_structures_tsv.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="chemwalker annotations results example" src="../img/workflows/chemwalker/chemwalker_structures_tsv.png" /></a> </p>
 <p>The user can download the graphml with the new nodes annotated by chem Walker, and now each node in the network contains the annotation calculated by ChemWalker. </p>
-<p><img alt="chemwalker graphml network results example" src="../img/workflows/chemwalker/chemwalker_network_graphml.png" /> </p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/chemwalker_network_graphml.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="chemwalker graphml network results example" src="../img/workflows/chemwalker/chemwalker_network_graphml.png" /></a> </p>
 <h1 id="full-tutorial-of-chemwalker">Full tutorial of ChemWalker<a class="headerlink" href="#full-tutorial-of-chemwalker" title="Permanent link">&para;</a></h1>
 <p>ChemWalker is a python package to propagate spectral library match identities through candidate structures provided by in silico fragmentation, using random walk.</p>
-<p><img alt="model" src="../img/workflows/chemwalker/walk_schem.png" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/walk_schem.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="model" src="../img/workflows/chemwalker/walk_schem.png" /></a></p>
 <p>Check out the package's <a href="https://github.com/computational-chemical-biology/ChemWalker">documentation</a>.</p>
 <h3 id="structure-database">Structure database<a class="headerlink" href="#structure-database" title="Permanent link">&para;</a></h3>
 <p>There are basically three options for database structure selection:</p>
@@ -1812,33 +1821,33 @@ A detailed explanation of the tool is found <a href="#full-tutorial-of-chemwalke
 <li>The default natural products database is the <a href="https://coconut.naturalproducts.net/">COCONUT</a> database. </li>
 <li>Input an in house generated database. 
 A standard format is required for the in house database. One can easily collect structures in the literature and format a tab separated files with SMILES strings and a character identifier of any kind, as the example database <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin.txt">Right-click, and Save link as</a>:<br />
-<img alt="inhousedb" src="../img/workflows/chemwalker/example_inhouse_database.png" /></li>
+<a class="glightbox" href="../img/workflows/chemwalker/example_inhouse_database.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="inhousedb" src="../img/workflows/chemwalker/example_inhouse_database.png" /></a></li>
 </ol>
 <p>Having an in house collection, the user has to first format the database, using the following <a href="http://seriema.fcfrp.usp.br:5002/upload">webserver</a>:</p>
-<p><img alt="conversionweb" src="../img/workflows/chemwalker/format_database_webform.png" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/format_database_webform.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="conversionweb" src="../img/workflows/chemwalker/format_database_webform.png" /></a></p>
 <p>After submission for conversion the user should receive an email with the link to download a file in the following format <a href="https://raw.githubusercontent.com/DorresteinLaboratory/GNPSDocumentation/master/docs/static/JNP_Kyobin_formatted.txt">Right-click, and Save link as</a>:</p>
-<p><img alt="inhousedbformat" src="../img/workflows/chemwalker/inhouse_databse_formatted.png" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/inhouse_databse_formatted.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="inhousedbformat" src="../img/workflows/chemwalker/inhouse_databse_formatted.png" /></a></p>
 <h2 id="chemwalker-visualization-in-cytoscape">ChemWalker Visualization in Cytoscape<a class="headerlink" href="#chemwalker-visualization-in-cytoscape" title="Permanent link">&para;</a></h2>
 <p>In a similar way as Molecular Networking uses Cytoscape to visualize the whole network, we can visualize structure prediction of entire connected component or networks using the output <code>Random walk strtuctures graphml</code> available at the results page.</p>
 <p>Cytoscape (we have used version &gt;= 3.4) is available for download from <a href="http://www.cytoscape.org">here</a>. </p>
 <h3 id="download-chemwalkers-cytoscape-files">Download ChemWalker's Cytoscape files<a class="headerlink" href="#download-chemwalkers-cytoscape-files" title="Permanent link">&para;</a></h3>
 <p>To download the Cytoscape file, go back to the results page of your task:</p>
-<p><img alt="cytoscape" src="../img/workflows/chemwalker/rw_results_page_summary.png" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/rw_results_page_summary.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cytoscape" src="../img/workflows/chemwalker/rw_results_page_summary.png" /></a></p>
 <p>After the download, remember to uncompress the file for downstream use.</p>
 <h3 id="installing-the-chemviz-plugin">Installing the ChemViz plugin<a class="headerlink" href="#installing-the-chemviz-plugin" title="Permanent link">&para;</a></h3>
 <p>To visualize the structures on NAP output we need the <a href="https://apps.cytoscape.org/apps/chemviz">ChemViz</a> plugin. The easiest way to install it is using Cytoscape's App Manager, as shown below:</p>
-<p><img alt="install_chemviz" src="../img/workflows/chemwalker/chemviz_install.gif" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/chemviz_install.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="install_chemviz" src="../img/workflows/chemwalker/chemviz_install.gif" /></a></p>
 <h2 id="load-chemwalkers-cytoscape-file-and-apply-layout">Load ChemWalker's Cytoscape file and apply layout<a class="headerlink" href="#load-chemwalkers-cytoscape-file-and-apply-layout" title="Permanent link">&para;</a></h2>
 <p>Load the graphml file and apply a layout to spread the nodes:</p>
-<p><img alt="layout" src="../img/workflows/chemwalker/cytoscape_layout.gif" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/cytoscape_layout.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="layout" src="../img/workflows/chemwalker/cytoscape_layout.gif" /></a></p>
 <h2 id="change-image-display-properties-and-paint-library-match-structure">Change image display properties and paint library match structure<a class="headerlink" href="#change-image-display-properties-and-paint-library-match-structure" title="Permanent link">&para;</a></h2>
 <p>The graphml file contains some pre-set elements to aid structure display. Browsing the 'Table Panel' is possible to inspect which scoring method has structures available in the column SMILES. To use one of these columns to display the structures we have first to change the properties of ChemViz, by doing:</p>
-<p><img alt="library_smiles" src="../img/workflows/chemwalker/set_spectral_library_smiles.gif" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/set_spectral_library_smiles.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="library_smiles" src="../img/workflows/chemwalker/set_spectral_library_smiles.gif" /></a></p>
 <p>After setting the desired source column to display the structure one can just 'paint' the structure on the node:</p>
-<p><img alt="paint_library" src="../img/workflows/chemwalker/paint_spectral_library_structure.gif" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/paint_spectral_library_structure.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="paint_library" src="../img/workflows/chemwalker/paint_spectral_library_structure.gif" /></a></p>
 <h3 id="display-the-list-of-candidates">Display the list of candidates<a class="headerlink" href="#display-the-list-of-candidates" title="Permanent link">&para;</a></h3>
 <p>The most correct structure may not be the first candidate. Therefore we can display the structures outputted from our <a href="#parameter-walkthrough">initial parameters</a>:</p>
-<p><img alt="cand_chemviz" src="../img/workflows/chemwalker/display_consensus_candidates.gif" /></p>
+<p><a class="glightbox" href="../img/workflows/chemwalker/display_consensus_candidates.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cand_chemviz" src="../img/workflows/chemwalker/display_consensus_candidates.gif" /></a></p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p><a href="https://doi.org/10.1093/bioinformatics/btad078">Tiago Cabral Borelli, Gabriel Santos Arini, Luís G P Feitosa, Pieter C Dorrestein, Norberto Peporine Lopes, Ricardo R da Silva. Improving annotation propagation on molecular networks through random walks: introducing ChemWalker. Bioinformatics 2023, 39(3), btad078.</a></p>
 <h2 id="page-contributors">Page Contributors<a class="headerlink" href="#page-contributors" title="Permanent link">&para;</a></h2>
@@ -1863,7 +1872,7 @@ A standard format is required for the in house database. One can easily collect 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 17:44:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:22:02</span>
   </span>
 
     
@@ -1918,5 +1927,7 @@ A standard format is required for the in house database. One can easily collect 
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

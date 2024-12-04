@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1700,7 +1709,7 @@ Here you can also read how you can easily run MS2Query locally from the command 
 </tbody>
 </table>
 <p>The fields are presented in the image. Bold fields are mandatory:
-<img alt="MS2Query input fields image" src="../img/workflows/ms2query/ms2query_input.png" /></p>
+<a class="glightbox" href="../img/workflows/ms2query/ms2query_input.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MS2Query input fields image" src="../img/workflows/ms2query/ms2query_input.png" /></a></p>
 <h3 id="example-input">Example Input<a class="headerlink" href="#example-input" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -1766,13 +1775,13 @@ Here you can also read how you can easily run MS2Query locally from the command 
 </tbody>
 </table>
 <p>The different parts of the output are presented in the image:
-<img alt="Workflow clone task button" src="../img/workflows/ms2query/ms2query_output.png" /></p>
+<a class="glightbox" href="../img/workflows/ms2query/ms2query_output.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Workflow clone task button" src="../img/workflows/ms2query/ms2query_output.png" /></a></p>
 <h2 id="example-task">Example task<a class="headerlink" href="#example-task" title="Permanent link">&para;</a></h2>
 <p>To test the functionality of the MS2Query workflow an <a href="https://gnps2.org/status?task=8979365f96f8468d98ad7ba919b4e4af">Example task</a> can be visited, and this work can be reproduced by clicking the <a href="../img/workflows/clone_button.png">clone button</a>: </p>
-<p><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></p>
+<p><a class="glightbox" href="../img/workflows/clone_button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Workflow clone task button" src="../img/workflows/clone_button.png" /></a></p>
 <h3 id="example-output">Example output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h3>
 <p>The result of the task is the annotation of features present in the MS/MS spectra file. MS2Query assigns a identifier for each spectra annotated, their corresnponding ms2query_model_prediction_score, the delta m/z of the precursor mass, the representation of the structure (InChI Key and SMILES, the metadata columns added by the user and the corresponding class )</p>
-<p><img alt="MS2Query annotations results example" src="../img/workflows/ms2query/ms2query_annotations_csv.png" /> </p>
+<p><a class="glightbox" href="../img/workflows/ms2query/ms2query_annotations_csv.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MS2Query annotations results example" src="../img/workflows/ms2query/ms2query_annotations_csv.png" /></a> </p>
 <h1 id="interpretation-results">Interpretation results<a class="headerlink" href="#interpretation-results" title="Permanent link">&para;</a></h1>
 <p>As output a csv file is returned. For each of your input spectra MS2Query predicts a library match. It is important to check the ms2query_model_prediction column. This column contains a score, which indicates the likelihood that the found match is a good match. This score ranges between 0 and 1, the closer this score is to 1 the more likely that it is a good match/analogue. It is important to use this score to select only the reliable hits, since a prediction is given for each spectrum, regardless of the ms2query score. There is no strict minimum for this score, but the higher the MS2Query model prediction the more likely it is a good match/analogue. It will depend on your research goal, what a good threshold is. If a high recall is important you might want a low threshold and if a high reliability is more important you might want a high threshold. To give a general indication, a score &gt; 0,7 has many good analogues and exact matches. In the range of 0.6-0.7, the results can still be useful, but should be analysed with more caution and results below 0.6 can often best be discarded. </p>
 <p>MS2Query does not need two different workflows for searching for analogues and searching for exact matches, it automatically selects the most likely library spectra. If it is important to separate potential exact matches from potential analogues for your research question, the column with the precursor mz difference can be used to separate these results, since exact matches should have no precursor mz difference.
@@ -1801,7 +1810,7 @@ The columns completely to the right are estimated molecular classes based on the
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 17:44:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:22:02</span>
   </span>
 
     
@@ -1856,5 +1865,7 @@ The columns completely to the right are estimated molecular classes based on the
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

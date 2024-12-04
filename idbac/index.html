@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1657,39 +1666,39 @@
 <p>## <ins>1) Upload mzML files to GNPS2.org</p>
 <p>i) Select "File Browser" found on the <a href="https://gnps2.org/homepage">GNPS2.org</a> homepage.<ins></p>
 <p>ii) Create a new folder and upload your mzmL files, plate map and metadata sheet.</p>
-<p><img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6"></p>
-<p><img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="1096" alt="FileBrowserEx1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/1bbcc5be-f17f-469b-81f0-864aed4022c6"></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="1119" alt="SourceExamples" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/25a5cc68-051f-43ce-bc6c-a9fe08bf1aba"></a></p>
 <h2 id="3-split-re-name-autoexecute-file"><ins>3) Split re-name autoexecute file<a class="headerlink" href="#3-split-re-name-autoexecute-file" title="Permanent link">&para;</a></h2>
 <p>This workflow will split your autoexecute data into individually labeled mzML files based on your plate map and well positions. </p>
 <p>i) Open the <a href="https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow">idbac_split_maldi workflow</a></p>
 <p>ii) Select your autoExecute mzML and plate map from the drop down menu.</p>
 <p>iii) Submit workflow.</p>
-<p><img width="991" alt="Finalsplitmaldi" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f40702df-7337-47dc-92d0-fbef29742eee"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f40702df-7337-47dc-92d0-fbef29742eee" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="991" alt="Finalsplitmaldi" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f40702df-7337-47dc-92d0-fbef29742eee"></a></p>
 <h2 id="4-choose-what-you-would-like-to-do-next"><ins>4) Choose what you would like to do next:<ins><a class="headerlink" href="#4-choose-what-you-would-like-to-do-next" title="Permanent link">&para;</a></h2>
 <p>a) <strong>IDBac Analysis:</strong> Analyze spectra within your dataset indepedently, or compare against the IDBac protein database (See "Analysis options" below).</p>
 <p>b) <strong>IDBac Protein Database Deposition:</strong> Deposit metadata and spectra of genetically verified isolates into the IDBac database.</p>
-<p><img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="992" alt="Picture4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/438b762a-07d1-4dee-bd19-e7dd231bfb92"></a></p>
 <h2 id="a-idbac-analysis"><ins> a) IDBac Analysis<a class="headerlink" href="#a-idbac-analysis" title="Permanent link">&para;</a></h2>
 <p><strong><ins>Submit workflow:</strong> Select <a href="https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow">idbac_analysis_workflow</a> and reference the following image for submission instructions.</p>
 <p>*If you do not submit metadata during this step, you will have fewer analysis options.</p>
-<p><img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="994" alt="Analysis submission2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/f99ab189-0686-4415-b848-bf4da0d8fd7e"></a></p>
 <p><strong><ins>Analysis options:</strong> Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:</p>
 <p>i) Vizualize protein dendrogram: View a dendrogram of your isolates (excluding database seeds). </p>
 <p>ii) Visualize with Metadata: If you selected a metadata column to display, it will appear within this protein dendrogram. If you do not select a metadata column to display, a 500 server error will display on-screen should you choose this analysis.</p>
 <p>iii) Spectra summary: This option allows you to compare mirror plots of your spectra.</p>
 <p>iv) Dendrogram similarity: You may view similarity scores between your isolates based on the similarity metric you chose in the analysis workflow submission.</p>
 <p>v) Database Search Summary: Here you query protein spectra of your unknown isolate against our database of characterized bacterial strains (based on similairty scores).</p>
-<p><img width="986" alt="Finalanalysis" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/378353bc-0ee9-411b-a5c4-83bd6f286826"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/378353bc-0ee9-411b-a5c4-83bd6f286826" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="986" alt="Finalanalysis" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/378353bc-0ee9-411b-a5c4-83bd6f286826"></a></p>
 <h2 id="b-idbac-database-deposition">b) IDBac Database Deposition<a class="headerlink" href="#b-idbac-database-deposition" title="Permanent link">&para;</a></h2>
 <p><strong><ins>Submit workflow:</strong> Select <a href="https://gnps2.org/workflowinput?workflowname=idbacdeposition_workflow">idbacdeposition_workflow</a> and reference the following image for deposition instructions.</p>
-<p><img width="993" alt="Databasesubmissionfinal" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f"></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="993" alt="Databasesubmissionfinal" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/514765f1-560e-4dad-8307-c899993b907f"></a></p>
 <p><strong><ins>View Database</strong></p>
 <p>To view your deposition, visit the <a href="https://idbac-kb.gnps2.org/">IDBac Knowledgebase</a>.</p>
 <h2 id="3-analysis-options"><ins>3) Analysis options:<a class="headerlink" href="#3-analysis-options" title="Permanent link">&para;</a></h2>
 <p>Once the idbac_analysis_workflow is complete, you have the ability to analyze your data through:</p>
 <p><strong>i) Interactive IDBac Analysis:</strong> Choose parameters and visually analyze your dataset. See section below for more details.</p>
 <p><strong>ii) Database Search Summary:</strong> Compare protein spectra of your unknown isolate against our database of characterized bacterial strains and obtain similarity scores.</p>
-<p><img alt="1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e940dc4c-02f3-4d9f-b230-0b4cb89e9e05" /></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e940dc4c-02f3-4d9f-b230-0b4cb89e9e05" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/e940dc4c-02f3-4d9f-b230-0b4cb89e9e05" /></a></p>
 <h2 id="i-interactive-idbac-analysis">i) Interactive IDBac Analysis<a class="headerlink" href="#i-interactive-idbac-analysis" title="Permanent link">&para;</a></h2>
 <p><em>See images below for more detail</em></p>
 <p><strong>a)</strong> If you did not include a metadata spreadsheet during the workflow submission, you may upload the file here.</p>
@@ -1700,12 +1709,12 @@
 <p><strong>f)</strong> Your dendrogram will be displayed according to the parameters set above. Note: Database strains will be labeled as 'DB'.</p>
 <p><strong>g)</strong> Visualize a single spectrum or compare two spectra via a mirror plot. </p>
 <p><strong>h)</strong> URL link to easily share this analysis page.</p>
-<p><img alt="a1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/85c787fc-2ec6-4cae-af4e-c58bf4903da9" /></p>
-<p><img alt="a2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/8d60bbe3-69f2-44c1-9fca-4428d1212b56" /></p>
-<p><img alt="a3" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5dc59355-a75b-4008-9b73-dbc9e3c6f418" /></p>
-<p><img alt="a4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/81629d5d-bf51-41d8-9998-880b681c0974" /></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/85c787fc-2ec6-4cae-af4e-c58bf4903da9" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="a1" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/85c787fc-2ec6-4cae-af4e-c58bf4903da9" /></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/8d60bbe3-69f2-44c1-9fca-4428d1212b56" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="a2" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/8d60bbe3-69f2-44c1-9fca-4428d1212b56" /></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5dc59355-a75b-4008-9b73-dbc9e3c6f418" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="a3" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/5dc59355-a75b-4008-9b73-dbc9e3c6f418" /></a></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/81629d5d-bf51-41d8-9998-880b681c0974" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="a4" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/81629d5d-bf51-41d8-9998-880b681c0974" /></a></p>
 <h2 id="ii-database-search-summary">ii) Database Search Summary<a class="headerlink" href="#ii-database-search-summary" title="Permanent link">&para;</a></h2>
-<p><img alt="dbsearch" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/18d5e695-35c6-422f-847b-3c33699afb8e" /></p>
+<p><a class="glightbox" href="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/18d5e695-35c6-422f-847b-3c33699afb8e" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="dbsearch" src="https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/assets/140128524/18d5e695-35c6-422f-847b-3c33699afb8e" /></a></p>
 
 
 
@@ -1726,7 +1735,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 17:44:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:22:02</span>
   </span>
 
     
@@ -1781,5 +1790,7 @@
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

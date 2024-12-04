@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1659,16 +1668,16 @@
 <ul>
 <li>After you have created your sheet, you should validate it to ensure everything is correct. To do this, you will need to make a copy of our <a href="https://docs.google.com/spreadsheets/d/10U0xnJUKa_mD0H_9suH1KJAlJD9io9e4chBX8EAHneE/edit?usp=sharing">Google Sheet</a>.</li>
 </ul>
-<p><img alt="Make copy of Google Sheet" src="../img/make_sheet_copy.png" /></p>
+<p><a class="glightbox" href="../img/make_sheet_copy.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Make copy of Google Sheet" src="../img/make_sheet_copy.png" /></a></p>
 <ul>
 <li>Copy your metadata into an empty sheet and click ReDU-menu --&gt; Current Sheet Validation. This will validate your ReDU sheet and color cells depending on whether the values are accepted by Pan-ReDU or not. The first time you do this, you will encounter several warnings to click through, as you need to trust our Sheet to use it. Below, we have provided screenshots to show what to click. You will only need to do this the first time you make a copy of our sheet.  </li>
 </ul>
-<p><img alt="Current Sheet Validation" src="../img/validation.gif" /></p>
+<p><a class="glightbox" href="../img/validation.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Current Sheet Validation" src="../img/validation.gif" /></a></p>
 <p>How to click through warnings (only the first time the script is run):</p>
-<p><img alt="Accept Warnings (2)" src="../img/redu_02.PNG" /></p>
-<p><img alt="Accept Warnings (3)" src="../img/redu_03.PNG" /></p>
-<p><img alt="Accept Warnings (4)" src="../img/redu_04.PNG" /></p>
-<p><img alt="Accept Warnings (5)" src="../img/redu_05.PNG" /></p>
+<p><a class="glightbox" href="../img/redu_02.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Accept Warnings (2)" src="../img/redu_02.PNG" /></a></p>
+<p><a class="glightbox" href="../img/redu_03.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Accept Warnings (3)" src="../img/redu_03.PNG" /></a></p>
+<p><a class="glightbox" href="../img/redu_04.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Accept Warnings (4)" src="../img/redu_04.PNG" /></a></p>
+<p><a class="glightbox" href="../img/redu_05.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Accept Warnings (5)" src="../img/redu_05.PNG" /></a></p>
 <ul>
 <li>
 <p>After the script runs, you will see a popup indicating how many of your samples have been accepted or rejected. If a cell is colored red, it means that the respective row will not be accepted in ReDU. This occurs if your filenames don’t have the expected extension (.mzML or .mzXML) or if your MassiveID is not valid. Cells colored in grey will be replaced with "missing values" in ReDU. If a cell is colored grey even though you think it should be accepted, check for spelling and capitalization errors or trailing white spaces (" ") in your values. You can rerun the validation as often as needed.</p>
@@ -1680,7 +1689,7 @@
 <p>This TSV file can now be submitted to ReDU through our <a href="https://deposit.redu.gnps2.org/">deposition portal</a>.</p>
 </li>
 </ul>
-<p><img alt="ReDU metadata submission" src="../img/submission.gif" /></p>
+<p><a class="glightbox" href="../img/submission.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ReDU metadata submission" src="../img/submission.gif" /></a></p>
 </li>
 </ol>
 <h1 id="page-contributions">Page Contributions<a class="headerlink" href="#page-contributions" title="Permanent link">&para;</a></h1>
@@ -1705,7 +1714,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 17:44:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:22:02</span>
   </span>
 
     
@@ -1760,5 +1769,7 @@
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
