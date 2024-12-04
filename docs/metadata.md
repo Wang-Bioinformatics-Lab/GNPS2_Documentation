@@ -56,8 +56,8 @@ In order to use Google Sheets as your source of metadata you will need to accomp
     ![](img/metadata/share1.png)
     ![](img/metadata/share2.png)
 
-???+ info "Paste Link into Metadata Field in GNPS2"
-    ![](img/metadata/paste1.png)
+<!---???+ info "Paste Link into Metadata Field in GNPS2"
+    ![](img/metadata/paste1.png)-->
 
 
 ## Requirements Specific to Molecular Networking
