@@ -9,7 +9,7 @@ The steps are the same for all vendor file formats.*
 
 i) Insert the current filenames for your individual mzML files into the 'input_filename' column. It is important to keep the '.mzml' tag on the end of the filename in this column. Take care to make sure the filenames in the spreadsheet under 'input_filename' match the filenames in your data folder.
 
-ii) Type a new filename for replicate spectra you would like to combine into a single mzml file. You do NOT need to include the '.mzml' tag in this column. Make sure the 'output_filename' is identical for all replicate spectra you want to be merge. Otherwise the workflow will write files with different 'output_filename' entries as separate mzML files. 
+ii) Type a new filename for replicate spectra you would like to combine into a single mzml file. You do NOT need to include the '.mzml' tag in this column. Make sure the 'output_filename' is identical for all replicate spectra you want to be merged. Otherwise the workflow will write files with different 'output_filename' entries as separate mzML files. 
 
 ![input_output_spreadsheet](https://github.com/user-attachments/assets/4d58ea42-1280-4181-ae01-3fc81637c495)
 
@@ -41,6 +41,6 @@ iV) Submit workflow.
 
 # 5) Access your data for download and export
 
-i) Select 'See Output Files' to access the merged mzML files in file broswer.
+i) Select 'See Output Files' to access the merged mzML files in file browser.
 
 ![data_output](https://github.com/user-attachments/assets/3349a539-c13c-4d1a-a175-12b740c80d7f)
