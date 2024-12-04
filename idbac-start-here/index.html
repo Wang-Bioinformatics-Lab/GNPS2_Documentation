@@ -35,9 +35,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#this-page-is-currently-being-updated-please-visit-at-a-later-time-or-email-nkrulluicedu-with-any-questions">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -286,32 +283,11 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Start Here
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     Start Here
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#this-page-is-currently-being-updated-please-visit-at-a-later-time-or-email-nkrulluicedu-with-any-questions">
-<span class="md-ellipsis">
-      This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../idbac-request-an-account/">
@@ -627,19 +603,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#this-page-is-currently-being-updated-please-visit-at-a-later-time-or-email-nkrulluicedu-with-any-questions">
-<span class="md-ellipsis">
-      This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions
-    </span>
-</a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -650,10 +613,8 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
 </a>
 <h1>Start Here</h1>
-<hr/>
-<h2 id="this-page-is-currently-being-updated-please-visit-at-a-later-time-or-email-nkrulluicedu-with-any-questions">This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions<a class="headerlink" href="#this-page-is-currently-being-updated-please-visit-at-a-later-time-or-email-nkrulluicedu-with-any-questions" title="Permanent link">¶</a></h2>
-<p>```mermaid
-flowchart LR
+<p>NOTE: This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions</p>
+<div class="mermaid">flowchart LR
     A[Raw Bruker Data] --&gt; B[Convert raw protein data to mzML via MSConvert]
     B --&gt; C[Download and fill out a MALDI TOF plate map]
     C --&gt; D[Upload converted mzML files and plate map to GNPS2]
@@ -664,8 +625,9 @@ flowchart LR
     click B href "https://proteowizard.sourceforge.io/"
     click C href "https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&amp;ouid=102573514213912402103&amp;rtpof=true&amp;sd=true"
     click D href "https://gnps2.org/homepage"
-    click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"</p>
-<p>%% Styling
+    click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
+
+ %% Styling
     style A fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style B fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style C fill:#FFFFFF,stroke:#000000,stroke-width:2px
@@ -673,20 +635,21 @@ flowchart LR
     style E fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style F fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style G fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px</p>
-<pre><code>%% Link Styling
-linkStyle 0 stroke:#ffcc33,stroke-width:2px
-linkStyle 1 stroke:#ffcc33,stroke-width:2px
-linkStyle 2 stroke:#ffcc33,stroke-width:2px
-linkStyle 3 stroke:#ffcc33,stroke-width:2px
-linkStyle 4 stroke:#ffcc33,stroke-width:2px
-</code></pre>
+    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px
+
+    %% Link Styling
+    linkStyle 0 stroke:#ffcc33,stroke-width:2px
+    linkStyle 1 stroke:#ffcc33,stroke-width:2px
+    linkStyle 2 stroke:#ffcc33,stroke-width:2px
+    linkStyle 3 stroke:#ffcc33,stroke-width:2px
+    linkStyle 4 stroke:#ffcc33,stroke-width:2px
+</div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:25:42</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 4, 2024 18:30:40</span>
 </span>
 </aside>
 </article>
@@ -714,7 +677,8 @@ linkStyle 4 stroke:#ffcc33,stroke-width:2px
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
-<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
