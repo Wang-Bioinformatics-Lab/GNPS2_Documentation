@@ -1,6 +1,7 @@
 
 NOTE: This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions
 
+This is a flow chart for a quickstart start. For each tool, click on each step to go to the tools. 
 
 ```mermaid
 flowchart TD
