@@ -29,18 +29,18 @@ flowchart TD
     click L href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
 
  %% Styling
-    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style B fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style C fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style D fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style E fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style F fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style G fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
-    style L fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style B fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style C fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style D fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style E fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style F fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style G fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
+    style L fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:16px
     
    
 
@@ -67,7 +67,8 @@ flowchart TD
   
   Use the following images to convert raw Bruker data to mzML
 
-<img width="1066" alt="msconvert3" src="https://github.com/user-attachments/assets/478649c9-be10-4460-9d0d-3f4b34171777">
+  
+![MSConvertEDITED](https://github.com/user-attachments/assets/a4aafff0-1740-4bd7-8741-83e82af079a6)
 <img width="1054" alt="msconvert1" src="https://github.com/user-attachments/assets/cad440c8-917a-463f-a247-bc9f12ac3236">
 <img width="1066" alt="msconvert2" src="https://github.com/user-attachments/assets/91edf847-5647-4c89-bddd-154cde86a91c">
 
