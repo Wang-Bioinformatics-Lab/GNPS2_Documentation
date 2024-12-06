@@ -29,33 +29,33 @@ flowchart TD
     click L href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
 
  %% Styling
-    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style B fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style C fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style D fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style E fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style F fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style G fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    style L fill:#FFFFFF,stroke:#000000,stroke-width:2px
+    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style B fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style C fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style D fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style E fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style F fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style G fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
+    style L fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:12px
     
    
 
 %% Link Styling
-    linkStyle 0 stroke:#ffcc33,stroke-width:2px
-    linkStyle 1 stroke:#ffcc33,stroke-width:2px
-    linkStyle 2 stroke:#ffcc33,stroke-width:2px
-    linkStyle 3 stroke:#ffcc33,stroke-width:2px
-    linkStyle 4 stroke:#ffcc33,stroke-width:2px
-    linkStyle 5 stroke:#ffcc33,stroke-width:2px
-    linkStyle 6 stroke:#ffcc33,stroke-width:2px
-    linkStyle 7 stroke:#ffcc33,stroke-width:2px
-    linkStyle 8 stroke:#ffcc33,stroke-width:2px
-    linkStyle 9 stroke:#ffcc33,stroke-width:2px
-    linkStyle 10 stroke:#ffcc33,stroke-width:2px
+    linkStyle 0 stroke:#ffcc33,stroke-width:3px
+    linkStyle 1 stroke:#ffcc33,stroke-width:3px
+    linkStyle 2 stroke:#ffcc33,stroke-width:3px
+    linkStyle 3 stroke:#ffcc33,stroke-width:3px
+    linkStyle 4 stroke:#ffcc33,stroke-width:3px
+    linkStyle 5 stroke:#ffcc33,stroke-width:3px
+    linkStyle 6 stroke:#ffcc33,stroke-width:3px
+    linkStyle 7 stroke:#ffcc33,stroke-width:3px
+    linkStyle 8 stroke:#ffcc33,stroke-width:3px
+    linkStyle 9 stroke:#ffcc33,stroke-width:3px
+    linkStyle 10 stroke:#ffcc33,stroke-width:3px
     
 
 ```
