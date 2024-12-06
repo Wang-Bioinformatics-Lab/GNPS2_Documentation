@@ -73,3 +73,30 @@ flowchart TD
 <img width="1066" alt="msconvert2" src="https://github.com/user-attachments/assets/91edf847-5647-4c89-bddd-154cde86a91c">
 
 </details>
+
+
+</div>
+
+
+<details>
+  <summary>Accessing your converted files from the split_MALDI workflow</summary>
+  
+ #### Download the converted and re-named files to your desktop (allowing for manual upload into a File Browser folder).
+
+ 
+<img width="1054" alt="Download1" src="https://github.com/user-attachments/assets/0e007833-e122-4003-a77e-05db076f1c75">
+<img width="1054" alt="Download2" src="https://github.com/user-attachments/assets/eb9a600c-3c7c-4f7f-a4f0-0226c8ec0e20">
+
+
+ </details>
+
+
+</div>
+
+
+
+ 
+
+
+
+</details>
