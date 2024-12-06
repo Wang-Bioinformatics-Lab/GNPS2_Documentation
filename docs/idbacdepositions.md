@@ -34,7 +34,7 @@ flowchart TD
 
 
  %% Styling
-    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:24px
     style B fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style C fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style D fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
