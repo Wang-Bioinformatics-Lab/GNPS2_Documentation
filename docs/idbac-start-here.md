@@ -1,7 +1,10 @@
-<div align="center">This is a flow chart for a quickstart start. For each tool, click on each step to go to the tools. 
+*NOTE: This page is currently being updated*
 
-NOTE: This page is currently being updated, please visit at a later time or email nkrull@uic.edu with any questions
+## If you are starting with raw Bruker data, use this flow chart to prepare your files for analysis or deposition. Click on each step for links to the required tools/pages.
 
+
+<div align="center">
+    
 ```mermaid
 flowchart TD
     A[Starting with raw Bruker data] --> B[Convert raw protein data to mzML via MSConvert]
@@ -35,6 +38,7 @@ flowchart TD
 ```
 </div>
 
+## More Resources
 <details>
   <summary>Navigating MSConvert</summary>
   
