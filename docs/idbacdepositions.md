@@ -5,7 +5,7 @@ This page is under construction, thanks for your patience!
 Click on the step for links to the required tools/pages.
 
 
-**IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
+**IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the 'Start Here' tabs to the left.*
 
 
 **All database depositions must have either an accompanying accession number or 16S taxonomy assignment and sequence.*
