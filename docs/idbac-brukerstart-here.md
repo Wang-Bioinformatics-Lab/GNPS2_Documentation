@@ -13,20 +13,17 @@ flowchart TD
     B --> C[Download and fill out a MALDI TOF plate map]
     C --> D[Upload converted mzML files and plate map to GNPS2]
     D --> E[Run the IDBac_split_MALDI workflow]
-    E --> F[Make a database deposition]
-    F --> G[Proceed to the IDBac deposition documentation]
-    E --> H[Run an analysis]
-    H --> I[Do you have small molecule data you would like to add to the analysis?]
-    I --> |No| J[Click 'Downstream Analysis' on the split MALDI page]
-    I --> |Yes| K[Complete the steps in this flowchart for your small molecule data]
-    K --> L[Proceed to the analysis documentation]
+    E --> F[Contribute to the IDBac database]
+    F --> G[Proceed to the deposition documentation]
+    E --> H[Run an analysis workflow]
+    H --> I[Proceed to the analysis documentation]
     
     click B href "https://proteowizard.sourceforge.io/"
     click C href "https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
     click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/)"
-    click L href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
+    click I href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
 
  %% Styling
     style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
@@ -37,12 +34,7 @@ flowchart TD
     style F fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style G fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    style L fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    
-   
+    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px 
 
 %% Link Styling
     linkStyle 0 stroke:#ffcc33,stroke-width:3px
@@ -53,9 +45,8 @@ flowchart TD
     linkStyle 5 stroke:#ffcc33,stroke-width:3px
     linkStyle 6 stroke:#ffcc33,stroke-width:3px
     linkStyle 7 stroke:#ffcc33,stroke-width:3px
-    linkStyle 8 stroke:#ffcc33,stroke-width:3px
-    linkStyle 9 stroke:#ffcc33,stroke-width:3px
-    linkStyle 10 stroke:#ffcc33,stroke-width:3px
+  
+   
     
 
 ```
