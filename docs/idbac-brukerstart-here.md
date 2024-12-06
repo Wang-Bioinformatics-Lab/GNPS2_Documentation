@@ -1,6 +1,8 @@
-*NOTE: This page is currently being updated*
+### 🚧 Work In Progress
+This page is under construction, thanks for your patience!
 
-## If you are starting with raw Bruker data, use this flow chart to prepare your files for analysis or deposition. Click on each step for links to the required tools/pages.
+### If you are starting with raw Bruker data, use this flow chart to prepare your files for analysis or deposition. 
+#### Click on each step for links to the required tools/pages.
 
 
 <div align="center">
@@ -14,10 +16,12 @@ flowchart TD
     E --> F[Do you have small molecule data you would like to add to the analysis?]
     F --> |No| G[Click 'Downstream Analysis']
     F --> |Yes| H[Complete the steps in this flowchart for your small molecule data]
+    H --> I[Proceed to the analysis workflow]
     click B href "https://proteowizard.sourceforge.io/"
     click C href "https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
+    click I href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
 
  %% Styling
     style A fill:#FFFFFF,stroke:#000000,stroke-width:2px
@@ -28,17 +32,20 @@ flowchart TD
     style F fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style G fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style H fill:#FFFFFF,stroke:#000000,stroke-width:2px
+    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px
     
-    %% Link Styling
+%% Link Styling
     linkStyle 0 stroke:#ffcc33,stroke-width:2px
     linkStyle 1 stroke:#ffcc33,stroke-width:2px
     linkStyle 2 stroke:#ffcc33,stroke-width:2px
     linkStyle 3 stroke:#ffcc33,stroke-width:2px
     linkStyle 4 stroke:#ffcc33,stroke-width:2px
+    linkStyle 5 stroke:#ffcc33,stroke-width:2px
+
 ```
 </div>
 
-## More Resources
+### More Resources
 <details>
   <summary>Navigating MSConvert</summary>
   
