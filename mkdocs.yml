@@ -23,9 +23,9 @@ nav:
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
-        - Raw Bruker Data- START HERE: idbac-brukerstart-here.md 
         - Request an Account: idbac-request-an-account.md
         - Office Hours: idbacofficehours.md
+        - START HERE with Raw Bruker Data: idbac-brukerstart-here.md
         - Database Depositions: idbacdepositions.md
         - Sumbit Data for Analysis: idbacsumbmitdata.md
         - Analysis Platform: idbacanalysisplatform.md
