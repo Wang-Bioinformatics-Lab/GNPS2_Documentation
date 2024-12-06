@@ -34,3 +34,14 @@ flowchart TD
     linkStyle 4 stroke:#ffcc33,stroke-width:2px
 ```
 </div>
+
+<details>
+  <summary>Navigating MSConvert</summary>
+  
+  Use the following images to convert raw Bruker data to mzML
+
+<img width="1066" alt="msconvert3" src="https://github.com/user-attachments/assets/478649c9-be10-4460-9d0d-3f4b34171777">
+<img width="1054" alt="msconvert1" src="https://github.com/user-attachments/assets/cad440c8-917a-463f-a247-bc9f12ac3236">
+<img width="1066" alt="msconvert2" src="https://github.com/user-attachments/assets/91edf847-5647-4c89-bddd-154cde86a91c">
+
+</details>
