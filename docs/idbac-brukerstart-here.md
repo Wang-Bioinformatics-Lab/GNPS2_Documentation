@@ -13,15 +13,25 @@ flowchart TD
     B --> C[Download and fill out a MALDI TOF plate map]
     C --> D[Upload converted mzML files and plate map to GNPS2]
     D --> E[Run the IDBac_split_MALDI workflow]
-    E --> F[Do you have small molecule data you would like to add to the analysis?]
-    F --> |No| G[Click 'Downstream Analysis']
-    F --> |Yes| H[Complete the steps in this flowchart for your small molecule data]
-    H --> I[Proceed to the analysis workflow]
+    E --> F[Make a database deposition]
+    F --> G[Download and complete a deposition metadata sheet]
+    G --> H[Upload labeled protein mzML and metadata files to GNPS2 File Browser]
+    H --> I[Proceed to the IDBac deposition workflow]
+    E --> J[Run an analysis]
+    J --> K[Do you have small molecule data you would like to add to the analysis?]
+    K --> |No| L[Click 'Downstream Analysis' on the split MALDI page]
+    K --> |Yes| M[Complete the steps in this flowchart for your small molecule data]
+    M --> N[Proceed to the analysis workflow]
+    
+
     click B href "https://proteowizard.sourceforge.io/"
     click C href "https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
-    click I href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
+    click G href "https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
+    click H href "https://gnps2.org/homepage"
+    click I href "https://gnps2.org/workflowinput?workflowname=idbacdeposition_workflow"
+    click N href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
 
  %% Styling
     style A fill:#FFFFFF,stroke:#000000,stroke-width:2px
@@ -33,7 +43,12 @@ flowchart TD
     style G fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style H fill:#FFFFFF,stroke:#000000,stroke-width:2px
     style I fill:#FFFFFF,stroke:#000000,stroke-width:2px
-    
+    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px
+    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px
+    style L fill:#FFFFFF,stroke:#000000,stroke-width:2px
+    style M fill:#FFFFFF,stroke:#000000,stroke-width:2px
+    style N fill:#FFFFFF,stroke:#000000,stroke-width:2px
+
 %% Link Styling
     linkStyle 0 stroke:#ffcc33,stroke-width:2px
     linkStyle 1 stroke:#ffcc33,stroke-width:2px
@@ -41,6 +56,14 @@ flowchart TD
     linkStyle 3 stroke:#ffcc33,stroke-width:2px
     linkStyle 4 stroke:#ffcc33,stroke-width:2px
     linkStyle 5 stroke:#ffcc33,stroke-width:2px
+    linkStyle 6 stroke:#ffcc33,stroke-width:2px
+    linkStyle 7 stroke:#ffcc33,stroke-width:2px
+    linkStyle 8 stroke:#ffcc33,stroke-width:2px
+    linkStyle 9 stroke:#ffcc33,stroke-width:2px
+    linkStyle 10 stroke:#ffcc33,stroke-width:2px
+    linkStyle 11 stroke:#ffcc33,stroke-width:2px
+    linkStyle 12 stroke:#ffcc33,stroke-width:2px
+
 
 ```
 </div>
