@@ -6,7 +6,7 @@
     
 ```mermaid
 flowchart TD
-    A[Starting with raw Bruker data] --> B[Convert raw protein data to mzML via MSConvert]
+    A[Starting with raw Bruker data] --> B[Convert raw protein data to mzML via msConvert]
     B --> C[Download and fill out a MALDI TOF plate map]
     C --> D[Upload converted mzML files and plate map to GNPS2]
     D --> E[Run the IDBac_split_MALDI workflow]
@@ -63,7 +63,18 @@ flowchart TD
 </details>
 
 <details>
-  <summary>Accessing your converted files from the split_MALDI workflow</summary>
+  <summary>Uploading files to the GNPS2 File Browser</summary>
+  <ul>
+<img width="FileBrowser1" src="https://github.com/user-attachments/assets/61c1f7ec-aee6-4720-8922-249627ab78bf">
+<img width="FileBrowser2" src="https://github.com/user-attachments/assets/d6ffe324-b43d-41c6-9765-2ec681985438">
+
+
+
+ </ul>
+</details>
+
+<details>
+  <summary>Accessing your converted files from the split_MALDI workflow</summary><br>
 <p>Download the converted and re-named files to your desktop (allowing for manual upload into a File Browser folder)</p>
   <ul> 
 <img width="1054" alt="Download1" src="https://github.com/user-attachments/assets/0e007833-e122-4003-a77e-05db076f1c75">
@@ -71,7 +82,6 @@ flowchart TD
 
 </details>
  </ul>
-</details>
 
 
 
