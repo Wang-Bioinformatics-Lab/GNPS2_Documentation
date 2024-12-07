@@ -85,15 +85,9 @@ ii) Type a new filename for replicate spectra you would like to combine into a s
 <p>This workflow will combine spectra from separate spots that correspond to the same bacterial strain (i.e. replicate spots). The output is a single mzML file (per strain) that contains the replicate spectra as separate scans.</p>
 
 
-i) Open the msConvert_File_Merger workflow.
-
-
-ii) Select your mzML files and your input/output spreadsheet from the dropdown menus.
-
-
-iii) Select mzML or mzXML as your output data format.
-
-
+i) Open the msConvert_File_Merger workflow.  
+ii) Select your mzML files and your input/output spreadsheet from the dropdown menus.  
+iii) Select mzML or mzXML as your output data format.  
 iV) Submit workflow.
 
 
