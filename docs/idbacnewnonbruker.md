@@ -87,9 +87,12 @@ ii) Type a new filename for replicate spectra you would like to combine into a s
 
 i) Open the msConvert_File_Merger workflow.
 
+
 ii) Select your mzML files and your input/output spreadsheet from the dropdown menus.
 
+
 iii) Select mzML or mzXML as your output data format.
+
 
 iV) Submit workflow.
 
