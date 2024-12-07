@@ -29,7 +29,7 @@ nav:
         - Contribute to the database: idbacdepositions.md
         - Analyze your data: idbacsumbmitdata.md
         - Analysis platform: idbacanalysisplatform.md
-        - Data Conversion - non Bruker: idbacmsconvertfilemerger.md
+        - START HERE- Raw non-Bruker data: idbacnewnonbruker.md
         
         
     - Tandem Mass Spectrometry Data Analysis:
