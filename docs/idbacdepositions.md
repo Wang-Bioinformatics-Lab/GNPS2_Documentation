@@ -18,7 +18,7 @@ flowchart TD
     A[Contribute to the IDBac protein MS database] --> B[Do you have a single mzML file per strain?]
     B -->|Yes| C[Download and fill out a deposition metadata sheet]
     B -->|No| D[View the 'Start Here' documentation]
-    C --> E[Upload your mzML and metadata files to the GNPS2 <u>File Browser]
+    C --> E[Upload your mzML and metadata files to the GNPS2 File Browser]
     E --> F[Open the IDBac deposition workflow]
     F --> G[Choose a task description and select your metadata and spectra mzML files]
     G --> H[Would you like to QC your spectra before deposition?]
