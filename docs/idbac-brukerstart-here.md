@@ -22,7 +22,7 @@ flowchart TD
     click C href "https://docs.google.com/spreadsheets/d/1ihFy6lQyJtWy9fp46ahMPWk7xLp2tJ3q/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
-    click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/)"
+    click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/"
     click I href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
 
  %% Styling
