@@ -1,5 +1,5 @@
 ### IDBac Database Depositions
-This flowchart is giude on how to contribute genetically verified strains to the IDBac protein MS public database. 
+This flow chart is a guide on how to deposit genetically verified strains in the IDBac protein MS database. 
 
 Click on a step for links to the required tools/pages.
 
