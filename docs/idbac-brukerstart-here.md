@@ -1,5 +1,5 @@
 ### If you are starting with raw Bruker data, use this flow chart to prepare your files for analysis or deposition. 
-*Click on a step for links to the required tools/pages.*
+**Click on the flow chart boxes for links to the required tools/pages.*
 
 
 <div align="center">
