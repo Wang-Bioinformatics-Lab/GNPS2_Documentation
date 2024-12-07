@@ -1,7 +1,7 @@
 ### IDBac Database Depositions
 This flow chart is a guide on how to deposit genetically verified strains in the IDBac protein MS database. 
 
-Click on a step for links to the required tools/pages.
+**Click on a step for links to the required tools/pages.*
 
 **IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the 'Start Here' tabs to the left.*
 
