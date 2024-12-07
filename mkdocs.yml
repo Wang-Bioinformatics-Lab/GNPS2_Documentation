@@ -30,7 +30,7 @@ nav:
         - Analyze your data: idbacsumbmitdata.md
         - Analysis platform: idbacanalysisplatform.md
         - Data Conversion - non Bruker: idbacmsconvertfilemerger.md
-        - Data Conversion - mzXML to mzML: idbacmzxmlconversion.md
+        
         
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
