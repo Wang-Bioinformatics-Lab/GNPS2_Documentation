@@ -1,4 +1,6 @@
 ### IDBac Database Depositions
+This flowchart is giude on how to contribute genetically verified strains to the IDBac protein MS public database. 
+
 Click on a step for links to the required tools/pages.
 
 **IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the 'Start Here' tabs to the left.*
