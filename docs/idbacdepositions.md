@@ -17,7 +17,7 @@ flowchart TD
     B -->|No| D[View the 'Start Here' documentation]
     C --> E[Upload your mzML and metadata files to the GNPS2 File Browser]
     E --> F[Open the IDBac deposition workflow]
-    F --> G[Choose a task description and select the metadata and spectra mzML files]
+    F --> G[Choose a task description and select your metadata and spectra mzML files]
     G --> H[Would you like to QC your spectra before deposition?]
     H --> |Yes| I[Select 'Yes' from the 'Dryrun Mode' dropdown and submit workflow]
     H --> |No| J[Select 'No' from the 'Dryrun Mode' dropdown and submit workflow]
