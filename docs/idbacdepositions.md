@@ -27,7 +27,6 @@ flowchart TD
     J --> K[View your deposition on the IDBac database web page]
     I --> L[Reference the 'QC your data' tab below]
    
-    
     click C href "https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?usp=sharing&ouid=102573514213912402103&rtpof=true&sd=true"
     click E href "https://gnps2.org/homepage"
     click F href "https://gnps2.org/workflowinput?workflowname=idbacdeposition_workflow"
