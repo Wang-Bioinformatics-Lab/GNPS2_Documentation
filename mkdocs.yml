@@ -26,10 +26,11 @@ nav:
         - Request an Account: idbac-request-an-account.md
         - Office Hours: idbacofficehours.md
         - START HERE- Raw Bruker data: idbac-brukerstart-here.md
+        - START HERE- Raw non-Bruker data: idbacnewnonbruker.md
         - Contribute to the database: idbacdepositions.md
         - Analyze your data: idbacsumbmitdata.md
         - Analysis platform: idbacanalysisplatform.md
-        - START HERE- Raw non-Bruker data: idbacnewnonbruker.md
+        
         
         
     - Tandem Mass Spectrometry Data Analysis:
