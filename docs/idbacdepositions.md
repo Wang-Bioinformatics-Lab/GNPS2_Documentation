@@ -76,7 +76,7 @@ flowchart TD
 
 <details>
   <summary>Metadata Instructions</summary>
-<p>This page can also be found in the Metadata Excel doc.:</p>
+<p>This page can also be found in the Metadata Excel doc.</p>
   <ul>
 <img width="1054" alt="<img width="932" alt="DepositionMetadataInstructions" src="https://github.com/user-attachments/assets/773eb918-2d19-4fe9-b0f4-03a7f1139099">
  </ul>
