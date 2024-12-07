@@ -20,7 +20,7 @@ flowchart TD
     H --> I[Proceed to the analysis documentation]
     
     click B href "https://proteowizard.sourceforge.io/"
-    click C href "https://proteowizard.sourceforge.io/"
+    click C href "https://docs.google.com/spreadsheets/d/1o5K4SavD14K-LqhSeWkt4h20MTrAUpkXsaFRYqNdRvY/edit?gid=508446939#gid=508446939"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=msConvert_File_Merger"
     click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/"
