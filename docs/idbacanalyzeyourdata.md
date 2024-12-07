@@ -1,56 +1,80 @@
 ### 🚧 Work In Progress
 This page is under construction, thanks for your patience!
 
-# Sumbit data for analysis
+### Analyze your data
 
-## <ins>IDBac Templates<ins>
-[Analysis metadata sheet](https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?usp=sharing)
+This flow chart is a guide on how to submit an analysis workflow. <br>
 
-*IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the tabs to the left.*
+**Click on the flow chart boxes for links to the required tools/pages* <br>
+**Protein data analysis can be conducted without a metadata sheet.* <br>
+**Small molecule data analysis requires a metadata sheet.*
 
-## <ins>1) Upload mzML files to GNPS2.org
- 
-   i) Select "File Browser" found on the [GNPS2.org](https://gnps2.org/homepage) homepage.<ins>
+<div align="center">
+    
+```mermaid
+flowchart TD
+    A[Submit your data for analysis] --> B[Upload your metadata and mzML files to the GNPS2 File Browser]
+    B --> C[Open the idbac_analysis_workflow]
+    C --> D[Select appropriate data for each file selection section]
+    D --> E[Select preferred distance metric]
+    E --> F[Select preferred database distance threshold]
+    F --> G[Submit workflow]
+    G --> H[Choose a data analysis option]
+    H --> I[Web IDBac Analysis Platform]
+    H --> J[Database Search Summary- see tab below]
    
-   ii) Create a new folder and upload your mzML files and metadata sheet.
- 
-<img width="1769" alt="addfiles" src="https://github.com/user-attachments/assets/c518b3f2-4075-4228-b8f1-a269db5e07e6">
-&nbsp;
-&nbsp;
-
-## <ins>2) Sumbit data: 
-
-Select [idbac_analysis_workflow](https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow) and reference the following image for submission instructions.
-
-*Note: You may run a protein analysis with or without small molecule data*
-
-<img width="1800" alt="1 " src="https://github.com/user-attachments/assets/61cff528-66cc-4dad-be4a-4a2c9a37bbb7">
+   
+    click C href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
+    click H href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacanalysisplatform/"
+    
 
 
-<img width="1798" alt="2 " src="https://github.com/user-attachments/assets/30b8a48b-ed85-491d-8d28-f6c668f9225f">
+ %% Styling
+    style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:24px
+    style B fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style C fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style D fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style E fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style F fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style G fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style J fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    
 
-
-<img width="1799" alt="3" src="https://github.com/user-attachments/assets/1254acd6-f632-4ec7-9708-5deadee12b02">
-&nbsp;
-&nbsp;
-
-## <ins>3) Choose a data analysis option:
-<img width="1787" alt="4" src="https://github.com/user-attachments/assets/13f42d1c-086b-4a4c-b7a6-efae1b3f48b6">
-
-  ### __a) Web IDBac Analysis Platform:__ Choose parameters and visually analyze your dataset. *See tab labeled "IDBac Analysis Platform".*
+%% Link Styling
+    linkStyle 0 stroke:#ffcc33,stroke-width:3px
+    linkStyle 1 stroke:#ffcc33,stroke-width:3px
+    linkStyle 2 stroke:#ffcc33,stroke-width:3px
+    linkStyle 3 stroke:#ffcc33,stroke-width:3px
+    linkStyle 4 stroke:#ffcc33,stroke-width:3px
+    linkStyle 5 stroke:#ffcc33,stroke-width:3px
+    linkStyle 6 stroke:#ffcc33,stroke-width:3px
+    linkStyle 7 stroke:#ffcc33,stroke-width:3px
+    linkStyle 8 stroke:#ffcc33,stroke-width:3px
   
- ### __b) Database Search Summary:__ Compare protein spectra of your unknown isolate against our database of characterized bacterial strains and obtain distance values.
+    
+   
 
-<img width="1633" alt="5" src="https://github.com/user-attachments/assets/128df003-5f55-4be6-a370-dec342bf1998">
+```
+</div>
 
+### More Resources
+<details>
+  <summary>QC your Data</summary>
+<p>Use the following images to convert raw Bruker data to mzML:</p>
+  <ul>
+<img width="NewQC1" src="https://github.com/user-attachments/assets/14ab8a17-d87a-49ed-a377-9b403552a917">
+<img width="NewQC2" src="https://github.com/user-attachments/assets/49b8d828-f71c-414d-9a8c-eeae68f6474b">
+<img width="QC5"src="https://github.com/user-attachments/assets/1c32d15e-eb35-4fa7-987a-f29e9617b391">
 
+ </ul>
+</details>
 
-
-
-
-
-
-
-
-
-
+<details>
+  <summary>Metadata Instructions</summary>
+<p>This page can also be found in the Metadata Excel doc.</p>
+  <ul>
+<img width="1054" alt="<img width="932" alt="DepositionMetadataInstructions" src="https://github.com/user-attachments/assets/773eb918-2d19-4fe9-b0f4-03a7f1139099">
+ </ul>
+</details>
