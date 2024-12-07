@@ -2,7 +2,7 @@
 This page is under construction, thanks for your patience!
 
 ### If you are starting with raw Bruker data, use this flow chart to prepare your files for analysis or deposition. 
-Click on the step for links to the required tools/pages.
+Click on a step for links to the required tools/pages.
 
 
 <div align="center">
