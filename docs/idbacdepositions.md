@@ -16,7 +16,7 @@ This flow chart is a guide on how to deposit genetically verified strains in the
 ```mermaid
 flowchart TD
     A[Contribute to the IDBac protein MS database] --> B[Do you have a single mzML file per strain?]
-    B -->|Yes| C[Download and fill out a <u>deposition metadata sheet]
+    B -->|Yes| C[Download and fill out a deposition metadata sheet]
     B -->|No| D[View the 'Start Here' documentation]
     C --> E[Upload your mzML and metadata files to the GNPS2 <u>File Browser]
     E --> F[Open the IDBac deposition workflow]
