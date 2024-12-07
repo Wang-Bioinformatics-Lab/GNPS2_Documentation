@@ -1,7 +1,7 @@
 ### IDBac Database Depositions
 This flow chart is a guide on how to deposit genetically verified strains in the IDBac protein MS database. 
 
-**Click on a step for links to the required tools/pages.*
+**Click on the flow chart boxes for links to the required tools/pages.*
 
 **IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the 'Start Here' tabs to the left.*
 
@@ -13,10 +13,10 @@ This flow chart is a guide on how to deposit genetically verified strains in the
 ```mermaid
 flowchart TD
     A[Contribute to the IDBac protein MS database] --> B[Do you have a single mzML file per strain?]
-    B -->|Yes| C[Download and fill out a deposition metadata sheet]
+    B -->|Yes| C[Download and fill out a <u>deposition metadata sheet<u>]
     B -->|No| D[View the 'Start Here' documentation]
-    C --> E[Upload your mzML and metadata files to the GNPS2 File Browser]
-    E --> F[Open the IDBac deposition workflow]
+    C --> E[Upload your mzML and metadata files to the GNPS2 <u>File Browser<u>]
+    E --> F[<u>Open the IDBac deposition workflow<u>]
     F --> G[Choose a task description and select your metadata and spectra mzML files]
     G --> H[Would you like to QC your spectra before deposition?]
     H --> |Yes| I[Select 'Yes' from the 'Dryrun Mode' dropdown and submit workflow]
