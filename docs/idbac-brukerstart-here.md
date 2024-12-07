@@ -14,7 +14,7 @@ flowchart TD
     C --> D[Upload converted mzML files and plate map to GNPS2]
     D --> E[Run the IDBac_split_MALDI workflow]
     E --> F[Contribute to the IDBac database]
-    F --> G[Proceed to the deposition documentation]
+    F --> G[Proceed to the 'Contribute to the database' documentation]
     E --> H[Run an analysis workflow]
     H --> I[Proceed to the analysis documentation]
     
