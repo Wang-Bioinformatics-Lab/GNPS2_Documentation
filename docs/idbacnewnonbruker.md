@@ -55,11 +55,10 @@ flowchart TD
 
 ### More Resources
 <details>
-  <summary>Instructions for filling out the msConvert_File_Merger spreadsheet</summary>
+  <summary>Instructions for filling out the msConvert_File_Merger spreadsheet</summary><br>
 
 
 i) Insert the current filenames for your individual mzML files into the 'input_filename' column. It is important to keep the '.mzml' tag on the end of the filename in this column. Take care to make sure the filenames in the spreadsheet under 'input_filename' match the filenames in your data folder.<br>
-
 
 ii) Type a new filename for replicate spectra you would like to combine into a single mzml file. You do NOT need to include the '.mzml' tag in this column. Make sure the 'output_filename' is identical for all replicate spectra you want to be merged. Otherwise the workflow will write files with different 'output_filename' entries as separate mzML files. <br>
     
@@ -80,7 +79,7 @@ ii) Type a new filename for replicate spectra you would like to combine into a s
 </details>
 
 <details>
-  <summary>Navigating the msConvert_File_Merger workflow</summary>
+  <summary>Navigating the msConvert_File_Merger workflow</summary><br>
 
     
 <p>This workflow will combine spectra from separate spots that correspond to the same bacterial strain (i.e. replicate spots). The output is a single mzML file (per strain) that contains the replicate spectra as separate scans.</p>
