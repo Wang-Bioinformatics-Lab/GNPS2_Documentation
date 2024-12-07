@@ -15,16 +15,15 @@ flowchart TD
     C --> D[Upload converted mzML files and completed msConvert_File_Merger spreadsheet to File Browser]
     D --> E[Merge replicate files using the msConvert_File_Merger workflow]
     E --> F[Contribute to the IDBac database]
-    F --> G[Proceed to the 'Contribute to the database' documentation]
-    E --> H[Run an analysis workflow]
-    H --> I[Proceed to the analysis documentation]
+    E --> G[Run an analysis workflow]
+   
     
     click B href "https://proteowizard.sourceforge.io/"
     click C href "https://docs.google.com/spreadsheets/d/1o5K4SavD14K-LqhSeWkt4h20MTrAUpkXsaFRYqNdRvY/edit?gid=508446939#gid=508446939"
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=msConvert_File_Merger"
-    click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/"
-    click I href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
+    click F href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/"
+    click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
 
  %% Styling
     style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
@@ -34,8 +33,7 @@ flowchart TD
     style E fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style F fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style G fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
-    style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px 
+    
 
 %% Link Styling
     linkStyle 0 stroke:#ffcc33,stroke-width:3px
@@ -44,8 +42,7 @@ flowchart TD
     linkStyle 3 stroke:#ffcc33,stroke-width:3px
     linkStyle 4 stroke:#ffcc33,stroke-width:3px
     linkStyle 5 stroke:#ffcc33,stroke-width:3px
-    linkStyle 6 stroke:#ffcc33,stroke-width:3px
-    linkStyle 7 stroke:#ffcc33,stroke-width:3px
+
   
    
     
