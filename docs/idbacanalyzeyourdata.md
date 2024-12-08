@@ -78,3 +78,12 @@ flowchart TD
 <img width="1054" alt="<img width="932" alt="DepositionMetadataInstructions" src="https://github.com/user-attachments/assets/773eb918-2d19-4fe9-b0f4-03a7f1139099">
  </ul>
 </details>
+
+<details>
+  <summary>Navigating the idbac_analysis_workflow page</summary>
+<p>Use the following images to convert raw Bruker data to mzML:</p>
+  <ul>
+<img width="analysis page1" src="https://github.com/user-attachments/assets/68336857-8647-40d4-a607-cdbdffa9e950">
+
+ </ul>
+</details>
