@@ -4,7 +4,7 @@ If you have any questions about how to use GNPS2 please first ask the community 
 
 ## GNPS2 Office Hours
 
-The [Wang Bioinformatics Lab](https://www.cs.ucr.edu/~mingxunw/) at UC Riverside builds and maintains GNPS2. Specifically, the PI - Mingxun Wang ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu) hosts an office hours on a weekly basis for the benefit of the community. This office hours is virtual and on Zoom:
+The [Wang Bioinformatics Lab](https://www.cs.ucr.edu/~mingxunw/) at UC Riverside builds and maintains GNPS2. Specifically, the PI - Mingxun Wang ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu) ) hosts an office hours on a weekly basis for the benefit of the community. This office hours is virtual and on Zoom:
 
 [https://ucr.zoom.us/j/98049645231](https://ucr.zoom.us/j/98049645231)
 
