@@ -71,6 +71,20 @@ Drop Down List
         display-key: "name"
 ```
 
+Multiple Selection Checkboxes
+
+```
+    - displayname: Test Checkbox Selection
+      paramtype: select_checkbox
+      nf_paramname: test_checkbox
+      formvalue: optiona
+      options:
+        - value: optiona
+          display: optiona
+        - value: optionb
+          display: optionb
+```
+
 NOTE: For options-from-url, the API expects to return in json format, a list of dictionaries. Each dictionary will have the same keys, and the users can specify the value and display for the keys in the dropdown.
 
 Section Header
