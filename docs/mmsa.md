@@ -2,6 +2,7 @@
 MMSA is an interactive web-based tool that improves the interpretability of molecular networks by visualizing the detailed spectral alignment information of a molecular network component. It identifies shared fragment peaks (peak sets) across spectra, providing insights into the structural relationships within molecular families. MMSA’s interface allows users to explore and analyze the global alignment of molecular networks, enabling deeper insights into molecular relationships.
 
 Access the tool [here](https://multiplealignment.gnps2.org/setscreation/).
+
 If you have an existing peak sets file, you can directly access the visualization tool [here](https://multiplealignment.gnps2.org/spectraalignment). 
 
 ### MMSA Web Interface Input Options
