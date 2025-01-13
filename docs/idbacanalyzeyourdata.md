@@ -23,7 +23,7 @@ flowchart TD
     H --> I[Web IDBac Analysis Platform]
     H --> J[Database Search Summary- see tab below]
    
-   
+   click B href "https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?usp=sharing"
     click C href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
     click H href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacanalysisplatform/"
     
