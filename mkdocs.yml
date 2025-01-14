@@ -23,7 +23,7 @@ nav:
     - Analysis Workflow Index: workflowindex.md
     - GNPS2 USI: usi.md
     - IDBac:
-        - Request an Account: idbac-request-an-account.md
+        - Request an IDBac Account: idbac-request-an-account.md
         - Office Hours: idbacofficehours.md
         - START HERE- Raw Bruker data: idbac-brukerstart-here.md
         - START HERE- Raw non-Bruker data: idbacnewnonbruker.md
