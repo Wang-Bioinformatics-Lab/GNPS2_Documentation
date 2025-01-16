@@ -6,3 +6,9 @@ Once you have a token, you can create an account [here](https://gnps2.org/user/s
 GNPS2 is in closed beta to make sure everything is working properly and is slowly ramping up for community use. 
 
 Thank you for your patience!
+
+
+
+### *For general GNPS2 users, please see the following link to request an access token: 
+https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/accounts/
+
