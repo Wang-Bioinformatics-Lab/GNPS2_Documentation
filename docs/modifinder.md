@@ -4,7 +4,7 @@ ModiFinder is a tool for site localization of structural modifications using MS/
 
 ## How to Use
 
-1. [GNPS Interactive Web Interface](https://modifinder.gnps2.org/)
+1. [GNPS Interactive Web Interface](https://modifinder.gnps2.org/), 
 1. [High-throughput Nextflow Workflow](https://github.com/Wang-Bioinformatics-Lab/highThroughputModiFinder_workflow)
 1. [GNPS2 High-Throughput Workflow](https://gnps2.org/workflowinput?workflowname=high_throughput_modifinder)
 1. [Python Package Documentation](https://wang-bioinformatics-lab.github.io/ModiFinder_base/)
