@@ -41,7 +41,10 @@ nav:
             - Progenesis: fbmn-with-progenesisqi.md
             - Protocols for FBMN:
                 - Step by Step Protocols for Progenesis Data: protocol_fbmn_progenesis_overlay.md
-        - ModiFinder: modifinder.md
+        - ModiFinder: 
+            - ModiFinder: modifinder.md
+            - GNPS2 Interactive Web Interface: modifinder-web.md
+            - High-Throughput Workflow: modifinder-workflow.md
         - Networking Overlay: Networkingoverlay.md
         - Network Topology - Transitive Alignments: transitive.md
         - Multiple Spectrum Alignment: mmsa.md
