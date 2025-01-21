@@ -13,19 +13,20 @@ This flow chart is a guide on how to submit an analysis workflow. <br>
     
 ```mermaid
 flowchart TD
-    A[Submit your data for analysis] --> B[Upload your metadata and mzML files to the GNPS2 File Browser]
-    B --> C[Open the idbac_analysis_workflow]
-    C --> D[Select appropriate data for each file selection section]
-    D --> E[Select preferred distance metric]
-    E --> F[Select preferred database distance threshold]
-    F --> G[Submit workflow]
-    G --> H[Choose a data analysis option]
-    H --> I[Web IDBac Analysis Platform]
-    H --> J[Database Search Summary- see tab below]
+    A[Submit your data for analysis] --> B[Download and fill out an analysis metadata sheet]
+    B --> C[Upload your metadata and mzML files to the GNPS2 File Browser]
+    C --> D[Open the idbac_analysis_workflow]
+    D --> E[Select appropriate data for each file selection section]
+    E --> F[Select preferred distance metric]
+    F --> G[Select preferred database distance threshold]
+    G --> H[Submit workflow]
+    H --> I[Choose a data analysis option]
+    I --> J[Web IDBac Analysis Platform]
+    J --> K[Database Search Summary- see tab below]
    
-   click B href "https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?usp=sharing"
-    click C href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
-    click H href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacanalysisplatform/"
+    click B href "https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?gid=678327011#gid=678327011"
+    click D href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
+    click J href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacanalysisplatform/"
     
 
 
