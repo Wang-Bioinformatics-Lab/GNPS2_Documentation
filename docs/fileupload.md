@@ -48,4 +48,4 @@ If you want to upload with FTP because SFTP is blocked or has issues at your ins
 
 #### GUI Recommendations
 
-We recommend cyberduck to upload files. 
+We recommend cyberduck or winscp as an SFTP client. 
