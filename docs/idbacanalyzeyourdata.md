@@ -22,7 +22,7 @@ flowchart TD
     G --> H[Submit workflow]
     H --> I[Choose a data analysis option]
     I --> J[Web IDBac Analysis Platform]
-    J --> K[Database Search Summary- see tab below]
+    I --> K[Database Search Summary- see tab below]
    
     click B href "https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?gid=678327011#gid=678327011"
     click D href "https://gnps2.org/workflowinput?workflowname=idbac_analysis_workflow"
@@ -41,6 +41,7 @@ flowchart TD
     style H fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style I fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     style J fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
+    style K fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px
     
 
 %% Link Styling
