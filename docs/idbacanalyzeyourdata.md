@@ -9,6 +9,8 @@ This flow chart is a guide on how to submit an analysis workflow. <br>
 **Protein data analysis can be conducted without a metadata sheet.* <br>
 **Small molecule data analysis requires a metadata sheet.*
 
+[Metadata template](https://docs.google.com/spreadsheets/d/1Y7WHrFQR_SYpR_p5u_xL4BQimYorQ3-1PfAfVil3nL0/edit?gid=678327011#gid=678327011)
+
 <div align="center">
     
 ```mermaid
