@@ -1154,6 +1154,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#predicting-the-modification-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predicting the Modification Site
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Predicting the Modification Site">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#providing-the-input" class="md-nav__link">
     <span class="md-ellipsis">
       Providing the Input
@@ -1161,22 +1171,36 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#visualization-output" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#predicted-output" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualization Output
+      Predicted Output
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#refinement-of-msms-substructure-annotation" class="md-nav__link">
     <span class="md-ellipsis">
       Refinement of MS/MS substructure annotation
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-on-how-to-use-modifinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example on how to use ModiFinder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1190,11 +1214,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-on-how-to-use-modifinder" class="md-nav__link">
+  <a href="#visualizer" class="md-nav__link">
     <span class="md-ellipsis">
-      Example on how to use ModiFinder
+      Visualizer
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Visualizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1702,6 +1741,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#predicting-the-modification-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predicting the Modification Site
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Predicting the Modification Site">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#providing-the-input" class="md-nav__link">
     <span class="md-ellipsis">
       Providing the Input
@@ -1709,22 +1758,36 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#visualization-output" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#predicted-output" class="md-nav__link">
     <span class="md-ellipsis">
-      Visualization Output
+      Predicted Output
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#refinement-of-msms-substructure-annotation" class="md-nav__link">
     <span class="md-ellipsis">
       Refinement of MS/MS substructure annotation
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-on-how-to-use-modifinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example on how to use ModiFinder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1738,11 +1801,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-on-how-to-use-modifinder" class="md-nav__link">
+  <a href="#visualizer" class="md-nav__link">
     <span class="md-ellipsis">
-      Example on how to use ModiFinder
+      Visualizer
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Visualizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1770,8 +1848,10 @@
 
 
 <h1 id="gnps2-interactive-web-interface">GNPS2 Interactive Web Interface<a class="headerlink" href="#gnps2-interactive-web-interface" title="Permanent link">&para;</a></h1>
+<p>The ModiFinder interactive platform offers a dynamic environment for predicting modifications between an unknown compound and its known analog, along with intuitive tools for visualizing molecular structures and spectra.</p>
+<h2 id="predicting-the-modification-site">Predicting the Modification Site<a class="headerlink" href="#predicting-the-modification-site" title="Permanent link">&para;</a></h2>
 <p>Head to <a href="https://modifinder.gnps2.org/">ModiFinder Interactive Web Interface</a>, and use the information for your target compound and its known analog to generate the result.</p>
-<h2 id="providing-the-input">Providing the Input<a class="headerlink" href="#providing-the-input" title="Permanent link">&para;</a></h2>
+<h3 id="providing-the-input">Providing the Input<a class="headerlink" href="#providing-the-input" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Pass the information for the known analog to the known compound section of the input, the inputs are:</p>
@@ -1801,30 +1881,62 @@
 <p><strong>base peak filter ratio:</strong> Any peak less than the provided ratio of the base peak will be removed as a cleaning mechanism to reduce the effect of noise.</p>
 <p><strong>Adduct:</strong> This input determines the Adduct used.</p>
 <p>** <em>Note: There are examples provided in the examples tab, you can select any example and click on the update button to see the result.</em></p>
-<h2 id="visualization-output">Visualization Output<a class="headerlink" href="#visualization-output" title="Permanent link">&para;</a></h2>
+<h3 id="predicted-output">Predicted Output<a class="headerlink" href="#predicted-output" title="Permanent link">&para;</a></h3>
 <p><strong>Stats Table:</strong> This table contains general information about the pair, detailing aspects like the mass difference and the count of both total and shifted peaks observed in the alignment. In the case that SMILES2 is provided, an evaluation score is also provided. This evaluation score evaluates the ModiFinder performance against ground truth.</p>
 <p><strong>Prediction:</strong> This image shows a heatmap representation of the structure, where atoms with a higher likelihood of being the modification site are highlighted in shades of red, while those less likely to be modified appear in cooler blue tones.</p>
 <p><strong>Modification Highlight:</strong> If SMILES2 is provided, an image indicating the true modification and the modification site is displayed.</p>
 <p><strong>Peaks:</strong> This visualization displays the alignment of peaks, with the peaks of the known compound positioned at the top and those of the modified compound at the bottom. Peaks that are both matched and shifted are indicated in red, while matched but unshifted peaks are highlighted in blue. Peaks that do not have a match are represented in gray. Clicking on a matched and shifted peak will highlight that peak and its corresponding match.</p>
-<h2 id="refinement-of-msms-substructure-annotation">Refinement of MS/MS substructure annotation<a class="headerlink" href="#refinement-of-msms-substructure-annotation" title="Permanent link">&para;</a></h2>
+<h3 id="refinement-of-msms-substructure-annotation">Refinement of MS/MS substructure annotation<a class="headerlink" href="#refinement-of-msms-substructure-annotation" title="Permanent link">&para;</a></h3>
 <p>By selecting a peak associated with the known compound, all the potential substructures assigned to that peak by ModiFinder will be shown. Users have the ability to manually filter these substructures, incorporating specialist domain knowledge into the filtering process.</p>
+<h3 id="example-on-how-to-use-modifinder">Example on how to use ModiFinder<a class="headerlink" href="#example-on-how-to-use-modifinder" title="Permanent link">&para;</a></h3>
+<!-- add images -->
+<ol>
+<li>Select the <code>Naphthomycin B</code> and <code>Naphthomycin A</code> example provided under the Examples tab
+<a class="glightbox" href="../img/modifinder/Slide5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select Example" src="../img/modifinder/Slide5.png" /></a></li>
+<li>You can see the input section is automatically filled with the necassary information such as the USIs, SMILES, and adduct.
+<a class="glightbox" href="../img/modifinder/Slide6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Updated Inputs" src="../img/modifinder/Slide6.png" /></a></li>
+<li>Click on Update to run ModiFinder and get the result
+<a class="glightbox" href="../img/modifinder/Slide7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Apply Updates" src="../img/modifinder/Slide7.png" /></a></li>
+<li>You can see the Prediction and the possible formula for the modification. In this example, since the SMILES for the unknown is provided, the Modification Highlight is also available highlighting the true modification site.
+<a class="glightbox" href="../img/modifinder/Slide9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Initial Result" src="../img/modifinder/Slide9.png" /></a></li>
+<li>you can change the ppm tolerance and see how the prediction changes
+<a class="glightbox" href="../img/modifinder/Slide10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tolerance modification Modification" src="../img/modifinder/Slide10.png" /></a></li>
+<li>You can also refine the calculated annotations for each peak
+<a class="glightbox" href="../img/modifinder/Slide11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification" src="../img/modifinder/Slide11.png" /></a>
+<a class="glightbox" href="../img/modifinder/Slide12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification 2" src="../img/modifinder/Slide12.png" /></a>
+<a class="glightbox" href="../img/modifinder/Slide13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification 3" src="../img/modifinder/Slide13.png" /></a></li>
+<li>updated result after manual alignment.
+<a class="glightbox" href="../img/modifinder/Slide15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification result" src="../img/modifinder/Slide15.png" /></a></li>
+</ol>
 <h2 id="modifinder-on-private-data">ModiFinder on Private Data<a class="headerlink" href="#modifinder-on-private-data" title="Permanent link">&para;</a></h2>
 <p>You need to first generate a USI for your data:
 * Use https://tinymass.gnps2.org/ to upload your known compound spectrum and get a USI
 (This does not add your data to the public libraries)
 * Do the same thing for your unknown compound’s spectrum
 * use the ModiFinder as described before</p>
-<h2 id="example-on-how-to-use-modifinder">Example on how to use ModiFinder<a class="headerlink" href="#example-on-how-to-use-modifinder" title="Permanent link">&para;</a></h2>
-<!-- add images -->
-<p><a class="glightbox" href="../img/modifinder/Slide5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select Example" src="../img/modifinder/Slide5.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Updated Inputs" src="../img/modifinder/Slide6.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Apply Updates" src="../img/modifinder/Slide7.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Initial Result" src="../img/modifinder/Slide9.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tolerance modification Modification" src="../img/modifinder/Slide10.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification" src="../img/modifinder/Slide11.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification 2" src="../img/modifinder/Slide12.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification 3" src="../img/modifinder/Slide13.png" /></a>
-<a class="glightbox" href="../img/modifinder/Slide15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotation Modification result" src="../img/modifinder/Slide15.png" /></a></p>
+<h2 id="visualizer">Visualizer<a class="headerlink" href="#visualizer" title="Permanent link">&para;</a></h2>
+<p>The ModiFinder Interactive website also provides tools to visualize molecular structures and spectra, including the modifications between molecules or the alignment between two spectra.</p>
+<ol>
+<li>
+<p><strong>Molecule Visualizer:</strong>
+You can use SMILES, INCHI, or spectrum id to draw a molecule
+<a class="glightbox" href="../img/modifinder/draw_mol.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Molecule Visualizer" src="../img/modifinder/draw_mol.png" /></a></p>
+</li>
+<li>
+<p><strong>Modification Visualizer:</strong> 
+<a class="glightbox" href="../img/modifinder/draw_mod.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Modification Visualizer" src="../img/modifinder/draw_mod.png" /></a></p>
+</li>
+<li>
+<p><strong>Spectrum Visualizer:</strong> 
+<a class="glightbox" href="../img/modifinder/draw_spectrum.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Spectrum Visualizer" src="../img/modifinder/draw_spectrum.png" /></a></p>
+</li>
+<li>
+<p><strong>Alignment Visualizer:</strong> 
+<a class="glightbox" href="../img/modifinder/draw_alignment.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alignment Visualizer" src="../img/modifinder/draw_alignment.png" /></a></p>
+</li>
+</ol>
+<h3 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<p>These visualizer functions are also available as <a href="../api/#modifinder">API</a></p>
 
 
 
@@ -1845,7 +1957,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 22, 2025 19:46:49</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 24, 2025 00:45:56</span>
   </span>
 
     

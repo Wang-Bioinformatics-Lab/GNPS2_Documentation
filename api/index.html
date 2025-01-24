@@ -1574,6 +1574,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modifinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      ModiFinder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ModiFinder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#draw-molecule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Molecule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Modification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Spectrum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Alignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1766,6 +1817,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modifinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      ModiFinder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ModiFinder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#draw-molecule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Molecule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Modification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Spectrum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Draw Alignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1877,6 +1979,33 @@ Getting all files per dataset</p>
 JSON Peak List from USI (Example):
 <div class="highlight"><pre><span></span><code>https://fasst.gnps2.org/search?library=gnpslibrary&amp;usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
 </code></pre></div></p>
+<h2 id="modifinder">ModiFinder<a class="headerlink" href="#modifinder" title="Permanent link">&para;</a></h2>
+<p>Some functions of the ModiFinder visualizer module are accessible via APIs. For details on the parameters you can pass to these functions, refer to the <a href="https://github.com/Wang-Bioinformatics-Lab/ModiFinder_base">GitHub</a> repository or the <a href="https://wang-bioinformatics-lab.github.io/ModiFinder_base/modifinder/drawing.html#">documentation</a>.</p>
+<h3 id="draw-molecule">Draw Molecule<a class="headerlink" href="#draw-molecule" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>https://modifinder.gnps2.org/api/visualizer/draw_molecule?{function argument1}={argument1}&amp;{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+</code></pre></div>
+More details on the function arguments and the argument type are available on the <a href="https://wang-bioinformatics-lab.github.io/ModiFinder_base/modifinder/drawing.html#modifinder.utilities.visualizer.draw_molecule">documentation page</a>. The type can be png or svg.</p>
+<p>Exampes:
+* <a href="https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCO.svg">https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCO.svg</a>
+* <a href="https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCMSLIB00010102097&amp;size=400,400&amp;highlightAtoms=0,1,5.png">https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCMSLIB00010102097&amp;size=400,400&amp;highlightAtoms=0,1,5.png</a></p>
+<h3 id="draw-modification">Draw Modification<a class="headerlink" href="#draw-modification" title="Permanent link">&para;</a></h3>
+<p>You can also draw the modification between two molecules
+<div class="highlight"><pre><span></span><code>https://modifinder.gnps2.org/api/visualizer/draw_modifications?{function argument1}={argument1}&amp;{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+</code></pre></div></p>
+<p>Example:
+* <a href="https://modifinder.gnps2.org/api/visualizer/draw_modifications?mol1=CCMSLIB00010101989&amp;mol2=CCMSLIB00010102097.png">https://modifinder.gnps2.org/api/visualizer/draw_modifications?mol1=CCMSLIB00010101989&amp;mol2=CCMSLIB00010102097.png</a></p>
+<h3 id="draw-spectrum">Draw Spectrum<a class="headerlink" href="#draw-spectrum" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>https://modifinder.gnps2.org/api/visualizer/draw_spectrum?{function argument1}={argument1}&amp;{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+</code></pre></div>
+Example:
+* <a href="https://modifinder.gnps2.org/api/visualizer/draw_spectrum?spectrum=CCMSLIB00010102097&amp;bar_width=1.png">https://modifinder.gnps2.org/api/visualizer/draw_spectrum?spectrum=CCMSLIB00010102097&amp;bar_width=1.png</a></p>
+<h3 id="draw-alignment">Draw Alignment<a class="headerlink" href="#draw-alignment" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>https://modifinder.gnps2.org/api/visualizer/draw_alignment?{function argument1}={argument1}&amp;{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+</code></pre></div>
+<p>Example:</p>
+<ul>
+<li><a href="http://localhost:5003/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&amp;matches=default&amp;ratio_to_base_peak=0.01&amp;bar_width=1.png">http://localhost:5003/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&amp;matches=default&amp;ratio_to_base_peak=0.01&amp;bar_width=1.png</a></li>
+</ul>
 
 
 
@@ -1897,7 +2026,7 @@ JSON Peak List from USI (Example):
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 22, 2025 19:46:49</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 24, 2025 00:45:56</span>
   </span>
 
     
