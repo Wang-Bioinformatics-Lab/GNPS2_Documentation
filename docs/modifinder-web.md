@@ -93,4 +93,6 @@ You can use SMILES, INCHI, or spectrum id to draw a molecule
 ![Alignment Visualizer](img/modifinder/draw_alignment.png)
 
 
-## API
+### API
+
+These visualizer functions are also available as [API](api.md#modifinder)
