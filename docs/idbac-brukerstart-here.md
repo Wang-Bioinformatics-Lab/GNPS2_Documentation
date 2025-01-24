@@ -19,7 +19,7 @@ flowchart TD
     click D href "https://gnps2.org/homepage"
     click E href "https://gnps2.org/workflowinput?workflowname=idbac_split_maldi_workflow"
     click F href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacdepositions/"
-    click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacsumbmitdata/"
+    click G href "https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/idbacanalyzeyourdata/"
 
  %% Styling
     style A fill:#FFFFFF,stroke:#000000,stroke-width:2px,font-size:18px

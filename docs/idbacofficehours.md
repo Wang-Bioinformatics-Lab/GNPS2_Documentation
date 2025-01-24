@@ -1,4 +1,5 @@
 # Weekly Office Hours
+### *Office hours will not be held on January 24th, 2025. If you have immediate questions, please reach out via email. 
 
 Office hours will be hosted by Nyssa Krull [(nkrull@uic.edu)](nkrull@uic.edu) via [Zoom](https://uic.zoom.us/j/85354946320?pwd=RmCgZ43hNraLe2F3JaLJygAbNeTmSJ.1) every Friday at 10am CST. 
 

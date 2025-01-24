@@ -5,8 +5,9 @@ This flow chart is a guide on how to deposit genetically verified strains in the
 
 **IDBac workflows require a mzML file format. For guidance on how to convert raw data or mzXML to mzML, see the 'Start Here' tabs to the left.*
 
-
 **All database depositions must have either an accompanying accession number or 16S taxonomy assignment and sequence.*
+
+[Metadata template](https://docs.google.com/spreadsheets/d/1yKsZ2FEw8-cWufvY8l31Ju8NTKujmEtb/edit?gid=274227564#gid=274227564)
 
 <div align="center">
     
