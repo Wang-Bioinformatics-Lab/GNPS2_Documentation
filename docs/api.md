@@ -151,3 +151,45 @@ JSON Peak List from USI (Example):
 ```
 https://fasst.gnps2.org/search?library=gnpslibrary&usi=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000001547
 ```
+
+
+## ModiFinder
+Some functions of the ModiFinder visualizer module are accessible via APIs. For details on the parameters you can pass to these functions, refer to the [GitHub](https://github.com/Wang-Bioinformatics-Lab/ModiFinder_base) repository or the [documentation](https://wang-bioinformatics-lab.github.io/ModiFinder_base/modifinder/drawing.html#).
+
+### Draw Molecule
+```
+https://modifinder.gnps2.org/api/visualizer/draw_molecule?{function argument1}={argument1}&{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+```
+More details on the function arguments and the argument type are available on the [documentation page](https://wang-bioinformatics-lab.github.io/ModiFinder_base/modifinder/drawing.html#modifinder.utilities.visualizer.draw_molecule). The type can be png or svg.
+
+Exampes:
+* [https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCO.svg](https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCO.svg)
+* [https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCMSLIB00010102097&size=400,400&highlightAtoms=0,1,5.png](https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCMSLIB00010102097&size=400,400&highlightAtoms=0,1,5.png)
+
+
+### Draw Modification
+
+You can also draw the modification between two molecules
+```
+https://modifinder.gnps2.org/api/visualizer/draw_modifications?{function argument1}={argument1}&{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+```
+
+Example:
+* [https://modifinder.gnps2.org/api/visualizer/draw_modifications?mol1=CCMSLIB00010101989&mol2=CCMSLIB00010102097.png](https://modifinder.gnps2.org/api/visualizer/draw_modifications?mol1=CCMSLIB00010101989&mol2=CCMSLIB00010102097.png)
+
+### Draw Spectrum
+
+```
+https://modifinder.gnps2.org/api/visualizer/draw_spectrum?{function argument1}={argument1}&{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+```
+Example:
+* [https://modifinder.gnps2.org/api/visualizer/draw_spectrum?spectrum=CCMSLIB00010102097&bar_width=1.png](https://modifinder.gnps2.org/api/visualizer/draw_spectrum?spectrum=CCMSLIB00010102097&bar_width=1.png)
+
+### Draw Alignment
+```
+https://modifinder.gnps2.org/api/visualizer/draw_alignment?{function argument1}={argument1}&{function argument2}={value2}...{function argumentn}={argumentn}.{type}
+```
+
+Example:
+
+* [http://localhost:5003/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&matches=default&ratio_to_base_peak=0.01&bar_width=1.png](http://localhost:5003/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&matches=default&ratio_to_base_peak=0.01&bar_width=1.png)

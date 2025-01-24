@@ -1,8 +1,10 @@
 # GNPS2 Interactive Web Interface
 
-Head to [ModiFinder Interactive Web Interface](https://modifinder.gnps2.org/), and use the information for your target compound and its known analog to generate the result.
+The ModiFinder interactive platform offers a dynamic environment for predicting modifications between an unknown compound and its known analog, along with intuitive tools for visualizing molecular structures and spectra.
 
-## Providing the Input
+## Predicting the Modification Site
+Head to [ModiFinder Interactive Web Interface](https://modifinder.gnps2.org/), and use the information for your target compound and its known analog to generate the result.
+### Providing the Input
 
 1. Pass the information for the known analog to the known compound section of the input, the inputs are:
 
@@ -33,7 +35,7 @@ Head to [ModiFinder Interactive Web Interface](https://modifinder.gnps2.org/), a
 
 ** _Note: There are examples provided in the examples tab, you can select any example and click on the update button to see the result._
 
-## Visualization Output
+### Predicted Output
 
 **Stats Table:** This table contains general information about the pair, detailing aspects like the mass difference and the count of both total and shifted peaks observed in the alignment. In the case that SMILES2 is provided, an evaluation score is also provided. This evaluation score evaluates the ModiFinder performance against ground truth.
 
@@ -43,10 +45,28 @@ Head to [ModiFinder Interactive Web Interface](https://modifinder.gnps2.org/), a
 
 **Peaks:** This visualization displays the alignment of peaks, with the peaks of the known compound positioned at the top and those of the modified compound at the bottom. Peaks that are both matched and shifted are indicated in red, while matched but unshifted peaks are highlighted in blue. Peaks that do not have a match are represented in gray. Clicking on a matched and shifted peak will highlight that peak and its corresponding match.
 
-## Refinement of MS/MS substructure annotation
+### Refinement of MS/MS substructure annotation
 
 By selecting a peak associated with the known compound, all the potential substructures assigned to that peak by ModiFinder will be shown. Users have the ability to manually filter these substructures, incorporating specialist domain knowledge into the filtering process.
 
+### Example on how to use ModiFinder
+<!-- add images -->
+1. Select the `Naphthomycin B` and `Naphthomycin A` example provided under the Examples tab
+![Select Example](img/modifinder/Slide5.png)
+1. You can see the input section is automatically filled with the necassary information such as the USIs, SMILES, and adduct.
+![Updated Inputs](img/modifinder/Slide6.png)
+1. Click on Update to run ModiFinder and get the result
+![Apply Updates](img/modifinder/Slide7.png)
+1. You can see the Prediction and the possible formula for the modification. In this example, since the SMILES for the unknown is provided, the Modification Highlight is also available highlighting the true modification site.
+![Initial Result](img/modifinder/Slide9.png)
+1. you can change the ppm tolerance and see how the prediction changes
+![Tolerance modification Modification](img/modifinder/Slide10.png)
+1. You can also refine the calculated annotations for each peak
+![Annotation Modification](img/modifinder/Slide11.png)
+![Annotation Modification 2](img/modifinder/Slide12.png)
+![Annotation Modification 3](img/modifinder/Slide13.png)
+1. updated result after manual alignment.
+![Annotation Modification result](img/modifinder/Slide15.png)
 
 ## ModiFinder on Private Data
 You need to first generate a USI for your data:
@@ -55,15 +75,22 @@ You need to first generate a USI for your data:
 * Do the same thing for your unknown compound’s spectrum
 * use the ModiFinder as described before
 
+## Visualizer
 
-## Example on how to use ModiFinder
-<!-- add images -->
-![Select Example](img/modifinder/Slide5.png)
-![Updated Inputs](img/modifinder/Slide6.png)
-![Apply Updates](img/modifinder/Slide7.png)
-![Initial Result](img/modifinder/Slide9.png)
-![Tolerance modification Modification](img/modifinder/Slide10.png)
-![Annotation Modification](img/modifinder/Slide11.png)
-![Annotation Modification 2](img/modifinder/Slide12.png)
-![Annotation Modification 3](img/modifinder/Slide13.png)
-![Annotation Modification result](img/modifinder/Slide15.png)
+The ModiFinder Interactive website also provides tools to visualize molecular structures and spectra, including the modifications between molecules or the alignment between two spectra.
+
+1. **Molecule Visualizer:**
+You can use SMILES, INCHI, or spectrum id to draw a molecule
+![Molecule Visualizer](img/modifinder/draw_mol.png)
+
+1. **Modification Visualizer:** 
+![Modification Visualizer](img/modifinder/draw_mod.png)
+
+1. **Spectrum Visualizer:** 
+![Spectrum Visualizer](img/modifinder/draw_spectrum.png)
+
+1. **Alignment Visualizer:** 
+![Alignment Visualizer](img/modifinder/draw_alignment.png)
+
+
+## API
