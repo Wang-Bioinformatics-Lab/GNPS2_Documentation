@@ -10,5 +10,5 @@ Thank you for your patience!
 
 
 ### *For general GNPS2 users, please see the following link to request an access token: 
-https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/accounts/
+[GNPS2 Create an account](https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/accounts/)
 
