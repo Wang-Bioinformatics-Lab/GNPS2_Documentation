@@ -83,6 +83,48 @@ Structure Similarity
 https://structure.gnps2.org/structuresimilarity?inchi1=InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3&smiles2=CN1C=NC2=C1C(=O)N(C(=O)N2C)C
 ```
 
+### Structure Natural Product Classifier (NP Classifier)
+
+If you have Smiles
+
+```
+https://npclassifier.gnps2.org/classify?smiles=<smiles string>
+```
+
+[Example](https://npclassifier.gnps2.org/classify?smiles=Cn1c(=O)c2c(ncn2C)n(C)c1=O)
+
+??? info "Example JSON Output"
+    ```
+    {
+        class_results: [
+            "Purine alkaloids"
+        ],
+        superclass_results: [
+            "Pseudoalkaloids"
+        ],
+        pathway_results: [
+            "Alkaloids"
+        ],
+        isglycoside: false,
+        fp1: [
+            0,
+            0
+            ...
+        ],
+        fp2: [
+            0,
+            0,
+            ...
+        ]
+    }
+    ```
+
+!!! note "NPClassifier" 
+    NPClassifier is A Deep Neural Network-Based Structural Classification Tool for Natural Products - check it out [here](https://npclassifier.gnps2.org/). For citation: Kim, Hyun Woo, Mingxun Wang, Christopher A. Leber, Louis-Félix Nothias, Raphael Reher, Kyo Bin Kang, Justin JJ van der Hooft, Pieter C. Dorrestein, William H. Gerwick, and Garrison W. Cottrell. "NPClassifier: A deep neural network-based structural classification tool for natural products." Journal of Natural Products (2020). [https://doi.org/10.1021/acs.jnatprod.1c00399](https://pubs.acs.org/doi/abs/10.1021/acs.jnatprod.1c00399?casa_token=MRiUf8bJSAcAAAAA:2543Xv_7W0c-AyhntroXm62ccn0QL6c8CpxT0U6NnDoj3JpB1T6Wlr5G96Rfucmnoi2yR0XFgbp2Sw). Checkout the tool index for a large scale workflow for batch classification. 
+
+
+
+
 ## ReDU Metadata
 
 Getting files for a given metadata category
