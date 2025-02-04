@@ -4,6 +4,9 @@ If you have any questions about how to use GNPS2 please first ask the community 
 
 ## GNPS2 Office Hours
 
+!!! danger "Notes"
+    Office Hours will be cancelled 2/4/2025 due to travel. Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
+
 The [Wang Bioinformatics Lab](https://www.cs.ucr.edu/~mingxunw/) at UC Riverside builds and maintains GNPS2. Specifically, the PI - Mingxun Wang ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu) ) hosts an office hours on a weekly basis for the benefit of the community. This office hours is virtual and on Zoom:
 
 [https://ucr.zoom.us/j/98049645231](https://ucr.zoom.us/j/98049645231)
@@ -19,9 +22,6 @@ Upcoming Office Hour Schedule
 | 9:00 AM PST (6:00 PM CET) Weekly on Tuesdays | Interactive Office Hours |
 
 Note: The times of GNPS2 office hours are subject to change each quarter as Ming's teaching schedule shifts. Please check the week of to not be blindsided by any changes. 
-
-!!! danger "Notes"
-    Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
 
 Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it. Further, you will not receive any followup given an RSVP except when you show up to office hours):
 
