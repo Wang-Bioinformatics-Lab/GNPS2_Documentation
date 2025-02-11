@@ -7,7 +7,7 @@ MS/MS spectral libraries from GNPS, Massbank, MONA, and other sources are availa
 
 This section contains propagated spectral libraries that inherently are less confident but this provides an avenue to give more identifications.
 
-### Candidate bile acid modification spectral library
+### Candidate bile acid isomer spectral library
 
 The bile acid MS/MS spectral library consists of 21,549 spectra representing modifications to the bile acid steroid core. The GNPS-BILE-ACID-MODIFICATIONS library will not be added as a default library and will need to be added as an additional libraries for spectral matching while analyzing data as a molecular network.
 
