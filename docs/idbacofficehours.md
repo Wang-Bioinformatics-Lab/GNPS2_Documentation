@@ -1,3 +1,5 @@
+![idbac_logo (2)](https://github.com/user-attachments/assets/02a8e020-ed67-4850-8836-9c882d9d3fb2)
+
 # Weekly Office Hours
 
 Office hours will be hosted by Nyssa Krull [(nkrull@uic.edu)](nkrull@uic.edu) via [Zoom](https://uic.zoom.us/j/85354946320?pwd=RmCgZ43hNraLe2F3JaLJygAbNeTmSJ.1) every Friday at 10:30am CST. 
