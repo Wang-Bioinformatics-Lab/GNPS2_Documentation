@@ -16,7 +16,7 @@ Here is the template for GNPS2 Workflows, it provides boiler plate for NextFlow 
 
 For each workflow, there is a yml file called: workflowinput.yaml. It requires the following items:
 
-```
+```yml
 workflowname: classic_networking
 workflowdescription: LC - Classical Molecular Networking
 workflowlongdescription: Molecular networks ...
@@ -29,9 +29,9 @@ parameterlist:
 
 ### Workflow Input Parameters
 
-Text Entry
+#### Text Entry
 
-```
+```yml
     - displayname: Precursor Ion Tolerance
       paramtype: text
       nf_paramname: precursor_mass_tolerance
@@ -40,9 +40,9 @@ Text Entry
       tooltip: "Lorem Ipsum"
 ```
 
-Text Area
+#### Text Area
 
-```
+```yml
     - displayname: USI Entry
       paramtype: textarea
       nf_paramname: usi_field
@@ -52,9 +52,9 @@ Text Area
       cols: 50
 ```
 
-Drop Down List
+#### Drop Down List
 
-```
+```yml
     - displayname: Network Generation Mode
       paramtype: select
       nf_paramname: cosinemode
@@ -71,9 +71,29 @@ Drop Down List
         display-key: "name"
 ```
 
-Multiple Selection Checkboxes
+> **NOTE:**  for a multi-select dropdown list, you can use `selecttype: multi`
 
+>**NOTE 2:** for a multi-select dropdown with default values, use ';' seprated values for the form value. Example:
+
+```yml
+    - displayname: Multi Select
+      paramtype: select 
+      selecttype: multi
+      nf_paramname: multi_select
+      formvalue: 'a;c'
+      options:
+        - value: 'a'
+          display: 'Show Text 1'
+        - value: 'b'
+          display: 'Show Text 2'
+        - value: 'c'
+          display: 'Show Text 3'
 ```
+
+
+#### Multiple Selection Checkboxes
+
+```yml
     - displayname: Test Checkbox Selection
       paramtype: select_checkbox
       nf_paramname: test_checkbox
@@ -85,18 +105,18 @@ Multiple Selection Checkboxes
           display: optionb
 ```
 
-NOTE: For options-from-url, the API expects to return in json format, a list of dictionaries. Each dictionary will have the same keys, and the users can specify the value and display for the keys in the dropdown.
+> NOTE: For options-from-url, the API expects to return in json format, a list of dictionaries. Each dictionary will have the same keys, and the users can specify the value and display for the keys in the dropdown.
 
-Section Header
+#### Section Header
 
-```
+```yml
     - displayname: Advanced Network Options
       paramtype: section
 ```
 
-File Selector
+#### File Selector
 
-```
+```yml
     - displayname: Metadata Path
       paramtype: fileselector
       nf_paramname: metadata_filename
@@ -115,11 +135,69 @@ File Selector
 1. linkdata means that any linking will happen, by default on, but can turn off in cases where we simply want to specify files and not actually do anything with it beyond the name.
 1. targettaskfolder is the folder where you put the data on the server 
 
+#### Conditional Inputs
+Using the `showif` key, you can conditionally display fields based on the values of other inputs. This key allows you to define one or more conditions, and the field will be shown if **any** of those conditions are met (i.e., an **OR** logic between conditions).
+
+Within each condition, you list one or more key-value pairs:
+- The **key** should correspond to the `nf_paramname`.
+- The **value** is the required value.
+
+All key-value pairs within a single condition must be satisfied (i.e., an **AND** logic).
+
+The following is an example where the `Minimum Cosine` field is displayed if:
+- The _Search Method_ is _ModiFinder_, **or**
+- The _Search Method_ is _GNPS_ **and** _Analog Search_ is enabled.
+
+```yml
+    - displayname: Minimum Cosine
+      paramtype: text
+      nf_paramname: minimum_cosine
+      formvalue: "0.7"
+      showif:
+        - condition:
+          - key: search_method
+            value: 'gnps'
+          - key: analog_search
+            value: 'true'
+        - condition:
+          - key: search_method
+            value: 'modifinder'
+
+    - displayname: Search Method
+      paramtype: select
+      nf_paramname: search_method
+      formvalue: "gnps"
+      options:
+        - value: "gnps"
+          display: "GNPS"
+        - value: "modifinder"
+          display: "ModiFinder"
+        - value: "blink"
+          display: "Blink"
+    
+    - displayname: Analog Search
+      paramtype: select
+      nf_paramname: analog_search
+      formvalue: "false"
+      options:
+        - value: "true"
+          display: "True"
+        - value: "false"
+          display: "False"
+      showif:
+        - condition:
+          - key: search_method
+            value: 'gnps'
+```
+
+> Note: The condition only works for single entry items such as `     paramtype: text` or for `paramtype: select` where the `selecttype` is not set to `multi`.
+
+
 ### Workflow Display Parameters
 
-Pure Java Script Client Side Tables
+####  Pure Java Script Client Side Tables
 
-```
+```yml
 -   name: Results
     displayname: Results
     viewname: results
@@ -139,9 +217,9 @@ Pure Java Script Client Side Tables
 ```
 
 
-Serverside Tables (Medium Sized)
+#### Serverside Tables (Medium Sized)
 
-```
+```yml
 -   name: Results
     displayname: Results
     viewname: results
@@ -160,9 +238,9 @@ Serverside Tables (Medium Sized)
         `;}}]'
 ```
 
-Serverside Tables (Large Sized - GB+ Size)
+#### Serverside Tables (Large Sized - GB+ Size)
 
-```
+```yml
 -   name: Results
     displayname: Results
     viewname: results
@@ -181,9 +259,9 @@ Serverside Tables (Large Sized - GB+ Size)
         `;}}]'
 ```
 
-Linkout
+#### Linkout
 
-```
+```yml
 -   name: Downstream Analysis - Run Analysis
     displayname: Downstream Analysis - Run Analysis
     viewname: downstreamworkflow
@@ -212,9 +290,9 @@ Here if we want to use the task params in the linkout, simply use the syntax
 
 ```[@paramname]```
 
-Download Files
+#### Download Files
 
-```
+```yml
 -   name: Download PCoA
     displayname: Download PCoA
     viewname: poca
@@ -223,9 +301,9 @@ Download Files
         filename: pcoa/pcoa.qzv
 ```
 
-Section Division
+#### Section Division
 
-```
+```yml
 -   name: section
     displayname: Summary Views
     viewname: section
@@ -236,20 +314,20 @@ Section Division
 
 We can have little widgets to render in the table rows. To make them, you overwrite the columnDefs key. Here are a few examples.
 
-Spectrum Resolver Linkouts
+* Spectrum Resolver Linkouts
 
-```
-'[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
-        return `
-            <a target="_blank" href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}">View Spectrum</a>
-        `;}}]'
-```
+    ```
+    '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
+            return `
+                <a target="_blank" href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}">View Spectrum</a>
+            `;}}]'
+    ```
 
-Structure Display
+* Structure Display
 
-```
-'[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
-        return `
-            <img src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/>
-        `;}}]'
-```
+    ```
+    '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
+            return `
+                <img src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/>
+            `;}}]'
+    ```
