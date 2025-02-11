@@ -1,4 +1,3 @@
-
 ![idbac_logo (2)](https://github.com/user-attachments/assets/abf3c86c-b563-450d-95f0-ff02faa78072)
 
 ## IDBac Account Creation
