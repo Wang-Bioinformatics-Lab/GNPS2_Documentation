@@ -205,7 +205,9 @@ https://modifinder.gnps2.org/api/visualizer/draw_molecule?{function argument1}={
 More details on the function arguments and the argument type are available on the [documentation page](https://wang-bioinformatics-lab.github.io/ModiFinder_base/modifinder/drawing.html#modifinder.utilities.visualizer.draw_molecule). The type can be png or svg.
 
 Exampes:
+
 * [https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCO.svg](https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCO.svg)
+
 * [https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCMSLIB00010102097&size=400,400&highlightAtoms=0,1,5.png](https://modifinder.gnps2.org/api/visualizer/draw_molecule?mol=CCMSLIB00010102097&size=400,400&highlightAtoms=0,1,5.png)
 
 
@@ -217,6 +219,7 @@ https://modifinder.gnps2.org/api/visualizer/draw_modifications?{function argumen
 ```
 
 Example:
+
 * [https://modifinder.gnps2.org/api/visualizer/draw_modifications?mol1=CCMSLIB00010101989&mol2=CCMSLIB00010102097.png](https://modifinder.gnps2.org/api/visualizer/draw_modifications?mol1=CCMSLIB00010101989&mol2=CCMSLIB00010102097.png)
 
 ### Draw Spectrum
@@ -225,6 +228,7 @@ Example:
 https://modifinder.gnps2.org/api/visualizer/draw_spectrum?{function argument1}={argument1}&{function argument2}={value2}...{function argumentn}={argumentn}.{type}
 ```
 Example:
+
 * [https://modifinder.gnps2.org/api/visualizer/draw_spectrum?spectrum=CCMSLIB00010102097&bar_width=1.png](https://modifinder.gnps2.org/api/visualizer/draw_spectrum?spectrum=CCMSLIB00010102097&bar_width=1.png)
 
 ### Draw Alignment
@@ -234,4 +238,4 @@ https://modifinder.gnps2.org/api/visualizer/draw_alignment?{function argument1}=
 
 Example:
 
-* [http://localhost:5003/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&matches=default&ratio_to_base_peak=0.01&bar_width=1.png](http://localhost:5003/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&matches=default&ratio_to_base_peak=0.01&bar_width=1.png)
+* [https://modifinder.gnps2.org/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&matches=default&ratio_to_base_peak=0.01&bar_width=1.png](https://modifinder.gnps2.org/api/visualizer/draw_alignment?spectrums=[%22CCMSLIB00010118942%22,%22CCMSLIB00010118185%22,%22CCMSLIB00010104042%22]&matches=default&ratio_to_base_peak=0.01&bar_width=1.png)
