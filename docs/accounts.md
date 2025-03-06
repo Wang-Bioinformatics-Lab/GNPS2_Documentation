@@ -1,11 +1,13 @@
 ## Account Creation
 
-To create an account, please [contact us](contact.md) via email or join us in office hours to get started. When reaching out, please let us know your:
+To create an account, please [contact the Wang Lab](contact.md) by emailing the PI Ming (mingxun.wang@cs.ucr.edu) or join us in office hours to get started. When sending email please use the following template:
 
-1. Name
-2. institution
+```
+Name: <your name>
+Institutione: <your institution>
+```
 
-NOTE: Please also email from your actual academic affiliation email address.
+NOTE: Please also send your email from your academic affiliation email address and not a personal email address.
 
 Once you have a token, please create an account [here](https://gnps2.org/user/signup).
 
