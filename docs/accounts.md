@@ -4,7 +4,7 @@ To create an account, please [contact the Wang Lab](contact.md) by emailing the 
 
 ```
 Name: <your name>
-Institutione: <your institution>
+Institution: <your institution>
 ```
 
 NOTE: Please also send your email from your academic affiliation email address and not a personal email address.
