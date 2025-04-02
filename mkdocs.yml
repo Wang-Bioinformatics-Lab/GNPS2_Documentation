@@ -82,6 +82,7 @@ extra:
 
 plugins:
     - search
+    - git-authors
     - git-revision-date-localized:
         type: datetime
     - mermaid2
