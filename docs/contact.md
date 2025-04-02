@@ -9,7 +9,8 @@ If you have any questions about how to use GNPS2 please first ask the community 
 **📍 Zoom:** [Zoom Meeting](https://ucr.zoom.us/j/98049645231)
 **✅ RSVP:** [Please RSVP Below](#rsvp)
 
-NOTE: We also have specific IDBac office hours if you want to [check that out](idbacofficehours.md).
+!!! note "IDBac Office Hours"
+    We also have specific IDBac office hours if you want to [check that out](idbacofficehours.md).
 
 !!! danger "Notes"
     Office Hours hours have changed due to quarter change. Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
