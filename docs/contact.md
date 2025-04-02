@@ -2,13 +2,12 @@
 
 If you have any questions about how to use GNPS2 please first ask the community at the GNPS forum located [here](https://groups.google.com/forum/#!forum/molecular_networking_bug_reports).
 
-## GNPS2 Office Hours
+## GNPS2 Weekly Online Interactive Office Hours
 
-Upcoming Office Hour Schedule
-
-| Date/Time                                            | Subjects Covered         | Link                                      | RSVP                 |
-|------------------------------------------------------|--------------------------|-------------------------------------------|----------------------|
-| Weekly on Wednesdays <br/> 9:00 AM PST (6:00 PM CET) | Interactive Office Hours | [Zoom](https://ucr.zoom.us/j/98049645231) | [Please RSVP](#rsvp) |
+**🗓 When:** Every Wednesday at 9:00 AM PST (6:00 PM CET)  
+**🎓 Subject:** Interactive Office Hours  
+**📍 Zoom:** [Zoom Meeting](https://ucr.zoom.us/j/98049645231)
+**✅ RSVP:** [Please RSVP Below](#rsvp)
 
 NOTE: We also have specific IDBac office hours if you want to [check that out](idbacofficehours.md).
 
