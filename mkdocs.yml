@@ -51,6 +51,7 @@ nav:
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - GNPS2 MASST: masst.md
+    - plantMASST: plantmasst.md
     - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
     - GNPS2 PanReDU:
         - ReDU Overview: ReDU_overview.md
