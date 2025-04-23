@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -1481,6 +1481,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#input-search-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input search parameters
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1954,6 +1963,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#input-search-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input search parameters
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2083,14 +2101,39 @@
 <p>The user can provide two different types of input for the search: by <strong>USI (Universal Spectrum Identifier)</strong> or by a list of <strong>Spectrum Peaks</strong>.</p>
 <h3 id="usi-input">USI input<a class="headerlink" href="#usi-input" title="Permanent link">&para;</a></h3>
 <p>To perform a search using a spectrum identifier (USI), just copy and paste it into the “<strong>Spectrum USI</strong>” input area. If the user wants to perform a search using their own data, they can deposit datasets in <a href="https://massive.ucsd.edu/">MassIVE</a>, <a href="https://www.ebi.ac.uk/metabolights/">MetaboLights</a>, or <a href="https://www.metabolomicsworkbench.org/">Metabolomics Workbench</a>, and using the GNPS Dashboard tool, get the USI assigned to each specific scan. The user can access the documentation to see more details about the usage of the dashboard (<a href="https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/">GNPS Dashboard Documentation</a>). </p>
-<p>In addition, an USI can be retrieved from a GNPS job (such as feature-based molecular networking or classical molecular networking workflow) or from any spectrum that is part of the GNPS libraries. Examples of types of valid USIs can be found in the <a href="https://metabolomics-usi.gnps2.org/">Metabolomics Spectrum Resolver webpage</a>.</p>
+<p>In addition, a USI can be retrieved from a GNPS job (such as feature-based molecular networking or classical molecular networking workflow) or from any spectrum that is part of the GNPS libraries. Examples of types of valid USIs can be found in the <a href="https://metabolomics-usi.gnps2.org/">Metabolomics Spectrum Resolver webpage</a>.</p>
 <p><a class="glightbox" href="../img/plantmasst/img1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/plantmasst/img1.png" /></a>
 <em><strong>Figure 1.</strong> Input area for USI search on plantMASST</em></p>
 <h3 id="spectrum-peaks-input">Spectrum Peaks input<a class="headerlink" href="#spectrum-peaks-input" title="Permanent link">&para;</a></h3>
 <p>Another useful way to perform a search is to use the “<strong>Spectrum Peaks</strong>” input field to pass the spectrum details as a list of m/z and intensity pair values. This option is particularly helpful when the spectrum is not deposited in any of the repositories cited above, so no USI is associated with it.</p>
-<p>In such cases, the user must also provide a value in the <strong>“Precursor m/z”</strong> field to specify the mass-to-charge ratio of the precursor ion. The <strong>“Charge”</strong> field can be included as well, but it defaults to 1 if left blank.</p>
+<p>In such cases, the user must also provide a value in the <strong>“Precursor m/z”</strong> field to specify the mass-to-charge ratio of the precursor ion. The <strong>“Charge”</strong> field can be included as well, but it defaults to 1 if left blank. The <strong>"Use only the top N most intense peaks"</strong> is optional, and can be useb both with USI and Spectrum peaks search. <a href="#input-search-parameters:~:text=Use%20only%20the%20top%20N%20most%20intense%20peaks%20(optional)">See more details about this parameter below</a>.</p>
 <p><a class="glightbox" href="../img/plantmasst/img2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/plantmasst/img2.png" /></a>
 <em><strong>Figure 2.</strong> Input area for searching by spectrum peaks. The user needs to provide the formatted peak list and Precursor m/z. The charge input is optional, and defaults to 1 if not provided.</em></p>
+<h3 id="input-search-parameters">Input search parameters<a class="headerlink" href="#input-search-parameters" title="Permanent link">&para;</a></h3>
+<p>The user can also adjust the search parameters to customize the search. The following parameters are available.</p>
+<p><strong>Parameters available only for searches using Spectrum peaks:</strong></p>
+<ul>
+<li><strong>Precursor m/z</strong>: The mass-to-charge ratio of the precursor ion. This field is required when using the Spectrum Peaks input.</li>
+<li><strong>Charge</strong>: The charge state of the precursor ion. This field is optional and defaults to 1 if not provided.</li>
+</ul>
+<p><strong>Parameters available for both USI and Spectrum Peaks searches:</strong></p>
+<ul>
+<li><strong>Precursor m/z Tolerance (Da)</strong>: The mass tolerance for the precursor ion. The default value is 0.05 Da.</li>
+<li><strong>Fragment Tolerance (Da)</strong>: The mass tolerance for the fragment ions. The default value is 0.05 Da.</li>
+<li><strong>Cosine Threshold</strong>: The minimum cosine similarity score for a match. The default value is 0.7.</li>
+<li><strong>Minimum Matched Peaks</strong>: The minimum number of matched peaks required for a match. The default value is 3.</li>
+<li><strong>Use only the top N most intense peaks (optional)</strong>: The user can specify a number to limit the number of peaks used in the search. This is useful for reducing noise in the spectrum by using only the N most intense peaks in the spectrum. The default value is empty, meaning all peaks will be used. When performing searches using USI, the list of peaks will be fetched from the GNPS database, and the user can choose to limit the number of peaks used in the search.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Important note</p>
+<p>When using <strong>Use only the top N most intense peaks</strong> option with the USI search, it won't be possible to see mirror plots for the matches. This is because the search will be performed using the top N peaks, and the mirror plot requires the full spectrum and USI search for comparison. If you want to see mirror plots, please do not use this option.</p>
+</div>
+<p><strong>Parameters available when performing Analog Search:</strong></p>
+<ul>
+<li><strong>Analog Search</strong>: This option allows the user to search for possible analogs of the compound. The default value is No.</li>
+<li><strong>Delta Mass Above (Da)</strong>: The maximum mass difference between the query and the analog. The default value is 130 Da.</li>
+<li><strong>Delta Mass Below (Da)</strong>: The minimum mass difference between the query and the analog. The default value is 200 Da.</li>
+</ul>
 <h2 id="search-examples">Search examples<a class="headerlink" href="#search-examples" title="Permanent link">&para;</a></h2>
 <p>The example card on the right dashboard provides links to pre-configured search inputs. These examples demonstrate how to use the interface with both USI and spectrum peaks.</p>
 <p>Clicking the links will populate the required field on the interface, requiring the user to only click “<strong>Search plantMASST by USI</strong>” or “<strong>Search plantMASST by Spectrum Peaks</strong>”, depending on the initial choice, as seen in the figure below. We encourage the user to explore the different searches and how the different parameters affect the search results to better understand how to use the interface.</p>
@@ -2107,7 +2150,7 @@
 <div class="admonition note">
 <p class="admonition-title">URL example</p>
 <p>The URL below is an example of the parameters used in the search shown in the figure above. The user can click on it to populate the search fields with the same parameters. </p>
-<p><strong><a href="http://127.0.0.1:5052/plantmasst#%7B%22usi1%22%3A%20%22mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3A%20CCMSLIB00005435899%22%2C%20%22peaks%22%3A%20%22%22%2C%20%22precursor_mz%22%3A%20%22%22%2C%20%22charge%22%3A%20%22%22%2C%20%22pm_tolerance%22%3A%200.05%2C%20%22fragment_tolerance%22%3A%200.05%2C%20%22cosine_threshold%22%3A%200.6%2C%20%22min_matched_peaks%22%3A%203%2C%20%22analog_select%22%3A%20%22No%22%2C%20%22delta_mass_below%22%3A%20300%2C%20%22delta_mass_above%22%3A%20300%7D%0A">Click here to populate the plantMASST search with the parameters shown above</a></strong></p>
+<p><strong><a href="https://masst.gnps2.org/plantmasst#%7B%22usi1%22%3A%20%22mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3A%20CCMSLIB00005435899%22%2C%20%22peaks%22%3A%20%22%22%2C%20%22precursor_mz%22%3A%20%22%22%2C%20%22charge%22%3A%20%22%22%2C%20%22pm_tolerance%22%3A%200.05%2C%20%22fragment_tolerance%22%3A%200.05%2C%20%22cosine_threshold%22%3A%200.6%2C%20%22min_matched_peaks%22%3A%203%2C%20%22analog_select%22%3A%20%22No%22%2C%20%22delta_mass_below%22%3A%20300%2C%20%22delta_mass_above%22%3A%20300%7D%0A">Click here to populate the plantMASST search with the parameters shown above</a></strong></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Reproducibility tip</p>
@@ -2160,7 +2203,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="April 15, 2025 00:04:43">April 15, 2025 00:04:43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="April 23, 2025 16:26:38">April 23, 2025 16:26:38</span>
   </span>
 
     
