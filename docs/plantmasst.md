@@ -12,7 +12,7 @@ The user can provide two different types of input for the search: by **USI (Univ
 
 To perform a search using a spectrum identifier (USI), just copy and paste it into the “**Spectrum USI**” input area. If the user wants to perform a search using their own data, they can deposit datasets in [MassIVE](https://massive.ucsd.edu/), [MetaboLights](https://www.ebi.ac.uk/metabolights/), or [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), and using the GNPS Dashboard tool, get the USI assigned to each specific scan. The user can access the documentation to see more details about the usage of the dashboard ([GNPS Dashboard Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/)). 
 
-In addition, an USI can be retrieved from a GNPS job (such as feature-based molecular networking or classical molecular networking workflow) or from any spectrum that is part of the GNPS libraries. Examples of types of valid USIs can be found in the [Metabolomics Spectrum Resolver webpage](https://metabolomics-usi.gnps2.org/).
+In addition, a USI can be retrieved from a GNPS job (such as feature-based molecular networking or classical molecular networking workflow) or from any spectrum that is part of the GNPS libraries. Examples of types of valid USIs can be found in the [Metabolomics Spectrum Resolver webpage](https://metabolomics-usi.gnps2.org/).
 
 ![](img/plantmasst/img1.png)
 _**Figure 1.** Input area for USI search on plantMASST_
@@ -21,10 +21,37 @@ _**Figure 1.** Input area for USI search on plantMASST_
 
 Another useful way to perform a search is to use the “**Spectrum Peaks**” input field to pass the spectrum details as a list of m/z and intensity pair values. This option is particularly helpful when the spectrum is not deposited in any of the repositories cited above, so no USI is associated with it.
 
-In such cases, the user must also provide a value in the **“Precursor m/z”** field to specify the mass-to-charge ratio of the precursor ion. The **“Charge”** field can be included as well, but it defaults to 1 if left blank.
+In such cases, the user must also provide a value in the **“Precursor m/z”** field to specify the mass-to-charge ratio of the precursor ion. The **“Charge”** field can be included as well, but it defaults to 1 if left blank. The **"Use only the top N most intense peaks"** is optional, and can be useb both with USI and Spectrum peaks search. [See more details about this parameter below](#input-search-parameters:~:text=Use%20only%20the%20top%20N%20most%20intense%20peaks%20(optional)).
 
 ![](img/plantmasst/img2.png)
 _**Figure 2.** Input area for searching by spectrum peaks. The user needs to provide the formatted peak list and Precursor m/z. The charge input is optional, and defaults to 1 if not provided._
+
+### Input search parameters
+The user can also adjust the search parameters to customize the search. The following parameters are available.
+
+**Parameters available only for searches using Spectrum peaks:**
+
+- **Precursor m/z**: The mass-to-charge ratio of the precursor ion. This field is required when using the Spectrum Peaks input.
+- **Charge**: The charge state of the precursor ion. This field is optional and defaults to 1 if not provided.
+
+
+**Parameters available for both USI and Spectrum Peaks searches:**
+
+- **Precursor m/z Tolerance (Da)**: The mass tolerance for the precursor ion. The default value is 0.05 Da.
+- **Fragment Tolerance (Da)**: The mass tolerance for the fragment ions. The default value is 0.05 Da.
+- **Cosine Threshold**: The minimum cosine similarity score for a match. The default value is 0.7.
+- **Minimum Matched Peaks**: The minimum number of matched peaks required for a match. The default value is 3.
+- **Use only the top N most intense peaks (optional)**: The user can specify a number to limit the number of peaks used in the search. This is useful for reducing noise in the spectrum by using only the N most intense peaks in the spectrum. The default value is empty, meaning all peaks will be used. When performing searches using USI, the list of peaks will be fetched from the GNPS database, and the user can choose to limit the number of peaks used in the search.
+
+!!! warning "Important note"
+    When using **Use only the top N most intense peaks** option with the USI search, it won't be possible to see mirror plots for the matches. This is because the search will be performed using the top N peaks, and the mirror plot requires the full spectrum and USI search for comparison. If you want to see mirror plots, please do not use this option.
+
+**Parameters available when performing Analog Search:**
+
+- **Analog Search**: This option allows the user to search for possible analogs of the compound. The default value is No.
+- **Delta Mass Above (Da)**: The maximum mass difference between the query and the analog. The default value is 130 Da.
+- **Delta Mass Below (Da)**: The minimum mass difference between the query and the analog. The default value is 200 Da.
+
 
 ## Search examples
 
@@ -56,7 +83,7 @@ Another very useful feature available is the “**Copy Link**” button, which a
 !!! note "URL example"
     The URL below is an example of the parameters used in the search shown in the figure above. The user can click on it to populate the search fields with the same parameters. 
 
-    **[Click here to populate the plantMASST search with the parameters shown above](http://127.0.0.1:5052/plantmasst#%7B%22usi1%22%3A%20%22mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3A%20CCMSLIB00005435899%22%2C%20%22peaks%22%3A%20%22%22%2C%20%22precursor_mz%22%3A%20%22%22%2C%20%22charge%22%3A%20%22%22%2C%20%22pm_tolerance%22%3A%200.05%2C%20%22fragment_tolerance%22%3A%200.05%2C%20%22cosine_threshold%22%3A%200.6%2C%20%22min_matched_peaks%22%3A%203%2C%20%22analog_select%22%3A%20%22No%22%2C%20%22delta_mass_below%22%3A%20300%2C%20%22delta_mass_above%22%3A%20300%7D%0A)**
+    **[Click here to populate the plantMASST search with the parameters shown above](https://masst.gnps2.org/plantmasst#%7B%22usi1%22%3A%20%22mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3A%20CCMSLIB00005435899%22%2C%20%22peaks%22%3A%20%22%22%2C%20%22precursor_mz%22%3A%20%22%22%2C%20%22charge%22%3A%20%22%22%2C%20%22pm_tolerance%22%3A%200.05%2C%20%22fragment_tolerance%22%3A%200.05%2C%20%22cosine_threshold%22%3A%200.6%2C%20%22min_matched_peaks%22%3A%203%2C%20%22analog_select%22%3A%20%22No%22%2C%20%22delta_mass_below%22%3A%20300%2C%20%22delta_mass_above%22%3A%20300%7D%0A)**
 
 !!! tip "Reproducibility tip"
     Sharing a link like this ensures anyone can load the exact same parameters in the interface without manually re-entering them.
