@@ -61,6 +61,7 @@ nav:
     - Quickstart2: quickstart2.md
     # - Curated Data:
     #     - Plant metabolomics: plantdata.md
+
     - API: api.md
     - Logos: logo.md
     - GNPS2 Workshops: workshops.md
