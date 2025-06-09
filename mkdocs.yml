@@ -21,7 +21,7 @@ nav:
         - Metadata: metadata.md
     - Overall Tool Index: toolindex.md
     - Analysis Workflow Index: workflowindex.md
-    - GNPS2 USI: usi.md
+    - USI: usi.md
     - IDBac:
         - Request an IDBac Account: idbac-request-an-account.md
         - Office Hours: idbacofficehours.md
@@ -50,15 +50,17 @@ nav:
         - Multiple Spectrum Alignment: mmsa.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
-    - GNPS2 MASST: masst.md
+    - MASST: masst.md
     - plantMASST: plantmasst.md
-    - GNPS2 Dataset Explorer: gnpsdatasetexplorer.md
-    - GNPS2 PanReDU:
+    - Dataset Explorer: gnpsdatasetexplorer.md
+    - PanReDU:
         - ReDU Overview: ReDU_overview.md
         - ReDU Data Selection: ReDU_Dataselection_dashboard.md
         - ReDU Contribution: ReDU_Contribution.md
         - Pan Repo Public Data Downloader: downloadpublicdata.md
-    - GNPS2 Quickstart2: quickstart2.md
+    - Quickstart2: quickstart2.md
+    # - Curated Data:
+    #     - Plant metabolomics: plantdata.md
     - API: api.md
     - Logos: logo.md
     - GNPS2 Workshops: workshops.md
