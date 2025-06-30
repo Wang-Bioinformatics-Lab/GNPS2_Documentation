@@ -10,3 +10,16 @@ Feel free to use any of the following logos for your presentations. The followin
 
 ![](img/logo/microbeMASST_logo.png)
 
+## GNPS2 FBMN
+
+![img](img/logo/mzmine-fbmn.png)
+
+## MassQL 
+
+Find the full documentation for MassQL [here](https://mwang87.github.io/MassQueryLanguage_Documentation/)!
+
+![img](https://mwang87.github.io/MassQueryLanguage_Documentation/img/logo.png)
+
+## GNPS2 Dashboard Logo
+
+![img](img/logo/dashboard_logo_final_transparent.png)
