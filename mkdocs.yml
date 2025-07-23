@@ -48,6 +48,7 @@ nav:
         - Networking Overlay: Networkingoverlay.md
         - Network Topology - Transitive Alignments: transitive.md
         - Multiple Spectrum Alignment: mmsa.md
+        - IsoPairSpec: isopairspec.md
     - Spectral Libraries:
         - Using Spectral Libraries in GNPS2: libraries.md
     - MASST: masst.md
