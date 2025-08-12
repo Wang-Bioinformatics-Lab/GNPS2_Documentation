@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sample-info-specifications" class="md-skip">
+        <a href="#isopairfinder" class="md-skip">
           Skip to content
         </a>
       
@@ -1315,6 +1315,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1347,6 +1349,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1355,9 +1359,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-info-specifications" class="md-nav__link">
+  <a href="#input-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Sample Info Specifications
+      Input data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Input data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-data-msms-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raw Data &amp; MS/MS Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnps2-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNPS2 Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-and-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions and Feedback
     </span>
   </a>
   
@@ -1821,6 +1885,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1829,9 +1895,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-info-specifications" class="md-nav__link">
+  <a href="#input-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Sample Info Specifications
+      Input data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Input data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-data-msms-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raw Data &amp; MS/MS Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnps2-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      GNPS2 Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-and-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions and Feedback
     </span>
   </a>
   
@@ -1861,16 +1987,50 @@
   
 
 
-  <h1>IsoPairFinder</h1>
-
-<p>You can run IsoPairSpec in GNPS2 - <a href="https://gnps2.org/workflowinput?workflowname=isopairspec_nextflow_workflow">here</a>. </p>
-<p>We will require the follwoing files:</p>
-<ol>
-<li>XXX</li>
-<li>YYY</li>
-</ol>
-<h2 id="sample-info-specifications">Sample Info Specifications<a class="headerlink" href="#sample-info-specifications" title="Permanent link">&para;</a></h2>
-<p>Your wildtype samples must be the group WT, and the mutant must be MUTANT. </p>
+<h1 id="isopairfinder">IsoPairFinder<a class="headerlink" href="#isopairfinder" title="Permanent link">&para;</a></h1>
+<p><strong>IsoPairFinder</strong> is a computational tool that identifies pathway intermediates by analyzing paired unlabeled (12C) and isotope-labeled (13C) metabolomics data from gene-edited microbes. By prioritizing substrate-specific feature pairs, IsoPairFinder dramatically reduces the chemical search space to enable efficient identification of biologically relevant intermediates.</p>
+<ul>
+<li><strong>GNPS2 workflow</strong> - You can run IsoPairFinder in GNPS2 - <a href="https://gnps2.org/workflowinput?workflowname=isopairfinder_nextflow_workflow">here</a>.</li>
+<li><strong>R package</strong> - The R package and source code is available on <a href="https://github.com/DoddLab/IsoPairFinder">GitHub</a>.</li>
+<li><strong>Demo data</strong> - The demo data can be downloaded <a href="https://github.com/DoddLab/IsoPairFinder_demo_data">here</a>.</li>
+<li><strong>Tutorials</strong> - Comprehensive documentation is available <a href="https://doddlab.github.io/IsoPairFinder/">here</a>.</li>
+</ul>
+<p>If you used IsoPairFinder in your research, please cite the following paper:
+- Z. Zhou, Y. Liu, M. W, D. Dodd*, IsoPairFinder: A tool for biochemical pathway discovery using stable isotope tracing metabolomics, Submitted, 2025. <a href=""><strong>bioRxiv</strong></a>.</p>
+<h2 id="input-data">Input data<a class="headerlink" href="#input-data" title="Permanent link">&para;</a></h2>
+<p>We will require the following files:</p>
+<ul>
+<li><strong>Feature tables</strong> (comma-separated CSV files; unlabeled WT vs. unlabeled mutant and labeled WT vs. labeled mutant) contain differential feature results exported from common peak picking tools (XCMS, MSDIAL, MZmine, etc.). T<strong>he protocols for data preparation of these tools</strong> are detailed in the <a href="https://doddlab.github.io/IsoPairFinder_Tutorials/data_preparation.html"><strong>tutorials</strong></a>.</li>
+<li><strong>Sample Information Table</strong> (CSV file) defines the tracers and group information</li>
+<li><strong>Raw data files</strong> (mzML/mzXML files) are the LC-MS data files for each sample.</li>
+<li><strong>MS/MS files</strong> (mzML/mzXML/mgf format) are the MS/MS data files.</li>
+</ul>
+<h3 id="feature-table">Feature Table<a class="headerlink" href="#feature-table" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>peak_table_C12.csv</strong>: the peak area table of the unlabeled group. <ul>
+<li>The first 4 columns should be “id”, “mz”, “rt”, “ms1_isotopes”, and other columns are sample names.</li>
+</ul>
+</li>
+<li><strong>peak_table_C13.csv</strong>: the peak area table of the labeled group. <ul>
+<li>The first 4 columns should be “id”, “mz”, “rt”, “ms1_isotopes”, and other columns are sample names.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>id,mz,rt,ms1_isotopes,hyuA_UA_1,hyuA_UA_2,hyuA_UA_3,WT_UA_1,WT_UA_2,WT_UA_3
+43.0178@4.943,43.0178,4.943,43.01777:11184 44.02112:0 45.02448:6848,30667,30948,30120,28344,27638,28581
+45.0334@4.942,45.0334,4.942,45.03339:6695 46.03674:409 47.0401:0,19052,16036,18015,17337,16850,15274
+55.0539@4.564,55.0539,4.564,55.05389:30018 56.05724:32499 57.0606:1593,87663,81496,84551,99256,82603,84896
+</code></pre></div>
+<h3 id="sample-info">Sample Info<a class="headerlink" href="#sample-info" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Column names: “sample_id”, “group”, “tracer_group”, and “type”.<ul>
+<li><strong>sample_id</strong>: The sample ID, which should match the column names in the feature table, and should be same as the raw data file name.</li>
+<li><strong>group</strong>: <font color="red"> Your <strong>wild type</strong> samples must be the group <strong>WT</strong>, and the <strong>mutant samples</strong> must be <strong>MUTANT</strong>.</font></li>
+<li><strong>tracer_group</strong>: 12C or 13C.</li>
+<li><strong>type</strong>: The <strong>type</strong> column defines the type of the sample, e.g., sample or control.</li>
+</ul>
+</li>
+</ul>
 <div class="highlight"><pre><span></span><code>sample_id,group,tracer_group,type
 WT_UA_1,WT,12C,sample
 WT_UA_2,WT,12C,sample
@@ -1885,6 +2045,85 @@ hyuA_13CUA_1,MUTANT,13C,sample
 hyuA_13CUA_2,MUTANT,13C,sample
 hyuA_13CUA_3,MUTANT,13C,sample
 </code></pre></div>
+<h3 id="raw-data-msms-data">Raw Data &amp; MS/MS Data<a class="headerlink" href="#raw-data-msms-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li>mzML/mzXML files: The raw data files for each sample. <font color="red">The names of the raw data files should match the sample IDs in the sample information table.</font></li>
+<li>MS/MS files: The MS/MS data files for each sample, which can be in <mark>mzML/mzXML/mgf format</mark>. The MS/MS data of Pooled samples are recommended.</li>
+</ul>
+<h2 id="gnps2-workflow">GNPS2 Workflow<a class="headerlink" href="#gnps2-workflow" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Login to the GNPS2 platform and navigate to the IsoPairFinder workflow. <ul>
+<li>Click on the "Launch Workflow" button to start a new workflow.</li>
+<li>Search for "IsoPairFinder" in the workflow list or use the <a href="">direct link</a> to the workflow.</li>
+</ul>
+</li>
+</ol>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="IsoPairFinder Workflow" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow1.png" /></a></p>
+<p><br></p>
+<ol>
+<li>Upload the required input files (feature tables, sample information table, raw data files, and MS/MS files) to the GNPS2 platform.</li>
+</ol>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="IsoPairFinder Upload" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow2.png" /></a></p>
+<p><br></p>
+<ol>
+<li>Type the job name, and assign the uploaded files to the appropriate input fields in the workflow interface.<ul>
+<li>Select the sample information table </li>
+<li>Select the feature tables for unlabeled and labeled groups.</li>
+<li>Select the raw data files.</li>
+<li>Select the MS/MS files.</li>
+</ul>
+</li>
+</ol>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Assign the data types" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow3.png" /></a></p>
+<p><br></p>
+<ol>
+<li>Modify the IsoPairFinder workflow parameters according to your experimental design, and submit the workflow.<ul>
+<li>polarity: ionization polarity, “positive” or “negative”. Default: “positive”</li>
+<li>mz_tol: m/z tolerance (unit: ppm) for searching the intermediate ions. Default: 10 ppm</li>
+<li>rt_tol: retention time tolerance (unit: minute) for searching the intermediate ions. Default: 0.05 min</li>
+<li>p_value_cutoff: the cutoff of p-value (t-test). Default: 0.05</li>
+<li>p_adjust: whether to perform the multiple comparison correction (FDR adjustment). Default: TRUE</li>
+<li>fold_change_cutoff: the cutoff of fold-change (case vs. control). Default: 20</li>
+</ul>
+</li>
+</ol>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/202508111725650.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/202508111725650.png" /></a></p>
+<p><br></p>
+<ol>
+<li>Run the workflow and monitor its progress through the GNPS2 interface.</li>
+</ol>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow5.png" /></a></p>
+<p><br></p>
+<ol>
+<li>Once the workflow is complete, download the results and analyze them using your preferred tools.</li>
+</ol>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow6_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow6_2.png" /></a></p>
+<p><br></p>
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>The exported results could be found in the output directory (<code>Downloaded_folder/nf_output/Input/00_tracer_results</code>) of the workflow:</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow7.png" /></a></p>
+<p>These files will include (See the <a href="https://doddlab.github.io/IsoPairFinder_Tutorials/isoPairFinder_running.html">tutorials</a> for more details):
+- <strong>tracer_pair_result.xlsx</strong>: This file contains the results from differential analysis, recognized features, and identified pathway intermediate feature pairs. It has 4 sheets:
+    - <strong>raw_data_unlabeled</strong>: the differential analysis of the unlabeled group. Some columns below were added to the unlabeled feature table, including p-values, q-values, fold changes, etc.
+    - <strong>raw_data_labeled</strong>: the differential analysis of the labeled group. Some columns below were added to the unlabeled feature table, including p-values, q-values, fold changes, etc.
+    - <strong>recognized_peak_unlabel</strong>: the table of recognized adducts, neutral loss, and in-source fragments (@fig-figure3-2). The method used here was followed from a previous publication @zhou_metabolite_2022. Some key column definitions:
+        - base_peak: the base peaks that are used to recognize the adducts and in-source fragments.
+        - relationship: the relationship with the base peak.
+        - num_annotation: the number of features that belong to the same group.
+        - group_order: the feature group ID.
+    - <strong>paired_table</strong>: the table of possible pathway intermediate ion pairs identified. Each row represents one pair of pathway intermediate ions (@fig-figure3-2). Specifically,
+        - unlabeled_feature_id/mz/rt: the property (id, mz, rt) of pathway intermediate in the unlabeled group.
+        - labled_feature_id/mz/rt: the property (id, mz, rt) of pathway intermediate in the labeled group
+        - mass_shift_label: the estimated carbon number
+        - predicted_formula: the predicted formula of the pathway intermediate ion.
+        - p_values/fold_changes/average_abundance: the statistics of differential analysis
+- “<strong>volcano_plot_unlabeled.pdf</strong>” / “<strong>volcano_plot_labeled.pdf</strong>”: the volcano plots that show a significant accumulation between the case (mutant) and control groups. 
+- “<strong>isotope_pair_plot_overview.pdf</strong>”: the overview of the EIC mirror for identified pathway intermediate ion pairs.
+- “<strong>isotope_pair_list.pdf</strong>”: the lists of EIC mirror plots for identified pathway intermediate ion pairs. </p>
+<h2 id="questions-and-feedback">Questions and Feedback<a class="headerlink" href="#questions-and-feedback" title="Permanent link">&para;</a></h2>
+<p>If you have any questions or feedback regarding the IsoPairFinder workflow, please feel free to reach out to us via the following channels:
+- <strong>GitHub Issues</strong>: <a href="https://github.com/DODD-LAB/IsoPairFinder/issues">IsoPairFinder Issues</a>
+- <strong>Email</strong>: You can also contact us via email at <a href="mailto:zhouzw@stanford.edu">zhouzw@stanford.edu</a></p>
 
 
 
@@ -1905,7 +2144,7 @@ hyuA_13CUA_3,MUTANT,13C,sample
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 11, 2025 21:48:46 UTC">August 11, 2025 21:48:46</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 12, 2025 20:08:48 UTC">August 12, 2025 20:08:48</span>
   </span>
 
     
@@ -1921,7 +2160,7 @@ hyuA_13CUA_3,MUTANT,13C,sample
     </span>
     <nav>
       
-        <a href="mailto:mwang87@gmail.com">Mingxun Wang</a>
+        <a href="mailto:mwang87@gmail.com">Ming Wang</a>
     </nav>
   </span>
 
