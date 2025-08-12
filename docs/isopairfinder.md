@@ -1,7 +1,7 @@
 # IsoPairFinder
 **IsoPairFinder** is a computational tool that identifies pathway intermediates by analyzing paired unlabeled (12C) and isotope-labeled (13C) metabolomics data from gene-edited microbes. By prioritizing substrate-specific feature pairs, IsoPairFinder dramatically reduces the chemical search space to enable efficient identification of biologically relevant intermediates.
 
-- **GNPS2 workflow** - You can run IsoPairFinder in GNPS2 - [here](https://gnps2.org/workflowinput?workflowname=isopairspec_nextflow_workflow).
+- **GNPS2 workflow** - You can run IsoPairFinder in GNPS2 - [here](https://gnps2.org/workflowinput?workflowname=isopairfinder_nextflow_workflow).
 - **R package** - The R package and source code is available on [GitHub](https://github.com/DoddLab/IsoPairFinder).
 - **Demo data** - The demo data can be downloaded [here](https://github.com/DoddLab/IsoPairFinder_demo_data).
 - **Tutorials** - Comprehensive documentation is available [here](https://doddlab.github.io/IsoPairFinder/).
