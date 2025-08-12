@@ -119,6 +119,7 @@ The exported results could be found in the output directory (`Downloaded_folder/
 ![](https://raw.githubusercontent.com/JustinZZW/blogImg/main/GNPS2_workflow7.png)
 
 These files will include (See the [tutorials](https://doddlab.github.io/IsoPairFinder_Tutorials/isoPairFinder_running.html) for more details):
+
 - **tracer_pair_result.xlsx**: This file contains the results from differential analysis, recognized features, and identified pathway intermediate feature pairs. It has 4 sheets:
     - **raw_data_unlabeled**: the differential analysis of the unlabeled group. Some columns below were added to the unlabeled feature table, including p-values, q-values, fold changes, etc.
     - **raw_data_labeled**: the differential analysis of the labeled group. Some columns below were added to the unlabeled feature table, including p-values, q-values, fold changes, etc.
@@ -127,7 +128,7 @@ These files will include (See the [tutorials](https://doddlab.github.io/IsoPairF
         - relationship: the relationship with the base peak.
         - num_annotation: the number of features that belong to the same group.
         - group_order: the feature group ID.
-    - **paired_table**: the table of possible pathway intermediate ion pairs identified. Each row represents one pair of pathway intermediate ions (@fig-figure3-2). Specifically,
+    - **paired_table**: the table of possible pathway intermediate ion pairs identified. Each row represents one pair of pathway intermediate ions. Specifically,
         - unlabeled_feature_id/mz/rt: the property (id, mz, rt) of pathway intermediate in the unlabeled group.
         - labled_feature_id/mz/rt: the property (id, mz, rt) of pathway intermediate in the labeled group
         - mass_shift_label: the estimated carbon number
@@ -139,6 +140,7 @@ These files will include (See the [tutorials](https://doddlab.github.io/IsoPairF
 
 ## Questions and Feedback
 If you have any questions or feedback regarding the IsoPairFinder workflow, please feel free to reach out to us via the following channels:
+
 - **GitHub Issues**: [IsoPairFinder Issues](https://github.com/DODD-LAB/IsoPairFinder/issues)
 - **Email**: You can also contact us via email at [zhouzw@stanford.edu](mailto:zhouzw@stanford.edu)
 
