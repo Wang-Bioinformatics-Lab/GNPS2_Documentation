@@ -27,6 +27,15 @@ Please also take the time to RSVP that you're going to attend and what questions
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
+## Collaborator Office Hours
+
+Ming will host an additional office hours for collaborators, this means for labs where we have an existing on-going active project, joint grant funding, or planned funding actively coming up. There will be no RSVP - you will be admitted to the meeting directly. 
+
+**🗓 When:** Every Friday at 3:00 PM PST
+**🎓 Subject:** Collaborator Office Hours  
+**📍 Zoom:** [Zoom Meeting](https://ucr.zoom.us/j/98049645231)  
+
+
 ## Page Contributions
 
 {{ git_page_authors }}
