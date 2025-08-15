@@ -11,40 +11,38 @@ Please help us fill in more completely!
 
 These are web tools that is run by the GNPS2 team and provides complementary functionality to GNPS2. 
 
-| Tool                                                                                | Documentation           | Source Code                                                                         | Citation                                                                |
-|-------------------------------------------------------------------------------------|-------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Pubmed Co-Authors List](https://coauthor.wanglab.science/)                         | ---                     | ---                                                                                 | ---                                                                     |
-| [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/)        | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/)                      | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Structure Server](https://structure.gnps2.org/)                              | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Cytoscape](https://cytoscape.gnps2.org/)                                     | ---                     | ---                                                                                 | ---                                                                     |
-| [Metabolomics Spectrum Resolver](https://metabolomics-usi.gnps2.org)                | [Documentation](usi.md) | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver)                   | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
-| [GNPS2 Networking URL Formatter](https://urlformatter.gnps2.org)                    | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Classical Networking Upset Plot Dashboard](http://classicalupset.gnps2.org/) | ---                     | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | ---                                                                     |
-| [GNPS2 FBMN Upset Plot Dashboard](https://fbmnupset.gnps2.org/)                     | ---                     | ---                                                                                 | ---                                                                     |
-| [NP Classifier](https://npclassifier.gnps2.org/)                                    | ---                     | [GitHub](https://github.com/mwang87/NP-Classifier)                                  | ---                                                                     |
-| [GNPS2 Dashboard](https://dashboard.gnps2.org/)                                     | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Plotter Dashboard (Beta)](https://plotter.gnps2.org/)                        | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Dataset File Explorer (Beta)](https://explorer.gnps2.org/)                   | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Public Libraries Download List](https://external.gnps2.org/gnpslibrary)      | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Tiny Mass Sharer](https://tinymass.gnps2.org/)                               | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 MassQL Visualizer](https://massql.gnps2.org/)                                | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 MassQL Analysis/Chatbot](https://massql-analysis.gnps2.org/)                 | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 USI Playground](https://usi-playground.gnps2.org/)                           | ---                     | ---                                                                                 | ---                                                                     |
-| [GNPS2 Network Customization Playground](https://networkcustomization.gnps2.org/)   | ---                     | ---                                                                                 | ---                                                                     |
-| [FBmnStatsGUIde](https://fbmn-statsguide.gnps2.org/)                                | ---                     | [GitHub](https://github.com/Functional-Metabolomics-Lab/FBMN-STATS)                 | ---                                                                     |
-| [Chemical Proportionality](https://chemprop.gnps2.org/)                             | ---                     | ---                                                                                 | ---                                                                     |
-| [CorrOmics](https://corromics.gnps2.org/)                                           | ---                     | ---                                                                                 | ---                                                                     |
-| [CMMC Batch validation](https://cmmc-validation.gnps2.org/)                         | ---                     | [GitHub](https://github.com/Wang-Bioinformatics-Lab/streamlit-cmmc-validator)       | ---                                                                     |
-| [MetaboApp - DrugReadouts](https://drugreadouts.gnps2.org/)                         | ---                     | [GitHub](https://github.com/wilhan-nunes/streamlit_drug_readouts)                   | ---                                                                     |
-| [MetaboApp - CMMC Dashboard](https://cmmc-dashboard.gnps2.org/)                     | ---                     | [GitHub](https://github.com/wilhan-nunes/streamlit_CMMC_analysis-dashboard)         | ---                                                                     |
-| [MetaboApp - MassQL Post-MN](https://massqlpostmn.gnps2.org/)                       | ---                     | [GitHub](https://github.com/helenamrusso/streamlit-massql-post-mn)                  | ---                                                                     |
-
-[//]: # (| [MetaboApp - Reverse Metabolomics]&#40;https://reversemetabolomics.streamlit.app/&#41;     | ---                     | ---                                                                                 | ---                                                                     |)
-
-[//]: # (| [Conjugated Metabolome Explorer]&#40;https://conjugated-metabolome.streamlit.app/&#41;     | ---                     | ---                                                                                 | ---                                                                     |)
-
-[//]: # (| [MetaboApp - Multi‑step MassQL]&#40;https://multi-step-massql.streamlit.app/&#41;          | ---                     | ---                                                                                 | ---                                                                     |)
+| Tool                                                                                   | Documentation                                                | Source Code                                                                         | Citation                                                                |
+|----------------------------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| [Pubmed Co-Authors List](https://coauthor.wanglab.science/)                            | ---                                                          | ---                                                                                 | ---                                                                     |
+| [Nature Journals Author Quick Entry](https://natureauthors.wanglab.science/)           | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Spectral Similarity Hub](https://similarity.gnps2.org/)                         | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Structure Server](https://structure.gnps2.org/)                                 | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Cytoscape](https://cytoscape.gnps2.org/)                                        | ---                                                          | ---                                                                                 | ---                                                                     |
+| [Metabolomics Spectrum Resolver](https://metabolomics-usi.gnps2.org)                   | [Documentation](usi.md)                                      | [GitHub](https://github.com/mwang87/MetabolomicsSpectrumResolver)                   | [Citation](https://www.biorxiv.org/content/10.1101/2020.05.09.086066v1) |
+| [GNPS2 Networking URL Formatter](https://urlformatter.gnps2.org)                       | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Classical Networking Upset Plot Dashboard](http://classicalupset.gnps2.org/)    | ---                                                          | [GitHub](https://github.com/mwang87/GNPS_ClassicalNetworkGroupsComparisonDashboard) | ---                                                                     |
+| [GNPS2 FBMN Upset Plot Dashboard](https://fbmnupset.gnps2.org/)                        | ---                                                          | ---                                                                                 | ---                                                                     |
+| [NP Classifier](https://npclassifier.gnps2.org/)                                       | ---                                                          | [GitHub](https://github.com/mwang87/NP-Classifier)                                  | ---                                                                     |
+| [GNPS2 Dashboard](https://dashboard.gnps2.org/)                                        | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Plotter Dashboard (Beta)](https://plotter.gnps2.org/)                           | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Dataset File Explorer (Beta)](https://explorer.gnps2.org/)                      | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Public Libraries Download List](https://external.gnps2.org/gnpslibrary)         | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Tiny Mass Sharer](https://tinymass.gnps2.org/)                                  | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 MassQL Visualizer](https://massql.gnps2.org/)                                   | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 MassQL Analysis/Chatbot](https://massql-analysis.gnps2.org/)                    | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 USI Playground](https://usi-playground.gnps2.org/)                              | ---                                                          | ---                                                                                 | ---                                                                     |
+| [GNPS2 Network Customization Playground](https://networkcustomization.gnps2.org/)      | ---                                                          | ---                                                                                 | ---                                                                     |
+| [FBmnStatsGUIde](https://fbmn-statsguide.gnps2.org/)                                   | ---                                                          | [GitHub](https://github.com/Functional-Metabolomics-Lab/FBMN-STATS)                 | ---                                                                     |
+| [Chemical Proportionality](https://chemprop.gnps2.org/)                                | ---                                                          | ---                                                                                 | ---                                                                     |
+| [CorrOmics](https://corromics.gnps2.org/)                                              | ---                                                          | ---                                                                                 | ---                                                                     |
+| [CMMC Batch validation](https://cmmc-validation.gnps2.org/)                            | ---                                                          | [GitHub](https://github.com/Wang-Bioinformatics-Lab/streamlit-cmmc-validator)       | ---                                                                     |
+| [MetaboApp - DrugReadouts](https://drugreadouts.gnps2.org/)                            | [Documentation](metaboapp_Drug_Readout.md)                   | [GitHub](https://github.com/wilhan-nunes/streamlit_drug_readouts)                   | ---                                                                     |
+| [MetaboApp - CMMC Dashboard](https://cmmc-dashboard.gnps2.org/)                        | [Documentation](metaboapp_CMMC_dashboard.md)                 | [GitHub](https://github.com/wilhan-nunes/streamlit_CMMC_analysis-dashboard)         | ---                                                                     |
+| [MetaboApp - MassQL Post-MN](https://massqlpostmn.gnps2.org/)                          | [Documentation](metaboapp_Multi-Step_MassQL.md)              | [GitHub](https://github.com/helenamrusso/streamlit-massql-post-mn)                  | ---                                                                     |
+| [MetaboApp - Reverse Metabolomics](https://reverse-metabolomics.gnps2.org/)            | [Documentation](metaboapp_Reverse_Metabolomics.md)           | [GitHub](https://github.com/wilhan-nunes/streamlit-Reverse-Metabolomics)            | ---                                                                     |
+| [MetaboApp - Conjugated Metabolome Explorer](https://conjugated-metabolome.gnps2.org/) | [Documentation](metaboapp_Conjugated_Metabolome_Explorer.md) | [GitHub](https://github.com/Philipbear/streamlit-conjugated-metabolome)             | ---                                                                     |
+| [MetaboApp - Multi‑step MassQL](https://multistep-massql.gnps2.org/)                   | [Documentation](metaboapp_Multi-Step_MassQL.md)              | [GitHub](https://github.com/wilhan-nunes/streamlit-Multi-Step-MassQL)               | ---                                                                     |
+| [MetaboApp - FoodReadouts](https://foodreadouts.gnps2.org/)                            | [Documentation](metaboapp_Food_Readout.md)                   | [GitHub](https://github.com/wilhan-nunes/streamlit-food-readouts)                   | ---                                                                     |
 
 [//]: # (| [RDD App]&#40;https://gnps-rdd.streamlit.app/&#41;                                         | ---                     | ---                                                                                 | ---                                                                     |)
 
@@ -56,13 +54,11 @@ Enables users to perform spectral pattern-based queries directly on post-process
 
 [MassQL Post-MN](https://massqlpostmn.gnps2.org/)
 
-[//]: # (### Multi-step MassQL)
+### Multi-step MassQL
 
-[//]: # ()
-[//]: # (Allows construction of sequential MassQL queries, useful for identifying structurally related molecules &#40;e.g., distinguishing isomers&#41; through compound-specific fragmentation patterns.)
+Allows construction of sequential MassQL queries, useful for identifying structurally related molecules (e.g., distinguishing isomers) through compound-specific fragmentation patterns.
 
-[//]: # ()
-[//]: # ([Multi-step MassQL]&#40;https://multi-step-massql.streamlit.app/&#41;)
+[Multi-step MassQL](https://multistep-massql.gnps2.org/)
 
 [//]: # (### RDD App)
 
@@ -72,13 +68,11 @@ Enables users to perform spectral pattern-based queries directly on post-process
 [//]: # ()
 [//]: # ([RDD App]&#40;https://gnps-rdd.streamlit.app/&#41;)
 
-[//]: # (### Food Readout)
+### Food Readout
 
-[//]: # ()
-[//]: # (Annotates molecular features with dietary ontology terms, enabling exploration of potential food-derived metabolite exposures in untargeted metabolomics data.)
+Annotates molecular features with dietary ontology terms, enabling exploration of potential food-derived metabolite exposures in untargeted metabolomics data.
 
-[//]: # ()
-[//]: # ([Food Readout]&#40;https://foodreadouts.streamlit.app/&#41;)
+[Food Readout](https://foodreadouts.gnps2.org/)
 
 ### Drug Readout
 
@@ -111,21 +105,17 @@ Supports correlation-based multi-omics integration, linking metabolomics feature
 
 [CorrOmics](https://corromics.gnps2.org/)
 
-[//]: # (### Conjugated Metabolome Explorer)
+### Conjugated Metabolome Explorer
 
-[//]: # ()
-[//]: # (Facilitates the exploration of metabolite conjugation patterns across large datasets, aiding the identification of phase II metabolism products.)
+Facilitates the exploration of metabolite conjugation patterns across large datasets, aiding the identification of phase II metabolism products.
 
-[//]: # ()
-[//]: # ([Conjugated Metabolome Explorer]&#40;https://conjugated-metabolome.streamlit.app/&#41;)
+[Conjugated Metabolome Explorer](https://conjugated-metabolome.gnps2.org/)
 
-[//]: # (### Reverse Metabolomics)
+### Reverse Metabolomics
 
-[//]: # ()
-[//]: # (Enables querying of large repositories to identify metadata or sample types associated with specific molecular features, providing reverse-lookup functionality for biomarker discovery.)
+Enables querying of large repositories to identify metadata or sample types associated with specific molecular features, providing reverse-lookup functionality for biomarker discovery.
 
-[//]: # ()
-[//]: # ([Reverse Metabolomics]&#40;https://reversemetabolomics.streamlit.app/&#41;)
+[Reverse Metabolomics](https://reverse-metabolomics.gnps2.org/)
 
 
 ### MS/MS Spectrum Summary App
