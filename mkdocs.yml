@@ -31,8 +31,17 @@ nav:
         - Analyze your data: idbacanalyzeyourdata.md
         - Analysis platform: idbacanalysisplatform.md
         
-        
-        
+    - MetaboApps:
+        - MetaboApps Overview: metaboapps_overview.md
+        - PostMN MassQL: metaboapp_PostMN_MassQL.md
+        - Multi-step MassQL: metaboapp_Multi-Step_MassQL.md
+        - Drug readouts: metaboapp_Drug_Readout.md
+        - Food readouts: metaboapp_Food_Readout.md
+        - CMMC Analysis dashboard: metaboapp_CMMC_dashboard.md
+        - Conjugated Metabolome Explorer: metaboapp_Conjugated_Metabolome_Explorer.md
+        - Reverse Metabolomics: metaboapp_Reverse_Metabolomics.md
+
+
     - Tandem Mass Spectrometry Data Analysis:
         - Classical Molecular Networking: classical.md
         - FBMN:
