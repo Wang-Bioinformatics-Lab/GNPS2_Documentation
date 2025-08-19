@@ -6,8 +6,8 @@ We provide these data with putative annotations for metabolite identifications u
 
 ### Positive Mode MS/MS Dataset
 
-This dataset was clustered and analyzed in GNPS2 job [here](https://gnps2.org/status?task=c9a8a45365cf4cdf89b0afaf57df05d3). If you'd want to re-analyze it click here with your own MS/MS library. 
+This dataset was clustered and analyzed in GNPS2 job [https://gnps2.org/status?task=c9a8a45365cf4cdf89b0afaf57df05d3](https://gnps2.org/status?task=c9a8a45365cf4cdf89b0afaf57df05d3). If you'd want to re-analyze it click here with your own MS/MS library. 
 
 ### Negative Mode MS/MS Dataset
 
-This dataset was clustered and analyzed in GNPS2 job [here](https://gnps2.org/status?task=5e24d5949c964e37b6171818babb496a). If you'd want to re-analyze it click here with your own MS/MS library. 
+This dataset was clustered and analyzed in GNPS2 job [https://gnps2.org/status?task=d4a60a947e12444ab5a4b728e10f303b]([https://gnps2.org/status?task=5e24d5949c964e37b6171818babb496a](https://gnps2.org/status?task=d4a60a947e12444ab5a4b728e10f303b)). If you'd want to re-analyze it click here with your own MS/MS library. 
