@@ -10,4 +10,6 @@ Once you have a token, please create an account [here](https://gnps2.org/user/si
 
 GNPS2 is in closed beta to make sure everything is working properly and is slowly ramping up for community use. 
 
+Generally a new batch of tokens will be batched up and sent out once a week. 
+
 Thank you for your patience!
