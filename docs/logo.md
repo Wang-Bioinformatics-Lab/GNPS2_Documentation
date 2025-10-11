@@ -10,6 +10,11 @@ Feel free to use any of the following logos for your presentations and publicati
 
 ![](img/logo/microbeMASST_logo.png)
 
+## microbiomeMASST
+
+![](img/microbiomeMASST_logo_3D.png)
+
+
 ## GNPS2 FBMN
 
 ![img](img/logo/mzmine-fbmn.png)
