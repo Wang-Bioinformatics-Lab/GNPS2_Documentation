@@ -23,7 +23,10 @@ In office hours we'll cover new and old features of GNPS2 and most importantly w
 
 
 ## RSVP
-Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it. Further, you will not receive any followup given an RSVP except when you show up to office hours):
+Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address.
+
+!!! danger "NOTE"
+    You will not receive a confirmation from this RSVP, just show up to office hours once you add it
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
