@@ -13,7 +13,7 @@ If you have any questions about how to use GNPS2 please first ask the community 
     We also have specific IDBac office hours if you want to [check that out](idbacofficehours.md).
 
 !!! danger "Notes"
-    Office Hours on 9/3/2025 will be cancelled due to conference travel. Office Hours hours have changed due to quarter change. Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
+    Office Hours on 12/3/2025 will be late by 30 min due to other meetings. Office Hours hours have changed due to quarter change. Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
 
 The [Wang Bioinformatics Lab](https://www.cs.ucr.edu/~mingxunw/) at UC Riverside builds and maintains GNPS2. Specifically, the PI - Mingxun Wang ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu) ) hosts an office hours on a weekly basis for the benefit of the community. This office hours is virtual and on Zoom:
 
@@ -23,7 +23,10 @@ In office hours we'll cover new and old features of GNPS2 and most importantly w
 
 
 ## RSVP
-Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address (you will not receive a confirmation from this RSVP, just show up to office hours once you add it. Further, you will not receive any followup given an RSVP except when you show up to office hours):
+Please also take the time to RSVP that you're going to attend and what questions you may have so we know who to let in as well as what to expect and the order to address.
+
+!!! danger "NOTE"
+    You will not receive a confirmation from this RSVP, just show up to office hours once you add it
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCaOmZ6Q5ggsmnQ414SSYBrshpX-Ibt4ENh2TPkQiBBR2qw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 

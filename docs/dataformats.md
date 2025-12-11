@@ -2,7 +2,31 @@
 
 We generally accept two formats mzML and mzXML. These are preferred with some caveats on conversion. 
 
-MGF is accepted but its frowned upon as a raw data format as its not really standardized. 
+MGF is accepted but its frowned upon as a raw data format as its not really standardized. Here is an example of what it should look like if you want to be able to use it for analysis
+
+```
+BEGIN IONS
+TITLE=SCAN=1
+PEPMASS=981.54
+CHARGE=0
+MSLEVEL=2
+SEQ=*..*
+SCANS=1
+289.286377	8068.0
+295.545288	22507.0
+298.489624	3925.0
+317.324951	18742.0
+319.655945	8604.0
+324.482422	8041.0
+325.316284	9738.0
+339.789429	16145.0
+343.947021	18094.0
+347.020508	13981.0
+347.913391	6765.0
+END IONS
+```
+
+NOTE: Make sure your file starts at SCANS=1 and is continguous counting up
 
 ## MS/MS spectral libraries
 

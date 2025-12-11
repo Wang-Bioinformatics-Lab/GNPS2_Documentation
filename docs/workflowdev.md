@@ -216,6 +216,12 @@ The following is an example where the `Minimum Cosine` field is displayed if:
         `;}}]'
 ```
 
+Here if we want to use the task params in the columnDefs, simply use the syntax
+
+```
+[@paramname]
+```
+
 
 #### Serverside Tables (Medium Sized)
 
@@ -288,7 +294,9 @@ The following is an example where the `Minimum Cosine` field is displayed if:
 
 Here if we want to use the task params in the linkout, simply use the syntax
 
-```[@paramname]```
+```
+[@paramname]
+```
 
 #### Download Files
 
