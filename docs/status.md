@@ -9,14 +9,43 @@ Here is a quick dashboard for the uptime monitoring meant to give an at the glan
 
 ## Integration Testing
 
-These are detailed server status tests for functionality:
+These are detailed server status tests for functionality
 
-| Server  | Status |
-|---|---|
-| GNPS2 - Structure | ![production-integration](https://github.com/mwang87/ChemicalStructureWebService/workflows/production-integration/badge.svg) |
-| GNPS2 - Cytoscape | ![production-integration](https://github.com/mwang87/GNPS_CytoscapeFormatting/workflows/production-integration/badge.svg) |
-| GNPS2 - NP Classifier | ![production-integration](https://github.com/mwang87/NP-Classifier/workflows/production-integration/badge.svg) |
+[GNPS2 - Integration Testing](https://github.com/Wang-Bioinformatics-Lab/GNPS2_IntegrationTesting)
 
-## Workflow Testing
+[![test-api](https://github.com/Wang-Bioinformatics-Lab/GNPS2_IntegrationTesting/actions/workflows/test_api.yml/badge.svg)](https://github.com/Wang-Bioinformatics-Lab/GNPS2_IntegrationTesting/actions/workflows/test_api.yml)
 
-TODO: Add all the workflow testing monitoring
+
+
+
+[GNPS2 - Structure](https://github.com/mwang87/ChemicalStructureWebService) 
+
+[![production-integration](https://github.com/mwang87/ChemicalStructureWebService/workflows/production-integration/badge.svg)](https://github.com/mwang87/ChemicalStructureWebService/actions/workflows/production-integration.yml)
+
+
+
+
+[GNPS2 - Cytoscape](https://github.com/mwang87/GNPS_CytoscapeFormatting) 
+
+[![production-integration](https://github.com/mwang87/GNPS_CytoscapeFormatting/workflows/production-integration/badge.svg)](https://github.com/mwang87/GNPS_CytoscapeFormatting/actions/workflows/production-integration.yml)
+
+
+
+
+[GNPS2 - NP Classifier](https://github.com/mwang87/NP-Classifier) 
+
+[![production-integration](https://github.com/mwang87/NP-Classifier/workflows/production-integration/badge.svg)](https://github.com/mwang87/NP-Classifier/actions/workflows/production-integration.yml)
+
+
+[GNPS - External Structure Proxy](https://github.com/Wang-Bioinformatics-Lab/GNPS_ExternalStructureProxy) 
+
+[![production-integration](https://github.com/Wang-Bioinformatics-Lab/GNPS_ExternalStructureProxy/actions/workflows/productionintegration.yml/badge.svg)](https://github.com/Wang-Bioinformatics-Lab/GNPS_ExternalStructureProxy/actions/workflows/productionintegration.yml)
+
+## Build Testing
+
+Metabolomics Resolver
+
+[![Docker Build Test](https://github.com/mwang87/MetabolomicsSpectrumResolver/actions/workflows/build.yml/badge.svg)](https://github.com/mwang87/MetabolomicsSpectrumResolver/actions/workflows/build.yml)
+
+
+
