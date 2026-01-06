@@ -26,6 +26,11 @@ Feel free to use any of the following logos for your presentations and publicati
 
 [Download vector](img/logo/plantMASST_logo.ai)
 
+## structureMASST
+![](img/logo/structureMASST_logo.png)
+
+[Download vector](img/logo/structureMASST_logo.ai)
+
 ## GNPS2 FBMN
 
 ![img](img/logo/mzmine-fbmn.png)

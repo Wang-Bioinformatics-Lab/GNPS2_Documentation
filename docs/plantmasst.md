@@ -153,7 +153,7 @@ Add your MS/MS data files (in .mzML or .mzXML format) to the MassIVE repository.
 
 
 !!! danger "Mandatory dataset settings"
-    Please make sure that your dataset is set to "public" and that you have included:
+    Please make sure that your **dataset is set to "public"** and that you have included:
 
     - **"GNPS" as a prefix** to the dataset name. 
 
@@ -172,11 +172,11 @@ Please make sure to include a **TSV file with metadata** associated with the dep
 If possible, follow the newest [ReDU metadata format available here](https://docs.google.com/spreadsheets/d/10U0xnJUKa_mD0H_9suH1KJAlJD9io9e4chBX8EAHneE/edit?usp=sharing). If you want to know more about ReDU [click here](https://ccms-ucsd.github.io/GNPSDocumentation/metadata/#redu-metadata)
 
 !!! info "Table example"
-    | filename                                             | NCBITaxonomy    | species              |
-    | ---------------------------------------------------- | ------- | -------------------- |
-    | 140419_psycb1-2_100x_RB5_01_18146.mzXML              | 3046967 | Palicourea brachiata |
-    | C18p_FRM3_5ul_BE8_01_7604.mzXML                      | 4113    | Solanum tuberosum    |
-    | MSV000079628/20160321-JWGZ13-3_P2-F-8_01_33869.mzXML | 4442    | Camellia sinensis    |
+    | filename                                             | NCBITaxonomy | species              |
+    | ---------------------------------------------------- | ------------ | -------------------- |
+    | 140419_psycb1-2_100x_RB5_01_18146.mzXML              | 3046967      | Palicourea brachiata |
+    | C18p_FRM3_5ul_BE8_01_7604.mzXML                      | 4113         | Solanum tuberosum    |
+    | MSV000079628/20160321-JWGZ13-3_P2-F-8_01_33869.mzXML | 4442         | Camellia sinensis    |
 
 
 
