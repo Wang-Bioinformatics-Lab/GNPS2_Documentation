@@ -6,18 +6,36 @@ Feel free to use any of the following logos for your presentations and publicati
 
 ![](img/logo/GNPS2_logo_blue-grey-black.png)
 
+[Download vector](img/logo/GNPS2_logo_blue-grey-black.ai)
+
 ## microbeMASST
 
 ![](img/logo/microbeMASST_logo.png)
 
+[Download vector](img/logo/microbeMASST_logo.ai)
+
 ## microbiomeMASST
 
-![](img/microbiomeMASST_logo_3D.png)
+![](img/logo/microbiomeMASST_logo_3D.png)
 
+[Download vector](img/logo/microbiomeMASST_logo_3D.ai)
+
+## plantMASST
+
+![](img/logo/plantMASST_logo.svg)
+
+[Download vector](img/logo/plantMASST_logo.ai)
+
+## structureMASST
+![](img/logo/structureMASST_logo.png)
+
+[Download vector](img/logo/structureMASST_logo.ai)
 
 ## GNPS2 FBMN
 
 ![img](img/logo/mzmine-fbmn.png)
+
+[Download vector](img/logo/mzmine-fbmn.ai)
 
 ## MassQL 
 
@@ -28,3 +46,5 @@ Find the full documentation for MassQL [here](https://mwang87.github.io/MassQuer
 ## GNPS2 Dashboard Logo
 
 ![img](img/logo/dashboard_logo_final_transparent.png)
+
+[Download vector](img/logo/dashboard_logo_final.ai)
