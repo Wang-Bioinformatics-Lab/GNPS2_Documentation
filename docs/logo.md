@@ -53,3 +53,5 @@ Find the full documentation for MassQL [here](https://mwang87.github.io/MassQuer
 
 ![img](img/logo/panReDU_logo.png)
 
+[Download vector](img/logo/panReDU_logo.svg)
+
