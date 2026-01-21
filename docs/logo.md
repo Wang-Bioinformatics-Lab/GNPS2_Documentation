@@ -48,3 +48,8 @@ Find the full documentation for MassQL [here](https://mwang87.github.io/MassQuer
 ![img](img/logo/dashboard_logo_final_transparent.png)
 
 [Download vector](img/logo/dashboard_logo_final.ai)
+
+## GNPS2 Pan ReDU
+
+![img](img/logo/panReDU_logo.png)
+
