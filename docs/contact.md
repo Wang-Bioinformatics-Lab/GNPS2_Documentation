@@ -13,7 +13,7 @@ If you have any questions about how to use GNPS2 please first ask the community 
     We also have specific IDBac office hours if you want to [check that out](idbacofficehours.md).
 
 !!! danger "Notes"
-    Office Hours on 12/14/2025 will be postponed to the following week because of winter holidays. Office Hours hours have changed due to quarter change. Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
+    Office Hours on 01/28/2026 will be postponed to the following week because of winter holidays. Office Hours hours have changed due to quarter change. Please make note that the schedule changes every quarter to align with Ming's teaching schedule. Approximate dates of the changes are January, March, June, and October
 
 The [Wang Bioinformatics Lab](https://www.cs.ucr.edu/~mingxunw/) at UC Riverside builds and maintains GNPS2. Specifically, the PI - Mingxun Wang ([mingxun.wang@cs.ucr.edu](mailto:mingxun.wang@cs.ucr.edu) ) hosts an office hours on a weekly basis for the benefit of the community. This office hours is virtual and on Zoom:
 
