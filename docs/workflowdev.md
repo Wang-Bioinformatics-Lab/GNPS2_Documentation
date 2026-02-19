@@ -27,6 +27,16 @@ adminonly: true
 parameterlist:
 ```
 
+The `workflowlongdescription` also supports basic HTML including hyperlinks, and lists. 
+
+**Supported Tags:** The following HTML elements are permitted: \<a\>, \<ul\>, \<ol\>, \<li\>, \<br\>, \<strong\>, \<em\>, and \<p\>.
+
+**Permitted Attributes:** For anchor (\<a\>) tags, only the href, target, and title attributes are allowed. All other attributes will be stripped during processing.
+
+```yml
+workflowlongdescription: Please check out our documentation <a href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/" target="_blank">here</a>. Also, check out our cool unordered lists <ul><li>item 1</li><li>item 2</li><li>item 3</li></ul> and ordered lists <ol><li>item 1</li><li>item 2</li><li>item 3</li></ol>
+```
+
 ### Workflow Input Parameters
 
 #### Text Entry
