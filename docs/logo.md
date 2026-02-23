@@ -55,3 +55,8 @@ Find the full documentation for MassQL [here](https://mwang87.github.io/MassQuer
 
 [Download vector](img/logo/panReDU_logo.svg)
 
+## FASST Records
+
+![img](img/logo/fasst_records_logo.png)
+
+[Download vector](img/logo/fasst_records_logo.svg)
