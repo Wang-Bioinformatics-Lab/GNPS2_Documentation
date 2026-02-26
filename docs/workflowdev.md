@@ -349,3 +349,24 @@ We can have little widgets to render in the table rows. To make them, you overwr
                 <img src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/>
             `;}}]'
     ```
+
+
+#### Network Display Linkouts
+
+We can link out to a network display that is a special case for the interface
+
+```
+-   name: Visualize Network in Browser
+    displayname: Visualize Full Network in Browser
+    viewname: visualizefullnetwork
+    displaytype: linkout
+    parameters:
+        baseurl: /dashboards/networkviewer
+        urlparam:
+            -   usi:mzdata:GNPS2:TASK-[task]-nf_output/network_overlay/network.graphml
+            -   usi-mgf:mzdata:GNPS2:TASK-[task]-nf_output/network_overlay/specs_ms.mgf
+            -   usi-enrichment:mzdata:GNPS2:TASK-[task]-nf_output/network_overlay/overlay.csv
+            -   usi-enrichment-column-identifier:[@column_header]
+```
+
+Things to note that you can do - the graphml is the actual network, the mzdata is for the MS/MS display. Additionally, you can have an enrichment overlay. When you do this, you need to list the column that aligns with the cluster summary. 
