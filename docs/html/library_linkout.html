@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Linkout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .message {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .error { color: #c00; }
+        a { color: #0066cc; }
+    </style>
+</head>
+<body>
+    <div class="message" id="message">Redirecting…</div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const accession = params.get("accession");
+
+        const linkouts = [
+            { prefix: "LM", url: accession => `https://www.lipidmaps.org/databases/standardspectraDB/components/${accession}` },
+        ];
+
+        function resolve(accession) {
+            for (const rule of linkouts) {
+                if (accession.startsWith(rule.prefix)) {
+                    return rule.url(accession);
+                }
+            }
+            return null;
+        }
+
+        const msg = document.getElementById("message");
+
+        if (!accession) {
+            msg.innerHTML = '<p class="error">No <code>accession</code> parameter provided.</p>';
+        } else {
+            const url = resolve(accession);
+            if (url) {
+                msg.innerHTML = `Redirecting to <a href="${url}">${url}</a> in 5 seconds…`;
+                setTimeout(() => { window.location.href = url; }, 5000);
+            } else {
+                msg.innerHTML = `<p class="error">Unrecognized accession: <code>${document.createTextNode(accession).textContent}</code></p>
+                    <p>No linkout rule matched this identifier.</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
