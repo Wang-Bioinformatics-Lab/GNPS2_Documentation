@@ -13,5 +13,5 @@ As there are many aspects to GNPS2, it can be a bit overwhelming. Here is a quic
 	GNPS2 as a infrastructure is open for the academic community. If you are an industry user - please reach out to [Ming](mingxun.wang@cs.ucr.edu) or the [UCR Technology Transfer Office](tp@ucr.edu) to bring GNPS2 to your organization. 
 
 
-![img](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/UC_Riverside_logo.svg/2560px-UC_Riverside_logo.svg.png)
+![img](img/UC_Riverside_logo.svg.png)
 ![img](https://www.cs.ucr.edu/~mingxunw/img/logov2.png)
