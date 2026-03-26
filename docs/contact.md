@@ -4,7 +4,7 @@ If you have any questions about how to use GNPS2 please first ask the community 
 
 ## GNPS2 Weekly Online Interactive Office Hours
 
-**🗓 When:** Every Wednesday at 9:00 AM PST (6:00 PM CET)  
+**🗓 When:** Every Tuesday at 9:00 AM PST (6:00 PM CET)  
 **🎓 Subject:** Interactive Office Hours  
 **📍 Zoom:** [Zoom Meeting](https://ucr.zoom.us/j/98049645231)  
 **✅ RSVP:** [Please RSVP Below](#rsvp)
