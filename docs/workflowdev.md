@@ -319,6 +319,17 @@ Here if we want to use the task params in the linkout, simply use the syntax
         filename: pcoa/pcoa.qzv
 ```
 
+#### Display HTML
+
+```yml
+-   name: Interactive Report                                                                                                         
+      displayname: Interactive Report                             
+      viewname: report                                                                                                                 
+      displaytype: htmlfile
+      parameters:                                                                                                                      
+          filename: nf_output/report.html
+```
+
 #### Section Division
 
 ```yml
