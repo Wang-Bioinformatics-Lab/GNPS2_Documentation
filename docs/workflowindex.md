@@ -55,6 +55,11 @@ A .tsv file with the extracted information spectra from the molecule of interest
 These workflows focus on genomic and metagenomic analysis, ranging from species identification and taxonomic profiling to genome mining for specialized metabolites.
 
 ---
+### breseq
+| [Link](https://gnps2.org/workflowinput?workflowname=breseq_workflow) | [Tool documentation](https://barricklab.org/twiki/bin/view/Lab/SoftwareBreseq) | [Citation](https://doi.org/10.1186/1471-2164-15-1039) | **Prod & Beta** |
+| :--- | :--- | :--- | :--- |
+
+A computational pipeline for the analysis of short-read re-sequencing data. It uses reference-based alignment to predict mutations (SNPs, indels, and structural variants) in a sample relative to a reference genome. It is widely used in laboratory evolution experiments and strain verification.
 
 ### FastANI / pyANI
 | [Link](https://gnps2.org/workflowinput?workflowname=FastANI) | [Tool documentation](https://github.com/ParBLiSS/FastANI) | [Citation](https://doi.org/10.1038/s41467-018-07641-9) | **Prod & Beta** |
@@ -87,7 +92,7 @@ The "antibiotics and Secondary Metabolite Analysis Shell" is the premier tool fo
 Designed specifically for long-read sequencing (Oxford Nanopore), this workflow uses the **Emu** algorithm to perform species-level taxonomic profiling. It is highly effective for full-length 16S rRNA analysis, correcting for sequencing errors to provide high-resolution microbial community profiles.
 
 ### 16S rRNA Extraction
-| [Link](https://gnps2.org/workflowinput?workflowname=16s_rrna_extraction) | [Tool documentation](https://github.com/tseemann/barrnap) | [Citation](https://doi.org/10.1093/bioinformatics/btq033) | **Beta** |
+| [Link](https://gnps2.org/workflowinput?workflowname=16s_rrna_extraction) | [Tool documentation](https://github.com/tseemann/barrnap) | [Citation](https://doi.org/10.1093/bioinformatics/btq033) | **Prod & Beta** |
 | :--- | :--- | :--- | :--- |
 
 A targeted workflow for scanning whole-genome sequences or metagenomic assemblies to identify and extract the 16S ribosomal RNA gene sequences. It utilizes **barrnap** for rapid ribosomal RNA prediction and **BEDTools** for efficient genomic feature comparison.
