@@ -61,11 +61,17 @@ These workflows focus on genomic and metagenomic analysis, ranging from species 
 
 A computational pipeline for the analysis of short-read re-sequencing data. It uses reference-based alignment to predict mutations (SNPs, indels, and structural variants) in a sample relative to a reference genome. It is widely used in laboratory evolution experiments and strain verification.
 
-### FastANI / pyANI
+### FastANI
 | [Link](https://gnps2.org/workflowinput?workflowname=FastANI) | [Tool documentation](https://github.com/ParBLiSS/FastANI) | [Citation](https://doi.org/10.1038/s41467-018-07641-9) | **Prod & Beta** |
 | :--- | :--- | :--- | :--- |
 
-These tools compute the **Average Nucleotide Identity (ANI)** between genomes, which is the current "gold standard" for defining bacterial species. While **FastANI** is optimized for speed and large-scale datasets using an alignment-free MinHash approach, **pyANI** provides a versatile framework for multiple ANI algorithms and visualization. 
+Computes whole-genome **Average Nucleotide Identity (ANI)** using an alignment-free MinHash approach. It is the "gold standard" for defining bacterial species and is optimized for speed on large-scale datasets.
+
+### pyANI
+| [Link](https://gnps2.org/workflowinput?workflowname=pyANI) | [Tool documentation](https://github.com/pyani-plus/pyani-plus) | [Citation](https://pubs.rsc.org/en/content/articlelanding/2016/ay/c5ay02550h) | **Prod & Beta** |
+| :--- | :--- | :--- | :--- |
+
+A workflow for ANIb and ANIm calculations using pyANI - a workflow for ANIb and ANIm calculations using pyANI. 
 
 ### fastAAI
 | [Link](https://gnps2.org/workflowinput?workflowname=fastAAI) | [Tool documentation](https://github.com/cruizperez/FastAAI) | [Citation](https://academic.oup.com/nar/article/53/8/gkaf348/8120557) | **Prod & Beta** |
