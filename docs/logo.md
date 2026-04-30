@@ -57,6 +57,45 @@ Find the full documentation for MassQL [here](https://mwang87.github.io/MassQuer
 
 ## FASST Records
 
-![img](img/logo/fasst_records_logo.png)
+![img](img/logo/fasstrecords_logo.png)
 
-[Download vector](img/logo/fasst_records_logo.svg)
+[Download vector](img/logo/fasstrecords_logo.svg)
+## CMMC - Colaborative Microbial Metabolites Center
+
+![img](img/logo/cmmc.png)
+
+*Author: Pieter C. Dorrestein*
+
+[Download vector](img/logo/cmmc.ai)
+
+## Conjugated Metabolome Explorer
+
+![img](img/logo/conjugated_metabolome_explorer.png)
+
+*Author: Shipei Xing*
+
+[Download vector](img/logo/conjugated_metabolome_explorer.ai)
+
+## Drug Library
+
+![img](img/logo/drug_library.png)
+
+*Author: Haoqi Nina Zhao*
+
+[Download vector](img/logo/drug_library.ai)
+
+## Food Readout
+
+![img](img/logo/food_readout.png)
+
+*Author: Harsha Gouda*
+
+[Download vector](img/logo/food_readout.ai)
+
+## MetaboApps
+
+![img](img/logo/metabo_apps.png)
+
+*Author: Helena Mannochio-Russo*
+
+[Download vector](img/logo/metabo_apps.ai)
