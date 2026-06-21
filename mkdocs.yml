@@ -73,6 +73,7 @@ nav:
     #     - Plant metabolomics: plantdata.md
 
     - API: api.md
+    - Web Tools: webtools.md
     - Logos: logo.md
     - GNPS2 Workshops: workshops.md
     - GNPS2 Workflow Development: workflowdev.md
