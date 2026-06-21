@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Author Arranger</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f6fa; color: #333; padding: 20px; }
+  h1 { text-align: center; margin-bottom: 6px; font-size: 1.6em; color: #2c3e50; }
+  .subtitle { text-align: center; color: #666; margin-bottom: 20px; font-size: 0.9em; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; margin-bottom: 16px; }
+  .card h2 { font-size: 1.1em; margin-bottom: 12px; color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 6px; }
+  .row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .row > .card { flex: 1; min-width: 300px; }
+
+  /* Input area */
+  .input-section { display: flex; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+  textarea { width: 100%; min-height: 180px; border: 2px dashed #ccc; border-radius: 6px; padding: 12px; font-family: 'Courier New', monospace; font-size: 13px; resize: vertical; transition: border-color 0.2s; }
+  textarea:focus { outline: none; border-color: #3498db; }
+  .drop-zone { border: 2px dashed #3498db; border-radius: 6px; padding: 20px; text-align: center; color: #666; cursor: pointer; transition: all 0.2s; margin-bottom: 10px; }
+  .drop-zone:hover, .drop-zone.dragover { background: #ebf5fb; border-color: #2980b9; }
+  .drop-zone input[type="file"] { display: none; }
+
+  /* Options */
+  .options-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+  .option-group { padding: 8px; background: #f8f9fa; border-radius: 4px; }
+  .option-group label { display: block; font-size: 0.85em; font-weight: 600; margin-bottom: 4px; color: #555; }
+  select, input[type="text"] { width: 100%; padding: 6px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9em; }
+  .checkbox-row { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+  .checkbox-row input { margin: 0; }
+  .checkbox-row label { font-size: 0.85em; font-weight: normal; margin: 0; }
+
+  /* Buttons */
+  .btn { padding: 8px 18px; border: none; border-radius: 4px; font-size: 0.9em; cursor: pointer; transition: all 0.2s; }
+  .btn-primary { background: #3498db; color: #fff; }
+  .btn-primary:hover { background: #2980b9; }
+  .btn-success { background: #27ae60; color: #fff; }
+  .btn-success:hover { background: #219a52; }
+  .btn-secondary { background: #95a5a6; color: #fff; }
+  .btn-secondary:hover { background: #7f8c8d; }
+  .btn-sm { padding: 5px 12px; font-size: 0.82em; }
+  .btn-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+
+  /* Preview / Output */
+  .preview { padding: 16px; background: #fafafa; border: 1px solid #eee; border-radius: 4px; min-height: 80px; line-height: 1.7; font-size: 0.95em; }
+  .preview sup { font-size: 0.7em; color: #e74c3c; }
+  .email-list { margin-top: 10px; padding: 10px; background: #f0f0f0; border-radius: 4px; font-size: 0.85em; word-break: break-all; }
+
+  /* Author table */
+  .author-table { width: 100%; border-collapse: collapse; font-size: 0.85em; margin-top: 8px; }
+  .author-table th, .author-table td { padding: 6px 8px; border: 1px solid #ddd; text-align: left; }
+  .author-table th { background: #f0f4f8; font-weight: 600; position: sticky; top: 0; }
+  .author-table tr:nth-child(even) { background: #f9f9f9; }
+  .author-table tr.duplicate { background: #fff3cd; }
+  .table-wrap { max-height: 300px; overflow: auto; border: 1px solid #ddd; border-radius: 4px; }
+
+  /* Drag handle */
+  .drag-handle { cursor: grab; color: #999; user-select: none; }
+  .drag-handle:active { cursor: grabbing; }
+  tr.dragging { opacity: 0.4; }
+
+  .status { padding: 8px 12px; border-radius: 4px; margin-bottom: 10px; font-size: 0.85em; display: none; }
+  .status.info { display: block; background: #d1ecf1; color: #0c5460; }
+  .status.warn { display: block; background: #fff3cd; color: #856404; }
+  .status.error { display: block; background: #f8d7da; color: #721c24; }
+
+  .template-info { font-size: 0.82em; color: #777; margin-top: 8px; line-height: 1.5; }
+  .template-info code { background: #eee; padding: 1px 4px; border-radius: 2px; font-size: 0.95em; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Author Arranger</h1>
+  <p class="subtitle">Format author lists and affiliations for manuscript submissions</p>
+
+  <!-- Input Section -->
+  <div class="card">
+    <h2>1. Input Data</h2>
+    <div id="dropZone" class="drop-zone" onclick="document.getElementById('fileInput').click()">
+      <strong>Drop an Excel file here</strong> or click to upload (.xlsx, .xls, .csv)
+      <input type="file" id="fileInput" accept=".xlsx,.xls,.csv,.tsv">
+    </div>
+    <p style="text-align:center; color:#999; margin-bottom:8px;">— or paste tab-separated data from Excel below —</p>
+    <textarea id="pasteArea" placeholder="Paste rows from Excel here. First row should be column headers.&#10;&#10;Expected columns (order flexible):&#10;Title  First  Middle  Last  Degree  ORCID  Other  Email  Department  Division  Institute  Street  City  State  Postal Code  Country"></textarea>
+    <div class="template-info">
+      <strong>Expected columns:</strong> <code>Title</code>, <code>First</code>, <code>Middle</code>, <code>Last</code>, <code>Degree</code>, <code>ORCID</code>, <code>Other</code>, <code>Email</code>, <code>Department</code>, <code>Division</code>, <code>Institute</code>, <code>Street</code>, <code>City</code>, <code>State</code>, <code>Postal Code</code>, <code>Country</code><br>
+      Only <code>First</code> and <code>Last</code> are required. Columns are matched by header name (case-insensitive). Extra columns are ignored.
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="parseInput()">Parse &amp; Arrange</button>
+      <button class="btn btn-secondary" onclick="loadExample()">Load Example</button>
+      <button class="btn btn-secondary" onclick="clearAll()">Clear</button>
+    </div>
+    <div id="status" class="status"></div>
+  </div>
+
+  <!-- Options -->
+  <div class="row">
+    <div class="card">
+      <h2>2. Author Format</h2>
+      <div class="options-grid">
+        <div class="option-group">
+          <label>Name Order</label>
+          <select id="nameOrder">
+            <option value="first-last">First Middle Last</option>
+            <option value="last-first">Last, First Middle</option>
+            <option value="last-first-abbr">Last FM</option>
+          </select>
+        </div>
+        <div class="option-group">
+          <label>Middle Name</label>
+          <select id="middleName">
+            <option value="abbreviate">Abbreviate (M.)</option>
+            <option value="full">Full</option>
+            <option value="hide">Hide</option>
+          </select>
+        </div>
+        <div class="option-group">
+          <label>Author Separator</label>
+          <select id="authorSep">
+            <option value="comma">Comma (,)</option>
+            <option value="semicolon">Semicolon (;)</option>
+            <option value="newline">New Line</option>
+          </select>
+        </div>
+        <div class="option-group">
+          <label>Affiliation Label</label>
+          <select id="labelStyle">
+            <option value="numbers">Numbers (1, 2, 3)</option>
+            <option value="letters-lower">Letters (a, b, c)</option>
+            <option value="letters-upper">Letters (A, B, C)</option>
+          </select>
+        </div>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showTitle"><label for="showTitle">Include Title</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showDegree" checked><label for="showDegree">Include Degree</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showOrcid"><label for="showOrcid">Include ORCID</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2b. Affiliation Format</h2>
+      <div class="options-grid">
+        <div class="option-group">
+          <label>Affiliation Separator</label>
+          <select id="affSep">
+            <option value="newline">New Line</option>
+            <option value="semicolon">Semicolon (;)</option>
+          </select>
+        </div>
+        <div class="option-group">
+          <label>Label Position</label>
+          <select id="labelPos">
+            <option value="superscript">Superscript</option>
+            <option value="inline">Inline</option>
+          </select>
+        </div>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showDept" checked><label for="showDept">Department</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showDiv"><label for="showDiv">Division</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showInst" checked><label for="showInst">Institute</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showCity" checked><label for="showCity">City</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showState" checked><label for="showState">State</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="showCountry" checked><label for="showCountry">Country</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Parsed Authors Table -->
+  <div class="card" id="tableCard" style="display:none">
+    <h2>3. Parsed Authors <span id="authorCount" style="font-weight:normal; color:#888; font-size:0.85em;"></span></h2>
+    <p style="font-size:0.82em; color:#888; margin-bottom:6px;">Drag rows to reorder authors. Duplicates highlighted in yellow.</p>
+    <div class="table-wrap">
+      <table class="author-table" id="authorTable">
+        <thead><tr id="tableHead"></tr></thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="renderOutput()">Update Output</button>
+    </div>
+  </div>
+
+  <!-- Output -->
+  <div class="card" id="outputCard" style="display:none">
+    <h2>4. Formatted Output</h2>
+    <div class="preview" id="preview"></div>
+    <div id="emailSection" style="display:none">
+      <h3 style="font-size:0.95em; margin-top:12px; color:#555;">Extracted Emails</h3>
+      <div class="email-list" id="emailList"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-success" onclick="copyFormatted()">Copy Formatted (Rich Text)</button>
+      <button class="btn btn-primary" onclick="copyPlain()">Copy Plain Text</button>
+      <button class="btn btn-secondary" onclick="copyEmails()">Copy Emails</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---- Constants ----
+const AUTHOR_FIELDS = ['title','first','middle','last','degree','orcid','other','email'];
+const AFF_FIELDS = ['department','division','institute','street','city','state','postal code','country'];
+const ALL_FIELDS = [...AUTHOR_FIELDS, ...AFF_FIELDS];
+const DISPLAY_COLS = ['first','middle','last','degree','email','department','institute','city','state','country'];
+
+// ---- State ----
+let parsedAuthors = [];  // [{title, first, middle, last, degree, orcid, other, email, department, division, institute, street, city, state, postal_code, country}]
+let columnMap = {};      // header index -> field name
+
+// ---- File Upload / Drop ----
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('dragover'); handleFile(e.dataTransfer.files[0]); });
+fileInput.addEventListener('change', e => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+
+function handleFile(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const wb = XLSX.read(e.target.result, { type: 'array' });
+      let sheetName = wb.SheetNames[0];
+      if (wb.SheetNames.includes('Authors')) sheetName = 'Authors';
+      const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], { header: 1, defval: '' });
+      if (rows.length < 2) { setStatus('File has no data rows.', 'error'); return; }
+      // Convert to tab-separated and put in textarea
+      const tsv = rows.map(r => r.join('\t')).join('\n');
+      document.getElementById('pasteArea').value = tsv;
+      setStatus(`Loaded ${rows.length - 1} rows from "${file.name}" (sheet: ${sheetName}).`, 'info');
+      parseInput();
+    } catch (err) {
+      setStatus('Error reading file: ' + err.message, 'error');
+    }
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+// ---- Parsing ----
+function parseInput() {
+  const raw = document.getElementById('pasteArea').value.trim();
+  if (!raw) { setStatus('No data to parse.', 'warn'); return; }
+
+  const lines = raw.split('\n').map(l => l.split('\t'));
+  if (lines.length < 2) { setStatus('Need at least a header row and one data row.', 'warn'); return; }
+
+  // Map headers
+  const headers = lines[0].map(h => h.trim().toLowerCase().replace(/_/g, ' '));
+  columnMap = {};
+  headers.forEach((h, i) => {
+    const match = ALL_FIELDS.find(f => f === h || h.includes(f) || f.includes(h));
+    if (match) columnMap[i] = match;
+  });
+
+  if (!Object.values(columnMap).includes('first') && !Object.values(columnMap).includes('last')) {
+    // Fallback: assume standard order
+    ALL_FIELDS.forEach((f, i) => { if (i < headers.length) columnMap[i] = f; });
+    setStatus('Headers not recognized — assuming standard column order.', 'warn');
+  }
+
+  // Parse data rows
+  parsedAuthors = [];
+  let lastAuthor = null;
+
+  for (let r = 1; r < lines.length; r++) {
+    const cells = lines[r];
+    if (cells.every(c => !c.trim())) continue; // skip blank rows
+
+    const row = {};
+    for (const [idx, field] of Object.entries(columnMap)) {
+      const key = field.replace(/ /g, '_');
+      row[key] = (cells[idx] || '').trim();
+    }
+
+    // If first/last are empty, this is an extra affiliation row for the previous author
+    if (!row.first && !row.last && lastAuthor) {
+      // Add as additional affiliation
+      lastAuthor._extraAffs = lastAuthor._extraAffs || [];
+      lastAuthor._extraAffs.push(buildAffString(row));
+      continue;
+    }
+
+    row._extraAffs = [];
+    parsedAuthors.push(row);
+    lastAuthor = row;
+  }
+
+  // Check duplicates
+  parsedAuthors.forEach((a, i) => {
+    a._dup = parsedAuthors.some((b, j) => j < i &&
+      norm(a.first) === norm(b.first) && norm(a.last) === norm(b.last) && norm(a.middle) === norm(b.middle));
+  });
+
+  setStatus(`Parsed ${parsedAuthors.length} author(s).`, 'info');
+  renderTable();
+  renderOutput();
+}
+
+function norm(s) { return (s || '').trim().toLowerCase(); }
+
+// ---- Author Table ----
+function renderTable() {
+  const card = document.getElementById('tableCard');
+  card.style.display = 'block';
+  document.getElementById('authorCount').textContent = `(${parsedAuthors.length} authors)`;
+
+  const thead = document.getElementById('tableHead');
+  thead.innerHTML = '<th style="width:30px"></th><th>#</th>' + DISPLAY_COLS.map(c => `<th>${capitalize(c)}</th>`).join('') + '<th></th>';
+
+  rebuildTableBody();
+}
+
+function rebuildTableBody() {
+  const tbody = document.getElementById('tableBody');
+  tbody.innerHTML = '';
+  parsedAuthors.forEach((a, i) => {
+    const tr = document.createElement('tr');
+    if (a._dup) tr.classList.add('duplicate');
+    tr.draggable = true;
+    tr.dataset.index = i;
+    tr.innerHTML = `<td class="drag-handle" title="Drag to reorder">⠿</td><td>${i + 1}</td>` +
+      DISPLAY_COLS.map(c => `<td>${a[c.replace(/ /g,'_')] || ''}</td>`).join('') +
+      `<td><button class="btn btn-secondary btn-sm" onclick="removeAuthor(${i})">✕</button></td>`;
+    // Drag events
+    tr.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain', i); tr.classList.add('dragging'); });
+    tr.addEventListener('dragend', () => tr.classList.remove('dragging'));
+    tr.addEventListener('dragover', e => e.preventDefault());
+    tr.addEventListener('drop', e => {
+      e.preventDefault();
+      const from = parseInt(e.dataTransfer.getData('text/plain'));
+      const to = i;
+      if (from !== to) {
+        const item = parsedAuthors.splice(from, 1)[0];
+        parsedAuthors.splice(to, 0, item);
+        rebuildTableBody();
+        renderOutput();
+      }
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+function removeAuthor(i) {
+  parsedAuthors.splice(i, 1);
+  rebuildTableBody();
+  renderOutput();
+  document.getElementById('authorCount').textContent = `(${parsedAuthors.length} authors)`;
+}
+
+function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+// ---- Formatting / Output ----
+function renderOutput() {
+  if (!parsedAuthors.length) return;
+  const card = document.getElementById('outputCard');
+  card.style.display = 'block';
+
+  const opts = getOptions();
+
+  // Build unique affiliations
+  const affMap = new Map(); // affString -> id
+  const affList = [];       // [{id, text}]
+
+  parsedAuthors.forEach(a => {
+    const affs = [buildAffString(a, opts), ...(a._extraAffs || []).map(x => x)];
+    // Re-build extra affs with current options
+    const allAffs = [buildAffDisplay(a, opts)];
+    if (a._extraAffs) {
+      // _extraAffs are already strings from parse time; we keep them as-is
+      allAffs.push(...a._extraAffs.filter(s => s));
+    }
+    a._affIds = [];
+    allAffs.forEach(affStr => {
+      if (!affStr) return;
+      if (!affMap.has(affStr)) {
+        const id = affList.length + 1;
+        affMap.set(affStr, id);
+        affList.push({ id, text: affStr });
+      }
+      a._affIds.push(affMap.get(affStr));
+    });
+  });
+
+  // Format author names
+  const authorParts = parsedAuthors.map(a => {
+    const name = formatName(a, opts);
+    const labels = a._affIds.map(id => labelFor(id, opts.labelStyle));
+    const labelHtml = labels.length ? `<sup>${labels.join(',')}</sup>` : '';
+    return name + labelHtml;
+  });
+
+  const sepMap = { comma: ', ', semicolon: '; ', newline: '<br>' };
+  const authorHtml = authorParts.join(sepMap[opts.authorSep] || ', ');
+
+  // Format affiliations
+  const affSepMap = { newline: '<br>', semicolon: '; ' };
+  const affHtml = affList.map(a => {
+    const lbl = labelFor(a.id, opts.labelStyle);
+    if (opts.labelPos === 'superscript') return `<sup>${lbl}</sup>${a.text}`;
+    return `${lbl}. ${a.text}`;
+  }).join(affSepMap[opts.affSep] || '<br>');
+
+  document.getElementById('preview').innerHTML =
+    `<div style="margin-bottom:12px"><strong>Authors:</strong><br>${authorHtml}</div>` +
+    `<div><strong>Affiliations:</strong><br>${affHtml}</div>`;
+
+  // Emails
+  const emails = parsedAuthors.filter(a => a.email).map(a => `${a.first || ''} ${a.last || ''} <${a.email}>`.trim());
+  const emailSection = document.getElementById('emailSection');
+  if (emails.length) {
+    emailSection.style.display = 'block';
+    document.getElementById('emailList').textContent = emails.join('; ');
+  } else {
+    emailSection.style.display = 'none';
+  }
+}
+
+function getOptions() {
+  return {
+    nameOrder: document.getElementById('nameOrder').value,
+    middleName: document.getElementById('middleName').value,
+    authorSep: document.getElementById('authorSep').value,
+    labelStyle: document.getElementById('labelStyle').value,
+    labelPos: document.getElementById('labelPos').value,
+    affSep: document.getElementById('affSep').value,
+    showTitle: document.getElementById('showTitle').checked,
+    showDegree: document.getElementById('showDegree').checked,
+    showOrcid: document.getElementById('showOrcid').checked,
+    showDept: document.getElementById('showDept').checked,
+    showDiv: document.getElementById('showDiv').checked,
+    showInst: document.getElementById('showInst').checked,
+    showCity: document.getElementById('showCity').checked,
+    showState: document.getElementById('showState').checked,
+    showCountry: document.getElementById('showCountry').checked,
+  };
+}
+
+function formatName(a, opts) {
+  let first = a.first || '';
+  let middle = a.middle || '';
+  let last = a.last || '';
+  const title = opts.showTitle ? (a.title || '') : '';
+  const degree = opts.showDegree ? (a.degree || '') : '';
+
+  if (opts.middleName === 'abbreviate' && middle) {
+    middle = middle.charAt(0).toUpperCase() + '.';
+  } else if (opts.middleName === 'hide') {
+    middle = '';
+  }
+
+  let parts;
+  switch (opts.nameOrder) {
+    case 'last-first':
+      parts = [title, last + (first ? ',' : ''), first, middle].filter(Boolean);
+      break;
+    case 'last-first-abbr':
+      parts = [last, (first ? first.charAt(0).toUpperCase() : '') + (middle ? middle.charAt(0).toUpperCase() : '')].filter(Boolean);
+      break;
+    default: // first-last
+      parts = [title, first, middle, last].filter(Boolean);
+  }
+
+  let name = parts.join(' ').replace(/\s+/g, ' ').trim();
+  if (degree) name += ', ' + degree;
+
+  if (opts.showOrcid && a.orcid) {
+    name += ` (${a.orcid})`;
+  }
+  return name;
+}
+
+function buildAffDisplay(a, opts) {
+  const parts = [];
+  if (opts.showDept && a.department) parts.push(a.department);
+  if (opts.showDiv && a.division) parts.push(a.division);
+  if (opts.showInst && a.institute) parts.push(a.institute);
+  if (opts.showCity && a.city) parts.push(a.city);
+  if (opts.showState && a.state) parts.push(a.state);
+  if (opts.showCountry && a.country) parts.push(a.country);
+  return parts.join(', ');
+}
+
+function buildAffString(row) {
+  // Used during parse for extra affiliation rows — includes all fields
+  const parts = [];
+  ['department','division','institute','city','state','country'].forEach(f => {
+    const key = f.replace(/ /g, '_');
+    if (row[key]) parts.push(row[key]);
+  });
+  return parts.join(', ');
+}
+
+function labelFor(id, style) {
+  switch (style) {
+    case 'letters-lower': return String.fromCharCode(96 + id);
+    case 'letters-upper': return String.fromCharCode(64 + id);
+    default: return String(id);
+  }
+}
+
+// ---- Copy functions ----
+function copyFormatted() {
+  const el = document.getElementById('preview');
+  const range = document.createRange();
+  range.selectNodeContents(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  document.execCommand('copy');
+  sel.removeAllRanges();
+  flashButton(event.target, 'Copied!');
+}
+
+function copyPlain() {
+  const el = document.getElementById('preview');
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(() => flashButton(event.target, 'Copied!'));
+}
+
+function copyEmails() {
+  const text = document.getElementById('emailList').textContent;
+  navigator.clipboard.writeText(text).then(() => flashButton(event.target, 'Copied!'));
+}
+
+function flashButton(btn, msg) {
+  const orig = btn.textContent;
+  btn.textContent = msg;
+  setTimeout(() => btn.textContent = orig, 1500);
+}
+
+// ---- Auto-update on option change ----
+document.querySelectorAll('select, input[type="checkbox"]').forEach(el => {
+  el.addEventListener('change', () => { if (parsedAuthors.length) renderOutput(); });
+});
+
+// ---- Utility ----
+function setStatus(msg, type) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = 'status ' + type;
+}
+
+function clearAll() {
+  document.getElementById('pasteArea').value = '';
+  parsedAuthors = [];
+  document.getElementById('tableCard').style.display = 'none';
+  document.getElementById('outputCard').style.display = 'none';
+  document.getElementById('status').className = 'status';
+  document.getElementById('fileInput').value = '';
+}
+
+function loadExample() {
+  document.getElementById('pasteArea').value =
+`First\tMiddle\tLast\tDegree\tEmail\tDepartment\tInstitute\tCity\tState\tCountry
+Jane\tA\tSmith\tPhD\tjsmith@example.edu\tDept of Chemistry\tMIT\tCambridge\tMA\tUSA
+John\tB\tDoe\tMD\tjdoe@example.edu\tDept of Biology\tStanford University\tStanford\tCA\tUSA
+Maria\t\tGarcia\tPhD\tmgarcia@example.edu\tDept of Chemistry\tMIT\tCambridge\tMA\tUSA
+Wei\t\tChen\tPhD\twchen@example.edu\tSchool of Medicine\tJohns Hopkins University\tBaltimore\tMD\tUSA
+Sarah\tK\tJohnson\tMD, PhD\tsjohnson@example.edu\tDept of Biology\tStanford University\tStanford\tCA\tUSA`;
+  parseInput();
+}
+</script>
+</body>
+</html>
