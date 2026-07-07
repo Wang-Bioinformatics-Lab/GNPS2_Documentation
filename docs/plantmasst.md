@@ -2,22 +2,110 @@
 
 ![](img/logo/plantMASST_logo.svg)
 
-[plantMASST](https://masst.gnps2.org/plantmasst) is a domain-specific MASST in which users can search MS/MS spectra against a public MS/MS database comprising taxonomically defined plant extracts.
+[plantMASST](https://masst.gnps2.org/plantmasst) is a domain-specific MASST in which users can search MS/MS spectra against a public MS/MS database comprising taxonomically defined plant extracts. The interface offers two tabs: a **Search** tab to query the database with a spectrum, and a **PlantMASST Explorer** tab to browse the entire collection without a query spectrum.
 
 ## Using plantMASST
 
-### Input
+### plantMASST Explorer
+
+Alongside the **Search** tab, the plantMASST interface includes a **plantMASST Explorer** tab that gives a bird's-eye view of the entire plantMASST collection: every plant taxon, its taxonomic lineage, and the number of mass spectrometry files associated with it. From there, the user can inspect the individual files and launch downstream analyses, such as Molecular Networking, without needing a query spectrum.
+
+#### Navigating to the Explorer
+
+On the plantMASST page, two tabs are shown just below the navigation bar: **Search** (the original spectrum search interface, unchanged) and **plantMASST Explorer** (the browsing interface). Clicking **plantMASST Explorer** switches to the new view.
+
+![](img/plantmasst/explorer1.png)
+_**Figure 1.** Tab bar showing the "Search" and "plantMASST Explorer" tabs, with "plantMASST Explorer" selected._
+
+#### The Explorer table
+
+The Explorer table displays one row per plant taxon present in the plantMASST database (~4,000 taxa). Each row shows:
+
+| Column         | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| TaxID (NCBI)   | The NCBI taxonomy identifier for the taxon                   |
+| Species        | Species name                                                 |
+| Genus          | Genus name                                                   |
+| Family         | Family name                                                  |
+| Order          | Order name                                                   |
+| Class          | Class name                                                   |
+| Phylum         | Phylum name                                                  |
+| Kingdom        | Kingdom name                                                 |
+| **File Count** | Number of mass spectrometry files associated with this taxon |
+
+The table is sorted by **File Count** (highest first) by default, so the best-represented taxa appear at the top.
+
+![](img/plantmasst/explorer2.png)
+_**Figure 2.** The full Explorer table with all columns visible, showing the first page of results sorted by File Count descending._
+
+#### Sorting
+
+Clicking any column header sorts the table by that column; clicking again reverses the sort order. This is useful, for example, for finding all taxa within a specific family sorted alphabetically by species name.
+
+![](img/plantmasst/explorer3.png)
+_**Figure 3.** The Explorer table sorted alphabetically by the "Genus" column._
+
+#### Filtering
+
+Each column has a filter input row directly below the header. Typing in any filter box narrows the results. Filtering is **case-insensitive** — typing `rosaceae` will match `Rosaceae`.
+
+Filters can be combined across multiple columns simultaneously. For example, filtering **Phylum** by `Streptophyta` and **Family** by `Fabaceae` shows only legumes within that phylum.
+
+![](img/plantmasst/explorer4.png)
+_**Figure 4.** The Explorer table with a filter applied in the "Family" column (e.g. "Rosaceae"), showing only matching rows._
+
+#### Inspecting files for a taxon
+
+The **File Count** values are clickable. Clicking any number in that column (shown as a blue, underlined value) opens a detail panel listing all the mass spectrometry files associated with that taxon. The modal window shows a header with the TaxID and species/genus name, and a paginated, sortable, filterable table of the individual files.
+
+Each file row shows:
+
+| Column   | Description                                                           |
+| -------- | --------------------------------------------------------------------- |
+| Filename | Short file name within the MassIVE dataset                            |
+| MassIVE  | The MassIVE dataset identifier (e.g. MSV000078770)                    |
+| File USI | The Universal Spectrum Identifier for the file, usable in GNPS2 tools |
+
+![](img/plantmasst/explorer5.png)
+_**Figure 5.** The file detail modal open, showing the header with the taxon name and the file list table._
+
+#### Selecting files and launching Classical Networking
+
+The user can select one or more files in the modal and send them directly to the **Classical Molecular Networking** workflow on GNPS2.
+
+!!! warning "Important note"
+    For this step a GNPS2 account is required. We recommend logging in to your GNPS2 account before proceeding. You can [request an account](accounts.md) if you do not have one yet.
+
+**Selecting individual files.** Clicking the checkbox on the left side of any row selects it; selected rows are highlighted. Rows can be selected across multiple pages.
+
+![](img/plantmasst/explorer6.png)
+_**Figure 6.** The modal with individual rows selected (checkboxes ticked), showing the selected rows highlighted._
+
+**Selecting all files at once.** Clicking the **Select All** button in the modal footer selects every file for that taxon; clicking it again deselects all rows.
+
+![](img/plantmasst/explorer7.png)
+_**Figure 7.** The modal with all rows selected after clicking "Select All"._
+
+**Launching the workflow.** Once at least one row is selected, the green **Launch Classical Networking Workflow** button becomes active. Clicking it opens the GNPS2 Classical Networking workflow in a new browser tab, with all selected file USIs pre-loaded as input.
+
+**Closing the modal.** Clicking the **Close** button or the **×** in the top-right corner of the modal dismisses it and returns to the Explorer table. The selection is cleared automatically when the modal closes.
+
+!!! tip "Explorer tips"
+    - **Filter before selecting**: if a taxon has hundreds of files, use the filter box inside the modal (e.g. filter by MassIVE dataset) to narrow down before selecting and launching networking.
+    - **Multiple datasets**: files from different MassIVE datasets can be selected together in a single networking job — GNPS2 will handle them as one combined input.
+
+## Searching
 
 The user can provide two different types of input for the search: by **USI (Universal Spectrum Identifier)** or by a list of **Spectrum Peaks**.
 
 ### USI input
 
-To perform a search using a spectrum identifier (USI), just copy and paste it into the “**Spectrum USI**” input area. If the user wants to perform a search using their own data, they can deposit datasets in [MassIVE](https://massive.ucsd.edu/), [MetaboLights](https://www.ebi.ac.uk/metabolights/), or [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), and using the GNPS Dashboard tool, get the USI assigned to each specific scan. The user can access the documentation to see more details about the usage of the dashboard ([GNPS Dashboard Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/)). 
+To perform a search using a spectrum identifier (USI), just copy and paste it into the “**Spectrum USI**” input area. If the user wants to perform a search using their own data, they can deposit datasets in [MassIVE](https://massive.ucsd.edu/), [MetaboLights](https://www.ebi.ac.uk/metabolights/), or [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), and using the GNPS Dashboard tool, get the USI assigned to each specific scan. The user can access the documentation to see more details about the usage of the dashboard ([GNPS Dashboard Documentation](https://ccms-ucsd.github.io/GNPSDocumentation/lcms-dashboard/)).
 
 In addition, a USI can be retrieved from a GNPS job (such as feature-based molecular networking or classical molecular networking workflow) or from any spectrum that is part of the GNPS libraries. Examples of types of valid USIs can be found in the [Metabolomics Spectrum Resolver webpage](https://metabolomics-usi.gnps2.org/).
 
 ![](img/plantmasst/img1.png)
-_**Figure 1.** Input area for USI search on plantMASST_
+_**Figure 8.** Input area for USI search on plantMASST_
 
 ### Spectrum Peaks input
 
@@ -26,16 +114,16 @@ Another useful way to perform a search is to use the "**Spectrum Peaks**" input 
 In such cases, the user must also provide a value in the **“Precursor m/z”** field to specify the mass-to-charge ratio of the precursor ion. The **“Charge”** field can be included as well, but it defaults to 1 if left blank. The **"Use only the top N most intense peaks"** is optional, and can be used both with USI and Spectrum peaks search. [See more details about this parameter below](#input-search-parameters:~:text=Use%20only%20the%20top%20N%20most%20intense%20peaks%20(optional)).
 
 ![](img/plantmasst/img2.png)
-_**Figure 2.** Input area for searching by spectrum peaks. The user needs to provide the formatted peak list and Precursor m/z. The charge input is optional, and defaults to 1 if not provided._
+_**Figure 9.** Input area for searching by spectrum peaks. The user needs to provide the formatted peak list and Precursor m/z. The charge input is optional, and defaults to 1 if not provided._
 
 ### Input search parameters
+
 The user can also adjust the search parameters to customize the search. The following parameters are available.
 
 **Parameters available only for searches using Spectrum peaks:**
 
 - **Precursor m/z**: The mass-to-charge ratio of the precursor ion. This field is required when using the Spectrum Peaks input.
 - **Charge**: The charge state of the precursor ion. This field is optional and defaults to 1 if not provided.
-
 
 **Parameters available for both USI and Spectrum Peaks searches:**
 
@@ -54,7 +142,6 @@ The user can also adjust the search parameters to customize the search. The foll
 - **Delta Mass Above (Da)**: The maximum mass difference between the query and the analog. The default value is 130 Da.
 - **Delta Mass Below (Da)**: The minimum mass difference between the query and the analog. The default value is 200 Da.
 
-
 ### Search examples
 
 The example card on the right dashboard provides links to pre-configured search inputs. These examples demonstrate how to use the interface with both USI and spectrum peaks.
@@ -63,9 +150,9 @@ Clicking the links will populate the required field on the interface, requiring 
 
 ![](img/plantmasst/img3.png)
 
-_**Figure 3.** The example card provides a few pre-configured entries that can be used to explore how to populate the search parameters._
+_**Figure 10.** The example card provides a few pre-configured entries that can be used to explore how to populate the search parameters._
 
-## Searching
+## Performing plantMASST searches
 
 ### plantMASST Search
 
@@ -76,29 +163,26 @@ The remaining fields (Fragment Tolerance, Cosine Threshold, Minimum Matched Peak
 Finally, the user can click "**Search plantMASST by USI**" (Box 3) to perform the search.
 
 ![](img/plantmasst/img4.png)
-_**Figure 4.** Search parameters populated for USI search for the compound moroidin. By default, the Analog Search is off, and the search will look for matches within the tolerance input for PM Tolerance and fragment tolerance. Box 1 \- USI input for moroidin. Box 2 \- Parameters set with Analog Search off (default). Box 3 \- Search button to perform the search using the provided USI._
-
-
+_**Figure 11.** Search parameters populated for USI search for the compound moroidin. By default, the Analog Search is off, and the search will look for matches within the tolerance input for PM Tolerance and fragment tolerance. Box 1 \- USI input for moroidin. Box 2 \- Parameters set with Analog Search off (default). Box 3 \- Search button to perform the search using the provided USI._
 
 Another very useful feature available is the “**Copy Link**” button, which allows the user to share their search parameters easily. This facilitates reproducibility and collaboration by enabling others to rerun the exact same query.
 
 !!! note "URL example"
-    The URL below is an example of the parameters used in the search shown in the figure above. The user can click on it to populate the search fields with the same parameters. 
+    The URL below is an example of the parameters used in the search shown in the figure above. The user can click on it to populate the search fields with the same parameters.
 
     **[Click here to populate the plantMASST search with the parameters shown above](https://masst.gnps2.org/plantmasst#%7B%22usi1%22%3A%20%22mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3A%20CCMSLIB00005435899%22%2C%20%22peaks%22%3A%20%22%22%2C%20%22precursor_mz%22%3A%20%22%22%2C%20%22charge%22%3A%20%22%22%2C%20%22pm_tolerance%22%3A%200.05%2C%20%22fragment_tolerance%22%3A%200.05%2C%20%22cosine_threshold%22%3A%200.6%2C%20%22min_matched_peaks%22%3A%203%2C%20%22analog_select%22%3A%20%22No%22%2C%20%22delta_mass_below%22%3A%20300%2C%20%22delta_mass_above%22%3A%20300%7D%0A)**
 
 !!! tip "Reproducibility tip"
     Sharing a link like this ensures anyone can load the exact same parameters in the interface without manually re-entering them.
 
-
 ### plantMASST Analog Search
 
 To search for possible compound analogs, the user must select Yes on the “**Analog Search**” field. In that case, a delta mass range should also be given using the “**Delta Mass Below (Da)**”/”**Delta Mass Above (Da)**” inputs. Both USI and Spectrum Peaks search inputs can be used for an analog search.
 
-In the figure below, we illustrate the search using the USI for moroidin (Fig 5, Box 1). The search parameters were defined as shown in Box 2\. Finally, to perform the search, we click on ‘Search plantMASST by USI’  (Box 3).
+In the figure below, we illustrate the search using the USI for moroidin (Fig 12, Box 1). The search parameters were defined as shown in Box 2\. Finally, to perform the search, we click on ‘Search plantMASST by USI’  (Box 3).
 
 ![](img/plantmasst/img5.png)
-_**Figure 5.** Search parameters set for Analog Search using an USI for the compound moroidin. Box 1 \- USI input for moroidin. Box 2 \- Parameters set with Analog Search on. Box 3 \- Search button to perform the search using the provided USI._
+_**Figure 12.** Search parameters set for Analog Search using an USI for the compound moroidin. Box 1 \- USI input for moroidin. Box 2 \- Parameters set with Analog Search on. Box 3 \- Search button to perform the search using the provided USI._
 
 !!! tip "Reproducibility tip"
     To populate the search fields as shown above, click the link: [plantMASST analog search parameters example](https://masst.gnps2.org/plantmasst#%7B%22usi1%22%3A%20%22mzspec%3AGNPS%3AGNPS-LIBRARY%3Aaccession%3ACCMSLIB00005435899%22%2C%20%22peaks%22%3A%20%5B%22%22%5D%2C%20%22precursor_mz%22%3A%20%5B%22%22%5D%2C%20%22charge%22%3A%20%22%22%2C%20%22pm_tolerance%22%3A%200.05%2C%20%22fragment_tolerance%22%3A%200.05%2C%20%22cosine_threshold%22%3A%200.6%2C%20%22min_matched_peaks%22%3A%203%2C%20%22analog_select%22%3A%20%22Yes%22%2C%20%22delta_mass_below%22%3A%20300%2C%20%22delta_mass_above%22%3A%20300%7D)
@@ -110,21 +194,21 @@ _**Figure 5.** Search parameters set for Analog Search using an USI for the comp
 The search results can be visualized in two main formats: A taxonomic tree and through data tables. Those outputs are highlighted in the figure below. The tree offers interactive features, and the user can explore the details by moving the cursor over any node, for example. The visualization is also highly customizable using the controls available above the tree.
 
 ![](img/plantmasst/img6.png)
-_**Figure 6.** Interactive result tree visualization. The user can use the available controls to customize the visualization as well as see details by moving the mouse over the nodes. The result tables can be visualized and exported by clicking the buttons on the top left corner._
+_**Figure 13.** Interactive result tree visualization. The user can use the available controls to customize the visualization as well as see details by moving the mouse over the nodes. The result tables can be visualized and exported by clicking the buttons on the top left corner._
 
 The results tables offer a concise way of obtaining more details about the matches. On the Dataset Matches tab, information such as NCBI taxonomy ID number, organism name, and external links to the matching spectrum, public dataset source, and a link to visualize the original file data using the GNPS Dashboard are available. For this search, 90 matches with public datasets were retrieved for moroidin.
 
 ![](img/plantmasst/img7.png)
-_**Figure 7.** Dataset matches table visualization. Here details such as the NCBI  taxonomy ID, cosine similarity, matching spectra USI and other information are summarized. The table can also be exported in 3 different formats to be further explored._
+_**Figure 14.** Dataset matches table visualization. Here details such as the NCBI  taxonomy ID, cosine similarity, matching spectra USI and other information are summarized. The table can also be exported in 3 different formats to be further explored._
 
 ### Analog search Results
 
 Below, we can see the results retrieved when the analog search is performed with the parameters described in the "**plantMASST Analog Search**" section. The interface is the same as described for the standard search, including customizing the tree visualization and exporting table results, as seen in the figure.
 
 ![](img/plantmasst/img8.png)
-_**Figure 8.** Dataset matches table, filtered to matches containing the word “tomentosa”. NCBI  taxonomy ID, cosine similarity, matching spectra USI, and other information are available. The table can also be exported in 3 different formats to be further explored._
+_**Figure 15.** Dataset matches table, filtered to matches containing the word “tomentosa”. NCBI  taxonomy ID, cosine similarity, matching spectra USI, and other information are available. The table can also be exported in 3 different formats to be further explored._
 
-However, here we can see the total amount of matches has increased compared to the previous search. Since we are also looking for analogs, more matches are expected, and we can see that compounds that are not exact matches to moroidin are also retrieved. 
+However, here we can see the total amount of matches has increased compared to the previous search. Since we are also looking for analogs, more matches are expected, and we can see that compounds that are not exact matches to moroidin are also retrieved.
 
 The Delta Mass column in the table above shows one compound that has a Delta mass of +39.01 Da compared to moroidin. This means that the spectrum is similar enough to moroidin (according to the set parameters), but the precursor has a greater mass, suggesting that the compounds' core structure might be similar but with an additional portion corresponding to the observed delta mass.
 
@@ -134,23 +218,21 @@ As described in the previous session, the result tables can be exported in diffe
 
 ## Contributing to plantMASST
 
-In order to contribute MS/MS data to plantMASST you just need to: 
+In order to contribute MS/MS data to plantMASST you just need to:
 
 1) upload your MS/MS data to MassIVE repository and
-    
-2) make sure to provide metadata in the form of a TSV file during deposition. 
 
-We will update plantMASST with the new information every 3 months. 
+2) make sure to provide metadata in the form of a TSV file during deposition.
+
+We will update plantMASST with the new information every 3 months.
 If you are depositing a big volume of data or want to contribute ASAP, you can [contact us directly](mailto:hmannochiorusso@health.ucsd.edu).
 
 ### MassIVE Dataset
 
 Add your MS/MS data files (in .mzML or .mzXML format) to the MassIVE repository. Please refer to this excellent [YouTube tutorial](https://www.youtube.com/watch?v=sudY7UtkMQg) by Dr. Daniel Petras on how to convert and upload your data. Additional information on how to deposit data to MassIVE can also be [found here](https://mwang87.github.io/ReDU-MS2-Documentation/HowtoContribute/).
 
-
 !!! tip "Existing dataset with .raw files deposited"
     If you already have your files deposited on MassIVE as .raw files, you can use the default conversion mechanism already implemented on MassIVE. To know more, click here: [Raw Data Automated Conversion documentation](https://ccms-ucsd.github.io/MassIVEDocumentation/#conversion/)
-
 
 !!! danger "Mandatory dataset settings"
     Please make sure that your **dataset is set to "public"** and that you have included:
@@ -162,12 +244,9 @@ Add your MS/MS data files (in .mzML or .mzXML format) to the MassIVE repository.
 
     - The dataset attribute **"DatasetType" is set to "Metabolomics"**
 
-
-
-
 ### Associated metadata file
 
-Please make sure to include a **TSV file with metadata** associated with the deposited files. The **minimum requirement** is that the TSV contains the headers for **filename, NCBI taxonomy ID, and the plant species**. 
+Please make sure to include a **TSV file with metadata** associated with the deposited files. The **minimum requirement** is that the TSV contains the headers for **filename, NCBI taxonomy ID, and the plant species**.
 
 If possible, follow the newest [ReDU metadata format available here](https://docs.google.com/spreadsheets/d/10U0xnJUKa_mD0H_9suH1KJAlJD9io9e4chBX8EAHneE/edit?usp=sharing). If you want to know more about ReDU [click here](https://ccms-ucsd.github.io/GNPSDocumentation/metadata/#redu-metadata)
 
@@ -178,11 +257,9 @@ If possible, follow the newest [ReDU metadata format available here](https://doc
     | C18p_FRM3_5ul_BE8_01_7604.mzXML                      | 4113         | Solanum tuberosum    |
     | MSV000079628/20160321-JWGZ13-3_P2-F-8_01_33869.mzXML | 4442         | Camellia sinensis    |
 
-
-
 ### What is already deposited in plantMASST?
 
-To see a list of species to which we have MS2 data already included on plantMASST you can [download this TSV file](https://github.com/helenamrusso/plantmasst/blob/main/plant_masst_table.csv).
+To see a list of species to which we have MS2 data already included on plantMASST you can [download this TSV file](https://github.com/helenamrusso/plantmasst/blob/main/plant_masst_table.csv). Alternatively, the [PlantMASST Explorer](#plantmasst-explorer) tab offers a live, browsable view of every taxon currently in the database, along with its file count.
 
 ## Page Contributors
 
