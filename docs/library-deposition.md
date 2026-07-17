@@ -6,9 +6,6 @@ build a deposit from what you already have, quality-control it, test it safely
 with a dry-run, and publish it — either to the open community tier yourself, or
 to the official tier through the GNPS2 team.
 
-A short [For library consumers](#for-library-consumers) section at the end covers
-searching the Knowledgebase once libraries are in it.
-
 ---
 
 ## The deposition pipeline at a glance
@@ -23,10 +20,10 @@ flowchart LR
     E -->|On + gate passes| G[(GNPS2 Library<br/>Knowledgebase)]
 ```
 
-Everything you deposit flows through the **Library Creation Workflow**. It
+Everything you deposit flows through the [Library Creation Workflow](https://gnps2.org/workflowinput?workflowname=gnps2_librarycreation_workflow). It
 normalizes your spectra into the GNPS2 format, runs quality control, and writes a
 provenance archive recording exactly what went in and what came out. Only after
-that — and only if you ask for it — does it publish.
+that, and only if you ask for it, does it publish.
 
 ---
 
@@ -94,7 +91,7 @@ The hard-fail checks are the ones to design your data around:
 | Check | A row is dropped when… |
 |---|---|
 | MS level | The spectrum isn't MS² |
-| Polarity match | The declared polarity contradicts the scan |
+| Polarity match | The declared polarity contradicts the scan |a
 | Precursor m/z consistency | The precursor mass doesn't match the adduct + structure (report shows `delta=` in Daltons) |
 | Peaks present | The spectrum has no fragment peaks |
 | Structure consistency | The `SMILES` / `INCHI` / `INCHIAUX` / `SELFIES` you gave don't all describe the same molecule |
@@ -102,9 +99,8 @@ The hard-fail checks are the ones to design your data around:
 The **structure check** is worth calling out: the workflow canonicalizes every
 structural identifier you provide to an InChIKey and confirms they agree. If you
 supply some but not all identifiers, the missing ones are imputed for you from
-what you gave. If they disagree — or you gave only an InChIKey (a one-way hash it
-can't verify) — the row hard-fails. Give at least one parseable structure
-(SMILES, InChI, or SELFIES) per row.
+what you gave. If they disagree or you gave only an InChIKey, the row hard-fails. Give at least one parseable structure
+(SMILES, InChI, or SELFIES) per row to pass in the Hard-QC mode.
 
 ---
 
@@ -164,9 +160,7 @@ maintainer, no approval:
 4. Run it.
 
 Your spectra deposit into the shared **`USER-CONTRIBUTED-GNPS2`** library. If a
-gate condition isn't met, the publish step is **skipped with a warning and the
-run still succeeds** — you never lose a good build because publishing was
-declined.
+gate condition isn't met, the publish step is **skipped with a warning**.
 
 ### Get an official library published
 
