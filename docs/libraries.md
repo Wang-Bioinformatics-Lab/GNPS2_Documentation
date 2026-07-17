@@ -3,7 +3,7 @@
 MS/MS spectral libraries from GNPS, Massbank, MONA, and other sources are available for spectral matching in GNPS2.
 
 
-## Propogated MS/MS Spectral Libraries
+## Propagated MS/MS Spectral Libraries
 
 This section contains propagated spectral libraries that inherently are less confident but this provides an avenue to give more identifications.
 
