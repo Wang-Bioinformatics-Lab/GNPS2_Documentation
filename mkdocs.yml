@@ -59,6 +59,7 @@ nav:
         - Multiple Spectrum Alignment: mmsa.md
         - IsoPairFinder: isopairfinder.md
     - Spectral Libraries:
+        - Depositing Libraries into GNPS2: library-deposition.md
         - Using Spectral Libraries in GNPS2: libraries.md
     - MASST: masst.md
     - plantMASST: plantmasst.md
