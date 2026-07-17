@@ -102,6 +102,21 @@ supply some but not all identifiers, the missing ones are imputed for you from
 what you gave. If they disagree or you gave only an InChIKey, the row hard-fails. Give at least one parseable structure
 (SMILES, InChI, or SELFIES) per row to pass in the Hard-QC mode.
 
+### Strict vs. lax QC
+
+A separate **QC strictness** setting on the form decides what a hard-fail does to
+the run as a whole:
+
+- **Strict** (default) — if *any* row hard-fails, the run itself **fails** after
+  the QC report is written. Nothing is silently lost: you're forced to look at
+  the report and fix the offending rows before you can proceed.
+- **Lax** — hard-fail rows are **dropped silently** and the run continues with the
+  survivors.
+
+Keep it **strict** while you're preparing a deposit — it's the surest way to
+catch a problem you'd otherwise miss. Switch to lax only when you deliberately
+want to keep the good rows of a large, known-imperfect input.
+
 ---
 
 ## Step 3 — Always dry-run first
@@ -169,7 +184,7 @@ restricted to maintainers. If you have a library that belongs there:
 
 1. Build and QC it, and get a clean dry-run.
 2. Choose a proposed **library name**.
-3. Email Ming Wang with your library, the proposed the proposed name, and a short description of what it covers and where the reference data came from.
+3. Email Ming Wang with your library, the proposed name, and a short description of what it covers and where the reference data came from.
 
 **Spreadsheet-mode depositions are preferred for official libraries.**
 
@@ -179,7 +194,7 @@ team rather than open self-service.
 
 ### A note on identifiers
 
-Reference spectra are identified by a stable **library accession**. Only **maintainers** republishing an an authoritative library (e.g. porting a legacy
+Reference spectra are identified by a stable **library accession**. Only **maintainers** republishing an authoritative library (e.g. porting a legacy
   GNPS-1 library) keep the original `CCMSLIB…` accessions verbatim. All other submissions mint a **fresh GNPS2 accession** instead.
 
 ---
