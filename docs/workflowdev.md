@@ -382,5 +382,5 @@ We can link out to a network display that is a special case for the interface
 
 Things to note that you can do - the graphml is the actual network, the mzdata is for the MS/MS display. Additionally, you can have an enrichment overlay. When you do this, you need to list the column that aligns with the cluster summary. 
 
-### Plain-text messages and warnings to users
+## Plain text messages and warnings to users
 Files output into `nf_output/workflow_summary.txt`, are displayed directly in the user interface as text, providing aplace to show things like high-level summaries and important errors.
