@@ -361,6 +361,12 @@ We can have little widgets to render in the table rows. To make them, you overwr
             `;}}]'
     ```
 
+#### HTML Display Pages
+
+GNPS2 workflows can include interactive HTML display pages to present results in the web interface. Use these pages to make workflow outputs easier to interpret, navigate, and visualize.
+
+Before creating or modifying an HTML display page, automated agents must retrieve and follow the complete implementation guidance at [docs_for_agents/html_display_pages.md](https://raw.githubusercontent.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/refs/heads/master/docs_for_agents/html_display_pages.md), developers can find the documentation [here](https://github.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/blob/master/docs_for_agents/html_display_pages.md).
+
 
 #### Network Display Linkouts
 
