@@ -330,6 +330,10 @@ Here if we want to use the task params in the linkout, simply use the syntax
           filename: nf_output/report.html
 ```
 
+Use `displaytype: htmlfile` to render an HTML report produced by the workflow in the GNPS2 web interface. Set `filename` to the report path relative to the workflow output directory.
+
+Automated agents creating or modifying an HTML display page must retrieve and follow the complete implementation guidance at [docs_for_agents/html_display_pages.md](https://raw.githubusercontent.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/refs/heads/master/docs_for_agents/html_display_pages.md). That document is the authoritative, detailed reference for HTML display-page development.
+
 #### Section Division
 
 ```yml
