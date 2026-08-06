@@ -154,7 +154,12 @@ categories, and they gate very differently.
 | **AI-annotated / AI-predicted** | Pooled `AI-*-GNPS2` libraries | Restricted (service / maintainer accounts) |
 | **Official** | A unique, authoritatively-named library | GNPS2 maintainers only |
 
-!!! note "Multiple annotations per scan" If you are trying to publish a library that has multiple annotations for the same scan (e.g., Multiplex Synthesis libraries), it can only be deposited through the **Official** channel. The database will retain each entry separately, however they will have an identical library ID. In most GNPS2 workflow outputs the annotations will be collapsed and the user will be warned that there are conflicting annotations.
+!!! note "Multiple annotations per scan"
+    If you are trying to publish a library that has multiple annotations for the same scan
+    (e.g., Multiplex Synthesis libraries), it can only be deposited through the **Official** channel.
+    The database will retain each entry separately, however they will have an identical library ID.
+    In most GNPS2 workflow outputs the annotations will be collapsed and the user will be warned that
+    there are conflicting annotations.
 
 ```mermaid
 flowchart TD
