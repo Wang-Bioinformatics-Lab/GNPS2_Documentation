@@ -3043,100 +3043,100 @@
 </ol>
 <h2 id="defining-gnps2-workflow-input-yaml">Defining GNPS2 Workflow Input YAML<a class="headerlink" href="#defining-gnps2-workflow-input-yaml" title="Permanent link">¶</a></h2>
 <p>For each workflow, there is a yml file called: workflowinput.yaml. It requires the following items:</p>
-<div class="highlight"><pre><span></span><code>workflowname: classic_networking
-workflowdescription: LC - Classical Molecular Networking
-workflowlongdescription: Molecular networks ...
-workflowversion: "0.1"
-workflowfile: workflows.nf
-workflowautohide: false
-adminonly: true
-parameterlist:
+<div class="highlight"><pre><span></span><code><span class="nt">workflowname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">classic_networking</span>
+<span class="nt">workflowdescription</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LC - Classical Molecular Networking</span>
+<span class="nt">workflowlongdescription</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Molecular networks ...</span>
+<span class="nt">workflowversion</span><span class="p">:</span><span class="w"> </span><span class="s">"0.1"</span>
+<span class="nt">workflowfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">workflows.nf</span>
+<span class="nt">workflowautohide</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">adminonly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">parameterlist</span><span class="p">:</span>
 </code></pre></div>
 <p>The <code>workflowlongdescription</code> also supports basic HTML including hyperlinks, and lists. </p>
 <p><strong>Supported Tags:</strong> The following HTML elements are permitted: \&lt;a&gt;, \&lt;ul&gt;, \&lt;ol&gt;, \&lt;li&gt;, \&lt;br&gt;, \&lt;strong&gt;, \&lt;em&gt;, and \&lt;p&gt;.</p>
 <p><strong>Permitted Attributes:</strong> For anchor (\&lt;a&gt;) tags, only the href, target, and title attributes are allowed. All other attributes will be stripped during processing.</p>
-<div class="highlight"><pre><span></span><code>workflowlongdescription: Please check out our documentation &lt;a href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/" target="_blank"&gt;here&lt;/a&gt;. Also, check out our cool unordered lists &lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt; and ordered lists &lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;
+<div class="highlight"><pre><span></span><code><span class="nt">workflowlongdescription</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Please check out our documentation &lt;a href="https://wang-bioinformatics-lab.github.io/GNPS2_Documentation/" target="_blank"&gt;here&lt;/a&gt;. Also, check out our cool unordered lists &lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt; and ordered lists &lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;</span>
 </code></pre></div>
 <h3 id="workflow-input-parameters">Workflow Input Parameters<a class="headerlink" href="#workflow-input-parameters" title="Permanent link">¶</a></h3>
 <h4 id="text-entry">Text Entry<a class="headerlink" href="#text-entry" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>    - displayname: Precursor Ion Tolerance
-      paramtype: text
-      nf_paramname: precursor_mass_tolerance
-      formplaceholder: Enter the Precursor Ion Tolerance
-      formvalue: "2.0"
-      tooltip: "Lorem Ipsum"
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Precursor Ion Tolerance</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">precursor_mass_tolerance</span>
+<span class="w">      </span><span class="nt">formplaceholder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Enter the Precursor Ion Tolerance</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">"2.0"</span>
+<span class="w">      </span><span class="nt">tooltip</span><span class="p">:</span><span class="w"> </span><span class="s">"Lorem</span><span class="nv"> </span><span class="s">Ipsum"</span>
 </code></pre></div>
 <h4 id="text-area">Text Area<a class="headerlink" href="#text-area" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>    - displayname: USI Entry
-      paramtype: textarea
-      nf_paramname: usi_field
-      formplaceholder: Enter USIs
-      formvalue: ""
-      rows: 4
-      cols: 50
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">USI Entry</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">textarea</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">usi_field</span>
+<span class="w">      </span><span class="nt">formplaceholder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Enter USIs</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+<span class="w">      </span><span class="nt">rows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="w">      </span><span class="nt">cols</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50</span>
 </code></pre></div>
 <h4 id="drop-down-list">Drop Down List<a class="headerlink" href="#drop-down-list" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>    - displayname: Network Generation Mode
-      paramtype: select
-      nf_paramname: cosinemode
-      formvalue: fast
-      options:
-        - value: python
-          display: python
-        - value: fast
-          display: fast
-      options-from-file: options.csv
-      options-from-url:
-        url: https://gnps-external.ucsd.edu/gnpslibrary
-        value-key: "name"
-        display-key: "name"
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Network Generation Mode</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">select</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cosinemode</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fast</span>
+<span class="w">      </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fast</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fast</span>
+<span class="w">      </span><span class="nt">options-from-file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">options.csv</span>
+<span class="w">      </span><span class="nt">options-from-url</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://gnps-external.ucsd.edu/gnpslibrary</span>
+<span class="w">        </span><span class="nt">value-key</span><span class="p">:</span><span class="w"> </span><span class="s">"name"</span>
+<span class="w">        </span><span class="nt">display-key</span><span class="p">:</span><span class="w"> </span><span class="s">"name"</span>
 </code></pre></div>
 <blockquote>
 <p><strong>NOTE:</strong>  for a multi-select dropdown list, you can use <code>selecttype: multi</code></p>
 <p><strong>NOTE 2:</strong> for a multi-select dropdown with default values, use ';' seprated values for the form value. Example:</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>    - displayname: Multi Select
-      paramtype: select 
-      selecttype: multi
-      nf_paramname: multi_select
-      formvalue: 'a;c'
-      options:
-        - value: 'a'
-          display: 'Show Text 1'
-        - value: 'b'
-          display: 'Show Text 2'
-        - value: 'c'
-          display: 'Show Text 3'
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Multi Select</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">select</span><span class="w"> </span>
+<span class="w">      </span><span class="nt">selecttype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">multi</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">multi_select</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">'a;c'</span>
+<span class="w">      </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'a'</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">'Show</span><span class="nv"> </span><span class="s">Text</span><span class="nv"> </span><span class="s">1'</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'b'</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">'Show</span><span class="nv"> </span><span class="s">Text</span><span class="nv"> </span><span class="s">2'</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'c'</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">'Show</span><span class="nv"> </span><span class="s">Text</span><span class="nv"> </span><span class="s">3'</span>
 </code></pre></div>
 <h4 id="multiple-selection-checkboxes">Multiple Selection Checkboxes<a class="headerlink" href="#multiple-selection-checkboxes" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>    - displayname: Test Checkbox Selection
-      paramtype: select_checkbox
-      nf_paramname: test_checkbox
-      formvalue: optiona
-      options:
-        - value: optiona
-          display: optiona
-        - value: optionb
-          display: optionb
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Test Checkbox Selection</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">select_checkbox</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test_checkbox</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">optiona</span>
+<span class="w">      </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">optiona</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">optiona</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">optionb</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">optionb</span>
 </code></pre></div>
 <blockquote>
 <p>NOTE: For options-from-url, the API expects to return in json format, a list of dictionaries. Each dictionary will have the same keys, and the users can specify the value and display for the keys in the dropdown.</p>
 </blockquote>
 <h4 id="section-header">Section Header<a class="headerlink" href="#section-header" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>    - displayname: Advanced Network Options
-      paramtype: section
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Advanced Network Options</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section</span>
 </code></pre></div>
 <h4 id="file-selector">File Selector<a class="headerlink" href="#file-selector" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>    - displayname: Metadata Path
-      paramtype: fileselector
-      nf_paramname: metadata_filename
-      formplaceholder: Enter the path to metadata
-      formvalue: ""
-      targettaskfolder: metadata_folder
-      optional: true
-      selectsinglefile: false
-      folderunroll: true
-      linkdata: true
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Metadata Path</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fileselector</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">metadata_filename</span>
+<span class="w">      </span><span class="nt">formplaceholder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Enter the path to metadata</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">""</span>
+<span class="w">      </span><span class="nt">targettaskfolder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">metadata_folder</span>
+<span class="w">      </span><span class="nt">optional</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">selectsinglefile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">      </span><span class="nt">folderunroll</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">linkdata</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 <ol>
 <li>optional means that if nothing is selected, it will default the nextflow argument to NO_FILE</li>
@@ -3154,156 +3154,156 @@ parameterlist:
 <p>The following is an example where the <code>Minimum Cosine</code> field is displayed if:
 - The <em>Search Method</em> is <em>ModiFinder</em>, <strong>or</strong>
 - The <em>Search Method</em> is <em>GNPS</em> <strong>and</strong> <em>Analog Search</em> is enabled.</p>
-<div class="highlight"><pre><span></span><code>    - displayname: Minimum Cosine
-      paramtype: text
-      nf_paramname: minimum_cosine
-      formvalue: "0.7"
-      showif:
-        - condition:
-          - key: search_method
-            value: 'gnps'
-          - key: analog_search
-            value: 'true'
-        - condition:
-          - key: search_method
-            value: 'modifinder'
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Minimum Cosine</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">minimum_cosine</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">"0.7"</span>
+<span class="w">      </span><span class="nt">showif</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">condition</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search_method</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'gnps'</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">analog_search</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'true'</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">condition</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search_method</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'modifinder'</span>
 
-    - displayname: Search Method
-      paramtype: select
-      nf_paramname: search_method
-      formvalue: "gnps"
-      options:
-        - value: "gnps"
-          display: "GNPS"
-        - value: "modifinder"
-          display: "ModiFinder"
-        - value: "blink"
-          display: "Blink"
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Search Method</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">select</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search_method</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">"gnps"</span>
+<span class="w">      </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">"gnps"</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">"GNPS"</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">"modifinder"</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">"ModiFinder"</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">"blink"</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">"Blink"</span>
 
-    - displayname: Analog Search
-      paramtype: select
-      nf_paramname: analog_search
-      formvalue: "false"
-      options:
-        - value: "true"
-          display: "True"
-        - value: "false"
-          display: "False"
-      showif:
-        - condition:
-          - key: search_method
-            value: 'gnps'
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analog Search</span>
+<span class="w">      </span><span class="nt">paramtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">select</span>
+<span class="w">      </span><span class="nt">nf_paramname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">analog_search</span>
+<span class="w">      </span><span class="nt">formvalue</span><span class="p">:</span><span class="w"> </span><span class="s">"false"</span>
+<span class="w">      </span><span class="nt">options</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">"true"</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">"True"</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">"false"</span>
+<span class="w">          </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="s">"False"</span>
+<span class="w">      </span><span class="nt">showif</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">condition</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search_method</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">'gnps'</span>
 </code></pre></div>
 <blockquote>
 <p>Note: The condition only works for single entry items such as <code>paramtype: text</code> or for <code>paramtype: select</code> where the <code>selecttype</code> is not set to <code>multi</code>.</p>
 </blockquote>
 <h3 id="workflow-display-parameters">Workflow Display Parameters<a class="headerlink" href="#workflow-display-parameters" title="Permanent link">¶</a></h3>
 <h4 id="pure-java-script-client-side-tables">Pure Java Script Client Side Tables<a class="headerlink" href="#pure-java-script-client-side-tables" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: Results
-    displayname: Results
-    viewname: results
-    displaytype: datatable
-    parameters:
-        filename: library/results.tsv
-        error_missingfile: "No File"
-        columns:
-            -   title: "Visualize"
-                data: 
-            -   title: "SpecFile"
-                data: filename
-        columnDefs: '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
-        return `
-            &lt;a target="_blank" href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}"&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Results</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Results</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">results</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datatable</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">library/results.tsv</span>
+<span class="w">        </span><span class="nt">error_missingfile</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">File"</span>
+<span class="w">        </span><span class="nt">columns</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"Visualize"</span>
+<span class="w">                </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"SpecFile"</span>
+<span class="w">                </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filename</span>
+<span class="w">        </span><span class="nt">columnDefs</span><span class="p">:</span><span class="w"> </span><span class="s">'[</span><span class="nv"> </span><span class="s">{"targets":</span><span class="nv"> </span><span class="s">0,"data":</span><span class="nv"> </span><span class="s">null,"render":</span><span class="nv"> </span><span class="s">function</span><span class="nv"> </span><span class="s">(</span><span class="nv"> </span><span class="s">data,</span><span class="nv"> </span><span class="s">type,</span><span class="nv"> </span><span class="s">row,</span><span class="nv"> </span><span class="s">meta</span><span class="nv"> </span><span class="s">)</span><span class="nv"> </span><span class="s">{</span>
+<span class="w">        </span><span class="s">return</span><span class="nv"> </span><span class="s">`</span>
+<span class="w">            </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">target="_blank"</span><span class="nv"> </span><span class="s">href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}"&gt;View</span><span class="nv"> </span><span class="s">Spectrum&lt;/a&gt;</span>
+<span class="w">        </span><span class="s">`;}}]'</span>
 </code></pre></div>
 <p>Here if we want to use the task params in the columnDefs, simply use the syntax</p>
 <div class="highlight"><pre><span></span><code>[@paramname]
 </code></pre></div>
 <h4 id="serverside-tables-medium-sized">Serverside Tables (Medium Sized)<a class="headerlink" href="#serverside-tables-medium-sized" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: Results
-    displayname: Results
-    viewname: results
-    displaytype: datatable_server
-    parameters:
-        filename: library/results.tsv
-        error_missingfile: "No File"
-        columns:
-            -   title: "Visualize"
-                data: 
-            -   title: "SpecFile"
-                data: filename
-        columnDefs: '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
-        return `
-            &lt;a target="_blank" href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}"&gt;View Spectrum&lt;/a&gt;
-        `;}}]'
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Results</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Results</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">results</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datatable_server</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">library/results.tsv</span>
+<span class="w">        </span><span class="nt">error_missingfile</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">File"</span>
+<span class="w">        </span><span class="nt">columns</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"Visualize"</span>
+<span class="w">                </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"SpecFile"</span>
+<span class="w">                </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filename</span>
+<span class="w">        </span><span class="nt">columnDefs</span><span class="p">:</span><span class="w"> </span><span class="s">'[</span><span class="nv"> </span><span class="s">{"targets":</span><span class="nv"> </span><span class="s">0,"data":</span><span class="nv"> </span><span class="s">null,"render":</span><span class="nv"> </span><span class="s">function</span><span class="nv"> </span><span class="s">(</span><span class="nv"> </span><span class="s">data,</span><span class="nv"> </span><span class="s">type,</span><span class="nv"> </span><span class="s">row,</span><span class="nv"> </span><span class="s">meta</span><span class="nv"> </span><span class="s">)</span><span class="nv"> </span><span class="s">{</span>
+<span class="w">        </span><span class="s">return</span><span class="nv"> </span><span class="s">`</span>
+<span class="w">            </span><span class="s">&lt;a</span><span class="nv"> </span><span class="s">target="_blank"</span><span class="nv"> </span><span class="s">href="https://metabolomics-usi.gnps2.org/dashinterface/?usi1=mzspec:GNPS2:TASK-${task}-input_file_folder/${row["filename"]}:scan:${row["scan1"]}"&gt;View</span><span class="nv"> </span><span class="s">Spectrum&lt;/a&gt;</span>
+<span class="w">        </span><span class="s">`;}}]'</span>
 </code></pre></div>
 <h4 id="serverside-tables-large-sized-gb-size">Serverside Tables (Large Sized - GB+ Size)<a class="headerlink" href="#serverside-tables-large-sized-gb-size" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: Results
-    displayname: Results
-    viewname: results
-    displaytype: datatable_serverbig
-    parameters:
-        filename: library/results.tsv
-        error_missingfile: "No File"
-        columns:
-            -   title: "Visualize"
-                data: 
-            -   title: "SpecFile"
-                data: filename
-        columnDefs: '[ {"targets": 0,"data": null,"render": function ( data, type, row, meta ) {
-        return `
-            &lt;img src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/&gt;
-        `;}}]'
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Results</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Results</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">results</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">datatable_serverbig</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">library/results.tsv</span>
+<span class="w">        </span><span class="nt">error_missingfile</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">File"</span>
+<span class="w">        </span><span class="nt">columns</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"Visualize"</span>
+<span class="w">                </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"SpecFile"</span>
+<span class="w">                </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filename</span>
+<span class="w">        </span><span class="nt">columnDefs</span><span class="p">:</span><span class="w"> </span><span class="s">'[</span><span class="nv"> </span><span class="s">{"targets":</span><span class="nv"> </span><span class="s">0,"data":</span><span class="nv"> </span><span class="s">null,"render":</span><span class="nv"> </span><span class="s">function</span><span class="nv"> </span><span class="s">(</span><span class="nv"> </span><span class="s">data,</span><span class="nv"> </span><span class="s">type,</span><span class="nv"> </span><span class="s">row,</span><span class="nv"> </span><span class="s">meta</span><span class="nv"> </span><span class="s">)</span><span class="nv"> </span><span class="s">{</span>
+<span class="w">        </span><span class="s">return</span><span class="nv"> </span><span class="s">`</span>
+<span class="w">            </span><span class="s">&lt;img</span><span class="nv"> </span><span class="s">src="https://structure.gnps2.org/structureimg?smiles=${row["smiles"]}"/&gt;</span>
+<span class="w">        </span><span class="s">`;}}]'</span>
 </code></pre></div>
 <h4 id="linkout">Linkout<a class="headerlink" href="#linkout" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: Downstream Analysis - Run Analysis
-    displayname: Downstream Analysis - Run Analysis
-    viewname: downstreamworkflow
-    displaytype: linkout
-    parameters:
-        baseurl: /workflowinput
-        urlparam:
-            -   workflowname:reanalysis_workflow
-        hashparam:
-            -   input_spectra:TASKLOCATION/[task]/input_spectra
-            -   description:Downstream from [task] Molecular Networking
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Downstream Analysis - Run Analysis</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Downstream Analysis - Run Analysis</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">downstreamworkflow</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">linkout</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">baseurl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/workflowinput</span>
+<span class="w">        </span><span class="nt">urlparam</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">workflowname:reanalysis_workflow</span>
+<span class="w">        </span><span class="nt">hashparam</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">input_spectra:TASKLOCATION/[task]/input_spectra</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">description:Downstream from [task] Molecular Networking</span>
 
 
--   name: Visualize Heatmap
-    displayname: Visualize Heatmap
-    viewname: visualizeheatmap
-    displaytype: linkout
-    parameters:
-        baseurl: /taskresult/[task]/file/nf_output/output.html
-        urlparam:
-            -   attachment:no
+<span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Visualize Heatmap</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Visualize Heatmap</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">visualizeheatmap</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">linkout</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">baseurl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/taskresult/[task]/file/nf_output/output.html</span>
+<span class="w">        </span><span class="nt">urlparam</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">attachment:no</span>
 </code></pre></div>
 <p>Here if we want to use the task params in the linkout, simply use the syntax</p>
 <div class="highlight"><pre><span></span><code>[@paramname]
 </code></pre></div>
 <h4 id="download-files">Download Files<a class="headerlink" href="#download-files" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: Download PCoA
-    displayname: Download PCoA
-    viewname: poca
-    displaytype: download
-    parameters:
-        filename: pcoa/pcoa.qzv
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Download PCoA</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Download PCoA</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">poca</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">download</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pcoa/pcoa.qzv</span>
 </code></pre></div>
 <h4 id="display-html">Display HTML<a class="headerlink" href="#display-html" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: Interactive Report                                                                                                         
-      displayname: Interactive Report                             
-      viewname: report                                                                                                                 
-      displaytype: htmlfile
-      parameters:                                                                                                                      
-          filename: nf_output/report.html
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Interactive Report</span><span class="w">                                                                                                         </span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">displayname</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Interactive Report</span><span class="w">                             </span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">viewname</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">report</span><span class="w">                                                                                                                 </span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">displaytype</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">htmlfile</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">parameters</span><span class="p p-Indicator">:</span><span class="w">                                                                                                                      </span>
+<span class="w">          </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nf_output/report.html</span>
 </code></pre></div>
 <p>Use <code>displaytype: htmlfile</code> to render an HTML report produced by the workflow in the GNPS2 web interface. Set <code>filename</code> to the report path relative to the workflow output directory.</p>
 <p>Automated agents creating or modifying an HTML display page must retrieve and follow the complete implementation guidance at <a href="https://raw.githubusercontent.com/Wang-Bioinformatics-Lab/GNPS2_Documentation/refs/heads/master/docs_for_agents/html_display_pages.md">docs_for_agents/html_display_pages.md</a>. That document is the authoritative, detailed reference for HTML display-page development.</p>
 <h4 id="section-division">Section Division<a class="headerlink" href="#section-division" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>-   name: section
-    displayname: Summary Views
-    viewname: section
-    displaytype: section
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section</span>
+<span class="w">    </span><span class="nt">displayname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Summary Views</span>
+<span class="w">    </span><span class="nt">viewname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section</span>
+<span class="w">    </span><span class="nt">displaytype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section</span>
 </code></pre></div>
 <h4 id="display-widgets">Display Widgets<a class="headerlink" href="#display-widgets" title="Permanent link">¶</a></h4>
 <p>We can have little widgets to render in the table rows. To make them, you overwrite the columnDefs key. Here are a few examples.</p>
@@ -3365,7 +3365,7 @@ parameterlist:
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 12, 2026 19:16:12 UTC">August 12, 2026 19:16:12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="August 17, 2026 20:26:49 UTC">August 17, 2026 20:26:49</span>
   </span>
 
     
