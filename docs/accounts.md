@@ -6,7 +6,7 @@ Generally a new batch of tokens will be batched up and sent out once a week.
 
 We aim to email tokens to the email address provided on a pretty rapid cadence. 
 
-NOTE: Please also send your email from your academic affiliation email address and not a personal email address (like gmail as we'll ignore those).
+NOTE: Please enter your email from your academic affiliation email address and not a personal email address (like gmail as we'll ignore those).
 
 Once you have a token, please create an account [here](https://gnps2.org/user/signup).
 
