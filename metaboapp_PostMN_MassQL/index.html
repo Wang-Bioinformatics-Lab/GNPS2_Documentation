@@ -2870,11 +2870,11 @@
 <h3 id="step-1-open-the-application">Step 1 – Open the Application<a class="headerlink" href="#step-1-open-the-application" title="Permanent link">¶</a></h3>
 <p>Open the app in your browser using the direct URL: <a href="https://massqlpostmn.gnps2.org/">https://massqlpostmn.gnps2.org/</a></p>
 <p>The landing page will display the interface for submitting a GNPS2 job and MassQL query.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_1.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_1.png"></a></p>
+<p></p>
 <p><strong>Figure 1:</strong> Landing page of the PostMN MassQL application. The interface includes fields for inputting the GNPS2 Task ID and MassQL query.</p>
 <h3 id="step-2-enter-the-gnps2-task-id">Step 2 – Enter the GNPS2 Task ID<a class="headerlink" href="#step-2-enter-the-gnps2-task-id" title="Permanent link">¶</a></h3>
 <p>Paste your Task ID into the field labeled “<strong>Enter GNPS2 Task ID</strong>”. This will fetch the clustered MGF associated with your molecular networking job. Make sure the job is public; otherwise, the app will not be able to access the data.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_2.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_2.png"></a></p>
+<p></p>
 <p><strong>Figure 2:</strong> Input field for entering a GNPS2 Task ID. This task must correspond to a completed CMN or FBMN job, and be publicly accessible.</p>
 <h3 id="step-3-select-or-write-a-massql-query">Step 3 – Select or Write a MassQL Query<a class="headerlink" href="#step-3-select-or-write-a-massql-query" title="Permanent link">¶</a></h3>
 <p>In the section labeled “<strong>Select one or more queries or groups</strong>”, you can either:</p>
@@ -2883,7 +2883,7 @@
 <li>Write your own custom query following the MassQL syntax, or  </li>
 <li>Select and edit a predefined query from the list.</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_3.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_3.png"></a></p>
+<p></p>
 <p><strong>Figure 3:</strong> Interface of the PostMN MassQL app with a GNPS2 Task ID entered (top), the predefined query group “Bile acids (stage 1)” selected (1), and the Query Editor displaying the full list of MassQL queries for mono- to pentahydroxylated bile acid fragments (2). The “Run Analysis” button (3) executes the selected queries.</p>
 <h3 id="step-4-run-the-query">Step 4 – Run the Query<a class="headerlink" href="#step-4-run-the-query" title="Permanent link">¶</a></h3>
 <p>Click the “<strong>Run Analysis</strong>” button. The app will search the clustered MGF for all spectra matching your query. This may take a few seconds or minutes depending on dataset size.</p>
@@ -2891,15 +2891,15 @@
 <p>Once the MassQL query has been executed, a green notification bar appears at the bottom of the screen displaying “Analysis Complete”, indicating that the results are ready for review. The app interface is then updated to include four output tabs:</p>
 <h4 id="library-matches-tab">Library Matches Tab<a class="headerlink" href="#library-matches-tab" title="Permanent link">¶</a></h4>
 <p>The Library Matches tab displays all spectra from the dataset that matched GNPS reference libraries and specifies whether they satisfied the selected MassQL query conditions. The results table on the left includes the scan number, query validation outcome, compound name, spectrum ID, and other relevant metadata. On the right, the Summary for Library Table panel reports the total number of matched scans (5035) and breaks them down by query, including cases where no query condition was met. The table can be downloaded in .tsv format, and the “Generate MGF with validated scans” button allows exporting only the spectra that passed at least one query (Figure 4).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_4.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_4.png"></a></p>
+<p></p>
 <p><strong>Figure 4:</strong> Library Matches tab showing (left) the table of spectra matched to GNPS reference libraries with query validation results, and (right) the summary panel reporting the total and per-query distribution of matches, including the option to download validated spectra as a .mgf file.</p>
 <h4 id="full-table-tab">Full Table Tab<a class="headerlink" href="#full-table-tab" title="Permanent link">¶</a></h4>
 <p>The Full Table tab lists all spectra from the dataset, regardless of whether they matched GNPS reference libraries, and specifies whether they satisfied the selected MassQL query conditions. The results table on the <strong>left</strong> includes the scan number, query validation outcome, compound name, spectrum ID, library name, and other relevant metadata. On the <strong>right</strong>, the <strong>Summary for Full Table</strong> panel reports the total number of scans (30,372) and breaks them down by query, including cases where no query condition was met. The table can be downloaded in .tsv format, and the <strong>Generate MGF with validated scans</strong> button allows exporting only the spectra that passed at least one query (Figure 5).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_5.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_5.png"></a></p>
+<p></p>
 <p><strong>Figure 5:</strong> Full Table tab in the PostMN MassQL app. This view lists all consensus spectra from the molecular networking job, regardless of whether they matched GNPS reference libraries. The table (left) includes the scan number, query validation status, compound name, among others. The summary panel (right) shows the total number of scans and the distribution of those that passed each MassQL query.</p>
 <h4 id="executed-queries-tab">Executed Queries Tab<a class="headerlink" href="#executed-queries-tab" title="Permanent link">¶</a></h4>
 <p>This tab provides a record of all MassQL queries executed during the analysis (Figure 6). It serves as a reproducibility aid, enabling users to document, share, and re-run the same queries in future analyses or on different datasets.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_6.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/1_PostMN_MassQL/PostMN_MassQL_6.png"></a></p>
+<p></p>
 <p><strong>Figure 6:</strong> Executed Queries tab in the PostMN MassQL app. This view lists all MassQL queries that were run during the analysis, including the complete syntax for each predefined query.</p>
 <h4 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">¶</a></h4>
 <p>MassQL and Compendium queries: Damiani, T., Jarmusch, A.K., Aron, A.T., Petras, D., et al. (2025). A universal language for finding mass spectrometry data patterns. Nature Methods, 22(6), 1247–1254. <a href="https://doi.org/10.1038/s41592-025-02660-z">https://doi.org/10.1038/s41592-025-02660-z</a></p>
@@ -2925,7 +2925,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="September 8, 2026 20:46:03 UTC">September 8, 2026 20:46:03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 19, 2026 20:03:56 UTC">October 19, 2026 20:03:56</span>
   </span>
 
     

@@ -2743,7 +2743,7 @@
 <li>set the ppm tolerance</li>
 <li>set the base peak filter ratio</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide3.png" data-desc-position="bottom"><img alt="Select Example" src="../img/modifinder/Slide3.png"></a></p>
+<p></p>
 <p><strong>Universal Spectrum Identifiers (USI):</strong> The Universal Spectrum Identifiers(USI) for both known and unknown compounds should be provided as they encompass the peak information used in the alignment step.</p>
 <p><strong>SMILES:</strong> ModiFinder is designed to accept molecular structures in SMILES notation. Providing the SMILES for the unknown compound is optional and is used to generate additional results that are particularly useful for evaluating and visualizing ModiFinder's performance with compounds whose structures are already known.</p>
 <p><strong>ppm:</strong> This input determines the error tolerance of ModiFinder in ppm. This error tolerance is used both in the alignment step and when annotating the peaks with substructures.</p>
@@ -2761,21 +2761,21 @@
 <!-- add images -->
 <ol>
 <li>Select the <code>Naphthomycin B</code> and <code>Naphthomycin A</code> example provided under the Examples tab
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide5.png" data-desc-position="bottom"><img alt="Select Example" src="../img/modifinder/Slide5.png"></a></li>
+</li>
 <li>You can see the input section is automatically filled with the necassary information such as the USIs, SMILES, and adduct.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide6.png" data-desc-position="bottom"><img alt="Updated Inputs" src="../img/modifinder/Slide6.png"></a></li>
+</li>
 <li>Click on Update to run ModiFinder and get the result
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide7.png" data-desc-position="bottom"><img alt="Apply Updates" src="../img/modifinder/Slide7.png"></a></li>
+</li>
 <li>You can see the Prediction and the possible formula for the modification. In this example, since the SMILES for the unknown is provided, the Modification Highlight is also available highlighting the true modification site.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide9.png" data-desc-position="bottom"><img alt="Initial Result" src="../img/modifinder/Slide9.png"></a></li>
+</li>
 <li>you can change the ppm tolerance and see how the prediction changes
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide10.png" data-desc-position="bottom"><img alt="Tolerance modification Modification" src="../img/modifinder/Slide10.png"></a></li>
+</li>
 <li>You can also refine the calculated annotations for each peak
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide11.png" data-desc-position="bottom"><img alt="Annotation Modification" src="../img/modifinder/Slide11.png"></a>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide12.png" data-desc-position="bottom"><img alt="Annotation Modification 2" src="../img/modifinder/Slide12.png"></a>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide13.png" data-desc-position="bottom"><img alt="Annotation Modification 3" src="../img/modifinder/Slide13.png"></a></li>
+
+
+</li>
 <li>updated result after manual alignment.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/Slide15.png" data-desc-position="bottom"><img alt="Annotation Modification result" src="../img/modifinder/Slide15.png"></a></li>
+</li>
 </ol>
 <h2 id="modifinder-on-private-data">ModiFinder on Private Data<a class="headerlink" href="#modifinder-on-private-data" title="Permanent link">¶</a></h2>
 <p>You need to first generate a USI for your data:
@@ -2789,19 +2789,19 @@
 <li>
 <p><strong>Molecule Visualizer:</strong>
 You can use SMILES, INCHI, or spectrum id to draw a molecule
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/draw_mol.png" data-desc-position="bottom"><img alt="Molecule Visualizer" src="../img/modifinder/draw_mol.png"></a></p>
+</p>
 </li>
 <li>
 <p><strong>Modification Visualizer:</strong> 
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/draw_mod.png" data-desc-position="bottom"><img alt="Modification Visualizer" src="../img/modifinder/draw_mod.png"></a></p>
+</p>
 </li>
 <li>
 <p><strong>Spectrum Visualizer:</strong> 
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/draw_spectrum.png" data-desc-position="bottom"><img alt="Spectrum Visualizer" src="../img/modifinder/draw_spectrum.png"></a></p>
+</p>
 </li>
 <li>
 <p><strong>Alignment Visualizer:</strong> 
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/modifinder/draw_alignment.png" data-desc-position="bottom"><img alt="Alignment Visualizer" src="../img/modifinder/draw_alignment.png"></a></p>
+</p>
 </li>
 </ol>
 <h3 id="api">API<a class="headerlink" href="#api" title="Permanent link">¶</a></h3>
@@ -2826,7 +2826,7 @@ You can use SMILES, INCHI, or spectrum id to draw a molecule
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="September 8, 2026 20:46:03 UTC">September 8, 2026 20:46:03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 19, 2026 20:03:56 UTC">October 19, 2026 20:03:56</span>
   </span>
 
     

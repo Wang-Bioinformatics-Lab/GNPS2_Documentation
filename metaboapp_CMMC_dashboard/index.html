@@ -2865,7 +2865,7 @@
 <li><strong>Analysis Configuration Sidebar</strong> (left) - where you load example data, enter CMMC and FBMN Task IDs, upload your metadata file, and set analysis parameters.  </li>
 <li><strong>Main Display Panel</strong> (right) - where an overview of the tool, instructions, and the generated visualizations ara shown.</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_1.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_1.png"></a></p>
+<p></p>
 <p><strong>Figure 1:</strong> CMMC Dashboard interface. (1) Analysis configuration Sidebar - input panel for Task IDs, metadata upload, and analysis settings. (2) Main Display Panel - displays the tool description, usage instructions, and visual outputs.</p>
 <h2 id="input-requirements">Input Requirements<a class="headerlink" href="#input-requirements" title="Permanent link">¶</a></h2>
 <p>To run the CMMC Analysis Dashboard, the following inputs are required:</p>
@@ -2903,12 +2903,12 @@
 </ol>
 <p><strong>Tutorial Note:</strong><br>
 For demonstration purposes, this guide uses the <strong>built-in example dataset</strong>. To load it, select <strong>Load Example Data</strong> from the input panel. This will automatically populate all required fields with example Task IDs and metadata. Once populated, click <strong>Run Analysis</strong> to execute the pipeline.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_2.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_2.png"></a></p>
+<p></p>
 <p><strong>Figure 2:</strong> CMMC Analysis Dashboard interface with example dataset loaded. (1) Load Example Data: automatically populates all input fields with preconfigured Task IDs and metadata from the referenced study. (2) CMMC Task ID: identifier for the CMMC Enrichment Workflow. (3) FBMN Task ID: identifier for the Feature-Based Molecular Networking Workflow. (4) Preview Data: displays the filenames from the selected quantification table. (5) Run Analysis: executes the pipeline using the provided inputs and parameters.</p>
 <p><strong>Step 3 – View the Results</strong></p>
 <h3 id="step-3-view-the-results">Step 3 – View the Results<a class="headerlink" href="#step-3-view-the-results" title="Permanent link">¶</a></h3>
 <h4 id="data-overview-box-plots">Data Overview Box Plots<a class="headerlink" href="#data-overview-box-plots" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_3.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_3.png"></a></p>
+<p></p>
 <p><strong>Figure 3:</strong> Data Overview Box Plots interface in the CMMC Dashboard. (1) Data Explorer tab; (2) dropdown to select the metadata column used for grouping; (3) selection of groups to compare; (4) dropdown to select the metabolite by Feature ID; (5) box plot showing abundance distributions between selected groups; (6) metabolite details and chemical structure.</p>
 <h4 id="stratified-box-plots">Stratified Box Plots<a class="headerlink" href="#stratified-box-plots" title="Permanent link">¶</a></h4>
 <p>The Stratified Box Plots tab (see Figure 4) enables a two-level grouping of metabolomics data, allowing deeper exploration of metabolite abundance patterns.</p>
@@ -2921,7 +2921,7 @@ For demonstration purposes, this guide uses the <strong>built-in example dataset
 <li>The box plot (6) displays peak area distributions for each subgroup within the stratified selection, enabling detection of abundance differences conditioned on the first grouping criterion.  </li>
 <li>The right-hand panel (7) provides additional chemical and biological details for the selected metabolite, including name, origin, and source.</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_4.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_4.png"></a></p>
+<p></p>
 <p><strong>Figure 4</strong>: Stratified Box Plots interface in the CMMC Dashboard. (1) Selection of the first metadata attribute for prefiltering; (2) secondary metadata attribute used for the x-axis; (3) selection of a specific subgroup from Group 1; (4) selection of groups for comparison in Group 2; (5) metabolite selection by Feature ID; (6) box plot showing peak area distributions for Glycocholic acid in GF vs. SPF stomach samples; (7) detailed metabolite information and structure.</p>
 <p>In the example, Glycocholic acid is substantially more abundant in the GF group compared to SPF when restricted to stomach samples. This view is particularly valuable for identifying group differences that emerge only within a specific metadata-defined context, such as organ-specific metabolite patterns or host–microbe interactions.</p>
 <h4 id="upset-plot">UpSet Plot<a class="headerlink" href="#upset-plot" title="Permanent link">¶</a></h4>
@@ -2935,7 +2935,7 @@ For demonstration purposes, this guide uses the <strong>built-in example dataset
 <li>A single filled dot without connections represents a unique set (metabolites belonging exclusively to that category).  </li>
 <li>Connected dots indicate metabolites shared across multiple categories, with the intersection size displayed as the height of the corresponding bar.</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_5.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_5.png"></a></p>
+<p></p>
 <p><strong>Figure 5:</strong> UpSet Plot visualization showing intersections grouped by Source (1) and Origin (2). Bars indicate intersection sizes (number of metabolites), while connected dots represent the categories included in each intersection. </p>
 <p>This plot helps identify overlapping biological or dietary origins of detected metabolites, providing insights into potential shared metabolic pathways or cross-domain chemical signatures.</p>
 <h4 id="molecular-network-visualization">Molecular Network Visualization<a class="headerlink" href="#molecular-network-visualization" title="Permanent link">¶</a></h4>
@@ -2952,7 +2952,7 @@ For demonstration purposes, this guide uses the <strong>built-in example dataset
 <li>Red node marks the queried feature.  </li>
 <li>Edges indicate cosine similarity-based spectral matches between nodes.</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_6.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_6.png"></a></p>
+<p></p>
 <p><strong>Figure 6:</strong> Molecular Network Visualization showing spectral similarity relationships between features. Node colors correspond to annotation status (red: queried node, green: CMMC match, orange: FBMN match, blue: unidentified), and edges represent spectral similarity connections.</p>
 <h4 id="microbemasst-search">microbeMASST Search<a class="headerlink" href="#microbemasst-search" title="Permanent link">¶</a></h4>
 <p>The <strong>microbeMASST Search</strong> feature (see Figure 7) enables users to link known or unknown MS/MS spectra to their potential microbiological producers. It leverages a curated database containing over 60,000 microbial monocultures (covering bacteria, fungi, and archaea) collected from diverse environments such as plants, soils, oceans, animals, and humans. By comparing the fragmentation pattern of a query spectrum to those in the GNPS/MassIVE repository, MicrobeMASST identifies matches and organizes them into an interactive <strong>taxonomic tree</strong>, making it easier to interpret the relationships between compounds and their microbial sources. This functionality provides unique insights into the ecological and health-related roles of microorganisms.</p>
@@ -2968,7 +2968,7 @@ For demonstration purposes, this guide uses the <strong>built-in example dataset
 <li>Run Search - Executes the search based on the parameters defined above.  </li>
 <li>Results Panel - Displays a hierarchical taxonomic tree of matched microorganisms, from domain to strain level. Yellow circles represent matched taxa, with each branch reflecting taxonomic relationships.</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_7.png" data-desc-position="bottom"><img alt="" src="../img/metaboapps/5_CMMC_dashboard/CMMC_dashboard_7.png"></a></p>
+<p></p>
 <p><strong>Figure 7:</strong> Example of a taxonomic tree generated by MicrobeMASST, showing the matched microbial taxa for a queried MS/MS spectrum. Nodes represent taxonomic levels from domain to strain, with yellow nodes indicating matches.</p>
 <p>In the example shown, the query spectrum is matched to multiple microbial taxa, organized from <strong>root</strong> → <strong>domain</strong> → <strong>order</strong> → <strong>family</strong> → <strong>genus</strong> → <strong>species</strong> → <strong>strain</strong>. This hierarchical view helps the user identify the likely microbial origin of the metabolite, narrowing down potential producers without requiring prior taxonomic knowledge.</p>
 
@@ -2991,7 +2991,7 @@ For demonstration purposes, this guide uses the <strong>built-in example dataset
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="September 8, 2026 20:46:03 UTC">September 8, 2026 20:46:03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 19, 2026 20:03:56 UTC">October 19, 2026 20:03:56</span>
   </span>
 
     
