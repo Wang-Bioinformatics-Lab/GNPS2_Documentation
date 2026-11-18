@@ -9,12 +9,6 @@
     - **Web apps (Easy):** after converting, run any profile-mode files through the [mzML Centroider](#centroiding-profile-mzml). See [Is my data centroided?](#is-my-data-centroided) below.
     - **MSConvert (Traditional):** add the **Peak Picking** filter, with **Vendor** checked, as the *first* filter. See [Conversion with MSConvert](#conversion-with-msconvert).
 
-## Data Conversion (Super Easy)
-
-Drag and drop files on our server [here](https://quickstart.gnps2.org/conversion) and hit convert. 
-
-You will receive a download of all the converted files in a zip file that is ready to be analyzed! 
-
 ## Data Conversion (Easy)
 
 The [GNPS2 Next Gen Web Apps](https://apps.gnps2.org/) site has converters that turn vendor files into mzML **inside your web browser**. Nothing to install, it works on Windows, macOS, and Linux, and **your files never leave your computer**, because nothing is uploaded to a server.
