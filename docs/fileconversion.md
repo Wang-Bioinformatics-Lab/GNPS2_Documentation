@@ -1,6 +1,14 @@
 !!! info "Supported Formats at GNPS2"
     GNPS2 supports mzXML, mzML, and mgf formats for analysis. Our tools do NOT support mzData, xml, raw, RAW, wiff, scan, d, and cdf formats. If some of your files are in these formats, please use the following guide to convert them to open formats supported by GNPS2.
 
+!!! danger "Your data must be centroided"
+    GNPS2 workflows, such as molecular networking, FBMN, and library search, need **centroided** MS/MS data. Profile-mode data gives poor or empty results, and often no error explains why.
+
+    Whatever method you use to convert your files, make sure the result is centroided:
+
+    - **Web apps (Easy):** after converting, run any profile-mode files through the [mzML Centroider](#centroiding-profile-mzml). See [Is my data centroided?](#is-my-data-centroided) below.
+    - **MSConvert (Traditional):** add the **Peak Picking** filter, with **Vendor** checked, as the *first* filter. See [Conversion with MSConvert](#conversion-with-msconvert).
+
 ## Data Conversion (Super Easy)
 
 Drag and drop files on our server [here](https://quickstart.gnps2.org/conversion) and hit convert. 
@@ -26,6 +34,18 @@ To browse all the converters, open [apps.gnps2.org](https://apps.gnps2.org/) and
 
 !!! warning "Beta converters"
     These apps are marked **IN DEV**. They are already usable, but the interface may change. For production-critical work, spot-check a few converted files against MSConvert (see [Data Conversion (Traditional)](#data-conversion-traditional)). If a conversion fails or looks wrong, let us know by [contacting us](contact.md).
+
+### Is my data centroided?
+
+Converting and centroiding are two separate steps. Some converters centroid for you, and others keep your data as it was acquired:
+
+| App | Centroids for you? | What to do |
+| --- | ------------------ | ---------- |
+| [RAW to mzML](https://apps.gnps2.org/raw_to_mzml2) | Not guaranteed | If your Thermo method acquired any scans in **profile** mode (common for Orbitrap MS1), run the output through the [mzML Centroider](#centroiding-profile-mzml) |
+| [Agilent to mzML](https://apps.gnps2.org/agilent_to_mzml) | Yes, when **Centroid profile-mode scans** is checked (the default) | Leave the box checked |
+| [Bruker timsTOF to mzML](https://apps.gnps2.org/bruker_tims_to_mzml) | Yes, MS/MS spectra are centroided | Nothing extra |
+
+If you are not sure, run your mzML files through the [mzML Centroider](#centroiding-profile-mzml) anyway. Spectra that are already centroided are copied unchanged, so this step is safe for every file.
 
 !!! tip "Use a desktop browser"
     Use a recent version of Chrome, Edge, or Firefox. The apps convert several files at once, one per CPU core, so large batches finish faster on a computer with more cores. Keep the tab open until the conversion finishes.
