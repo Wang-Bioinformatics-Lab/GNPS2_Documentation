@@ -9,16 +9,93 @@ You will receive a download of all the converted files in a zip file that is rea
 
 ## Data Conversion (Easy)
 
-This is a complete package for Windows users to convert their vendor formats to GNPS compatible format (mzML or legacy mzXML). It is as easy as putting files into a folder and batch converting them all without any installation (well nearly so).
+The [GNPS2 Next Gen Web Apps](https://apps.gnps2.org/) site has converters that turn vendor files into mzML **inside your web browser**. Nothing to install, it works on Windows, macOS, and Linux, and **your files never leave your computer**, because nothing is uploaded to a server.
 
-1. Download the zip file [here](https://www.dropbox.com/s/41m88bh3fcr5uz9/GNPS_Vendor_Conversion.zip?dl=1)
-2. Unzip contents onto a folder on your computer (e.g. Desktop)
-3. Install windows libraries in "pwizLibraries-and-Installation" - Run appropriate program for 32-bit (32-Bit_Double-Click_To_Install.bat) or 64-bit system (64-Bit_Double-Click_To_Install.bat). To find out which type of OS you have please check [here](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq)
-4. Put vendor formats in "Input_Files" not embedded in other folders
-5. Double click on Double-Click_To-Convert.bat - Download zip includes demo files for major vendor formats as a test.
-6. Wait patiently
-7. Check all the converted files in Output_Folder
-8. If there are errors, please check log.txt or read on how to convert files in a more traditional manner.
+Pick the app for your instrument vendor:
+
+| Vendor | File Format | App |
+| ------ | ----------- | --- |
+| ThermoFisher | .raw | [RAW to mzML](https://apps.gnps2.org/raw_to_mzml2) |
+| Agilent (Q-TOF) | .d folder | [Agilent to mzML](https://apps.gnps2.org/agilent_to_mzml) |
+| Bruker timsTOF | .d folder | [Bruker timsTOF to mzML](https://apps.gnps2.org/bruker_tims_to_mzml) |
+| Any (profile-mode mzML) | .mzML | [mzML Centroider](https://apps.gnps2.org/mzml_centroider) |
+
+To browse all the converters, open [apps.gnps2.org](https://apps.gnps2.org/) and type `to mzML` in the search box:
+
+![GNPS2 Web Apps filtered to the conversion apps](img/conversion/apps_home_search.png)
+
+!!! warning "Beta converters"
+    These apps are marked **IN DEV**. They are already usable, but the interface may change. For production-critical work, spot-check a few converted files against MSConvert (see [Data Conversion (Traditional)](#data-conversion-traditional)). If a conversion fails or looks wrong, let us know by [contacting us](contact.md).
+
+!!! tip "Use a desktop browser"
+    Use a recent version of Chrome, Edge, or Firefox. The apps convert several files at once, one per CPU core, so large batches finish faster on a computer with more cores. Keep the tab open until the conversion finishes.
+
+### Thermo .raw → mzML
+
+App: [https://apps.gnps2.org/raw_to_mzml2](https://apps.gnps2.org/raw_to_mzml2)
+
+![RAW to mzML app](img/conversion/apps_raw_to_mzml.png)
+
+1. Open the [RAW to mzML](https://apps.gnps2.org/raw_to_mzml2) app. Wait for the status line to say **Engine ready**.
+2. Drag your Thermo `.raw` files onto the **Drop .raw files here** box, or click the box to pick them. You can select many files at once (100 or more is fine).
+3. The files convert in parallel, and the progress shows on the page.
+4. When they are done, download the mzML files. You can download the whole batch at once as a `.zip` file.
+
+!!! info "Centroiding Thermo data"
+    If your Thermo data was acquired in profile mode, run the converted mzML files through the [mzML Centroider](#centroiding-profile-mzml) before using them in GNPS2. Molecular networking needs centroided data.
+
+### Agilent .d → mzML
+
+App: [https://apps.gnps2.org/agilent_to_mzml](https://apps.gnps2.org/agilent_to_mzml)
+
+![Agilent to mzML app](img/conversion/apps_agilent_to_mzml.png)
+
+1. Open the [Agilent to mzML](https://apps.gnps2.org/agilent_to_mzml) app. Wait for the status line to say **Engine ready**.
+2. Leave **Centroid profile-mode scans** checked. This is recommended for GNPS2 and molecular networking.
+3. Drag your Agilent `.d` folders onto the **Drop Agilent .d folder(s) here** box, or click the box to choose a folder. To convert a whole batch at once, pick a parent folder that contains many `.d` folders.
+4. When the conversion finishes, download the mzML files.
+
+!!! note "Supported Agilent instruments"
+    The converter supports Agilent **Q-TOF** data (6520–6560 series). Triple-quad (MRM) and ion-mobility `.d` files are not converted. For those, use [MSConvert](#conversion-with-msconvert). See also our [Agilent conversion guide](agilent_conversion.md).
+
+### Bruker timsTOF .d → mzML
+
+App: [https://apps.gnps2.org/bruker_tims_to_mzml](https://apps.gnps2.org/bruker_tims_to_mzml)
+
+![Bruker timsTOF to mzML app](img/conversion/apps_bruker_tims_to_mzml.png)
+
+1. Open the [Bruker timsTOF to mzML](https://apps.gnps2.org/bruker_tims_to_mzml) app. Wait for the status line to say **Engine ready**.
+2. Optional: check **keep ion mobility** to add each peak's 1/K0 value to the MS1 spectra. You can leave it unchecked for a standard GNPS2 analysis.
+3. Optional, for large batches: click **Stream to folder…** and pick a folder on your computer. The mzML files are then written straight to that folder instead of being kept in browser memory.
+4. Drag your `.d` folders onto the **Drop .d folders here** box, or click it to choose a folder. You can drop one acquisition or a folder of many.
+5. When the conversion finishes, download the mzML files, or find them in the folder you picked in step 3.
+
+!!! note "Supported Bruker data"
+    The converter handles timsTOF **TDF** (TIMS on, DDA-PASEF) and **TSF** (TIMS off) data. MS2 spectra are centroided. A single very large `.d` acquisition (over ~4 GB) may not fit in browser memory. In that case, use [timsconvert](https://github.com/gtluu/timsconvert) or MSConvert. For other Bruker instruments, see [Data Conversion (Traditional)](#data-conversion-traditional).
+
+### Centroiding Profile mzML
+
+App: [https://apps.gnps2.org/mzml_centroider](https://apps.gnps2.org/mzml_centroider)
+
+Use this app if you already have mzML files, but they are in profile mode. For example, files exported from Thermo profile data or files converted by MSConvert without peak picking. GNPS2 workflows need centroided data.
+
+![mzML Centroider app](img/conversion/apps_mzml_centroider.png)
+
+1. Open the [mzML Centroider](https://apps.gnps2.org/mzml_centroider) app.
+2. Review the **Settings**. The defaults (**All MS levels**, **Auto** peak intensity, minimum intensity `0`, minimum S/N `0`, **zlib** compression) work well for most data.
+3. Drag your profile `.mzML` files onto the **Drop profile mzML files here** box, or click it to choose them. To see how the app works first, click **try an example**.
+4. The **Batch** panel shows the progress. The **Files** table lists each output file, with how many spectra were centroided.
+5. Click **Download all (.zip)**, **Save all to folder…**, or the **download** link on each row.
+
+![mzML Centroider after converting the example file](img/conversion/apps_mzml_centroider_result.png)
+
+### Check Your Converted Files
+
+Before you start a GNPS2 analysis, check that the converted files look right. Drop them into the [mzML / mzXML Viewer](https://apps.gnps2.org/mzml_viewer). It shows an MS1 heatmap, overlays the total ion chromatograms (TICs) of all your files, and can extract ion chromatograms (XICs). It also runs entirely in your browser.
+
+![mzML Viewer app](img/conversion/apps_mzml_viewer.png)
+
+If everything looks good, [upload your files](fileupload.md) to GNPS2.
 
 ## Data Conversion (Traditional)
 
